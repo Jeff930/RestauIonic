@@ -1,0 +1,7 @@
+{
+  "name": "Kusina-Filipina",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
