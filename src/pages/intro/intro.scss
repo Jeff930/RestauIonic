@@ -1,9 +1,18 @@
 page-intro {
-
+	.scroll-content {
+		
+	background: rgb(188,4,2) !important;
+	}
 
 .enterBtn{
 		margin-top: 30vh;
 		font-size: 28px;
 		//font-style:
+		button {
+			padding: 20px !important;
+			background: rgb(212,202,177);
+			 box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+			 border: none !important;
+		}
 	}
 }
