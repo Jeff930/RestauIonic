@@ -30,6 +30,6 @@ export class NewsPage {
 
   goTo() {
   
-    this.navCtrl.push('HomePage');
+    this.navCtrl.push('GalleryTabsPage');
   }
 }

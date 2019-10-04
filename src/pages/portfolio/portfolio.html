@@ -14,18 +14,19 @@
 			 <button ion-button menuToggle>
     <ion-icon name="menu"></ion-icon>
   </button>
-			<ion-title>Portfolio</ion-title>
+			<ion-title>Kusina Filipina</ion-title>
 		</ion-navbar>
 
 	</ion-header>
 	<ion-slides pager>
 
-		<ion-slide style="background-color: black" *ngFor="let l of list">
+		<ion-slide style="background-color: black">
 
-			<img src="{{l.value}}">
-			<h2 style="color:white;">{{l.name}}</h2>
-			<ion-row>
-				<ion-col>
+			<img src="assets/imgs/{{currentImage.image}}">
+			<h2 style="color:white;">{{currentImage.name}}</h2>
+			<ion-row style="margin-bottom: 20px">
+				<h6 style="color: #ffff; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </h6>
+				<!-- <ion-col>
 					<button ion-button icon-left clear small color="light">
 						<ion-icon name="thumbs-up"></ion-icon>
 						<div>12 Likes</div>
@@ -43,7 +44,7 @@
 						<div>11h ago</div>
 					</ion-note>
 				</button>
-				</ion-col>
+				</ion-col> -->
 			</ion-row>
 		</ion-slide>
 

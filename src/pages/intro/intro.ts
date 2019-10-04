@@ -23,7 +23,7 @@ export class IntroPage {
   }
 
 enterWebsite(){
-	this.navCtrl.setRoot('HomePage');
+	this.navCtrl.setRoot('NewsPage');
 		//this.navCtrl.push('HomePage');
 	}
 }

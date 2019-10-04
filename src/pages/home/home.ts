@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage,NavController } from 'ionic-angular';
+import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
 @IonicPage()
 @Component({
@@ -8,19 +9,10 @@ import { IonicPage,NavController } from 'ionic-angular';
 })
 export class HomePage {
 	public liked1:boolean=false;
-	public list:any= [
-	{value: 'assets/imgs/File1.webp', liked: false},
-	{value: 'assets/imgs/File2.webp',liked: false},
-	{value: 'assets/imgs/File3.webp',liked: false},
-	{value: 'assets/imgs/File4.webp',liked: false},
-	{value: 'assets/imgs/File5.webp',liked: false},
-	{value: 'assets/imgs/1.jpeg',liked: false},
-	{value: 'assets/imgs/2.jpeg',liked: false},
-	{value: 'assets/imgs/3.jpeg',liked: false}
-	];
+	public list:any= [];
 	
-	constructor(public navCtrl: NavController) {
-
+	constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
+		this.list = this.imageProvider.getImages();
 	}
 
 	enterWebsite(){

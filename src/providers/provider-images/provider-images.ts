@@ -1,6 +1,6 @@
 // import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
+import { drinks } from '../../models/drink';
 /*
   Generated class for the ProviderImagesProvider provider.
 
@@ -9,28 +9,14 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class ProviderImagesProvider {
-  public templateImage = [ 
-    { name: 'test',
-     image: 'img1.jpg'
-    }, {
-      name: 'test',
-      image: 'img2.jpg'
-    }, {
-      name: 'test',
-      image: 'img3.jpg'
-    }, {
-      name: 'test',
-      image: 'img4.jpg'
-    }, {
-      name: 'test',
-      image: 'img5.jpg'
-    }
-  ]
+  public templateImage = [];
+  public currentImage: any;
   constructor() {
     console.log('Hello ProviderImagesProvider Provider');
   }
   
   getImages() {
+    this.templateImage = drinks;
     return this.templateImage;
   }
 

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'October Twilight';
+    src: url('OctoberTwilight.woff2') format('woff2'),
+        url('OctoberTwilight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

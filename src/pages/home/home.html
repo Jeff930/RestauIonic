@@ -25,14 +25,13 @@
   <ion-grid no-padding text-center>
     <ion-row no-padding >
 
-      <ion-col no-margin no-padding col-6 (click)="showPortfolio();" *ngFor="let l of list">
+      <ion-col no-margin no-padding col-6 (click)="showPortfolio();" *ngFor="let l of list" class="image-holder">
 
-        <img src="{{l.value}}" class="show">
+        <img src="assets/imgs/{{l.image}}" class="show">
 
-       <!--  <button ion-button clear icon-only style="position: absolute;bottom: 15%;right: 15%;" (click)="like(1)">
-          <ion-icon name=heart-outline color=light style="font-size: 3em;"></ion-icon>
-        </button> -->
-
+        <div class="subtitle">
+          <h6>{{l.name}}</h6>
+        </div>
       </ion-col >
 
     </ion-row>
