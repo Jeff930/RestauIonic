@@ -18,6 +18,22 @@
   </ion-navbar>
 </ion-header>
 
-  <ion-content>
-  <h2 text-center style="margin-top: 25vh">Coming Soon...</h2>
-  </ion-content>
+<ion-content>
+
+  <ion-grid no-padding text-center>
+    <ion-row no-padding>
+
+      <ion-col no-margin no-padding col-6 (click)="showPortfolio(l);" *ngFor="let l of list" class="image-holder">
+
+        <img src="assets/imgs/{{l.image}}" class="show">
+
+        <div class="subtitle">
+          <h6>{{l.name}}</h6>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

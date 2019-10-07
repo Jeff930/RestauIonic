@@ -20,7 +20,7 @@ export class AllFoodsPage {
   public list: any = [];
 
   constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
-    this.list = this.imageProvider.getImages();
+    this.list = this.imageProvider.getImages('All');
   }
 
   enterWebsite() {

@@ -24,7 +24,7 @@ export class NewsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewsPage');
-    this.images = this.image.getImages();
+    this.images = this.image.getEachImageForView();
     console.log(this.images)
   }
 
