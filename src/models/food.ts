@@ -592,5 +592,55 @@ export const food = [
 		name: 'sample Food 119',
 		image: 'food/food-119.jpg',
 		price: '2200',
-	}
+
+	}, {
+		name: 'sample Food 120',
+		image: 'food/food-120.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 121',
+		image: 'food/food-121.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 122',
+		image: 'food/food-122.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 123',
+		image: 'food/food-123.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 124',
+		image: 'food/food-124.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 125',
+		image: 'food/food-125.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 126',
+		image: 'food/food-126.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 127',
+		image: 'food/food-127.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 128',
+		image: 'food/food-128.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 129',
+		image: 'food/food-129.jpg',
+		price: '2200',
+
 ];
