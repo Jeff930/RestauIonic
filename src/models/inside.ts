@@ -255,7 +255,26 @@ export const inside = [
 	}, {
 		name: 'sample Inside 52',
 		image: 'inside/inside-52.jpg'
+
+		
+	}, {
+		name: 'sample Inside 53',
+		image: 'inside/inside-53.jpg'
 		
 
+	}, {
+		name: 'sample Inside 54',
+		image: 'inside/inside-54.jpg'
+		
+
+	}, {
+		name: 'sample Inside 55',
+		image: 'inside/inside-55.jpg'
+
+	}, {
+		name: 'sample Inside 56',
+		image: 'inside/inside-56.jpg'
+		
+		
 	}
 ];
