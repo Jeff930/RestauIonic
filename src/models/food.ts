@@ -643,4 +643,104 @@ export const food = [
 		image: 'food/food-129.jpg',
 		price: '2200',
 
+	}, {
+		name: 'sample Food 130',
+		image: 'food/food-130.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 131',
+		image: 'food/food-131.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 132',
+		image: 'food/food-132.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 133',
+		image: 'food/food-133.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 134',
+		image: 'food/food-134.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 135',
+		image: 'food/food-135.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 136',
+		image: 'food/food-136.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 137',
+		image: 'food/food-137.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 138',
+		image: 'food/food-138.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 139',
+		image: 'food/food-139.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 140',
+		image: 'food/food-140.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 141',
+		image: 'food/food-141.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 142',
+		image: 'food/food-142.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 143',
+		image: 'food/food-143.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 144',
+		image: 'food/food-144.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 145',
+		image: 'food/food-145.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 146',
+		image: 'food/food-146.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 147',
+		image: 'food/food-147.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 148',
+		image: 'food/food-148.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 149',
+		image: 'food/food-149.jpg',
+		price: '2200',
+
 ];
