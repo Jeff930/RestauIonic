@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
 /**
  * Generated class for the FoodPage page.
@@ -14,12 +15,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'food.html',
 })
 export class FoodPage {
+  public liked1: boolean = false;
+  public list: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
+    this.list = this.imageProvider.getImages('food');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FoodPage');
+  enterWebsite() {
+    this.navCtrl.push('HomePage');
   }
 
+  like(no) {
+
+    if (this.liked1) {
+      this.liked1 = false;
+    } else {
+      this.liked1 = true;
+    }
+  }
+
+  showPortfolio(image) {
+    this.navCtrl.push('PortfolioPage');
+    console.log(image);
+    this.imageProvider.currentImage = image;
+  }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
 /**
  * Generated class for the InsidePage page.
@@ -14,12 +15,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'inside.html',
 })
 export class InsidePage {
+  public liked1: boolean = false;
+  public list: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
+    this.list = this.imageProvider.getImages('inside');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad InsidePage');
+  enterWebsite() {
+    this.navCtrl.push('HomePage');
   }
 
+  like(no) {
+
+    if (this.liked1) {
+      this.liked1 = false;
+    } else {
+      this.liked1 = true;
+    }
+  }
+
+  showPortfolio(image) {
+    this.navCtrl.push('PortfolioPage');
+    console.log(image);
+    this.imageProvider.currentImage = image;
+  }
 }

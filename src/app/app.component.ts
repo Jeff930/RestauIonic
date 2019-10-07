@@ -32,7 +32,8 @@ export class MyApp {
       // { title: 'Click', component: 'ClickPage' , icon:'camera'},
       // { title: 'Notifications', component: 'NotificationsPage' , icon:'notifications-outline'},
       // { title: 'Profile', component: 'ProfilePage' , icon:'contact'},
-      { title: 'Settings', component: 'SettingsPage' , icon:'settings'}
+      { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
+      { title: 'Location', component: 'NotificationsPage' , icon:'navigate'}
       ];
 
     }
