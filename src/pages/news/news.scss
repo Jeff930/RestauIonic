@@ -72,8 +72,7 @@ page-news {
 	.fooot {
 		word-wrap: normal;
 	}
-	.list {
-		padding-top: 5px;
+	.lister {
 		padding-left: 50px;
 		padding-right: 50px;
 		width: 100%;
@@ -88,9 +87,36 @@ page-news {
 			}
 		}
 	}
-	.titles {
+	.listy {
+		
+    color: rgb(94, 94, 94) !important;
+		width: 100%;
+		display: inline-flex;
+		div {
+		width: 50%;
+		font-size: 1.3rem !important;
+		.item-inner {
+			border-bottom: none !important;
+		}ion-item {
+			ion-label {
+				
+				span {
+					font-weight: 500 !important;
+					color: rgb(245, 61, 61) !important; 
+				}
+			}
+		}
+		}
+	}
+	.toolbar-title-md {
 		text-align: left !important; 
 		margin-top: 20px !important;
 		font-weight: bold !important;
+		color: rgb(245, 61, 61) !important; 
+	}
+	.no-line {
+		.item-inner {
+			border-bottom: none !important;
+		}
 	}
 }

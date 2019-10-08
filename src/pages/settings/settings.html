@@ -18,6 +18,26 @@
 	</ion-navbar>
 </ion-header>
 
-<ion-content>
-	<h2 text-center style="margin-top: 25vh">Comming Soon...</h2>
+<ion-content padding>
+	<div class="swipercontainer" (swipe)="swipeEvent($event)">
+		<!-- <h2 class="infoHead"></h2> -->
+		<h1 class="infoHead"><ion-icon name="ios-help-circle-outline"></ion-icon></h1>
+		<!-- <h2 class="infoHead">Inquire now for your needs..</h2> -->
+		<hr>
+		<div class="parg">
+				<h6>Inquire now for your needs. You may contact us with our number listed below:</h6>
+				<h6><span class="fonty">
+					<span  class="iconFont"> <ion-icon color="danger" name="call"></ion-icon></span>
+				</span> (323) 229-0228</h6>
+				<!-- <span class="fonty">
+					<ion-icon ios="ios-arrow-forward" md="md-arrow-dropright"></ion-icon> Coaching
+				</span> is a series of conversations intended to facilitate personal growth.
+				The best coaches enlighten with their questions, not their advice. They know the
+				‘best’ answer lies within you, and that your discovery of it significantly increases
+				the chances you will actually do something about it. LeaderCOACH facilitates translating
+				insight into action. Give yourself the time to reflect on the questions, and let that lead
+				you where you need to go. In short, trust the process. -->
+		</div>
+	</div>
 </ion-content>
+

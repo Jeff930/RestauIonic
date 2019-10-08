@@ -742,5 +742,5 @@ export const food = [
 		name: 'sample Food 149',
 		image: 'food/food-149.jpg',
 		price: '2200',
-
+	}
 ];
