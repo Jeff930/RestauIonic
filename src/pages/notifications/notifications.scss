@@ -1,3 +1,45 @@
 page-notifications {
+    #floating-panel {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  #map {
+    height: 100%;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+  }
+  .mapContainer {
+      width: 100%;
+      height: 50vh;
+      margin: 0 auto;
+       box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
 
+   h1 {
+        font-size: 4rem !important;
+    color: rgb(94, 94, 94) !important;
+    }
+ .parg {
+        margin: 2rem 5vw;
+        text-align: center;
+    color: rgb(94, 94, 94) !important;
+    }   
+    .parg p {
+        line-height: 25px;
+        font-size: 4.8vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .iconFont {
+        font-size: 2rem;
+        top: 3px !important;
+        position: relative !important;
+    }
 }
