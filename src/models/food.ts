@@ -1304,43 +1304,93 @@ export const food = [
 		price: '2200',
 
 	}, {
-		name: 'sample Food 202',
-		image: 'food/food-202.jpg',
+		name: 'sample Food 262',
+		image: 'food/food-262.jpg',
 		price: '2200',
 		
 	}, {
-		name: 'sample Food 203',
-		image: 'food/food-203.jpg',
+		name: 'sample Food 263',
+		image: 'food/food-263.jpg',
 		price: '2200',
 
 	}, {
-		name: 'sample Food 204',
-		image: 'food/food-204.jpg',
+		name: 'sample Food 264',
+		image: 'food/food-264.jpg',
 		price: '2200',
 
 	}, {
-		name: 'sample Food 205',
-		image: 'food/food-205.jpg',
+		name: 'sample Food 265',
+		image: 'food/food-265.jpg',
 		price: '2200',
 
 	}, {
-		name: 'sample Food 206',
-		image: 'food/food-206.jpg',
+		name: 'sample Food 266',
+		image: 'food/food-266.jpg',
 		price: '2200',
 
 	}, {
-		name: 'sample Food 207',
-		image: 'food/food-207.jpg',
+		name: 'sample Food 267',
+		image: 'food/food-267.jpg',
 		price: '2200',
 
 	}, {
-		name: 'sample Food 208',
-		image: 'food/food-208.jpg',
+		name: 'sample Food 268',
+		image: 'food/food-268.jpg',
 		price: '2200',
 
 	}, {
-		name: 'sample Food 209',
-		image: 'food/food-209.jpg',
+		name: 'sample Food 269',
+		image: 'food/food-269.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 270',
+		image: 'food/food-270.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 271',
+		image: 'food/food-271.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 272',
+		image: 'food/food-272.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 273',
+		image: 'food/food-273.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 274',
+		image: 'food/food-274.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 275',
+		image: 'food/food-275.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 276',
+		image: 'food/food-276.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 277',
+		image: 'food/food-277.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 278',
+		image: 'food/food-278.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 279',
+		image: 'food/food-279.jpg',
 		price: '2200',
 	}
 ];
