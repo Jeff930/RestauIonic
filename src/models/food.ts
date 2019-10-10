@@ -1392,5 +1392,455 @@ export const food = [
 		name: 'sample Food 279',
 		image: 'food/food-279.jpg',
 		price: '2200',
+
+	}, {
+		name: 'sample Food 280',
+		image: 'food/food-280.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 281',
+		image: 'food/food-281.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 282',
+		image: 'food/food-282.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 283',
+		image: 'food/food-283.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 284',
+		image: 'food/food-284.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 285',
+		image: 'food/food-285.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 296',
+		image: 'food/food-296.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 297',
+		image: 'food/food-297.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 298',
+		image: 'food/food-298.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 299',
+		image: 'food/food-299.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 300',
+		image: 'food/food-300.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 301',
+		image: 'food/food-301.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 302',
+		image: 'food/food-302.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 303',
+		image: 'food/food-303.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 304',
+		image: 'food/food-304.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 305',
+		image: 'food/food-305.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 306',
+		image: 'food/food-306.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 307',
+		image: 'food/food-307.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 308',
+		image: 'food/food-308.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 309',
+		image: 'food/food-309.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 310',
+		image: 'food/food-310.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 311',
+		image: 'food/food-311.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 312',
+		image: 'food/food-312.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 313',
+		image: 'food/food-313.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 314',
+		image: 'food/food-314.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 315',
+		image: 'food/food-315.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 316',
+		image: 'food/food-316.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 317',
+		image: 'food/food-317.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 318',
+		image: 'food/food-318.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 319',
+		image: 'food/food-319.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 320',
+		image: 'food/food-320.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 321',
+		image: 'food/food-321.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 322',
+		image: 'food/food-322.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 323',
+		image: 'food/food-323.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 324',
+		image: 'food/food-324.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 325',
+		image: 'food/food-325.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 326',
+		image: 'food/food-326.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 327',
+		image: 'food/food-327.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 328',
+		image: 'food/food-328.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 329',
+		image: 'food/food-329.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 330',
+		image: 'food/food-330.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 331',
+		image: 'food/food-331.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 332',
+		image: 'food/food-332.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 333',
+		image: 'food/food-333.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 334',
+		image: 'food/food-334.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 335',
+		image: 'food/food-335.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 336',
+		image: 'food/food-336.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 337',
+		image: 'food/food-337.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 338',
+		image: 'food/food-338.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 339',
+		image: 'food/food-339.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 340',
+		image: 'food/food-340.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 341',
+		image: 'food/food-341.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 342',
+		image: 'food/food-342.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 343',
+		image: 'food/food-343.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 344',
+		image: 'food/food-344.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 345',
+		image: 'food/food-345.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 346',
+		image: 'food/food-346.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 347',
+		image: 'food/food-347.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 348',
+		image: 'food/food-348.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 349',
+		image: 'food/food-349.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 350',
+		image: 'food/food-350.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 351',
+		image: 'food/food-351.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 352',
+		image: 'food/food-352.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 353',
+		image: 'food/food-353.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 354',
+		image: 'food/food-354.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 355',
+		image: 'food/food-355.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 356',
+		image: 'food/food-356.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 357',
+		image: 'food/food-357.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 358',
+		image: 'food/food-358.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 359',
+		image: 'food/food-359.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 360',
+		image: 'food/food-360.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 361',
+		image: 'food/food-361.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 362',
+		image: 'food/food-362.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 363',
+		image: 'food/food-363.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 364',
+		image: 'food/food-364.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 365',
+		image: 'food/food-365.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 366',
+		image: 'food/food-366.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 367',
+		image: 'food/food-367.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 368',
+		image: 'food/food-368.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 369',
+		image: 'food/food-369.jpg',
+		price: '2200',
+	
+	}, {
+		name: 'sample Food 370',
+		image: 'food/food-370.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 371',
+		image: 'food/food-371.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 372',
+		image: 'food/food-372.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 373',
+		image: 'food/food-373.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 374',
+		image: 'food/food-374.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 375',
+		image: 'food/food-375.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 376',
+		image: 'food/food-376.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 377',
+		image: 'food/food-377.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 388',
+		image: 'food/food-388.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 389',
+		image: 'food/food-389.jpg',
+		price: '2200',
 	}
 ];
