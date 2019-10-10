@@ -4,6 +4,7 @@ import { drinks } from '../../models/drink';
 import { food } from '../../models/food';
 import { outside } from '../../models/outside';
 import { inside } from '../../models/inside';
+import { menu } from '../../models/menu';
 /*
   Generated class for the ProviderImagesProvider provider.
 
@@ -26,6 +27,8 @@ export class ProviderImagesProvider {
       this.templateImage = outside;
     } else if (type === "inside") {
       this.templateImage = inside;
+    } else if (type === "menu") {
+      this.templateImage = menu;
     } else if (type === "food") {
       this.templateImage = food;
     } else {
@@ -62,9 +65,14 @@ export class ProviderImagesProvider {
       if (element.name === 'sample Inside 1') {
         allFoods.push(element);
       }
-    });
+    }); 
     food.forEach(element => {
       if (element.name === 'sample Food 1') {
+        allFoods.push(element);
+      }
+    });
+    menu.forEach(element => {
+      if (element.name === 'sample Menu 17') {
         allFoods.push(element);
       }
     });

@@ -1,8 +1,42 @@
-<ion-tabs>
+<!-- <ion-tabs>
     <ion-tab [root]="allFoodsRoot" tabTitle="All" tabIcon="ios-apps-outline"></ion-tab>
     <ion-tab [root]="foodRoot" tabTitle="Food" tabIcon="ios-basket-outline"></ion-tab>
     <ion-tab [root]="insideRoot" tabTitle="Inside" tabIcon="ios-images-outline"></ion-tab>
     <ion-tab [root]="menuRoot" tabTitle="Menu" tabIcon="ios-menu-outline"></ion-tab>
     <ion-tab [root]="drinkRoot" tabTitle="Drink" tabIcon="ios-beer-outline"></ion-tab>
     <ion-tab [root]="outsideRoot" tabTitle="Outside" tabIcon="ios-images-outline"></ion-tab>
-</ion-tabs>
+</ion-tabs> -->
+
+<ion-header>
+    <ion-navbar color="white">
+        <button ion-button menuToggle>
+            <ion-icon name="menu" style="color: red !important;"></ion-icon>
+        </button>
+        <img src="assets/imgs/logo.jpg" height="40px;">
+        <!-- <ion-title style="color: red !important;">Kusina Filipina</ion-title> -->
+        <!-- 
+  <ion-buttons end>
+    <button ion-button icon-only>
+      <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+    <button ion-button icon-only>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </button>
+  </ion-buttons> -->
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina <span
+        style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
+    <hr>
+    <div class="card-lists">
+        <div class="card-holder"  (click)="catClick(item)" *ngFor="let item of categories">
+            <div class="cards-content">
+                <h2>{{ item.name }}</h2>
+                <img src="assets/imgs/{{item.image}}" alt="">
+            </div>
+        </div>
+    </div>
+</ion-content>

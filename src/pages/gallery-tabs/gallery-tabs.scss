@@ -1,3 +1,49 @@
 page-gallery-tabs {
-
+    .infoHead {
+        padding-bottom: 5px !important;
+        color: black;
+    }
+    .toolbar-title-md {
+        font-size: 2.5rem !important;
+        font-family: 'October Twilight' !important;
+    }
+    hr {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        width: 40% !important;
+        height: 3px !important;
+        background: rgb(42,34,45) !important;
+        border-radius: 20px !important;
+    }
+    .card-lists {
+        margin-top: 10px;
+        .card-holder {
+            .cards-content {
+                position: relative;
+                text-align: center;
+                height: 15vh;
+                width: 95%;
+                margin: 0 auto;
+                border-radius: 5px;
+                h2 {
+                    width: 100%;
+                    border-radius: 8px 8px 0px 0px;
+                    position: absolute;
+                    background: linear-gradient(to bottom, rgba(42,34,45, 1) 30%,rgba(169, 127, 184, 0.3) 100%);
+                    // background: ;
+                    color: #ffff;
+                    font-size: 1.8rem;
+                    padding: 10px 0px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    // font-weight: 500;
+                }
+                img {
+                    
+                    border-radius: 8px 8px 0px 0px;
+                    height: 30vh;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
 }

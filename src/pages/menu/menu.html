@@ -19,5 +19,24 @@
 </ion-header>
 
 <ion-content>
-  <h2 text-center style="margin-top: 25vh">Coming Soon...</h2>
+  <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina
+    <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span
+      style="color: rgb(245, 61, 61) !important; font-weight: bold;">M</span>enu</ion-title>
+  <hr>
+  <ion-grid no-padding text-center>
+    <ion-row no-padding>
+
+      <ion-col no-margin no-padding col-6 (click)="showPortfolio(l);" *ngFor="let l of list" class="image-holder">
+
+        <img src="assets/imgs/{{l.image}}" class="show">
+
+        <div class="subtitle">
+          <h6>{{l.name}}</h6>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
 </ion-content>
