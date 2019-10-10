@@ -1842,5 +1842,46 @@ export const food = [
 		name: 'sample Food 379',
 		image: 'food/food-379.jpg',
 		price: '2200',
+	
+	}, {
+		name: 'sample Food 380',
+		image: 'food/food-380.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 381',
+		image: 'food/food-381.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 382',
+		image: 'food/food-382.jpg',
+		price: '2200',
+		
+	}, {
+		name: 'sample Food 383',
+		image: 'food/food-383.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 384',
+		image: 'food/food-384.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 385',
+		image: 'food/food-385.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 386',
+		image: 'food/food-386.jpg',
+		price: '2200',
+
+	}, {
+		name: 'sample Food 387',
+		image: 'food/food-387.jpg',
+		price: '2200',
+
 	}
 ];
