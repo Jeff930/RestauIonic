@@ -10,22 +10,23 @@
 <ion-content>
 	<ion-header no-border>
 
-		<ion-navbar color="dark">
+		<ion-navbar color="white">
 			 <button ion-button menuToggle>
     <ion-icon name="menu"></ion-icon>
   </button>
-			<ion-title>Kusina Filipina</ion-title>
+			<img src="assets/imgs/logo.jpg" height="40px;">
 		</ion-navbar>
 
 	</ion-header>
-	<ion-slides pager>
+	<ion-slides>
 
-		<ion-slide style="background-color: black">
+		<ion-slide >
 
 			<img src="assets/imgs/{{currentImage.image}}">
-			<h2 style="color:white;">{{currentImage.name}}</h2>
+			<h2 style="color:rgb(0, 0, 0);">{{currentImage.name}}</h2>
+			<hr>
 			<ion-row style="margin-bottom: 20px">
-				<h6 style="color: #ffff; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </h6>
+				<h6 style="color: rgb(0, 0, 0); padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </h6>
 				<!-- <ion-col>
 					<button ion-button icon-left clear small color="light">
 						<ion-icon name="thumbs-up"></ion-icon>
