@@ -1,5 +1,11 @@
 page-portfolio {
-
+	hr {
+        margin-top: 0px !important;
+        width: 40% !important;
+        height: 1px !important;
+        background: rgba(42,34,45, 0.5) !important;
+        border-radius: 20px !important;
+    }
 
 	ion-card{
 width:100% !important;
