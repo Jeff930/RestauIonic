@@ -9,7 +9,7 @@ export const chickens = [
 		name : 'Chicken BBQ (4 skewers/1 skewer)',
 		description : 'Grilled Chicken BBQ skewers served with mixed vinegar and soy sauce.',
 		image: 'chicken/ChickenBBQ.jpg',
-		price : '10.99/2.9'
+		price : '10.99/2.99'
 		
 	}
 ];
