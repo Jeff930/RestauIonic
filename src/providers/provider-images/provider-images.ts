@@ -5,6 +5,11 @@ import { food } from '../../models/food';
 import { outside } from '../../models/outside';
 import { inside } from '../../models/inside';
 import { menu } from '../../models/menu';
+
+import { appetizers } from '../../models/appetizer';
+import { beefs } from '../../models/beef';
+import { vegetables } from '../../models/vegetable';
+
 /*
   Generated class for the ProviderImagesProvider provider.
 
@@ -16,6 +21,7 @@ export class ProviderImagesProvider {
   public templateImage = [];
   public imageReturnLimitedView = [];
   public currentImage: any;
+  public menuItems = [];
   constructor() {
     console.log('Hello ProviderImagesProvider Provider');
   }
@@ -78,5 +84,22 @@ export class ProviderImagesProvider {
     });
     this.imageReturnLimitedView = allFoods;
     return this.imageReturnLimitedView;
+  }
+
+
+  // get all the items from the other foods.
+  getAllFoodsFromMenu() {
+    const allMenu = [];
+    appetizers.forEach(element => {
+        allMenu.push(element);
+    });
+    beefs.forEach(element => {
+        allMenu.push(element);
+    });
+    vegetables.forEach(element => {
+        allMenu.push(element);
+    }); 
+    this.menuItems = allMenu;
+    return this.menuItems;
   }
 }
