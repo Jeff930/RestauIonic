@@ -6,16 +6,10 @@ export const beefs = [
 		price : '13.99'
 		
 	},{
-		name : 'Pinakbet',
-		description : 'A vegetable stew prepared with fresh vegetables sauteed with either pork, shrimp, and shrimp paste.',
-		image: 'vegetable/Pinakbet.jpg',
+		name : 'Beef Steak Tagalog',
+		description : 'Thinly sliced beef sirloin sauteed in onions, lemon juice, soy sauce. Topped with fresh onion rings',
+		image: 'beef/BeefSteakTagalog.jpg',
 		price : '12.99'
-		
-	},{
-		name : 'Lumpiang Sariwa',
-		description : 'Fresh spring roll made out of different vegetables such as carrots and bamboo shoots.',
-		image: 'vegetable/FreshLumpia.jpg',
-		price : '8.99'
 		
 	}
 ];
