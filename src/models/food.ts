@@ -34,11 +34,6 @@ export const food = [
 		price: '2200',
 
 	}, {
-		name: 'sample Food 8',
-		image: 'food/food-8.jpg',
-		price: '2200',
-
-	}, {
 		name: 'sample Food 9',
 		image: 'food/food-9.jpg',
 		price: '2200',
@@ -573,12 +568,7 @@ export const food = [
 		image: 'food/food-115.jpg',
 		price: '2200',
 
-	}, {
-		name: 'sample Food 116',
-		image: 'food/food-116.jpg',
-		price: '2200',
-
-	}, {
+	},{
 		name: 'sample Food 117',
 		image: 'food/food-117.jpg',
 		price: '2200',

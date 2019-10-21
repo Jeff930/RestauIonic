@@ -15,7 +15,7 @@ export class HomePage {
 		this.list = this.imageProvider.getImages('drinks');
 	}
 
-	enterWebsite(){
+	enterWebsite() {
 		this.navCtrl.push('HomePage');
 	}
 

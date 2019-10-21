@@ -19,7 +19,8 @@ export class FoodPage {
   public list: any = [];
 
   constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
-    this.list = this.imageProvider.getImages('food');
+    // this.list = this.imageProvider.getImages('food');
+    this.list = this.imageProvider.getAllFoodsFromMenu();
   }
 
   enterWebsite() {
