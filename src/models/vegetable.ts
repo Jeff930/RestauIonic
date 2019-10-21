@@ -1,9 +1,21 @@
-export const appetizers = [
+export const vegetables = [
 	{
-		name : 'Egg Rolls',
-		description : 'Deep-fried egg rolls consists of ground pork and veggies',
-		image: 'appetizer/EggRolls.jpg',
-		price : '7.99'
+		name : 'Ginataang Gulay',
+		description : 'Fresh vegetables cooked in coconut milk. Can be ordered with shrimp, pork or chicken.',
+		image: 'vegetable/GinataangGulay.jpg',
+		price : '12.99'
+		
+	},{
+		name : 'Pinakbet',
+		description : 'A vegetable stew prepared with fresh vegetables sauteed with either pork, shrimp, and shrimp paste.',
+		image: 'vegetable/Pinakbet.jpg',
+		price : '12.99'
+		
+	},{
+		name : 'Lumpiang Sariwa',
+		description : 'Fresh spring roll made out of different vegetables such as carrots and bamboo shoots.',
+		image: 'vegetable/FreshLumpia.jpg',
+		price : '8.99'
 		
 	}
 ];
