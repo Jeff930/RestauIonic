@@ -25,8 +25,14 @@ export const porks = [
 		
 	},{
 		name : 'Crispy Binagoongan',
-		description : 'Combination of filipino favorites.',
-		image: 'pork/Dinakdakan.jpg',
+		description : 'Combination of filipino favorites, crispy pork pieces,coconut milk and shrimp paste, toppped with mango salad.',
+		image: 'pork/CrispyBinagoongan.jpg',
+		price : '13.99'
+		
+	},{
+		name : 'Pork Binagoongan',
+		description : 'Pork sauteed in bagoong alamang (shrimp paste), garlic, tomatoes and eggplant.',
+		image: 'pork/PorkBinagoongan.jpg',
 		price : '12.99'
 		
 	}
