@@ -1,9 +1,9 @@
-export const seafoods = [
+export const platters = [
 	{
-		name : 'Fried Bangus',
-		description : 'Fried marinated milkfish in vinegar, garlic and pepper.',
-		image: 'seafood/FriedBangus.jpg',
-		price : '13.99'
+		name : 'Grilled Seafood platter',
+		description : 'Garlic Prawn,Pinaputok na bangus or Pampano,Squid, Mussels, Ensaladang Talong.',
+		image: 'platter/GrilledSeafoodPlatter.jpg',
+		price : '49.99'
 		
 	}
 ];
