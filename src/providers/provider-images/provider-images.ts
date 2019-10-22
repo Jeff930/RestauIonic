@@ -9,6 +9,9 @@ import { menu } from '../../models/menu';
 import { appetizers } from '../../models/appetizer';
 import { beefs } from '../../models/beef';
 import { vegetables } from '../../models/vegetable';
+import { chickens } from '../../models/chicken';
+import { porks } from '../../models/pork';
+import { seafoods } from '../../models/seafood';
 
 /*
   Generated class for the ProviderImagesProvider provider.
@@ -98,6 +101,15 @@ export class ProviderImagesProvider {
     });
     vegetables.forEach(element => {
         allMenu.push(element);
+    }); 
+    chickens.forEach(element => {
+      allMenu.push(element);
+    }); 
+    porks.forEach(element => {
+      allMenu.push(element);
+    }); 
+    seafoods.forEach(element => {
+      allMenu.push(element);
     }); 
     this.menuItems = allMenu;
     return this.menuItems;
