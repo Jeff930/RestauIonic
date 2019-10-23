@@ -32,7 +32,7 @@ export const appetizers = [
 	},{
 		name : 'Chicharon Bulaklak (Crispy Pork Ruffle)',
 		description : 'Golden crisp pork ruffle fat served with a vinegar garlic dip.',
-		image: 'appetizer/EggRolls.jpg',
+		image: 'appetizer/ChicharonBulaklak.jpg',
 		price : '8.99'
 		
 	}
