@@ -24,10 +24,28 @@ export const vegetables = [
 		price : '10.99'
 		
 	},{
-		name : 'Lumpiang Sariwa',
+		name : 'Ampalaya Con Egg (Bitter Gourd with Egg)',
+		description : 'Sauteed bitter gourd sauteed with eggs, garlic, onions and seasonings.',
+		image: 'Vegetable/AmpalayaConEgg.jpeg',
+		price : '10.99'
+		
+	},{
+		name : 'Lumpiang Sariwa (Fresh Spring Roll)',
 		description : 'Fresh spring roll made out of different vegetables such as carrots and bamboo shoots.',
 		image: 'Vegetable/FreshLumpia.jpeg',
 		price : '8.99'
+		
+	},{
+		name : 'Tortang Talong Ala Carte (Eggplant Omellette)',
+		description : 'Grilled eggplants are soaked in a beaten egg mixture then fried.',
+		image: 'Vegetable/TortangTalongAlaCarte.jpeg',
+		price : '10.99'
+		
+	},{
+		name : 'Talong Salad Ala Carte(Grilled Eggplant Salad)',
+		description : 'Grilled talong with onions and tomatoes.',
+		image: 'Vegetable/TalongSaladAlaCarte.jpeg',
+		price : '10.99'
 		
 	}
 ];
