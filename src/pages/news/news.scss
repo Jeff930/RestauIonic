@@ -1,5 +1,9 @@
 page-news {
-	
+	.content {
+		 padding-right: calc((100% - 992px)/ 2) !important;
+	padding-left: calc((100% - 992px)/ 2) !important;
+	//  background: rgba(201, 200, 200, 0.11) !important
+	}
 	.title, .subTitle {
 		text-align: center !important; 
 		font-size: 30px !important;
@@ -21,6 +25,12 @@ page-news {
 			margin: 0 auto !important;
 			font-size: 15px !important;
 		}
+	}
+	.button-menu-desk {
+		background: rgb(245, 61, 61) !important;
+	}
+	.text-menu {
+		padding: 20px 20px 20px 35px;
 	}
 .colinline{
 		display: inline-block;
@@ -57,9 +67,24 @@ page-news {
 		border-top: 1px solid grey;
 	}
 	.image-holder {
+			
+			width: 100%;
 		.images {
 			img {
 				max-height: 30vh !important;
+				width: 100% !important;
+			}
+		}
+	}
+	.desk-image-holder {
+		
+			width: 100%;
+		.images {
+			img {
+				max-height: 40vh !important;
+				border-radius: 3px;
+				
+				box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 				width: 100% !important;
 			}
 		}
@@ -107,6 +132,9 @@ page-news {
 			}
 		}
 		}
+	}
+	.deskList { 
+		ion-label { font-size: 1.6rem !important; }
 	}
 	.toolbar-title-md {
 		text-align: left !important; 

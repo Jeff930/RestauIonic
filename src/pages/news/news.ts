@@ -18,8 +18,16 @@ import { Nav, Platform } from 'ionic-angular';
 })
 export class NewsPage {
   images = [];
+  checkApp: boolean;
+  slideOptsOne = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay: true
+  };
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public image: ProviderImagesProvider) {
+    public image: ProviderImagesProvider, public platform: Platform) {
+
+    this.checkApp = this.platform.is('android');
   }
 
   ionViewDidLoad() {
