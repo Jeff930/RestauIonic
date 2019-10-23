@@ -75,8 +75,8 @@ export class ProviderImagesProvider {
         allFoods.push(element);
       }
     }); 
-    food.forEach(element => {
-      if (element.name === 'sample Food 1') {
+    beefs.forEach(element => {
+      if (element.name === 'Beef Mechado') {
         allFoods.push(element);
       }
     });
