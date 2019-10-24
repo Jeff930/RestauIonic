@@ -29,5 +29,11 @@ export const chickens = [
 		image: 'chicken/chickenBBQ.jpg',
 		price : '10.99/2.99'
 		
+	},{
+		name : 'Inihaw na Manok',
+		description : 'Chicken marinated in barbecue seasoning and grilled.',
+		image: 'chicken/InihawNaManok.jpg',
+		price : '8.99'
+		
 	}
 ];
