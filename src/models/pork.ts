@@ -1,15 +1,33 @@
 export const porks = [
 	{
-		name : 'Crispy Pata',
+		name : 'Crispy Pata (Crispy Pork Hock)',
 		description : 'Premium pork hock simmered in a special marinade and deep-fried to perfection.',
 		image: 'pork/CrispyPata.jpg',
 		price : '19.99'
 		
 	},{
-		name : 'Dinakdakan',
+		name : 'Dinakdakan (Boiled and Grilled Pork)',
 		description : 'Grilled pork seasoned with onions,pepper, vinegar and mayonnaise.',
 		image: 'pork/Dinakdakan.jpg',
 		price : '12.99'
+		
+	},{
+		name : 'Lechon Kawali (Crispy Pork Belly)',
+		description : 'Pork belly deep-fried until crisp and golden brown, yet soft and tender inside.',
+		image: 'pork/LechonKawali.jpg',
+		price : '12.99'
+		
+	},{
+		name : 'Inihaw na Liempo (Grilled Pork Belly)',
+		description : 'Grilled pork seasoned with onions,pepper, vinegar and mayonnaise.',
+		image: 'pork/Dinakdakan.jpg',
+		price : '12.99'
+		
+	},{
+		name : 'Dinuguan (Pork Blood Stew)',
+		description : 'Filipino savory pork stew simmered in a rich, spicy dark gravy of pig blood, garlic, chili and vinegar.',
+		image: 'pork/Dinakdakan.jpg',
+		price : '13.99'
 		
 	},{
 		name : 'Pork Adobo',
