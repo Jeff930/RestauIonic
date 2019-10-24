@@ -1,17 +1,18 @@
 export const beefs = [
+	// {
+	// 	name : 'Kare-kare (Beef Peanut Stew)',
+	// 	description : 'Beef stew prepared with beef shank, oxtail and vegetables simmered in thick peanut sauce.',
+	// 	image: 'beef/KareKare.jpg',
+	// 	price : '14.99'
+		
+	// },{
+	// 	name : 'Beef Kaldereta (Stew in Tomato Sauce/Liver)',
+	// 	description : 'Filipino stew made with beef, tomato sauce, potatoes, liver spread and cheese.',
+	// 	image: 'beef/BeefKaldereta.jpg',
+	// 	price : '13.99'
+		
+	// },
 	{
-		name : 'Kare-kare (Beef Peanut Stew)',
-		description : 'Beef stew prepared with beef shank, oxtail and vegetables simmered in thick peanut sauce.',
-		image: 'beef/KareKare.jpg',
-		price : '14.99'
-		
-	},{
-		name : 'Beef Kaldereta (Stew in Tomato Sauce/Liver)',
-		description : 'Filipino stew made with beef, tomato sauce, potatoes, liver spread and cheese.',
-		image: 'beef/BeefKaldereta.jpg',
-		price : '13.99'
-		
-	},{
 		name : 'Beef Mechado (Stew in Tomato Sauce)',
 		description : 'Filipino beef stew with potatoes, carrots and onions.',
 		image: 'beef/BeefMechado.jpg',

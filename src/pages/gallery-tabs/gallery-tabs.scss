@@ -15,6 +15,7 @@ page-gallery-tabs {
         background: rgb(42,34,45) !important;
         border-radius: 20px !important;
     }
+    // MOBILE
     .card-lists {
         margin-top: 10px;
         .card-holder {
@@ -45,5 +46,67 @@ page-gallery-tabs {
                 }
             }
         }
+    }
+    
+    // DESKTOP
+    .desk-card-lists {
+        margin-top: 40px;
+        display: flex;
+        .desk-card-holder {
+                height: 20px;
+                margin: 4px;
+                display: flex;
+                width: 100%;
+            .desk-cards-content {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                text-align: center;
+                height: 40vh;
+                margin: 0 auto;
+                border-radius: 5px;
+                 box-shadow:  0 0 5px #000000;
+                h2 {
+                    width: 100%;
+                    border-radius: 8px 8px 0px 0px;
+                    bottom: 0px;
+                    right: 0px;
+                    position: absolute !important;
+                    background: linear-gradient(to bottom, rgba(42,34,45, 0.5) 50%,rgba(169, 127, 184, 0.3)100%);
+                    // // background: ;
+                    color: rgb(255, 255, 255) !important;
+                    font-size: 1.8rem;
+                    padding: 30px 0px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    margin-bottom: 0px !important;
+                    transition: 1s; 
+                }
+                img {
+                    
+                    border-radius: 4px 4px 0px 0px;
+                    height: 40vh;
+                }
+            }
+             .desk-cards-content:hover {
+                 cursor: pointer;
+                 h2 {
+                    transition: 1s; 
+                    padding: 20vh 0px;
+                    font-size: 1.9rem;
+                    
+                }
+             }
+        }
+    }
+    .desk-subtitle {
+        margin-top: 40vh;
+        padding-right: calc((100% - 590px)/ 2);
+    padding-left: calc((100% - 590px)/ 2);
+        font-size: 1.6rem;
+    }
+    .emph {
+        text-decoration: underline;
+        color: #d32323;
     }
 }

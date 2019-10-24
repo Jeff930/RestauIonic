@@ -11,13 +11,15 @@ export const porks = [
 		image: 'pork/Dinakdakan.jpg',
 		price : '12.99'
 		
-	},{
-		name : 'Lechon Kawali (Crispy Pork Belly)',
-		description : 'Pork belly deep-fried until crisp and golden brown, yet soft and tender inside.',
-		image: 'pork/LechonKawali.jpg',
-		price : '12.99'
+	}
+	// ,{
+	// 	name : 'Lechon Kawali (Crispy Pork Belly)',
+	// 	description : 'Pork belly deep-fried until crisp and golden brown, yet soft and tender inside.',
+	// 	image: 'pork/LechonKawali.jpg',
+	// 	price : '12.99'
 		
-	},{
+	// }
+	,{
 		name : 'Inihaw na Liempo (Grilled Pork Belly)',
 		description : 'Grilled pork seasoned with onions,pepper, vinegar and mayonnaise.',
 		image: 'pork/Dinakdakan.jpg',

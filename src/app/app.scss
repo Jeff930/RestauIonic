@@ -33,8 +33,11 @@
 	padding: 10px 0;
 }
 .header {
-        padding-right: calc((100% - 992px)/ 2);
-    padding-left: calc((100% - 992px)/ 2);
+        padding-right: calc((100% - 1100px)/ 2);
+    padding-left: calc((100% - 1100px)/ 2);
+    // background: #f53d3d;
+    background: #d32323;
+    color: black !important;
 }
 .logo {
     display: inline-flex;
@@ -42,3 +45,15 @@
 .first-section {
     padding: 80px 20px 60px 20px;
 }
+.padding-all { 
+     padding-right: calc((100% - 1440px)/ 2);
+    padding-left: calc((100% - 1440px)/ 2);
+ }
+ .iconsss {
+     right: 2px !important;
+     position: relative;
+ }
+ .bar-button {
+     margin-left: 8px;
+     margin-right: 8px;
+ }

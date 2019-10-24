@@ -23,7 +23,7 @@ export class GalleryTabsPage {
   drinkRoot = 'DrinkPage'
   outsideRoot = 'OutsidePage'
   images = [];
-
+  checkApp;
   categories = [ 
     { name: 'Our Foods', page: this.foodRoot, image: '' , key: 3},
     { name: 'Enjoy the Drinks', page: this.drinkRoot, image: '', key: 0 },
@@ -40,6 +40,8 @@ export class GalleryTabsPage {
       console.log(this.images[0]);
     }
     console.log(this.categories)
+    console.log(this.image.checkAppPlatform());
+    this.checkApp = this.image.checkAppPlatform();
   }
 
   catClick(item) {

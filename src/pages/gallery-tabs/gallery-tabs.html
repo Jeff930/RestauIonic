@@ -1,11 +1,4 @@
-<!-- <ion-tabs>
-    <ion-tab [root]="allFoodsRoot" tabTitle="All" tabIcon="ios-apps-outline"></ion-tab>
-    <ion-tab [root]="foodRoot" tabTitle="Food" tabIcon="ios-basket-outline"></ion-tab>
-    <ion-tab [root]="insideRoot" tabTitle="Inside" tabIcon="ios-images-outline"></ion-tab>
-    <ion-tab [root]="menuRoot" tabTitle="Menu" tabIcon="ios-menu-outline"></ion-tab>
-    <ion-tab [root]="drinkRoot" tabTitle="Drink" tabIcon="ios-beer-outline"></ion-tab>
-    <ion-tab [root]="outsideRoot" tabTitle="Outside" tabIcon="ios-images-outline"></ion-tab>
-</ion-tabs> -->
+
 
 <ion-header>
     <ion-navbar color="white">
@@ -27,7 +20,9 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+
+<!-- MOBILE DESIGN -->
+<ion-content padding *ngIf="checkApp">
     <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina <span
         style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
     <hr>
@@ -40,3 +35,29 @@
         </div>
     </div>
 </ion-content>
+
+<!-- WEB DESIGN  -->
+<ion-content padding *ngIf="!checkApp">
+    <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina
+        <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span
+            style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
+    <hr>
+    <div class="desk-card-lists padding-all">
+        <div class="desk-card-holder " (click)="catClick(item)" *ngFor="let item of categories" >
+            <div class="desk-cards-content">
+                <img src="assets/imgs/{{item.image}}" alt="">
+                <h2>{{ item.name }}</h2>
+                
+            </div>
+        </div>
+    </div>
+    <h4 class="titl infoHead desk-subtitle">We offer an exceptional dining experience. Curious about <span class="emph" >what we serve?</span> and <span class="emph">What the Restaurant looks like?</span> Well just click one of the items above to look at it.
+    </h4>
+    <hr style="width: 10% !important">
+    
+</ion-content>
+<ion-footer>
+        <ion-toolbar color="semiDark">
+            <!-- <h6>Kusina Filipina Copyright</h6> -->
+        </ion-toolbar>
+</ion-footer>

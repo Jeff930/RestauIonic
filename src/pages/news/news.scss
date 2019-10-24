@@ -1,7 +1,7 @@
 page-news {
 	.content {
-		 padding-right: calc((100% - 992px)/ 2) !important;
-	padding-left: calc((100% - 992px)/ 2) !important;
+		 padding-right: calc((100% - 1100px)/ 2) !important;
+	padding-left: calc((100% - 1100px)/ 2) !important;
 	//  background: rgba(201, 200, 200, 0.11) !important
 	}
 	.title, .subTitle {
@@ -26,8 +26,14 @@ page-news {
 			font-size: 15px !important;
 		}
 	}
+	
 	.button-menu-desk {
 		background: rgb(245, 61, 61) !important;
+		transition: .5s;
+	}
+	.button-menu-desk:hover {
+		background: #b11e1e !important;
+		transition: .5s;
 	}
 	.text-menu {
 		padding: 20px 20px 20px 35px;

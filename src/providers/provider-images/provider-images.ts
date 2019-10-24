@@ -12,6 +12,7 @@ import { vegetables } from '../../models/vegetable';
 import { chickens } from '../../models/chicken';
 import { porks } from '../../models/pork';
 import { seafoods } from '../../models/seafood';
+import { Platform } from 'ionic-angular';
 
 /*
   Generated class for the ProviderImagesProvider provider.
@@ -25,10 +26,16 @@ export class ProviderImagesProvider {
   public imageReturnLimitedView = [];
   public currentImage: any;
   public menuItems = [];
-  constructor() {
+  public checkApp;
+  constructor(public platform: Platform) {
     console.log('Hello ProviderImagesProvider Provider');
   }
   
+
+  checkAppPlatform() {
+    this.checkApp = this.platform.is('android');
+    return this.checkApp;
+  }
   getImages(type) {
     if (type === "drinks") {
       this.templateImage = drinks;
@@ -76,7 +83,7 @@ export class ProviderImagesProvider {
       }
     }); 
     beefs.forEach(element => {
-      if (element.name === 'Beef Mechado') {
+      if (element.name === 'Beef Mechado (Stew in Tomato Sauce)') {
         allFoods.push(element);
       }
     });

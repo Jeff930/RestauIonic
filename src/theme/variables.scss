@@ -36,11 +36,11 @@ $app-direction: ltr;
 $colors: (
   primary:    #5D4037,
   secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
+  danger:     #d32323,
+  light:      #020202,
   dark:       black,
   white:      #fff,
-  semiDark: rgb(42,34,45)
+  semiDark: rgb(245,245,245)
 );
 
 
@@ -54,8 +54,8 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-$tabs-md-tab-text-color-active: #f53d3d !important;
-$tabs-md-tab-icon-color-active: #f53d3d !important;
+$tabs-md-tab-text-color-active: #d32323 !important;
+$tabs-md-tab-icon-color-active: #d32323 !important;
 
 
 // App Windows Variables

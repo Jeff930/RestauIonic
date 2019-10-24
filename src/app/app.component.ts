@@ -38,9 +38,9 @@ export class MyApp {
       { title: 'Location', component: 'NotificationsPage' , icon:'navigate'}
       ];
       this.pagesDesk = [
-        { title: 'Home', component: 'NewsPage', icon: 'basket' },
-        { title: 'Gallery', component: 'GalleryTabsPage', icon: 'albums' },
-        { title: 'About Us', component: 'NotificationsPage', icon: 'navigate' }
+        { title: 'Home', component: 'NewsPage', icon: 'home' },
+        { title: 'Gallery', component: 'GalleryTabsPage', icon: 'images' },
+        { title: 'About Us', component: 'NotificationsPage', icon: 'information-circle' }
       ]
     }
 
