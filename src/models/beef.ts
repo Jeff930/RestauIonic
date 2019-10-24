@@ -1,5 +1,11 @@
 export const beefs = [
 	{
+		name : 'Kare-kare (Beef Peanut Stew)',
+		description : 'Beef stew prepared with beef shank, oxtail and vegetables simmered in thick peanut sauce.',
+		image: 'beef/KareKare.jpg',
+		price : '14.99'
+		
+	},{
 		name : 'Beef Mechado',
 		description : 'Filipino beef stew with potatoes, carrots and onions.',
 		image: 'beef/BeefMechado.jpg',
