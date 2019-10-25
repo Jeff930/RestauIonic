@@ -35,5 +35,17 @@ export const seafoods = [
 		image: 'seafood/FriedTilapia.jpg',
 		price : '11.99'
 		
+	},{
+		name : 'Seafood Bicol Express',
+		description : 'Spicy dish composed of shrimp, mussels, squid, cooked in coconut milk with garlic,onion,ginger and chili pepper.',
+		image: 'seafood/SeafoodBicolExpress.jpg',
+		price : '14.99'
+		
+	},{
+		name : 'Seafood Kare-kare (Seafood in Peanut Stew)',
+		description : 'Shrimp, squid and mussels are pan fried and then cooked in a sauce made of peanut and coconut cream with vegetables.',
+		image: 'seafood/SeafoodKareKare.jpg',
+		price : '14.99'
+		
 	}
 ];
