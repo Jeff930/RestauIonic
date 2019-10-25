@@ -32,6 +32,12 @@ export const porks = [
 		price : '13.99'
 		
 	},{
+		name : 'Menudo',
+		description : 'A tasty boneless pork stew with carrots, potatoes and green peas.',
+		image: 'pork/Menudo.jpg',
+		price : '13.99'
+		
+	},{
 		name : 'Pork Adobo',
 		description : 'Marinated pork chunks slowly cooked in vinegar and soy sauce with garlic,bay leaf and peppercorn.',
 		image: 'pork/PorkAdobo.jpg',
@@ -44,13 +50,25 @@ export const porks = [
 		price : '10.99/2.75'
 		
 	},{
-		name : 'Crispy Binagoongan',
+		name : 'Sizzling Sisig (Sizzling pork cues)',
+		description : 'Marinated pork cheeks broiled and cut into small pieces served in a sizzling platter with onion and lemon.',
+		image: 'pork/SizzlingSisig.jpg',
+		price : '11.99'
+		
+	},{
+		name : 'Crispy Sisig (Crispy pork cues)',
+		description : 'Grilled pork cubes with lemon, onions, chillies, scallions and seasoning.',
+		image: 'pork/CrispySisig.jpg',
+		price : '11.99'
+		
+	},{
+		name : 'Crispy Binagoongan (Pork in Shrimp Paste and Coconut Milk)',
 		description : 'Combination of filipino favorites, crispy pork pieces,coconut milk and shrimp paste, toppped with mango salad.',
 		image: 'pork/CrispyBinagoongan.jpg',
 		price : '13.99'
 		
 	},{
-		name : 'Pork Binagoongan',
+		name : 'Pork Binagoongan (Pork in Shrimp Paste and Eggplant)',
 		description : 'Pork sauteed in bagoong alamang (shrimp paste), garlic, tomatoes and eggplant.',
 		image: 'pork/PorkBinagoongan.jpg',
 		price : '12.99'
