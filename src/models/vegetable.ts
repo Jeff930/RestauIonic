@@ -9,13 +9,13 @@ export const vegetables = [
 	{
 		name : 'Ginataang Gulay (vegetables in Coconut Milk)',
 		description : 'Fresh vegetables cooked in coconut milk. Can be ordered with shrimp, pork or chicken.',
-		image: 'Vegetable/GinataangGulay.jpeg',
+		image: 'vegetable/GinataangGulay.jpeg',
 		price : '12.99'
 		
 	},{
 		name : 'Pinakbet',
 		description : 'A vegetable stew prepared with fresh vegetables sauteed with either pork, shrimp, and shrimp paste.',
-		image: 'Vegetable/Pinakbet.jpeg',
+		image: 'vegetable/Pinakbet.jpeg',
 		price : '12.99'
 		
 	}

@@ -40,7 +40,7 @@ export class MyApp {
       this.pagesDesk = [
         { title: 'Home', component: 'NewsPage', icon: 'home' },
         { title: 'Gallery', component: 'GalleryTabsPage', icon: 'images' },
-        { title: 'About Us', component: 'NotificationsPage', icon: 'information-circle' }
+        { title: 'About Us', component: 'NewsPage', icon: 'information-circle' }
       ]
     }
 
