@@ -1,45 +1,45 @@
 export const noodles = [
 	{
-		name : 'Bulalo (Beef Marrow Stew)',
-		description : 'Tender beef shanks and ribs in a flavorful noodle with green onions, peppercorn and potatoes.',
-		image: 'noodle/Bulalo.jpg',
-		price : '15.99'
-		
-	},{
-		name : 'Beef Sinigang (Tamarind noodle)',
-		description : 'Beef stewed in a flavorful, slightly sour tamarind broth with lots of vegetables.',
-		image: 'noodle/BeefSinigang.jpg',
-		price : '14.99'
-		
-	},{
-		name : 'Pork Sinigang (Pork Tamarind noodle)',
-		description : 'Pork stewed in a flavorful, slightly sour tamarind broth with lots of vegetables.',
-		image: 'noodle/PorkSinigang.jpg',
+		name : 'Chami (Sweet Egg Noodles)',
+		description : 'Stir-fried Miki noodles in a sweet sauce with vegetables and a choice of chicken meat, prawn or pork.',
+		image: 'noodle/Chami.jpg',
 		price : '12.99'
 		
 	},{
-		name : 'Shrimp Sinigang (Shrimp Tamarind noodle)',
-		description : 'Shrimp stewed in a flavorful, slightly sour tamarind broth with lots of vegetables.',
-		image: 'noodle/ShrimpSinigang.jpg',
+		name : 'Spaghetti',
+		description : 'Filipino-style spaghetti in a sweet tomato sauce with ground beef and hotdog slices;topped with cheese.',
+		image: 'noodle/Spaghetti.jpg',
 		price : '12.99'
 		
 	},{
-		name : 'Bangus Sinigang (Milkfish Tamarind noodle)',
-		description : 'Milkfish stewed in a flavorful, slightly sour tamarind broth with lots of vegetables.',
-		image: 'noodle/MilkfishSinigang.jpg',
-		price : '14.99'
-		
-	},{
-		name : 'Tinolang Manok (Chicken in Ginger noodle)',
-		description : 'Chicken noodle with pepper leaves in broth flavored with ginger, onions and fish sauce.',
-		image: 'noodle/TinolangManok.jpg',
+		name : 'Pancit Bihon (Rice Noodles)',
+		description : 'Rice noodles sauteed with vegetables and a choice of pork, chicken or shrimp.',
+		image: 'noodle/PancitBihon.jpg',
 		price : '12.99'
 		
 	},{
-		name : 'Sinampalukang Manok (Chicken Stewed in Tamarind noodle)',
-		description : 'Chicken cooked ala-Sinigang but uses young tamarind leaves along with the tamarind pulp to sour the broth.',
-		image: 'noodle/SinampalukangManok.jpg',
+		name : 'Pancit Miki Bihon (Egg and Rice Noodles)',
+		description : 'A blend of egg and rice noodles sauteed with vegetables with a choice of pork, chicken or shrimp.',
+		image: 'noodle/PancitMikiBihon.jpg',
 		price : '12.99'
+		
+	},{
+		name : 'Pancit Canton (Egg Noodles)',
+		description : 'Egg noodles sauteed with vegetables with a choice of pork, chicken or shrimp.',
+		image: 'noodle/PancitCanton.jpg',
+		price : '12.99'
+		
+	},{
+		name : 'Palabok (Thick Rice Noodles)',
+		description : 'Thick rice noodles in a delicious shrimp and squid sauce; garnished with garlic bits, green onions and sliced egg.',
+		image: 'noodle/Palabok.jpg',
+		price : '12.99'
+		
+	},{
+		name : 'Lomi (Thick Egg Noodles with Egg)',
+		description : 'Soup with thick egg noodles, pork, veggies and thick broth mixed with whisked egg.',
+		image: 'noodle/Lomi.jpg',
+		price : '9.99'
 		
 	}
 ];
