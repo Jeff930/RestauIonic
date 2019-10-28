@@ -31,12 +31,21 @@ export class GalleryTabsPage {
     { name: 'Look at our Menu', page: this.menuRoot, image: '', key:  4 },
     { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   ];
+  deskCategories = [
+    { name: 'Our Foods', page: this.foodRoot, image: '', key: 3 },
+    { name: 'Enjoy the Drinks', page: this.foodRoot, image: '', key: 0 },
+    { name: 'Inside the Restaurant', page: this.foodRoot, image: '', key: 2 },
+    { name: 'Look at our Menu', page: this.foodRoot, image: '', key: 4 },
+    { name: 'Let us take it Outside', page: this.foodRoot, image: '', key: 1 }
+  ];
 
   constructor(public navCtrl: NavController, public image: ProviderImagesProvider) {
     this.images = this.image.getEachImageForView();
     for (let index = 0; index < this.categories.length; index++) {
       const element = this.categories[index];
+      const element2 = this.deskCategories[index];
       element.image = this.images[element.key].image;
+      element2.image = this.images[element2.key].image;
       console.log(this.images[0]);
     }
     console.log(this.categories)

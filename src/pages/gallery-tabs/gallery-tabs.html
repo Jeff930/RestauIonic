@@ -43,7 +43,7 @@
             style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
     <hr>
     <div class="desk-card-lists padding-all">
-        <div class="desk-card-holder " (click)="catClick(item)" *ngFor="let item of categories" >
+        <div class="desk-card-holder " (click)="catClick(item)" *ngFor="let item of deskCategories" >
             <div class="desk-cards-content">
                 <img src="assets/imgs/{{item.image}}" alt="">
                 <h2>{{ item.name }}</h2>

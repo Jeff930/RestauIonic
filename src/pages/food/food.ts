@@ -17,10 +17,11 @@ import { ProviderImagesProvider } from '../../providers/provider-images/provider
 export class FoodPage {
   public liked1: boolean = false;
   public list: any = [];
-
+  checkApp;
   constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
     // this.list = this.imageProvider.getImages('food');
     this.list = this.imageProvider.getAllFoodsFromMenu();
+    this.checkApp = this.imageProvider.checkAppPlatform();
   }
 
   enterWebsite() {
