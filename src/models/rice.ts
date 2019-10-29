@@ -1,27 +1,39 @@
-export const platters = [
+export const rices = [
 	{
-		name : 'Grilled Meat Platter',
-		description : '4 BBQ Pork, 4 BBQ Chicken, Inihaw na Manok, Inihaw na Liempo, Ensaladang Talong',
-		image: 'platter/GrilledMeatPlatter.jpg',
-		price : '44.99'
+		name : 'Adobo Fried Rice',
+		description : 'Fried Rice cooked with Adobo sauce.',
+		image: 'rice/AdoboFriedRice.jpg',
+		price : '9.99'
 		
 	},{
-		name : 'Fried Meat Platter',
-		description : 'Crispy Pata, Lechon Kawali, Fried Chicken, Chicharon Bulaklak,Lumpiang Shanghai, Mango Salsa',
-		image: 'platter/FriedMeatPlatter.jpg',
-		price : '49.99'
+		name : 'Bagoong Fried Rice (Shrimp Paste Fried Rice)',
+		description : 'Fried Rice cooked with bagoong alamang (shrimp paste).',
+		image: 'rice/BagoongFriedRice.jpg',
+		price : '9.99'
 		
 	},{
-		name : 'Grilled Seafood Platter',
-		description : 'Garlic Prawn,Pinaputok na bangus or Pampano,Squid, Mussels, Ensaladang Talong',
-		image: 'platter/GrilledSeafoodPlatter.jpg',
-		price : '49.99'
+		name : 'House Fried Rice',
+		description : 'Stir-fried rice mixed with carrots, peas and vegetables.',
+		image: 'rice/HouseFriedRice.jpg',
+		price : '9.99'
 		
 	},{
-		name : 'Appetizer Platter',
-		description : 'Egg Rolls, Calamari, Fries, Fried Oyster',
-		image: 'platter/AppetizerPlatter.jpg',
-		price : '29.99'
+		name : 'Shrimp Fried Rice',
+		description : 'Shrimp stir-fried rice mixed with carrots and peas.',
+		image: 'rice/ShrimpFriedRice.jpg',
+		price : '9.99'
+		
+	},{
+		name : 'Garlic Fried Rice (4 scoops/1 scoop)',
+		description : 'Fried rice with garlic bits',
+		image: 'rice/HarlicFriedRice.jpg',
+		price : '7.99/1.99'
+		
+	},{
+		name : 'Steam Rice (4 scoops/1 scoop)',
+		description : '',
+		image: 'rice/SteamRice.jpg',
+		price : '4.99/1.29'
 		
 	}
 ];
