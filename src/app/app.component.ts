@@ -19,9 +19,14 @@ export class MyApp {
   pages: Array<{title: string, component: any , icon : string}>;
   pagesDesk: Array<{ title: string, component: any, icon: string }>;
 
+  public innerWidth: any;
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
     this.checkApp = this.platform.is('android');
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth<=480) {
+      this.checkApp = true;
+    }
     console.log();
     // used for an example of ngFor and navigation
     this.pages = [

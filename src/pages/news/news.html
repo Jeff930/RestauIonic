@@ -391,8 +391,8 @@
 	
 	</div>
 
-	<ion-toolbar color="semiDark">
-		<!-- <h6>Kusina Filipina Copyright</h6> -->
+	<ion-toolbar *ngIf="!checkApp" class="footer-text" color="semiDark">
+		<h6>© Kusina Filipina Copyright</h6>
 	</ion-toolbar>
 </ion-content>
 

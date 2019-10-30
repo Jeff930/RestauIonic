@@ -17,8 +17,7 @@
 
   </ion-navbar>
 </ion-header>
-
-<ion-content>
+<ion-content *ngIf="checkApp">
   <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina
     <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span
       style="color: rgb(245, 61, 61) !important; font-weight: bold;">I</span>nside</ion-title>
@@ -39,4 +38,29 @@
 
   </ion-grid>
 
+</ion-content>
+
+<ion-content *ngIf="!checkApp">
+  <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina
+    <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span
+      style="color: rgb(245, 61, 61) !important; font-weight: bold;">I</span>nside</ion-title>
+  <hr>
+  <ion-grid class="padding-all" text-center>
+    <ion-row>
+
+      <ion-col no-margin col-2 (click)="showPortfolio(l);" *ngFor="let l of list" class="desk-image-holder">
+
+        <img src="assets/imgs/{{l.image}}" class="show">
+
+        <div class="subtitle">
+          <h6>{{l.name}}</h6>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+  <ion-toolbar *ngIf="!checkApp" class="footer-text" color="semiDark">
+    <h6>© Kusina Filipina Copyright</h6>
+  </ion-toolbar>
 </ion-content>

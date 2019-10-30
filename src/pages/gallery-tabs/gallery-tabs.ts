@@ -33,12 +33,12 @@ export class GalleryTabsPage {
   ];
   deskCategories = [
     { name: 'Our Foods', page: this.foodRoot, image: '', key: 3 },
-    { name: 'Enjoy the Drinks', page: this.foodRoot, image: '', key: 0 },
-    { name: 'Inside the Restaurant', page: this.foodRoot, image: '', key: 2 },
+    { name: 'Enjoy the Drinks', page: this.drinkRoot, image: '', key: 0 },
+    { name: 'Inside the Restaurant', page: this.insideRoot, image: '', key: 2 },
     { name: 'Look at our Menu', page: this.foodRoot, image: '', key: 4 },
     { name: 'Let us take it Outside', page: this.foodRoot, image: '', key: 1 }
   ];
-
+  public innerWidth: any;
   constructor(public navCtrl: NavController, public image: ProviderImagesProvider) {
     this.images = this.image.getEachImageForView();
     for (let index = 0; index < this.categories.length; index++) {
@@ -51,6 +51,10 @@ export class GalleryTabsPage {
     console.log(this.categories)
     console.log(this.image.checkAppPlatform());
     this.checkApp = this.image.checkAppPlatform();
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <=480) {
+      this.checkApp = true;
+    }
   }
 
   catClick(item) {

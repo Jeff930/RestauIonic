@@ -17,11 +17,17 @@ import { ProviderImagesProvider } from '../../providers/provider-images/provider
 export class InsidePage {
   public liked1: boolean = false;
   public list: any = [];
-
+  checkApp;
+  public innerWidth: any;
   constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
+    // this.list = this.imageProvider.getImages('food');
     this.list = this.imageProvider.getImages('inside');
+    this.checkApp = this.imageProvider.checkAppPlatform();
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <= 480) {
+      this.checkApp = true;
+    }
   }
-
   enterWebsite() {
     this.navCtrl.push('HomePage');
   }

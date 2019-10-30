@@ -15,6 +15,15 @@ page-gallery-tabs {
         background: rgb(42,34,45) !important;
         border-radius: 20px !important;
     }
+    .footer-text {
+        position: relative;
+        h6 {
+            right: 0;
+            font-size: 1rem;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+    }
     // MOBILE
     .card-lists {
         margin-top: 10px;
