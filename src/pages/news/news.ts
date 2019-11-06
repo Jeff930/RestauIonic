@@ -24,6 +24,7 @@ export class NewsPage {
     slidesPerView: 1,
     autoplay: true
   };
+  public innerWidth: any;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public image: ProviderImagesProvider, public platform: Platform) {
 
@@ -34,6 +35,11 @@ export class NewsPage {
     console.log('ionViewDidLoad NewsPage');
     this.images = this.image.getEachImageForView();
     console.log(this.images)
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <=480) {
+      this.checkApp = true;
+    }
+    console.log(this.innerWidth);
   }
 
   goTo() {
