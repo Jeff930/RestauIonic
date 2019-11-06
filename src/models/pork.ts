@@ -12,33 +12,33 @@ export const porks = [
 		price : '12.99'
 		
 	}
-	// ,{
-	// 	name : 'Lechon Kawali (Crispy Pork Belly)',
-	// 	description : 'Pork belly deep-fried until crisp and golden brown, yet soft and tender inside.',
-	// 	image: 'pork/LechonKawali.jpg',
-	// 	price : '12.99'
+	,{
+		name : 'Lechon Kawali (Crispy Pork Belly)',
+		description : 'Pork belly deep-fried until crisp and golden brown, yet soft and tender inside.',
+		image: 'pork/LechonKawali.jpg',
+		price : '12.99'
 		
-	// }
+	}
 	,{
 		name : 'Inihaw na Liempo (Grilled Pork Belly)',
 		description : 'Grilled pork seasoned with onions,pepper, vinegar and mayonnaise.',
-		image: 'pork/Dinakdakan.jpg',
+		image: 'pork/InihawNaLiempo.jpg',
 		price : '12.99'
 		
 	},{
 		name : 'Dinuguan (Pork Blood Stew)',
 		description : 'Filipino savory pork stew simmered in a rich, spicy dark gravy of pig blood, garlic, chili and vinegar.',
-		image: 'pork/Dinakdakan.jpg',
+		image: 'pork/Dinuguan.jpg',
 		price : '13.99'
 		
 	}
-	// ,{
-	// 	name : 'Menudo',
-	// 	description : 'A tasty boneless pork stew with carrots, potatoes and green peas.',
-	// 	image: 'pork/Menudo.jpg',
-	// 	price : '13.99'
+	,{
+		name : 'Menudo',
+		description : 'A tasty boneless pork stew with carrots, potatoes and green peas.',
+		image: 'pork/Menudo.jpg',
+		price : '13.99'
 		
-	// }
+	}
 	,{
 		name : 'Pork Adobo',
 		description : 'Marinated pork chunks slowly cooked in vinegar and soy sauce with garlic,bay leaf and peppercorn.',
@@ -52,19 +52,19 @@ export const porks = [
 		price : '10.99/2.75'
 		
 	},
-	// {
-	// 	name : 'Sizzling Sisig (Sizzling pork cues)',
-	// 	description : 'Marinated pork cheeks broiled and cut into small pieces served in a sizzling platter with onion and lemon.',
-	// 	image: 'pork/SizzlingSisig.jpg',
-	// 	price : '11.99'
+	{
+		name : 'Sizzling Sisig (Sizzling Pork Cubes)',
+		description : 'Marinated pork cheeks broiled and cut into small pieces served in a sizzling platter with onion and lemon.',
+		image: 'pork/SizzlingSisig.jpg',
+		price : '11.99'
 		
-	// },{
-	// 	name : 'Crispy Sisig (Crispy pork cues)',
-	// 	description : 'Grilled pork cubes with lemon, onions, chillies, scallions and seasoning.',
-	// 	image: 'pork/CrispySisig.jpg',
-	// 	price : '11.99'
+	},{
+		name : 'Crispy Sisig (Crispy Pork Cubes)',
+		description : 'Grilled pork cubes with lemon, onions, chillies, scallions and seasoning.',
+		image: 'pork/CrispySisig.jpg',
+		price : '11.99'
 		
-	// },
+	},
 	{
 		name : 'Crispy Binagoongan (Pork in Shrimp Paste and Coconut Milk)',
 		description : 'Combination of filipino favorites, crispy pork pieces,coconut milk and shrimp paste, toppped with mango salad.',
