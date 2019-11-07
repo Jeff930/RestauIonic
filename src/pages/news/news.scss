@@ -6,11 +6,12 @@ page-news {
 	}
 	.title, .subTitle {
 		text-align: center !important; 
-		font-size: 38px !important;
+		font-size: 7vw !important;
 		font-family: 'Crete Round',Georgia,'Times New Roman',serif;
 		color: white;
 		font-weight: 500;
 	}
+
 	.cover {
 		border-radius: 0px 0px 0px 150px !important;
 		// background-image: url("assets/");
@@ -45,6 +46,11 @@ page-news {
 			min-height: vh !important;
 			width: 100%;
 		}
+	}
+
+	.category{
+		
+		height:25vw !important;
 	}
 	.image-holder {
 		position: relative;
@@ -158,11 +164,11 @@ page-news {
 	}
 
 	.subTitle {
-		font-size: 15px !important;
+		font-size: 3vw !important;
 		font-weight: bold;
 		margin-top: 5px !important;
-
 	}
+
 	.menu-button {
 		text-align: center;
 		margin: 0 auto !important;

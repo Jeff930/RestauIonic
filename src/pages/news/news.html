@@ -53,12 +53,13 @@
 	
 	</div> -->
 	<h4  class="titles">Categories:</h4>
+	<ion-grid>
 	<ion-row no-padding>
 	
-		<ion-col no-margin no-padding col-6 (click)="showPortfolio(l);" *ngFor="let l of categories" class="image-holder">
+		<ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories" class="image-holder">
 	
 			<div class="show">
-				<img src="assets/imgs/{{l.image}}">
+				<img class="category" src="assets/imgs/{{l.image}}">
 			</div>
 	
 			<div class="subtitle">
@@ -520,7 +521,7 @@
 
 </ion-content>
 
-<ion-footer transparent>
+<ion-footer transparent *ngIf="!checkApp">
 		<ion-toolbar class="footer-text mobile-footer" color="brownLight" >
 			<h5><span class="iconFont">
 					<ion-icon color="danger" name="call"></ion-icon>
