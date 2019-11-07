@@ -37,10 +37,15 @@ page-news {
 		img {
 			border: 2px solid #c2c0c0;
 			box-shadow: 0 10px 6px -6px #777;
-			max-height: 20vh !important;
-			min-height: vh !important;
+			max-height: 30vw !important;
+			min-height: 15vw !important;
 			width: 100%;
 		}
+	}
+
+	.category{
+		
+		height:25vw !important;
 	}
 	.image-holder {
 		position: relative;

@@ -56,12 +56,13 @@
 		</button>
 	</div> -->
 	<h4  class="titles">Categories:</h4>
+	<ion-grid>
 	<ion-row no-padding>
 	
-		<ion-col no-margin no-padding col-6 (click)="showPortfolio(l);" *ngFor="let l of categories" class="image-holder">
+		<ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories" class="image-holder">
 	
 			<div class="show">
-				<img src="assets/imgs/{{l.image}}">
+				<img class="category" src="assets/imgs/{{l.image}}">
 			</div>
 	
 			<div class="subtitle">
@@ -70,6 +71,7 @@
 		</ion-col>
 	
 	</ion-row>
+	</ion-grid>
 	<h4 class="titles">Kusina Filipina:</h4>
 
 	<!-- <ion-item style="padding: 0px !important;" >
