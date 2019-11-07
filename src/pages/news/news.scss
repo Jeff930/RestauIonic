@@ -6,11 +6,12 @@ page-news {
 	}
 	.title, .subTitle {
 		text-align: center !important; 
-		font-size: 38px !important;
+		font-size: 7vw !important;
 		font-family: 'Crete Round',Georgia,'Times New Roman',serif;
 		color: white;
 		font-weight: 500;
 	}
+
 	.cover {
 		border-radius: 0px 0px 0px 180px !important;
 		// background-image: url("assets/");
@@ -22,7 +23,7 @@ page-news {
 	}
 	.titles {
 		color: #d32323 !important;
-		padding: 0px 10px;
+		padding: 30px 10px;
 	}
 	 .iconFont {
         top: 2px !important;
@@ -70,15 +71,16 @@ page-news {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
-		width: 300px;
+		width: 50vw;
 
 	}
+
 	.subTitle {
-		font-size: 15px !important;
+		font-size: 3vw !important;
 		font-weight: bold;
 		margin-top: 5px !important;
-
 	}
+
 	.menu-button {
 		text-align: center;
 		margin: 0 auto !important;
