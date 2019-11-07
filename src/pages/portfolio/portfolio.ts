@@ -15,13 +15,22 @@ import { ProviderImagesProvider } from '../../providers/provider-images/provider
   templateUrl: 'portfolio.html',
 })
 export class PortfolioPage {
-	currentImage;
+  currentImage; 
+  checkApp;
+  public innerWidth: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public imageProvider: ProviderImagesProvider) {
 	  this.currentImage = this.imageProvider.currentImage;
-	  console.log(this.currentImage)
+    console.log(this.currentImage) 
+    this.checkApp = this.imageProvider.checkAppPlatform();
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <=480) {
+      this.checkApp = true;
+    }
 }
 
-
+  goTo() {
+    this.navCtrl.pop();
+  }
   ionViewDidLoad() {
 	  
     console.log('ionViewDidLoad PortfolioPage');

@@ -6,12 +6,34 @@ page-portfolio {
         background: rgba(42,34,45, 0.5) !important;
         border-radius: 20px !important;
     }
-
+    .hrDesk {
+         margin-top: 0px !important;
+        width: 10% !important;
+        height: 2px !important;
+        background: rgba(42,34,45, 0.5) !important;
+        border-radius: 20px !important;
+    }
 	ion-card{
 width:100% !important;
 margin: 0px !important;
 	}
 	ion-icon{
 		font-size: 24px;
-	}
+    }
+    .content {
+		 padding-right: calc((100% - 1100px)/ 2) !important;
+	padding-left: calc((100% - 1100px)/ 2) !important;
+	//  background: rgba(201, 200, 200, 0.11) !important
+    }
+   .col {
+        .imagesDesk {
+        min-width: 50vh !important;
+        min-height: 50vh !important;
+        max-width: 50vh !important;
+        max-height: 50vh !important;
+        -moz-box-shadow:     0 0 10px #000000;
+        -webkit-box-shadow:  0 0 10px #000000;
+        box-shadow:          0 0 10px #000000;
+    }
+   }
 }

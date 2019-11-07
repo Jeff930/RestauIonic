@@ -88,7 +88,7 @@ export class ProviderImagesProvider {
       }
     });
     menu.forEach(element => {
-      if (element.name === 'sample Menu 17') {
+      if (element.name === 'sample Menu 2') {
         allFoods.push(element);
       }
     });

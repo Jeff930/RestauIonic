@@ -7,7 +7,7 @@
 
 
 
-<ion-content>
+<ion-content *ngIf="checkApp">
 	<ion-header no-border>
 
 		<ion-navbar color="white">
@@ -28,31 +28,49 @@
 			<h6 style="color: rgb(0, 0, 0); padding: 2px;">Price: <span style="color: rgb(245, 61, 61)">{{ currentImage.price }}</span> </h6>
 			<ion-row style="margin-bottom: 20px">
 				<h6 style="color: rgb(0, 0, 0); margin-top: 0px !important;">{{ currentImage.description }}</h6>
-				
-				<!-- <ion-col>
-					<button ion-button icon-left clear small color="light">
-						<ion-icon name="thumbs-up"></ion-icon>
-						<div>12 Likes</div>
-					</button>
-				</ion-col>
-				<ion-col>
-					<button ion-button icon-left clear small color="light">
-						<ion-icon name="text"></ion-icon>
-						<div>4 Comments</div>
-					</button>
-				</ion-col>
-				<ion-col center text-center>
-					<button ion-button icon-left clear small color="light">
-					<ion-note color="light">
-						<div>11h ago</div>
-					</ion-note>
-				</button>
-				</ion-col> -->
 			</ion-row>
 		</ion-slide>
-
-
-
 	</ion-slides>
 
 </ion-content>
+<ion-header no-border *ngIf="!checkApp">
+
+	<ion-navbar color="white">
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<img src="assets/imgs/logo.jpg" height="40px;">
+	</ion-navbar>
+
+</ion-header>
+<ion-content *ngIf="!checkApp" padding>
+	<div class="content">
+
+	<div class="first-section">
+	<ion-row align-items-center="" class="row">
+		<ion-col class="col" col-12="" col-lg-6="" push-lg-6="" class="text-menu">
+			<div class="container" style="text-align: center">
+				<h1 class="titleText">{{currentImage.name}} - <span style="color: #d32323">{{ currentImage.price }}</span></h1>
+				<hr class="hrDesk">
+				<p style="font-size: 1.7rem !important;">{{ currentImage.description }}</p>
+			</div>
+			<button block="" ion-button="" margin-top="" round=""
+				class="button button-md button-default button-default-md button-round button-round-md button-block button-block-md button-menu-desk"
+				(click)="goTo()"><span class="button-inner">
+					Go Back
+				</span>
+				<div class="button-effect"></div>
+			</button>
+		</ion-col>
+		<ion-col class="col" col-12="" col-lg-6="" pull-lg-6="" text-center="">
+			<img class="imagesDesk" src="assets/imgs/{{currentImage.image}}" alt="">
+			
+		</ion-col>
+	</ion-row>
+</div></div>
+</ion-content>
+<ion-footer *ngIf="!checkApp" >
+<ion-toolbar  class="footer-text" color="semiDark">
+	<h6>© Kusina Filipina Copyright</h6>
+</ion-toolbar>
+</ion-footer>

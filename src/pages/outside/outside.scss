@@ -78,7 +78,31 @@ page-outside {
 			padding-left: 10px;
 		}
 	}
-	
+	.desk-image-holder {
+		position: relative;
+		overflow: hidden !important;
+		.subtitle {
+			position: absolute;
+			bottom: 0;
+			min-height: 2vh;
+			width: 75%;
+			margin: 2px 2px 10px 2px;
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 0px 5px 0px 0px;
+			text-align: left;
+			color: #ffffff;
+			padding-left: 10px;
+			transition: 1s;
+		}
+	}
+	.desk-image-holder:hover {
+		cursor: pointer;
+		.subtitle {
+			background: rgba(0, 0, 0, 0.8);
+			transition: 1s;
+			width: 94%;
+		}
+	}
 
 
 }

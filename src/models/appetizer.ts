@@ -1,11 +1,11 @@
 export const appetizers = [
-	{
-		name : 'Lumpiang Shanghai (Egg Roll)',
-		description : 'Deep-fried egg rolls consists of ground pork and veggies',
-		image: 'appetizer/EggRolls.jpg',
-		price : '7.99'
+	// {
+	// 	name : 'Lumpiang Shanghai (Egg Roll)',
+	// 	description : 'Deep-fried egg rolls consists of ground pork and veggies',
+	// 	image: 'appetizer/EggRolls.jpg',
+	// 	price : '7.99'
 		
-	}
+	// }
 	// ,{
 	// 	name : 'Vegetable Egg Rolls',
 	// 	description : 'Deep-fried vegetable(carrots, cabbage, green beans) egg rolls.',

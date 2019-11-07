@@ -31,15 +31,15 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: 'NewsPage', icon: 'basket' },
-      {
-        title: 'Gallery', component: 'GalleryTabsPage', icon: 'albums' },
+      // {
+      //   title: 'Gallery', component: 'GalleryTabsPage', icon: 'albums' },
       // { title: 'List', component: 'ListPage' },
       // { title: 'Portfolio', component: 'PortfolioPage' , icon:'image'},
       // { title: 'Login', component: 'LoginPage' , icon:'log-in'},
       // { title: 'Click', component: 'ClickPage' , icon:'camera'},
       // { title: 'Notifications', component: 'NotificationsPage' , icon:'notifications-outline'},
       // { title: 'Profile', component: 'ProfilePage' , icon:'contact'},
-      { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
+      // { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
       { title: 'Location', component: 'NotificationsPage' , icon:'navigate'}
       ];
       this.pagesDesk = [
