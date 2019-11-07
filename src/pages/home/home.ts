@@ -15,9 +15,9 @@ export class HomePage {
 		this.list = this.imageProvider.getImages('drinks');
 	}
 
-	enterWebsite() {
-		this.navCtrl.push('HomePage');
-	}
+	// enterWebsite() {
+	// 	this.navCtrl.push('HomePage');
+	// }
 
 	like(no){
 		
