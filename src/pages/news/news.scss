@@ -12,17 +12,22 @@ page-news {
 		font-weight: 500;
 	}
 	.cover {
-		border-radius: 0px 0px 0px 180px !important;
+		border-radius: 0px 0px 0px 150px !important;
 		// background-image: url("assets/");
 		position: relative;
+		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
+		border: .5px solid black;
+		// height: 40vh;
 	}
 	.textTopR {
 		font-size: 1.5rem !important;
 		font-weight: 500;
 	}
+
 	.titles {
-		color: #d32323 !important;
+		color: rgb(211, 35, 35) !important;
 		padding: 0px 10px;
+		font-weight: 700;
 	}
 	 .iconFont {
         top: 2px !important;
@@ -35,7 +40,7 @@ page-news {
 		margin:0px;
 		img {
 			border: 2px solid #c2c0c0;
-			box-shadow: 0 10px 6px -6px #777;
+			box-shadow: 0 10px 6px -6px rgba(211, 35, 35,0.75);
 			max-height: 20vh !important;
 			min-height: vh !important;
 			width: 100%;
@@ -71,8 +76,87 @@ page-news {
 		margin-right: auto;
 		margin-top: 50px;
 		width: 300px;
-
+		text-align: center;
 	}
+	.mobile-footer {
+		border-radius: 0px 80px 0px 0px;
+		color: #ffffff;
+		.eatIcon {
+			font-size: 3.5rem;
+			position: absolute;	
+			top: 20px;
+			right: 20px;
+			.eatIconContent {
+				position: relative;
+				display: inline-flex;
+				.eatSubText {
+					font-size: 1.2rem;
+					width: 20vw;
+					margin-top: 5px !important;
+				}		
+			}
+		}		
+		
+	}
+	.desc {
+		color: #ffffff;
+		padding: 5px;
+		background: rgb(29,29,29);
+		 box-shadow: 0 10px 6px -6px #777;
+		position: relative;
+		margin-top: 70px;
+		img {
+			height: 140px;
+			position: absolute;
+			right: 0;
+			margin-right: -20px;
+			top: -70px;
+		}
+	}
+	// Slides
+	.slidesHolder {
+		margin-bottom: 10px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		.slides {
+			.slidesCard {
+				width: 100%;
+				display: inline-flex;
+				div {
+					margin-top: 10px;
+					width: 100%;
+					p {
+						padding: 10px;
+						margin: 0 auto;
+						height:50px;
+						border-radius:50%;
+						-moz-border-radius:50%;
+						-webkit-border-radius:50%;
+						min-width:50px !important;
+						max-width: 50px;
+						border: 2px solid rgba(211, 35, 35,1);
+						// background: rgba(211, 35, 35,1);
+						color: rgba(211, 35, 35,1);
+						font-weight: bold;
+						font-size: 4vw;
+					}
+					ion-label {
+						text-align: center;
+						margin: 0 auto;
+						margin-top: 10px !important;
+						hr {
+							font-weight: 500;
+							width: 30%;
+							background: rgba(211, 35, 35,1);
+							height: 2px;
+							border-radius: 5px;
+							margin-top: 2px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.subTitle {
 		font-size: 15px !important;
 		font-weight: bold;
@@ -92,7 +176,9 @@ page-news {
 			font-size: 15px !important;
 		}
 	}
-	
+	.footer .footer-md {
+		background: transparent !important;
+	}
 	.button-menu-desk {
 		background: rgb(245, 61, 61) !important;
 		transition: .5s;
@@ -214,6 +300,7 @@ page-news {
 		margin-top: 20px !important;
 		font-weight: bold !important;
 		color: rgb(0, 0, 0) !important; 
+		background: transparent !important;
 	}
 	.no-line {
 		.item-inner {

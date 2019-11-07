@@ -59,10 +59,27 @@
  }
  .footer-text {
         position: relative;
+        height: 13vh;
         h6 {
             right: 0;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             padding-left: 10px;
+        }
+        h5 {
+            right: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding-left: 10px;
+            margin-bottom: 0px !important;
+            margin-top: 5px !important;
+        }
+    }
+    .menuHeader {
+            width: 100%;
+            text-align: center;
+        img {
+            height: 20vh;
+            margin: 0 auto;
         }
     }

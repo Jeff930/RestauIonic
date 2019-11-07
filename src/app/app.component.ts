@@ -40,7 +40,8 @@ export class MyApp {
       // { title: 'Notifications', component: 'NotificationsPage' , icon:'notifications-outline'},
       // { title: 'Profile', component: 'ProfilePage' , icon:'contact'},
       // { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
-      { title: 'Location', component: 'NotificationsPage' , icon:'navigate'}
+      { title: 'About Us', component: 'NotificationsPage', icon: 'information-circle' },
+      { title: 'Catering and Events', component: 'NotificationsPage', icon: 'albums' }
       ];
       this.pagesDesk = [
         { title: 'Home', component: 'NewsPage', icon: 'home' },

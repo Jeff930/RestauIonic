@@ -7,7 +7,8 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ProviderImagesProvider } from '../providers/provider-images/provider-images';
+import { ProviderImagesProvider } from '../providers/provider-images/provider-images'; 
+import { CallNumber } from '@ionic-native/call-number/ngx';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ProviderImagesProvider } from '../providers/provider-images/provider-im
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ProviderImagesProvider
+    ProviderImagesProvider,
+    CallNumber
   ]
 })
 export class AppModule {}

@@ -20,7 +20,7 @@ page-notifications {
       width: 100%;
       height: 50vh;
       margin: 0 auto;
-       box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
 
    h1 {
@@ -41,5 +41,91 @@ page-notifications {
         font-size: 2rem;
         top: 3px !important;
         position: relative !important;
+    }
+    .infoIcon {
+        margin-top: 10px !important;
+    }
+    .titles {
+		color: rgb(211, 35, 35) !important;
+		padding: 0px 10px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .exdtra {
+        font-size: 2.5rem;
+    }
+    .storeHours {
+        color: #ffffff;
+        
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        hr {
+            width: 10%;
+            background: rgb(29,29,29);
+            height: 2px;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+        .hoursContent {
+            .hours {
+                padding: 0px 20px;
+                background: rgba(29, 29, 29, 0.534);
+                width: 90%;
+                margin: 10px auto;
+                border-radius: 25px 5px 5px 25px;
+                position: relative;
+                border: .5px solid rgb(29,29,29);
+                .marks {
+                    position: absolute;
+                    border: 2px solid #ffffff;
+                    background: #ffffff;
+                    padding: 6px;
+                    margin-top: -2px;
+                    margin-right: -2px;
+                    right: 0;
+                    border-radius: 0px 10px 0px 0px;
+                }
+                .schedContent {
+                    padding: 2px 0px;
+                    display: flex;
+                    width: 100%;
+                    color: #ffffff;
+                    .day {
+                        border-radius: 50%;
+                        width: 100px;
+                        font-size: 1.8rem;
+                        margin-top: 10px !important;
+                    }
+                    .sched {
+                        width: 100%;
+                        text-align: right;
+                        margin-top: 10px !important;
+
+                    }        
+                }
+                
+            }
+            .hours:nth-child(even) {
+                background: rgb(211, 35, 35);
+                border-radius: 5px 25px 25px 5px;
+                .marks {
+                    position: absolute;
+                    background: #ffffff;
+                    border: 2px solid #ffffff;
+                    padding: 6px;
+                    right: 0;
+                    border-radius: 0px 8px 0px 0px;
+                }
+                .schedContent, .day {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .maps {
+        color: #ffffff;
+		padding: 5px;
+		background: rgb(29,29,29);
+		 box-shadow: 0 10px 6px -6px #777;
+		position: relative;
     }
 }

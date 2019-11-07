@@ -1,38 +1,47 @@
 <ion-header>
-  <ion-navbar color="white">
+  <ion-navbar color="danger">
     <button ion-button menuToggle>
-      <ion-icon name="menu" ></ion-icon>
+      <ion-icon name="menu"></ion-icon>
     </button>
     <img src="assets/imgs/logo.jpg" height="40px;">
     <!-- <ion-title style="color: red !important;">Kusina Filipina</ion-title> -->
-    <!-- 
-  <ion-buttons end>
-    <button ion-button icon-only>
-      <ion-icon name="logo-facebook"></ion-icon>
-    </button>
-    <button ion-button icon-only>
-      <ion-icon name="logo-instagram"></ion-icon>
-    </button>
-  </ion-buttons> -->
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <!-- <ion-icon class="textTopR" name="pin"> <span style="text-decoration: underline">10:00am-10:00pm</span>
+        </ion-icon> -->
+      </button>
+    </ion-buttons>
 
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
 
-  <!-- <h2 class="infoHead"></h2> -->
-  <h1 class="infoHead">
-    <ion-icon color="danger" name="navigate"></ion-icon>
-  </h1>
-  <!-- <h2 class="infoHead">Inquire now for your needs..</h2> -->
-  <hr>
-  <div class="parg">
-    <h6>Want to know our location? <br> You can find us here:</h6>
+<ion-content >
+  <div class="maps">
+    
   <div class="mapContainer">
     <div #map id="map"></div>
   </div>
-  <h6 style="font-size: 1.4rem;">4157 Eagle Rock Blvd
+  <div class="parg">
+    <h4 class="titles" style="color: #ffffff !important"> <ion-icon color="danger" name="navigate"></ion-icon> Want to know our location? <br> You can find us here:</h4>
+  
+  <h6 style="font-size: 1.4rem; color: #ffffff">4157 Eagle Rock Blvd
   Ste 1
   Los Angeles, CA 90065</h6>
+  </div>
+  </div>
+  <div class="storeHours"> 
+      <h4 class="titles exdtra">Store Hours</h4>
+      <hr>
+      <div class="hoursContent">
+        <div class="hours" *ngFor="let hour of storeTime">
+          <!-- <div class="marks"></div> -->
+          <div class="schedContent">
+            <h5 class="day">{{ hour.day }}</h5>
+            <h5 class="sched">{{ hour.time }}</h5>
+          </div>
+        </div>
+      </div>
   </div>
 </ion-content>

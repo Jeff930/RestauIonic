@@ -16,10 +16,17 @@ declare var google;
   templateUrl: 'notifications.html',
 })
 export class NotificationsPage {
-
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-
+  storeTime = [
+    { day: 'Monday', time: '10:00am-10:00pm' },
+    { day: 'Tuesday', time: '10:00am-10:00pm' },
+    { day: 'Wednesday', time: '10:00am-10:00pm' },
+    { day: 'Thursday', time: '10:00am-10:00pm' },
+    { day: 'Friday', time: '10:00am-10:00pm' },
+    { day: 'Saturday', time: '10:00am-10:00pm' },
+    { day: 'Sunday', time: '10:00am-04:00pm' }
+  ]
   constructor(public navCtrl: NavController) {
 
   }

@@ -4,6 +4,7 @@ import { ProviderImagesProvider } from '../../providers/provider-images/provider
 
 import { HomePage } from '../home/home';
 import { Nav, Platform } from 'ionic-angular';
+import { CallNumber } from '@ionic-native/call-number/ngx';
 /**
  * Generated class for the NewsPage page.
  *
@@ -32,10 +33,10 @@ export class NewsPage {
     autoplay: true
   };
   categories = [
-    { name: 'Our Foods', page: this.foodRoot, image: '', key: 3 },
-    { name: 'Enjoy the Drinks', page: this.drinkRoot, image: '', key: 0 },
+    { name: 'Foods', page: this.foodRoot, image: '', key: 3 },
+    { name: 'Drinks', page: this.drinkRoot, image: '', key: 0 },
     { name: 'Inside and Outside', page: this.insideRoot, image: '', key: 2 },
-    { name: 'Look at our Menu', page: this.menuRoot, image: '', key: 4 },
+    { name: 'Menu', page: this.menuRoot, image: '', key: 4 },
     // { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   ];
   deskCategories = [
@@ -47,9 +48,15 @@ export class NewsPage {
   ];
   public innerWidth: any;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public image: ProviderImagesProvider, public platform: Platform) {
+    public image: ProviderImagesProvider, public platform: Platform, private callNumber: CallNumber) {
 
     this.checkApp = this.platform.is('android'); 
+  }
+  
+  callNow() {
+    this.callNumber.callNumber('3232290228', true)
+      .then(res => console.log('Launched dialer!', res))
+      .catch(err => console.log('Error launching dialer', err));
   }
 
   ionViewDidLoad() {
