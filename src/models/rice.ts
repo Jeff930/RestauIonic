@@ -26,7 +26,7 @@ export const rices = [
 	},{
 		name : 'Garlic Fried Rice (4 scoops/1 scoop)',
 		description : 'Fried rice with garlic bits',
-		image: 'rice/HarlicFriedRice.jpg',
+		image: 'rice/GarlicFriedRice.jpg',
 		price : '7.99/1.99'
 		
 	},{
