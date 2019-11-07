@@ -38,5 +38,5 @@ export const chickens = [
 	// 	image: 'chicken/InihawNaManok.jpg',
 	// 	price : '8.99'
 		
-	}
+	// }
 ];

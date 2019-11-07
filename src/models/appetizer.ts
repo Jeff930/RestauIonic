@@ -12,8 +12,8 @@ export const appetizers = [
 	// 	image: 'appetizer/VegetableEggRolls.jpg',
 	// 	price : '7.99'
 		
-	}
-	,{
+	// },
+	{
 		name : "Tokwa't Baboy (Fried Pork and Tofu)",
 		description : 'Fried pork ruffle - Deep-fried tofu cubes and pork pieces with a dipping mixture of soy sauce, vinegar and chillies',
 		image: 'appetizer/TokwaBaboy.jpg',

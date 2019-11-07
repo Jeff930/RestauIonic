@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
 /**
  * Generated class for the CateringPage page.
@@ -14,12 +15,36 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'catering.html',
 })
 export class CateringPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public liked1: boolean = false;
+  public list: any = [];
+  checkApp;
+  public innerWidth: any;
+  constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
+    // this.list = this.imageProvider.getImages('food');
+    this.list = this.imageProvider.getImages('drinks');
+    this.checkApp = this.imageProvider.checkAppPlatform();
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <= 480) {
+      this.checkApp = true;
+    }
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CateringPage');
+  enterWebsite() {
+    this.navCtrl.push('HomePage');
   }
 
+  like(no) {
+
+    if (this.liked1) {
+      this.liked1 = false;
+    } else {
+      this.liked1 = true;
+    }
+  }
+
+  showPortfolio(image) {
+    this.navCtrl.push('PortfolioPage');
+    console.log(image);
+    this.imageProvider.currentImage = image;
+  }
 }
