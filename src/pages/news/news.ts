@@ -56,10 +56,10 @@ export class NewsPage {
     console.log('ionViewDidLoad NewsPage');
     this.images = this.image.getEachImageForView();
     console.log(this.images)
-    this.innerWidth = window.innerWidth;
-    if (this.innerWidth <=480) {
-      this.checkApp = true;
-    }
+    // this.innerWidth = window.innerWidth;
+    // if (this.innerWidth <=480) {
+    //   this.checkApp = true;
+    // }
     console.log(this.innerWidth);
 
     for (let index = 0; index < this.categories.length; index++) {
