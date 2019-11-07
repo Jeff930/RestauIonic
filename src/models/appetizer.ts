@@ -1,19 +1,18 @@
 export const appetizers = [
-	// {
-	// 	name : 'Lumpiang Shanghai (Egg Roll)',
-	// 	description : 'Deep-fried egg rolls consists of ground pork and veggies',
-	// 	image: 'appetizer/EggRolls.jpg',
-	// 	price : '7.99'
-		
-	// }
-	// ,{
-	// 	name : 'Vegetable Egg Rolls',
-	// 	description : 'Deep-fried vegetable(carrots, cabbage, green beans) egg rolls.',
-	// 	image: 'appetizer/VegetableEggRolls.jpg',
-	// 	price : '7.99'
+	{
+		name : 'Lumpiang Shanghai (Egg Roll)',
+		description : 'Deep-fried egg rolls consists of ground pork and veggies',
+		image: 'appetizer/EggRolls.jpg',
+		price : '7.99'
 		
 	}
 	,{
+		name : 'Vegetable Egg Rolls',
+		description : 'Deep-fried vegetable(carrots, cabbage, green beans) egg rolls.',
+		image: 'appetizer/VegetableEggRolls.jpg',
+		price : '7.99'
+		
+	},{
 		name : "Tokwa't Baboy (Fried Pork and Tofu)",
 		description : 'Fried pork ruffle - Deep-fried tofu cubes and pork pieces with a dipping mixture of soy sauce, vinegar and chillies',
 		image: 'appetizer/TokwaBaboy.jpg',
