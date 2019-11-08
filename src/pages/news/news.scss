@@ -12,6 +12,11 @@ page-news {
 		font-weight: 500;
 	}
 
+	ion-toolbar {
+		--background: transparent;
+		--ion-color-base: transparent !important;
+	}
+
 	.cover {
 		border-radius: 0px 0px 0px 150px !important;
 		// background-image: url("assets/");
@@ -107,7 +112,7 @@ page-news {
 	.desc {
 		color: #ffffff;
 		padding: 5px;
-		background: rgb(29,29,29);
+		background: rgb(196,148,51);
 		 box-shadow: 0 10px 6px -6px #777;
 		position: relative;
 		margin-top: 70px;
