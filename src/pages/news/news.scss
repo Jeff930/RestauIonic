@@ -318,4 +318,8 @@ page-news {
 			border-bottom: none !important;
 		}
 	}
+	ion-toolbar {
+   --background-color: transparent;
+   --ion-color-base: transparent !important;
+ }
 }
