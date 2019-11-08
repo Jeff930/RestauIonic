@@ -1,10 +1,14 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
 import { HomePage } from '../home/home';
 import { Nav, Platform } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number/ngx';
+
+
+declare var google;
+
 /**
  * Generated class for the NewsPage page.
  *
@@ -18,7 +22,8 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
   templateUrl: 'news.html',
 })
 export class NewsPage {
-
+  @ViewChild('map') mapElement: ElementRef;
+  map: any;
   allFoodsRoot = 'AllFoodsPage'
   foodRoot = 'FoodPage'
   insideRoot = 'InsidePage'
@@ -33,10 +38,10 @@ export class NewsPage {
     autoplay: true
   };
   categories = [
-    { name: 'Foods', page: this.foodRoot, image: '', key: 3 },
-    { name: 'Drinks', page: this.drinkRoot, image: '', key: 0 },
-    { name: 'Inside and Outside', page: this.insideRoot, image: '', key: 2 },
-    { name: 'Menu', page: this.menuRoot, image: '', key: 4 },
+    { name: 'FOODS', page: this.foodRoot, image: '', key: 3 },
+    { name: 'DRINKS', page: this.drinkRoot, image: '', key: 0 },
+    // { name: 'Inside and Outside', page: this.insideRoot, image: '', key: 2 },
+    { name: 'MENU', page: this.menuRoot, image: '', key: 4 },
     // { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   ];
   deskCategories = [
@@ -51,15 +56,16 @@ export class NewsPage {
     public image: ProviderImagesProvider, public platform: Platform, private callNumber: CallNumber) {
 
     this.checkApp = this.platform.is('android'); 
+    
   }
   
   callNow() {
-    this.callNumber.callNumber('3232290228', true)
-      .then(res => console.log('Launched dialer!', res))
-      .catch(err => console.log('Error launching dialer', err));
+    window.open(`tel:3232290228`, '_system');
   }
 
   ionViewDidLoad() {
+
+    this.loadMap();
     console.log('ionViewDidLoad NewsPage');
     this.images = this.image.getEachImageForView();
     console.log(this.images)
@@ -68,7 +74,6 @@ export class NewsPage {
     //   this.checkApp = true;
     // }
     console.log(this.innerWidth);
-
     for (let index = 0; index < this.categories.length; index++) {
       const element = this.categories[index];
       const element2 = this.deskCategories[index];
@@ -79,6 +84,37 @@ export class NewsPage {
     console.log(this.categories);
   }
 
+  loadMap() {
+
+    let latLng = new google.maps.LatLng(34.122198, -118.225819);
+    let mapOptions = {
+      center: latLng,
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    let marker = new google.maps.Marker({
+      position: latLng,
+      map: mapOptions,
+      title: 'Hello World!'
+    });
+    this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+    this.addMarker(this.map);
+  }
+  addMarker(map: any) {
+
+    let marker = new google.maps.Marker({
+      map: map,
+      animation: google.maps.Animation.DROP,
+      position: map.getCenter()
+    });
+
+    let content = "<h4>Information!</h4>";
+
+    // this.addInfoWindow(marker, content);
+
+
+
+  }
   goTo() {
   
     this.navCtrl.push('GalleryTabsPage');

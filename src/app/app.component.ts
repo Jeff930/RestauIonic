@@ -40,6 +40,7 @@ export class MyApp {
       // { title: 'Notifications', component: 'NotificationsPage' , icon:'notifications-outline'},
       // { title: 'Profile', component: 'ProfilePage' , icon:'contact'},
       // { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
+      { title: 'Menu', component: 'GalleryTabsPage', icon: 'book' },
       { title: 'About Us', component: 'NotificationsPage', icon: 'information-circle' },
       { title: 'Catering and Events', component: 'NotificationsPage', icon: 'albums' }
       ];
@@ -64,8 +65,8 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
-  }
+    }
   goTo() {
     this.nav.setRoot('NewsPage');
-  }
+    }
 }

@@ -1,24 +1,43 @@
-<ion-header>
-  <ion-navbar color="danger">
+<ion-header no-boder>
+  <ion-navbar transparent color="transp" class="bar-header">
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="menu" class="bar-header"></ion-icon>
     </button>
-    <img src="assets/imgs/logo.jpg" height="40px;">
+    <img src="assets/imgs/logoName.png" height="60px;">
     <!-- <ion-title style="color: red !important;">Kusina Filipina</ion-title> -->
 
     <ion-buttons end>
-      <button ion-button icon-only>
-        <!-- <ion-icon class="textTopR" name="pin"> <span style="text-decoration: underline">10:00am-10:00pm</span>
-        </ion-icon> -->
-      </button>
+      <!-- <button ion-button icon-only>
+        <ion-icon class="textTopR bar-header" name="time"> <span
+            style="text-decoration: underline">10:00am-10:00pm</span></ion-icon>
+      </button> -->
     </ion-buttons>
 
   </ion-navbar>
 </ion-header>
 
 
+
 <ion-content >
-  <div class="maps">
+  <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
+    <!-- <ion-slides autoplay="5000" loop="true" speed="500" class="slides" pager="true" class="image-holder">
+  				<ion-slide *ngFor="let image of images"  class="images" >
+  					<img src="assets/imgs/{{image.image}}" alt="">
+  				</ion-slide>
+  			</ion-slides> -->
+    <img src="assets/imgs/cover.jpg" alt="">
+    <div class="texts">
+      <h2 class="title curvyFont welcomeText">About Us</h2>
+      <div class="mainTitles">
+        <h2 color="goldenBrown ">KUSINA </h2>
+        <h3>FILIPINA</h3>
+      </div>
+      <!-- <button ion-button class="menu-button" (click)="callNow()">
+        <h2>View Menu</h2>
+      </button> -->
+    </div>
+  </ion-row>
+  <!-- <div class="maps">
     
   <div class="mapContainer">
     <div #map id="map"></div>
@@ -36,12 +55,12 @@
       <hr>
       <div class="hoursContent">
         <div class="hours" *ngFor="let hour of storeTime">
-          <!-- <div class="marks"></div> -->
+        
           <div class="schedContent">
             <h5 class="day">{{ hour.day }}</h5>
             <h5 class="sched">{{ hour.time }}</h5>
           </div>
         </div>
       </div>
-  </div>
+  </div> -->
 </ion-content>

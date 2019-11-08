@@ -128,4 +128,50 @@ page-notifications {
 		 box-shadow: 0 10px 6px -6px #777;
 		position: relative;
     }
+    .bar-header {
+		color: black !important; 
+    }
+    .cover {
+		// border-radius: 0px 0px 0px 150px !important;
+		// background-image: url("assets/");
+		position: relative;
+		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
+		border: .5px solid black;
+		// height: 40vh;
+    }
+    .welcomeText {
+		font-size: 4rem !important;
+		margin: 0px auto;
+		font-weight: 500;
+    }
+    .texts {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		width: 300px;
+		text-align: center;
+    }
+    .mainTitles {
+		border: 2px solid #ffffff;
+		h2 {
+			color: rgb(196,148,51);
+			font-weight: bold;
+			font-size: 5rem;
+			padding: 0px !important;
+			margin: 0px auto;
+		}
+		h3 {
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 3rem;
+		}
+    }
+    .title, .subTitle {
+		text-align: center !important; 
+		color: white;
+		font-weight: 500;
+	}
 }

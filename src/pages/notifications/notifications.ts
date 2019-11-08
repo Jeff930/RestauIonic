@@ -32,38 +32,38 @@ export class NotificationsPage {
   }
 
   ionViewDidLoad() {
-    this.loadMap();
+    // this.loadMap();
   }
 
-  loadMap() {
+  // loadMap() {
 
-    let latLng = new google.maps.LatLng(34.122198, -118.225819);
-    let mapOptions = {
-      center: latLng,
-      zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    let marker = new google.maps.Marker({
-      position: latLng,
-      map: mapOptions,
-      title: 'Hello World!'
-    });
-    this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
-    this.addMarker(this.map);
-  }
-  addMarker(map: any) {
+  //   let latLng = new google.maps.LatLng(34.122198, -118.225819);
+  //   let mapOptions = {
+  //     center: latLng,
+  //     zoom: 15,
+  //     mapTypeId: google.maps.MapTypeId.ROADMAP
+  //   }
+  //   let marker = new google.maps.Marker({
+  //     position: latLng,
+  //     map: mapOptions,
+  //     title: 'Hello World!'
+  //   });
+  //   this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+  //   this.addMarker(this.map);
+  // }
+  // addMarker(map: any) {
 
-    let marker = new google.maps.Marker({
-      map: map,
-      animation: google.maps.Animation.DROP,
-      position: map.getCenter()
-    });
+  //   let marker = new google.maps.Marker({
+  //     map: map,
+  //     animation: google.maps.Animation.DROP,
+  //     position: map.getCenter()
+  //   });
 
-    let content = "<h4>Information!</h4>";
+  //   let content = "<h4>Information!</h4>";
 
-    // this.addInfoWindow(marker, content);
+  //   // this.addInfoWindow(marker, content);
 
 
 
-  }
+  // }
 }
