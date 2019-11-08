@@ -45,35 +45,25 @@ export class NewsPage {
     // { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   ];
   deskCategories = [
-    { name: 'Our Foods', page: this.foodRoot, image: '', key: 3 },
-    { name: 'Enjoy the Drinks', page: this.drinkRoot, image: '', key: 0 },
-    { name: 'Inside the Restaurant', page: this.insideRoot, image: '', key: 2 },
-    { name: 'Look at our Menu', page: this.menuRoot, image: '', key: 4 },
-    { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
+    { name: 'FOODS', page: this.foodRoot, image: '', key: 3 },
+    { name: 'DRINKS', page: this.drinkRoot, image: '', key: 0 },
+    { name: 'Inside and Outside', page: this.insideRoot, image: '', key: 2 },
+    { name: 'MENU', page: this.menuRoot, image: '', key: 4 },
+    // { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   ];
+  // deskCategories = [
+  //   { name: 'Our Foods', page: this.foodRoot, image: '', key: 3 },
+  //   { name: 'Enjoy the Drinks', page: this.drinkRoot, image: '', key: 0 },
+  //   { name: 'Inside the Restaurant', page: this.insideRoot, image: '', key: 2 },
+  //   { name: 'Look at our Menu', page: this.menuRoot, image: '', key: 4 },
+  //   { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
+  // ];
   public innerWidth: any;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public image: ProviderImagesProvider, public platform: Platform, private callNumber: CallNumber) {
 
-    this.checkApp = this.platform.is('android'); 
-    
-  }
-  
-  callNow() {
-    window.open(`tel:3232290228`, '_system');
-  }
-
-  ionViewDidLoad() {
-
-    this.loadMap();
-    console.log('ionViewDidLoad NewsPage');
     this.images = this.image.getEachImageForView();
-    console.log(this.images)
-    // this.innerWidth = window.innerWidth;
-    // if (this.innerWidth <=480) {
-    //   this.checkApp = true;
-    // }
-    console.log(this.innerWidth);
+    this.checkApp = this.platform.is('android'); 
     for (let index = 0; index < this.categories.length; index++) {
       const element = this.categories[index];
       const element2 = this.deskCategories[index];
@@ -81,6 +71,23 @@ export class NewsPage {
       element2.image = this.images[element2.key].image;
       console.log(this.images[0]);
     }
+  }
+  
+  callNow() {
+    window.open(`tel:3232290228`, '_system');
+  }
+
+  ionViewDidLoad() {
+    
+    this.loadMap();
+    console.log('ionViewDidLoad NewsPage');
+    console.log(this.images)
+    // this.innerWidth = window.innerWidth;
+    // if (this.innerWidth <=480) {
+    //   this.checkApp = true;
+    // }
+    console.log(this.innerWidth);
+   
     console.log(this.categories);
   }
 

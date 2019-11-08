@@ -135,7 +135,7 @@ page-news {
 
 	
 	.show{
-		height: 30vw;
+		height: auto;
 		padding: 10px;
 		margin:0px;
 		position: relative;
@@ -146,14 +146,30 @@ page-news {
 			min-height: 30vh !important;
 			width: 100%;
 		}
-<<<<<<< HEAD
-=======
+		.subtitle {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 30px;
+			// font-family: 'Crete Round',Georgia,'Times New Roman',serif;
+			width: 93%;
+			// background: rgba(0, 0, 0, 0.5);
+			border-radius: 0px 5px 0px 0px;
+			text-align: center;
+			color: #ffffff;
+			// top: 75px;
+			h6 {
+				font-weight: bold !important;
+				font-size: 1.8rem !important;
+			}
+		}
 	}
+	
 
 	.show2{
 		height: 20vw;
 		padding: 10px;
 		margin:0px;
+		width: 100%;
 		img {
 			border: 2px solid #c2c0c0;
 			box-shadow: 0 10px 6px -6px rgba(211, 35, 35,0.75);
@@ -174,7 +190,6 @@ page-news {
 
 	.image-holder {
 		position: relative;
->>>>>>> 8e99a93ac5856ccb53e285ee0ce41b5536bcdb1c
 		.subtitle {
 			position: absolute;
 			bottom: 0;
@@ -350,13 +365,8 @@ page-news {
 		text-align: center;
 		margin: 0 auto !important;
 		margin-top: 20px !important;
-<<<<<<< HEAD
 		width: 50% !important;
 		background: rgb(196,148,51);
-=======
-		width: 70% !important;
-		background: #C49433;
->>>>>>> 8e99a93ac5856ccb53e285ee0ce41b5536bcdb1c
 		color: white;
 		border-radius: 10px;
 		h2 {
