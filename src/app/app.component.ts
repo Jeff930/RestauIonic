@@ -44,10 +44,10 @@ export class MyApp {
       { title: 'Catering and Events', component: 'NotificationsPage', icon: 'albums' }
       ];
       this.pagesDesk = [
-        { title: 'Home', component: 'NewsPage', icon: 'home' },
-        { title: 'Gallery', component: 'GalleryTabsPage', icon: 'images' },
-        { title: 'About Us', component: 'ProfilePage', icon: 'information-circle' },
-        { title: 'Catering and Events', component: 'CateringPage', icon: 'basket' }
+        { title: 'HOME', component: 'NewsPage', icon: 'home' },
+        { title: 'MENU', component: 'GalleryTabsPage', icon: 'images' },
+        { title: 'ABOUT US', component: 'ProfilePage', icon: 'information-circle' },
+        { title: 'CATERING', component: 'CateringPage', icon: 'basket' }
       ]
     }
 
