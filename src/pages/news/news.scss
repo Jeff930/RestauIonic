@@ -12,6 +12,10 @@ page-news {
 		font-weight: 500;
 	}
 
+	.transparent{
+		background-color: rgba(0,0,0,0) !important;
+	}
+
 	ion-toolbar {
 		--background: transparent;
 		--ion-color-base: transparent !important;

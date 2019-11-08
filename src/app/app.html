@@ -19,14 +19,13 @@
 
 </ion-menu>
 
-<ion-header class="header header-md" *ngIf="!checkApp" color="danger">
-    <ion-toolbar class="toolbar toolbar-md" color="danger">
+<ion-header class="header header-md" *ngIf="!checkApp" color="dark">
+    <ion-toolbar class="toolbar toolbar-md" color="dark">
       <div class="" ></div>
       <ion-buttons left="" class="bar-buttons bar-buttons-md">
         <!---->
         <!----><a class="logo" tappable="" (click)="goTo()">
-        <img src="assets/imgs/logo.jpg" height="40px;">
-        <ion-title style="color: #d32323 !important;">Kusina Filipina</ion-title>
+        <ion-title class="MenuTitle">KUSINA FILIPINA</ion-title>
         </a>
       </ion-buttons>
       <!---->
@@ -34,7 +33,6 @@
       <ion-buttons end="" margin-left="" class="bar-buttons bar-buttons-md">
          <button color="" ion-button="" *ngFor="let p of pagesDesk" (click)="openPage(p)"
           class="bar-button bar-button-md bar-button-default bar-button-default-md">
-          <ion-icon name="{{p.icon}}" class="iconsss"></ion-icon>
           <span class="">{{p.title}}</span>
           <div class="button-effect"></div>
         </button>
