@@ -109,4 +109,29 @@ ion-toolbar {
 	 }
 	.headFont {
 		font-family: 'Ge Body' !important;
+    }
+    .footerSect {
+        background: rgba(184, 184, 184, 0.11);
+    }
+      .bar-header {
+        color: black !important; 
+        	.button-header {
+			text-align: center;
+			margin: 0px auto !important;
+			// margin-top: 20px !important;
+			background: rgb(196,148,51);
+			color: white;
+			width: 100%;
+			border-radius: 10px;
+			h2 {
+				margin: 0 auto !important;
+				font-size: 15px !important;
+			}
+		}
+    }
+    .iconFont {
+        top: 2px !important;
+		position: relative !important;
+		margin-right: 0px !important;
 	}
+	

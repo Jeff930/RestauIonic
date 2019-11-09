@@ -39,9 +39,9 @@ export class MyApp {
       // { title: 'Click', component: 'ClickPage' , icon:'camera'},
       // { title: 'Notifications', component: 'NotificationsPage' , icon:'notifications-outline'},
       // { title: 'Profile', component: 'ProfilePage' , icon:'contact'},
-      // { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
       { title: 'Menu', component: 'GalleryTabsPage', icon: 'book' },
       { title: 'About Us', component: 'NotificationsPage', icon: 'information-circle' },
+      { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
       { title: 'Catering and Events', component: 'NotificationsPage', icon: 'albums' }
       ];
       this.pagesDesk = [

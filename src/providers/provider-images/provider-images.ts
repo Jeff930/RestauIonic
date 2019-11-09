@@ -27,6 +27,7 @@ export class ProviderImagesProvider {
   public currentImage: any;
   public menuItems = [];
   public checkApp;
+  innerWidth: number;
   constructor(public platform: Platform) {
     console.log('Hello ProviderImagesProvider Provider');
   }
@@ -34,6 +35,10 @@ export class ProviderImagesProvider {
 
   checkAppPlatform() {
     this.checkApp = this.platform.is('android');
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <= 480) {
+      this.checkApp = true;
+    }
     return this.checkApp;
   }
   getImages(type) {

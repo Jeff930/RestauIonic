@@ -1,42 +1,130 @@
-<ion-header>
-	<ion-navbar color="white">
+<ion-header no-boder>
+	<ion-navbar transparent color="transp" class="bar-header">
 		<button ion-button menuToggle>
-			<ion-icon name="menu" ></ion-icon>
+			<ion-icon name="menu" class="bar-header"></ion-icon>
 		</button>
-		<img src="assets/imgs/logo.jpg" height="40px;">
+		<img src="assets/imgs/logoName.png" height="60px;">
 		<!-- <ion-title style="color: red !important;">Kusina Filipina</ion-title> -->
-		<!-- 
-  <ion-buttons end>
-    <button ion-button icon-only>
-      <ion-icon name="logo-facebook"></ion-icon>
-    </button>
-    <button ion-button icon-only>
-      <ion-icon name="logo-instagram"></ion-icon>
-    </button>
-  </ion-buttons> -->
+
+		<ion-buttons end>
+			<button ion-button class="button-header" (click)="callNow()">
+				<h2>Call Us Now!</h2>
+			</button>
+		</ion-buttons>
 
 	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
+
+
+<ion-content>
+	<ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
+		<h2 class="title curvyFont welcomeText">Contact Us</h2>
+
+	</ion-row>
+
 	
-		<!-- <h2 class="infoHead"></h2> -->
-		<h1 class="infoHead"><ion-icon name="ios-help-circle-outline" color="danger"></ion-icon></h1>
-		<!-- <h2 class="infoHead">Inquire now for your needs..</h2> -->
-		<hr>
-		<div class="parg">
-				<h6>Inquire now for your needs. You may contact us with our number listed below:</h6>
-				<h6><span class="fonty">
-					<span  class="iconFont"> <ion-icon color="danger" name="call"></ion-icon></span>
-				</span> (323) 229-0228</h6>
-				<!-- <span class="fonty">
-					<ion-icon ios="ios-arrow-forward" md="md-arrow-dropright"></ion-icon> Coaching
-				</span> is a series of conversations intended to facilitate personal growth.
-				The best coaches enlighten with their questions, not their advice. They know the
-				‘best’ answer lies within you, and that your discovery of it significantly increases
-				the chances you will actually do something about it. LeaderCOACH facilitates translating
-				insight into action. Give yourself the time to reflect on the questions, and let that lead
-				you where you need to go. In short, trust the process. -->
+
+	<div class="mapContainer">
+		<div #map id="map"></div>
+	</div>
+	<ion-row no-padding>
+		<div class="contentSections timeSched">
+			<h2 class="mainTexts headFont" style="text-align: left; padding-left: 40px;">CONTACT INFO</h2>
+			<div class="contacts">
+				<div class="contactContent">
+					<ion-icon name="ios-pin-outline" color="goldenBrown">
+
+					</ion-icon>
+					<div class="texts">
+						<h2>Address</h2>
+						<h3>Ristora Restaurant, 103, NY 254</h3>
+					</div>
+				</div>
+				<div class="contactContent">
+					<ion-icon style="margin-left: 5px !important;" name="ios-phone-portrait-outline" color="goldenBrown">
+				
+					</ion-icon>
+					<div class="texts">
+						<h2>Phone Number</h2>
+						<h3>(323) 229-0228</h3>
+					</div>
+				</div>
+				<div class="contactContent">
+					<ion-icon style="margin-left: -5px !important;"  name="ios-mail-outline" color="goldenBrown">
+				
+					</ion-icon>
+					<div class="texts">
+						<h2>Email Address</h2>
+						<h3>infoname@gmail.com</h3>
+					</div>
+				</div>
+			</div>
 		</div>
+	
+	</ion-row>
+	<ion-row no-padding>
+		<div class="contentSections footerSect" padding>
+			<h2 class="mainTexts headFont">SUBSCRIBE NOW</h2>
+			<hr>
+			<div class="subTexts">
+				<p>Sign up to our newsletter to get latest food item news and our new events. This theme will help you
+					organizing your site
+					without any technical skills.</p>
+			</div>
+
+			<div class="inputSection">
+				<input type="text" placeholder="Email Address">
+				<button>SIGN UP</button>
+			</div>
+
+		</div>
+
+	</ion-row>
+	<!-- <div class="maps">
+    
+  <div class="mapContainer">
+    <div #map id="map"></div>
+  </div>
+  <div class="parg">
+    <h4 class="titles" style="color: #ffffff !important"> <ion-icon color="danger" name="navigate"></ion-icon> Want to know our location? <br> You can find us here:</h4>
+  
+  <h6 style="font-size: 1.4rem; color: #ffffff">4157 Eagle Rock Blvd
+  Ste 1
+  Los Angeles, CA 90065</h6>
+  </div>
+  </div>
+  <div class="storeHours"> 
+      <h4 class="titles exdtra">Store Hours</h4>
+      <hr>
+      <div class="hoursContent">
+        <div class="hours" *ngFor="let hour of storeTime">
+        
+          <div class="schedContent">
+            <h5 class="day">{{ hour.day }}</h5>
+            <h5 class="sched">{{ hour.time }}</h5>
+          </div>
+        </div>
+      </div>
+  </div> -->
 </ion-content>
 
+<ion-footer transparent *ngIf="checkApp">
+	<ion-toolbar class="footer-text mobile-footer" color="brownLight">
+		<h5><span class="iconFont">
+				<ion-icon color="goldenBrown" name="call"></ion-icon>
+			</span><span style="margin-left: 0px !important">For Inquiries: (323) 229-0228 </span></h5>
+		<h5><span class="iconFont">
+				<ion-icon color="goldenBrown" name="contacts"></ion-icon>
+			</span><span style="margin-left: 0px !important">Kusina Filipina 2019</span></h5>
+		<h5><span class="iconFont">
+				<ion-icon color="goldenBrown" name="mail"></ion-icon>
+			</span><span style="margin-left: 0px !important">info@gmail.com</span></h5>
+		<div class="eatIcon">
+			<div class="eatIconContent">
+				<ion-icon name="restaurant" color="goldenBrown"></ion-icon>
+				<p class="eatSubText">An oasis of pleasure</p>
+			</div>
+		</div>
+	</ion-toolbar>
+</ion-footer>

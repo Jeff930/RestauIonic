@@ -12,6 +12,19 @@ page-news {
 	}
 	.bar-header {
 		color: black !important; 
+		.button-header {
+			text-align: center;
+			margin: 0px auto !important;
+			// margin-top: 20px !important;
+			background: rgb(196,148,51);
+			color: white;
+			width: 100%;
+			border-radius: 10px;
+			h2 {
+				margin: 0 auto !important;
+				font-size: 15px !important;
+			}
+		}
 	}
 	.welcomeText {
 		font-size: 4rem !important;
@@ -40,6 +53,13 @@ page-news {
 		.mainTexts {
 			font-size: 2.5rem;
 		}
+		  hr {
+            width: 50%;
+            background: rgb(196,148,51);
+            height: 5px;
+            text-align: left;
+            margin: -10px 0px;
+        }
 		.lestMainTexts { font-size: 2rem; }
 		.subTexts {
 			color: rgb(102,102,102);
@@ -81,6 +101,7 @@ page-news {
 		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
 		border: .5px solid black;
 		// height: 40vh;
+		height: 50vh;
 	}
 
 	.cover2 {
@@ -132,7 +153,21 @@ page-news {
 		margin: 0 auto;
 		border: 3px solid rgb(29,29,29);
 	}
-
+	.inputSection {
+        display: inline-flex;
+        border-radius: 50px;
+        border: 2px solid rgb(196,148,51);
+        overflow: hidden;
+        font-size: 1.5rem;
+        input {
+            padding: 5px;
+        }
+        button {
+            color: #ffffff;
+            font-size: 1.5rem;
+            background: rgb(196,148,51);
+        }
+    }
 	
 	.show{
 		height: auto;
