@@ -82,10 +82,7 @@ export class NewsPage {
     this.loadMap();
     console.log('ionViewDidLoad NewsPage');
     console.log(this.images)
-    // this.innerWidth = window.innerWidth;
-    // if (this.innerWidth <=480) {
-    //   this.checkApp = true;
-    // }
+    
     console.log(this.innerWidth);
    
     console.log(this.categories);
@@ -124,6 +121,6 @@ export class NewsPage {
   }
   goTo() {
   
-    this.navCtrl.push('GalleryTabsPage');
+    this.navCtrl.setRoot('GalleryTabsPage');
   }
 }

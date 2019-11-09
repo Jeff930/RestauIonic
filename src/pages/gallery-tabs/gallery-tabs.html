@@ -19,6 +19,8 @@
 
 
 <ion-content>
+    <div *ngIf="checkApp">
+        
     <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
         <h2 class="title curvyFont welcomeText">Menu Gallery</h2>
 
@@ -62,32 +64,41 @@
         </div>
 
     </ion-row>
-    <!-- <div class="maps">
+</div>
+<div *ngIf="!checkApp">
+    <div class="first-section second">
+        <ion-row align-items-center="" class="row">
+            <ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">
+                <div class="container" style="text-align: center">
+                    <h1 class="titleText" style="font-size:5vw"> <span style="color: #C49433 !important;">Business
+                            Hours</span></h1>
+                </div>
+            </ion-col>
     
-  <div class="mapContainer">
-    <div #map id="map"></div>
-  </div>
-  <div class="parg">
-    <h4 class="titles" style="color: #ffffff !important"> <ion-icon color="danger" name="navigate"></ion-icon> Want to know our location? <br> You can find us here:</h4>
-  
-  <h6 style="font-size: 1.4rem; color: #ffffff">4157 Eagle Rock Blvd
-  Ste 1
-  Los Angeles, CA 90065</h6>
-  </div>
-  </div>
-  <div class="storeHours"> 
-      <h4 class="titles exdtra">Store Hours</h4>
-      <hr>
-      <div class="hoursContent">
-        <div class="hours" *ngFor="let hour of storeTime">
-        
-          <div class="schedContent">
-            <h5 class="day">{{ hour.day }}</h5>
-            <h5 class="sched">{{ hour.time }}</h5>
-          </div>
-        </div>
-      </div>
-  </div> -->
+        </ion-row>
+        <ion-row align-items-center="" class="row">
+            <ion-col class="col" col-lg-6="" class="text-menu">
+                <div class="mapContainer">
+                    <div #map id="map"></div>
+                </div>
+            </ion-col>
+    
+            <ion-col class="col" col-lg-6="" class="text-menu">
+                <div class="deskcontentSections">
+                    <h2 class="mainTexts headFont">OPEN FOR SPECIAL OCASIONS</h2>
+                    <div class="alarmIcon">
+                        <ion-icon name="alarm" class="goldenText"></ion-icon>
+                    </div>
+                    <div class="sched subTexts">
+                        <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
+                        <h4>Sunday: 10:00am - 04:00pm</h4>
+                    </div>
+                </div>
+            </ion-col>
+    
+        </ion-row>
+    </div>
+</div>
 </ion-content>
 
 <ion-footer transparent *ngIf="checkApp">

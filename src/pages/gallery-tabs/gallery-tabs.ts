@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
+declare var google;
 /**
  * Generated class for the GalleryTabsPage tabs.
  *
@@ -16,6 +17,8 @@ import { ProviderImagesProvider } from '../../providers/provider-images/provider
 })
 export class GalleryTabsPage {
 
+  @ViewChild('map') mapElement: ElementRef;
+  map: any;
   allFoodsRoot = 'AllFoodsPage'
   foodRoot = 'FoodPage'
   insideRoot = 'InsidePage'
@@ -55,6 +58,13 @@ export class GalleryTabsPage {
     if (this.innerWidth <=480) {
       this.checkApp = true;
     }
+    
+  
+  }
+
+
+  ionViewDidLoad() {
+    this.loadMap();
   }
 
   catClick(item) {
@@ -85,6 +95,38 @@ export class GalleryTabsPage {
     }
     // this.categories[item.key].content
     console.log(this.categories[item.key].content);
+  }
+
+  loadMap() {
+
+    let latLng = new google.maps.LatLng(34.122198, -118.225819);
+    let mapOptions = {
+      center: latLng,
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    let marker = new google.maps.Marker({
+      position: latLng,
+      map: mapOptions,
+      title: 'Hello World!'
+    });
+    this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+    this.addMarker(this.map);
+  }
+  addMarker(map: any) {
+
+    let marker = new google.maps.Marker({
+      map: map,
+      animation: google.maps.Animation.DROP,
+      position: map.getCenter()
+    });
+
+    let content = "<h4>Information!</h4>";
+
+    // this.addInfoWindow(marker, content);
+
+
+
   }
   
 }
