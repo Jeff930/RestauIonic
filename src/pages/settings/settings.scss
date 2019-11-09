@@ -170,7 +170,7 @@ page-settings {
 	}
     .cover {
 		// border-radius: 0px 0px 0px 150px !important;
-		 background: url('../../assets/imgs/coverSub.jpg') no-repeat center center fixed;
+		 background: url('assets/imgs/coverSub.jpg') no-repeat center center fixed;
         position: relative;
         width: 100%;
         -webkit-background-size: cover;
@@ -239,6 +239,9 @@ page-settings {
             background: rgb(196,148,51);
         }
     }
+    .imageConte {
+        background: rgba(0,0,0,0.05);
+    }
     .contentSections {
 		margin: 0 auto;
 		text-align: left;
@@ -265,7 +268,11 @@ page-settings {
 			margin: 0 auto !important;
 			font-size: 1.5rem;
 			p {	
-				line-height: 2;
+                line-height: 2;
+                span {
+                    color: rgb(78, 78, 78);
+                    font-weight: bold;
+                }
 			}
 		}
 		.alarmIcon {
@@ -382,6 +389,10 @@ page-settings {
 			font-size: 15px !important;
 		}
 	}
+    }
+    .lastSect {
+        padding: 20px !important;
+        margin: 0px !important;
     }
 	.goldenText { color: rgb(196,148,51);  }
 

@@ -15,27 +15,27 @@ export const porks = [
 	,{
 		name : 'Lechon Kawali (Crispy Pork Belly)',
 		description : 'Pork belly deep-fried until crisp and golden brown, yet soft and tender inside.',
-		image: 'pork/LechonKawali.jpg',
+		image: 'pork/Dinakdakan.jpg',
 		price : '12.99'
 		
 	}
 	,{
 		name : 'Inihaw na Liempo (Grilled Pork Belly)',
 		description : 'Grilled pork seasoned with onions,pepper, vinegar and mayonnaise.',
-		image: 'pork/InihawNaLiempo.jpg',
+		image: 'pork/Dinakdakan.jpg',
 		price : '12.99'
 		
 	},{
 		name : 'Dinuguan (Pork Blood Stew)',
 		description : 'Filipino savory pork stew simmered in a rich, spicy dark gravy of pig blood, garlic, chili and vinegar.',
-		image: 'pork/Dinuguan.jpg',
+		image: 'pork/Dinakdakan.jpg',
 		price : '13.99'
 		
 	}
 	,{
 		name : 'Menudo',
 		description : 'A tasty boneless pork stew with carrots, potatoes and green peas.',
-		image: 'pork/Menudo.jpg',
+		image: 'pork/PorkAdobo.jpg',
 		price : '13.99'
 		
 	}
@@ -55,13 +55,13 @@ export const porks = [
 	{
 		name : 'Sizzling Sisig (Sizzling Pork Cubes)',
 		description : 'Marinated pork cheeks broiled and cut into small pieces served in a sizzling platter with onion and lemon.',
-		image: 'pork/SizzlingSisig.jpg',
+		image: 'pork/Dinakdakan.jpg',
 		price : '11.99'
 		
 	},{
 		name : 'Crispy Sisig (Crispy Pork Cubes)',
 		description : 'Grilled pork cubes with lemon, onions, chillies, scallions and seasoning.',
-		image: 'pork/CrispySisig.jpg',
+		image: 'pork/Dinakdakan.jpg',
 		price : '11.99'
 		
 	},

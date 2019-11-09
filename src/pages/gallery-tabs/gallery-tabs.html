@@ -1,43 +1,126 @@
 
-
-<ion-header>
-    <ion-navbar color="white">
+<ion-header no-boder>
+    <ion-navbar transparent color="transp" class="bar-header">
         <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
+            <ion-icon name="menu" class="bar-header"></ion-icon>
         </button>
-        <img src="assets/imgs/logo.jpg" height="40px;">
+        <img src="assets/imgs/logoName.png" height="60px;">
         <!-- <ion-title style="color: red !important;">Kusina Filipina</ion-title> -->
-        <!-- 
-  <ion-buttons end>
-    <button ion-button icon-only>
-      <ion-icon name="logo-facebook"></ion-icon>
-    </button>
-    <button ion-button icon-only>
-      <ion-icon name="logo-instagram"></ion-icon>
-    </button>
-  </ion-buttons> -->
+
+        <ion-buttons end>
+            <button ion-button class="button-header" (click)="callNow()">
+                <h2>Call Us Now!</h2>
+            </button>
+        </ion-buttons>
 
     </ion-navbar>
 </ion-header>
 
 
+
+<ion-content>
+    <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
+        <h2 class="title curvyFont welcomeText">Menu Gallery</h2>
+
+    </ion-row>
+
+    <ion-row>
+            <div class="card-lists">
+                <div class="card-holder" (click)="catClick(item)" *ngFor="let item of categories">
+                    <div class="cards-content">
+                        <div class="lister"><i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;" ></i> {{ item.name }}
+                        <div class="cardLister" *ngFor=" let cat of item.content">
+                           <ion-card>
+                               <img src="assets/imgs/{{ cat.image }}" alt="">
+                               <div class="cardText">    
+                                <h2>{{ cat.name }}</h2>
+                                <h4>{{ cat.description }}</h4>
+                                <h3>{{ cat.price }}</h3>
+                               </div>
+                           </ion-card>
+                        </div></div>
+                    </div>
+                </div>
+        </div>
+    </ion-row>
+
+    <ion-row no-padding>
+        <div class="contentSections footerSect">
+            <h2 class="mainTexts headFont">SUBSCRIBE NOW</h2>
+            <hr>
+            <div class="subTexts">
+                <p>Sign up to our newsletter to get latest food item news and our new events. This theme will help you
+                    organizing your site
+                    without any technical skills.</p>
+            </div>
+
+            <div class="inputSection">
+                <input type="text" placeholder="Email Address">
+                <button>SIGN UP</button>
+            </div>
+
+        </div>
+
+    </ion-row>
+    <!-- <div class="maps">
+    
+  <div class="mapContainer">
+    <div #map id="map"></div>
+  </div>
+  <div class="parg">
+    <h4 class="titles" style="color: #ffffff !important"> <ion-icon color="danger" name="navigate"></ion-icon> Want to know our location? <br> You can find us here:</h4>
+  
+  <h6 style="font-size: 1.4rem; color: #ffffff">4157 Eagle Rock Blvd
+  Ste 1
+  Los Angeles, CA 90065</h6>
+  </div>
+  </div>
+  <div class="storeHours"> 
+      <h4 class="titles exdtra">Store Hours</h4>
+      <hr>
+      <div class="hoursContent">
+        <div class="hours" *ngFor="let hour of storeTime">
+        
+          <div class="schedContent">
+            <h5 class="day">{{ hour.day }}</h5>
+            <h5 class="sched">{{ hour.time }}</h5>
+          </div>
+        </div>
+      </div>
+  </div> -->
+</ion-content>
+
+<ion-footer transparent *ngIf="checkApp">
+    <ion-toolbar class="footer-text mobile-footer" color="brownLight">
+        <h5><span class="iconFont">
+                <ion-icon color="goldenBrown" name="time"></ion-icon>
+            </span><span style="margin-left: 0px !important">10:00am - 10:00pm</span></h5>
+        <h5><span class="iconFont">
+                <ion-icon color="goldenBrown" name="contacts"></ion-icon>
+            </span><span style="margin-left: 0px !important">Kusina Filipina 2019</span></h5>
+        <h5><span class="iconFont">
+                <ion-icon color="goldenBrown" name="mail"></ion-icon>
+            </span><span style="margin-left: 0px !important">info@gmail.com</span></h5>
+        <div class="eatIcon">
+            <div class="eatIconContent">
+                <ion-icon name="restaurant" color="goldenBrown"></ion-icon>
+                <p class="eatSubText">An oasis of pleasure</p>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-footer>
+
+
 <!-- MOBILE DESIGN -->
-<ion-content padding *ngIf="checkApp">
+<!-- <ion-content padding *ngIf="checkApp">
     <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina <span
         style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
     <hr>
-    <div class="card-lists">
-        <div class="card-holder"  (click)="catClick(item)" *ngFor="let item of categories">
-            <div class="cards-content">
-                <h2>{{ item.name }}</h2>
-                <img src="assets/imgs/{{item.image}}" alt="">
-            </div>
-        </div>
-    </div>
-</ion-content>
+  
+</ion-content> -->
 
 <!-- WEB DESIGN  -->
-<ion-content padding *ngIf="!checkApp">
+<!-- <ion-content padding *ngIf="!checkApp">
     <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina
         <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span
             style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
@@ -59,4 +142,4 @@
     <ion-toolbar *ngIf="!checkApp" class="footer-text" color="semiDark">
         <h6>© Kusina Filipina Copyright</h6>
     </ion-toolbar>
-</ion-footer>
+</ion-footer> -->
