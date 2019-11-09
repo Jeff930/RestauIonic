@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-boder >
+<ion-header no-boder *ngIf="checkApp">
 	<ion-navbar transparent  color="transp" class="bar-header">
 		<button ion-button menuToggle>
 			<ion-icon name="menu" class="bar-header" ></ion-icon>
@@ -407,7 +407,7 @@
 				Watch All
 			</ion-col>
 		</ion-row> -->
-		<ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover2" >
+		<ion-row style="flex-wrap: inherit;" class="cover2" >
 			<!-- <ion-slides autoplay="5000" loop="true" speed="500" class="slides" pager="true" class="image-holder">
 				<ion-slide *ngFor="let image of images"  class="images" >
 					<img src="assets/imgs/{{image.image}}" alt="">
@@ -688,9 +688,32 @@
 				</ion-col>
 				
 			</ion-row>
-		</div>
-		<div class="first-section">
 			<ion-row align-items-center="" class="row">
+				<ion-col class="col" col-lg-6="" class="text-menu">
+					<div class="mapContainer">
+						<div #map id="map"></div>
+					</div>
+				</ion-col>
+
+				<ion-col class="col" col-lg-6="" class="text-menu">
+					<div class="contentSections">
+						<h2 class="mainTexts headFont">OPEN FOR SPECIAL OCASIONS</h2>
+						<div class="alarmIcon">
+							<ion-icon name="alarm" class="goldenText"></ion-icon>
+						</div>
+						<div class="sched subTexts">
+							<h4>Monday - Saturday: 10:00am - 10:00pm</h4>
+							<h4>Sunday: 10:00am - 04:00pm</h4>
+						</div>
+					</div>
+				</ion-col>
+				
+			</ion-row>
+		</div>
+		
+
+	
+			<!-- <ion-row align-items-center="" class="row">
 				<ion-col class="col" col-12="" col-lg-6="" push-lg-6="" class="text-menu">
 					<div class="container" style="text-align: center">	
 		<ion-list class="listy deskList">
@@ -725,9 +748,8 @@
 					</div>
 				</ion-col>
 				
-			</ion-row>
-		</div>
-		<div class="first-section second black">
+			</ion-row> -->
+		<div class="first-section second">
 			<ion-row align-items-center="" class="row">
 				<ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">
 					<div class="container" style="text-align: center">
@@ -738,187 +760,195 @@
 			</ion-row>
 		
 			<ion-row align-items-center="" class="row">
-				<ion-col class="col" col-12="" col-lg-6="" push-lg-6="" class="text-menu">
+				<ion-col class="col" col-12="" col-lg-10="" push-lg-1="" class="text-menu">
 					<div class="container" style="text-align: center">	
-							
-<!-- <h4 class="titles">Known for:</h4>
-	<ion-slides class="slidesHolder">
-		<ion-slide class="slides">
-			<ion-card class="slidesCard">
+	<ion-slides class="slidesHolder2">
+		<ion-slide class="slides2">
+			<ion-card class="slidesCard2">
 				<div>
-					<p>A</p>
-					<ion-label>
-						Health Score
-						<hr>
-					</ion-label>
+					<div>
+						<p><ion-icon ios="ios-medkit" md="md-medkit"></ion-icon></p>
+						<ion-label>
+							Health Score: <span>A</span>
+							<hr>
+						</ion-label>
+					</div>
+					<div style="margin-top: 50px" >
+						<p><ion-icon ios="ios-calendar" md="md-calendar"></ion-icon></p>
+						<ion-label>
+							Takes Reservations: <span>Yes</span>
+							<hr>
+						</ion-label>
+					</div>
 				</div>
 				<div>
-					<p>Yes</p>
-					<ion-label>
-						Takes Reservations
-						<hr>
-					</ion-label>
+					<div>
+						<p><ion-icon ios="ios-basket" md="md-basket"></ion-icon></p>
+						<ion-label>
+							Take Out: <span>Yes</span>
+							<hr>
+						</ion-label>
+					</div>
+					<div style="margin-top: 50px" >
+						<p><ion-icon ios="ios-person" md="md-person"></ion-icon></p>
+						<ion-label>
+							Caters: <span>Yes</span>
+							<hr>
+						</ion-label>
+					</div>
 				</div>
 				<div>
-					<p>Yes</p>
-					<ion-label>
-						Take Out
-						<hr>
-					</ion-label>
+					<div>
+						<p><ion-icon ios="ios-bicycle" md="md-bicycle"></ion-icon></p>
+						<ion-label>
+							Bike Parking: <span>No</span>
+							<hr>
+						</ion-label>
+					</div>
+					<div style="margin-top: 50px" >
+						<p><ion-icon ios="ios-people" md="md-people"></ion-icon></p>
+						<ion-label>
+							Good for Groups: <span>Yes</span>
+							<hr>
+						</ion-label>
+					</div>
 				</div>
+				<div>
+					<div>
+						<p><ion-icon ios="ios-volume-up" md="md-volume-up"></ion-icon></p>
+						<ion-label>
+							Noise Level: <span>Average</span>
+							<hr>
+						</ion-label>
+					</div>
+					<div style="margin-top: 50px" >
+						<p><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon></p>
+						<ion-label>
+							Good For All Meals: <span>Yes</span>
+							<hr>
+						</ion-label>
+					</div>
+				</div>
+				
 			</ion-card>
 		</ion-slide>
-		<ion-slide class="slides">
-			<ion-card class="slidesCard">
+		<ion-slide class="slides2">
+			<ion-card class="slidesCard2">
+				
 				<div>
-					<p>Yes</p>
-					<ion-label>
-						Caters
-						<hr>
-					</ion-label>
+					<div>
+						<p><ion-icon ios="ios-beer" md="md-beer"></ion-icon></p>
+							<ion-label>
+								Happy Hour: <span>No</span>
+								<hr>
+							</ion-label>
+					</div>
+					<div style="margin-top: 50px">
+						<p><ion-icon ios="ios-umbrella" md="md-umbrella"></ion-icon></p>
+							<ion-label>
+								Outdoor Seating: <span>No</span>
+								<hr>
+							</ion-label>
+						</div>
 				</div>
 				<div>
-					<p>No</p>
-					<ion-label>
-						Bike Parking
-						<hr>
-					</ion-label>
+					<div>
+						<p><ion-icon ios="ios-wifi" md="md-wifi"></ion-icon></p>
+							<ion-label>
+								Free Wi-Fi: <span>Yes</span>
+								<hr>
+							</ion-label>
+					</div>
+					<div style="margin-top: 50px">
+						<p><ion-icon ios="ios-paw" md="md-paw"></ion-icon></p>
+							<ion-label>
+								Dogs Allowed: <span>No</span>
+								<hr>
+							</ion-label>
+					</div>
 				</div>
 				<div>
-					<p>Yes</p>
-					<ion-label>
-						Good for Groups
-						<hr>
-					</ion-label>
+					<div>
+						<p><ion-icon ios="ios-body" md="md-body"></ion-icon></p>
+						<ion-label>
+								GNR: <span>Yes</span>
+								<hr>
+						</ion-label>
+					</div>
+					<div style="margin-top: 50px">
+						<p><ion-icon ios="ios-nutrition" md="md-nutrition"></ion-icon></p>
+						<ion-label>
+								Vegan Options: <span>Yes</span>
+								<hr>
+						</ion-label>
+					</div>
+				</div>
+				<div>
+					<div>
+						<p><ion-icon ios="ios-send" md="md-send"></ion-icon></p>
+							<ion-label>
+								Delivery: <span>Yes</span>
+								<hr>
+							</ion-label>
+					</div>
+					<div style="margin-top: 50px" >
+						<p><ion-icon  ios="ios-card" md="md-card"></ion-icon></p>
+							<ion-label>
+								Credit Cards: <span>Yes</span>
+								<hr>
+							</ion-label>
+					</div>
 				</div>
 		</ion-card>
 		</ion-slide>
-			<ion-slide class="slides">
-				<ion-card class="slidesCard">
+			<ion-slide class="slides2">
+				<ion-card class="slidesCard2">
+				<div>
 					<div>
-						<p>Ok</p>
-						<ion-label>
-							Noise Level
-						<hr>
-						</ion-label>
+						<p><ion-icon ios="ios-car" md="md-car"></ion-icon></p>
+							<ion-label>
+								Private Parking: <span>Yes</span>
+								<hr>
+							</ion-label>
 					</div>
-					<div>
-						<p>No</p>
-						<ion-label>
-							Bike Parking
-						<hr>
-						</ion-label>
+					<div style="margin-top: 50px">
+						<p><ion-icon  ios="ios-happy" md="md-happy"></ion-icon></p>
+							<ion-label>
+								Good for Kids: <span>Yes</span>
+								<hr>
+							</ion-label>
 					</div>
-					<div>
-						<p>No</p>
-						<ion-label>
-							Happy Hour
-						<hr>
-						</ion-label>
-					</div>
-				</ion-card>
+				</div>
+				<div>
+							<div>
+								<p><ion-icon ios="ios-bulb" md="md-bulb"></ion-icon></p>
+								<ion-label>
+									Ambience: <span>Casual</span>
+									<hr>
+								</ion-label>
+							</div>
+						</div>
+						<div>
+							<div style="margin-top: 50px">
+								<p><ion-icon  ios="ios-pint" md="md-pint"></ion-icon></p>
+								<ion-label>
+									Alcohol: <span>No</span>
+									<hr>
+								</ion-label>
+							</div>
+						</div>
+						<div>
+							<div>
+								<p><ion-icon ios="ios-desktop" md="md-desktop"></ion-icon></p>
+								<ion-label>
+									TV: <span>Yes</span>
+									<hr>
+								</ion-label>
+							</div>
+						</div>
+		</ion-card>
 			</ion-slide>
-				<ion-slide class="slides">
-					<ion-card class="slidesCard">
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								Free Wi-Fi
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>No</p>
-							<ion-label>
-								Dogs Allowed
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								GNR
-						<hr>
-							</ion-label>
-						</div>
-					</ion-card>
-				</ion-slide>
-				<ion-slide class="slides">
-					<ion-card class="slidesCard">
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								Vegan Options
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								Delivery
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								Credit Cards
-						<hr>
-							</ion-label>
-						</div>
-					</ion-card>
-				</ion-slide>
-				<ion-slide class="slides">
-					<ion-card class="slidesCard">
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								Parking
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								Good for Kids
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>Ok</p>
-							<ion-label>
-								Ambience
-						<hr>
-							</ion-label>
-						</div>
-					</ion-card>
-				</ion-slide>
-				<ion-slide class="slides">
-					<ion-card class="slidesCard">
-						<div>
-							<p>No</p>
-							<ion-label>
-								Alcohol
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>Yes</p>
-							<ion-label>
-								TV
-						<hr>
-							</ion-label>
-						</div>
-						<div>
-							<p>No</p>
-							<ion-label>
-								Outdoor Seating
-						<hr>
-							</ion-label>
-						</div>
-					</ion-card>
-				</ion-slide>
-	</ion-slides> -->
+	</ion-slides>
 					</div>
 				</ion-col>
 				
