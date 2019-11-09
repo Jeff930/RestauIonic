@@ -18,9 +18,12 @@
 
 	</ion-navbar>
 </ion-header>
-<ion-content padding >
+<ion-content>
 	
-	<div  class="content">
+	<div  class="content" *ngIf="checkApp">
+
+		
+
 		<ion-title class="titl"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina
 			<span style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span
 				style="color: rgb(245, 61, 61) !important; font-weight: bold;">I</span>nformation</ion-title><hr>
@@ -47,6 +50,97 @@
 					<div class="mapContainer">
 						<div #map id="map"></div>
 					</div>
+				</ion-col>
+			</ion-row>
+		</div>
+		
+	</div>
+
+	<div *ngIf="!checkApp" >
+		<div style="flex-wrap: inherit; width: 100%;padding:0" class="cover2" >
+			<div class="welcome">
+				<h2 class="title contact"> <span  style="color: #ffffff !important;font-size:5vw !important;margin-top: 20vw;">Contact Us</span></h2>
+			</div>
+		</div>
+		
+		<div class="first-section" style="padding-top: 0px !important">
+			<ion-row align-items-center="" class="row">
+				<!-- <ion-col class="col" col-12="" col-lg-6="" push-lg-6="" class="text-menu">
+					<div class="container" style="text-align: center">
+						<h2><ion-icon color="danger" name="navigate"></ion-icon>  Want to know our location? <br> You can find us here:</h2>
+						<h6 style="font-size: 1.4rem;">4157 Eagle Rock Blvd
+							Ste 1
+							Los Angeles, CA 90065</h6>
+
+						<hr style="width: 20% !important; margin: 50px auto !important">	
+						
+						<h2 style="padding: 0px 45px;"> <span class="iconFont">
+									<ion-icon color="danger" name="call"></ion-icon>
+								</span> Kusina Filipina Authentic Filipino Cuisine</h2>
+							<ul style="text-align: left !important; padding: 0px 180px">
+								<li style="font-size: 1.5rem">(323) 229-0228</li>
+							</ul>
+					</div>
+				</ion-col> -->
+				<ion-col class="col" col-12="" col-lg-12="" text-center="">
+					<div class="mapContainer" style="height:500px;">
+						<div #map id="map"></div>
+					</div>
+				</ion-col>
+			</ion-row>
+		</div>
+	
+	<div class="first-section" style="padding-top: 0px !important">
+			<ion-row align-items-center="" class="row">
+				<ion-col class="col" col-12="" col-lg-6="" class="text-menu">
+					<div class="container contactUs" style="text-align: left">
+						<h2 class="headFont;">CONTACT INFO</h2>
+						<br>
+						<p style="font-size: 1.7rem;font-weight: bold">Address</p>
+						<p style="font-size: 1.5rem;">4157 Eagle Rock Blvd
+							Ste 1
+							Los Angeles, CA 90065</p>
+
+						<br>
+						<p style="font-size: 1.7rem;font-weight: bold">Phone Number</p>
+						<p style="font-size: 1.5rem;">(323) 229-0228</p>
+
+						<br>
+						<p style="font-size: 1.7rem;font-weight: bold">Email Address</p>
+						<p style="font-size: 1.5rem;">infoname@gmail.com</p>
+
+
+					</div>
+				</ion-col>
+				<ion-col class="col" col-12="" col-lg-6="" text-center="">
+					<div class="container contactUs" style="text-align: center">
+						<img src="assets/imgs/logoName.png" alt="">
+					</div>
+					
+				</ion-col>
+			</ion-row>
+		</div>
+
+		<div class="first-section" style="padding-top: 0px !important">
+			<ion-row align-items-center="" class="row">
+				<ion-col class="col" col-12="" col-lg-6="" class="text-menu">
+					<div class="container contactUs" style="text-align: left">
+						<h2 class="headFont;">RESTAURANT</h2>
+						<br>
+						<p style="font-size: 1.5rem;">Opening Hours: 8:00 - 23:30</p>
+						<p style="font-size: 1.5rem;">Booking Call: +88045221210</p>
+
+					</div>
+				</ion-col>
+				<ion-col class="col" col-12="" col-lg-6="" text-center="">
+					<div class="container contactUs" style="text-align: left">
+						<h2 class="headFont;">EVENT CATERING</h2>
+						<br>
+						<p style="font-size: 1.5rem;">Opening Hours: 8:00 - 23:30</p>
+						<p style="font-size: 1.5rem;">Booking Call: +88045221210</p>
+
+					</div>
+					
 				</ion-col>
 			</ion-row>
 		</div>

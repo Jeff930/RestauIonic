@@ -25,12 +25,21 @@ ion-toolbar {
 		 font-family: 'Cookie Curvy' !important;
 	}
 
+.contact{
+    padding-top:5.8vw;
+}
+
 .Kusina {
          font-family: 'Ge Body' !important;
     }
 
 .black{
     background-color:black;
+}
+
+.first-header{
+    height:px !important;
+    background-color: #C49433 !important;
 }
 
 	.fonty {
@@ -50,13 +59,17 @@ ion-toolbar {
     //padding-left: calc((100% - 1100px)/ 2);
     // background: #f53d3d;
     // background: transparent;
-    color: black !important;
+    color: white !important;
 }
 .logo {
     display: inline-flex;
 }
 .first-section {
     padding: 30px 20px 20px 20px;
+}
+
+.first-section2 {
+    padding: 0px 20px 20px 20px;
 }
 
 .second {
