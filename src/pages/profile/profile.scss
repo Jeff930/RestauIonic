@@ -23,6 +23,22 @@ page-profile {
        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
 
+.cover2 {
+		background-color: black;
+		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
+		height: 18vw;
+	}
+
+.contactUs {
+	background-color: #EEF1EF;
+	padding:15px;
+	max-height:400px;
+
+	img{
+		padding-top:5px;
+		height:370px;
+	}
+}
    h1 {
         font-size: 4rem !important;
     color: rgb(94, 94, 94) !important;
@@ -43,9 +59,9 @@ page-profile {
         position: relative !important;
 	}
 		.content {
-		 padding-right: calc((100% - 1100px)/ 2) !important;
-	padding-left: calc((100% - 1100px)/ 2) !important;
-	//  background: rgba(201, 200, 200, 0.11) !important
+			width:100% !important;
+			padding:0 !important;
+			margin:0 !important;
 	}
 	.title, .subTitle {
 		text-align: center !important; 
