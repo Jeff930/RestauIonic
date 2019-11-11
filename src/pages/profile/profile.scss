@@ -31,6 +31,22 @@ page-profile {
 		min-height:300px;
 	}
 
+.inputSection {
+        display: inline-flex;
+        border-radius: 50px;
+        border: 2px solid rgb(196,148,51);
+        overflow: hidden;
+        font-size: 1.5rem;
+        input {
+            padding: 5px;
+        }
+        button {
+            color: #ffffff;
+            font-size: 1.5rem;
+            background: rgb(196,148,51);
+        }
+    }
+
 .icon{
 	font-size:70px;
 	text-align:right;

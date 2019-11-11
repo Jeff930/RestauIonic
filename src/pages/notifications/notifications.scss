@@ -216,6 +216,68 @@ page-notifications {
             background: rgb(196,148,51);
         }
     }
+
+    hr {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        margin-left:0px !important;
+        width: 20% !important;
+        height: 3px !important;
+        background: #C49433 !important;
+        text-align:left;
+        border-radius: 20px !important;
+    }
+
+    .contentSections2 {
+        margin: 0 auto;
+        text-align: left;
+        padding: 10px 15px;
+        hr {
+            width: 50%;
+            background: rgb(196,148,51);
+            height: 5px;
+            text-align: left;
+            margin: -10px 0px;
+        }
+        .mainTexts {
+            font-size: 2.5rem;
+            margin-top: 0px !important;
+            z-index: 999999;
+        }
+        .lestMainTexts { 
+            font-size: 1.8rem; 
+            line-height: 2;
+        }
+        .subTexts {
+            color: rgb(102,102,102);
+            // padding: 0px 25px;
+            margin: 0 auto !important;
+            font-size: 1.5rem;
+            p { 
+                line-height: 2;
+            }
+        }
+        .alarmIcon {
+            font-size: 6rem;
+        }
+        .sched {
+            h4 { font-size: 1.5rem !important; }
+        }
+        .subDesc {
+            margin-top: 20px;
+            h2 {
+                font-family: 'Allura';
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            h3 {
+                font-family: 'Josef Sans';
+                font-size: 1.5rem;
+            }
+            .subTexts { margin-bottom: 50px !important; }
+        }
+    }
+
     .contentSections {
 		margin: 0 auto;
 		text-align: left;
@@ -382,6 +444,68 @@ page-notifications {
 		}		
 		
 	}
+
+    .thSection {
+            text-align: center;
+            margin-bottom: 70px;
+            background: rgba(184, 184, 184, 0.11);
+            
+        .mainTexts {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .subTexts {
+            line-height: 2;
+            .goldenText {
+                font-size: 4rem;
+                line-height: 1px;
+            }
+        }
+        .subTexts2 {
+            width:50%;
+            margin-left:25%;
+            line-height: 2;
+            .goldenText {
+                text-align:center;
+                font-size: 4rem;
+                line-height: 1px;
+            }
+        }
+        ion-slides {
+            padding: 20px 0px;
+           
+        }
+    }
+    .mobile-footer {
+        // border-radius: 0px 80px 0px 0px;
+        color: #ffffff;
+        .eatIcon {
+            font-size: 3.5rem;
+            position: absolute; 
+            top: 20px;
+            right: 20px;
+            .eatIconContent {
+                position: relative;
+                display: inline-flex;
+                .eatSubText {
+                    font-size: 1.2rem;
+                    width: 20vw;
+                    margin-top: 5px !important;
+                    margin-left: 10px;
+                }       
+            }
+        }       
+        
+    }
+
+    .space{
+        margin-bottom:100px;
+    }
     .timeSched {
         text-align: center;
          .mainTexts { font-size: 2rem !important; }
