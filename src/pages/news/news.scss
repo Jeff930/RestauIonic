@@ -47,13 +47,14 @@ page-news {
 		}
 	}
 	.deskBrder {
-		
-		border: 5px solid black;
+		border: 2px solid black;
 	}
 	.contentSections {
 		margin: 0 auto;
+		width: 95%;
+		height: 50vh;
 		text-align: center;
-		padding: 100px 10px;
+		padding: 90px 10px;
 		.mainTexts {
 			font-size: 2.5rem;
 		}
