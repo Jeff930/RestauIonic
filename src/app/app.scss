@@ -63,6 +63,10 @@ ion-toolbar {
     padding: 30px 20px 20px 20px;
 }
 
+.last-section {
+    padding: 0px;
+}
+
 .footer{
   background-color:#EEF1EF;  
 }
@@ -77,6 +81,7 @@ ion-toolbar {
 
 .third{
     padding: 30px 20px 0px 20px;
+    margin-bottom: 80px;
 }
 
 .padding-all { 
@@ -91,17 +96,6 @@ ion-toolbar {
      margin-left: 8px;
      margin-right: 8px;
  }
-
-  hr {
-        margin-top: 0px !important;
-        margin-bottom: 20px !important;
-        margin-left:0px !important;
-        width: 20% !important;
-        height: 3px !important;
-        background: #C49433 !important;
-        text-align:left;
-        border-radius: 20px !important;
-    }
 
  .contactUs {
     background-color: #EEF1EF;
