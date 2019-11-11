@@ -63,9 +63,27 @@ ion-toolbar {
     padding: 30px 20px 20px 20px;
 }
 
+.last-section {
+    padding: 0px;
+}
+
+.footer{
+  background-color:#EEF1EF;  
+}
+
+.first-section2 {
+    padding: 0px 20px 20px 20px;
+}
+
 .second {
     padding: 120px 20px 0px 20px;
 }
+
+.third{
+    padding: 30px 20px 0px 20px;
+    margin-bottom: 80px;
+}
+
 .padding-all { 
      padding-right: calc((100% - 1440px)/ 2);
     padding-left: calc((100% - 1440px)/ 2);
@@ -78,6 +96,19 @@ ion-toolbar {
      margin-left: 8px;
      margin-right: 8px;
  }
+
+ .contactUs {
+    background-color: #EEF1EF;
+    padding:15px;
+    pading-top:50px;
+    padding-bottom:50px;
+    max-height:400px;
+
+    img{
+        padding-top:5px;
+        height:370px;
+    }
+}
 
  .bar-button:hover, .MenuTitle:hover {
      color:#C49433 !important;
