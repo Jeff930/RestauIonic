@@ -131,4 +131,8 @@ export class NewsPage {
   
     this.navCtrl.setRoot('GalleryTabsPage');
   }
+
+  goToAboutUs() {
+    this.navCtrl.setRoot('NotificationsPage');
+  }
 }

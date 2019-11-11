@@ -65,7 +65,45 @@
 
     </ion-row>
 </div>
+
+<!--WEB APP-->
+
 <div *ngIf="!checkApp">
+
+<!---->
+<ion-row style="flex-wrap: inherit;" class="cover2">
+    <!-- <ion-slides autoplay="5000" loop="true" speed="500" class="slides" pager="true" class="image-holder">
+				<ion-slide *ngFor="let image of images"  class="images" >
+					<img src="assets/imgs/{{image.image}}" alt="">
+				</ion-slide>
+			</ion-slides> -->
+    <img class="image" src="assets/imgs/cover.jpg" alt="">
+
+    <div class="welcome">
+        <h2 class="title titleText welcomeText"> <span style="color: #ffffff !important;font-size:5vw">Welcome to</span>
+        </h2>
+    </div>
+    <div class="texts2">
+        <h2 class="title Kusina" style="font-size:8vw"> <span style="color: #C49433 !important;">Kusina</span> <span
+                style="color: #ffffff !important;font-size:5vw">Filipina</span></h2>
+        <!-- <h6 class="subTitle">See our Menu!</h6>
+			<h2 class="title "> <span  style="color: #d32323 !important; font-weight: bold;">K</span>usina <span  style="color: #d32323 !important; font-weight: bold;">F</span>ilipina</h2> -->
+        <button ion-button class="menu-button" (click)="callNow()">
+            <h2>See Our Menu!</h2>
+        </button>
+    </div>
+</ion-row>
+
+<ion-row>
+    <div class="deskList">
+        <div class="deskListData"  >
+            <div class="deskLister" *ngFor="let item of categories"><i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"></i>
+                {{ item.name }}
+            </div>
+        </div>
+    </div>
+</ion-row>
+
     <div class="first-section second">
         <ion-row align-items-center="" class="row">
             <ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">

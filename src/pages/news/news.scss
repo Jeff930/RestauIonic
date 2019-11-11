@@ -101,7 +101,11 @@ page-news {
 	.goldenText { color: rgb(196,148,51);  }
 	.cover {
 		// border-radius: 0px 0px 0px 150px !important;
-		// background-image: url("assets/");
+		 background: url('../assets/imgs/banner/Homepage.jpg') no-repeat center center fixed;
+		 -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 		position: relative;
 		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
 		border: .5px solid black;
