@@ -59,6 +59,8 @@ export class NewsPage {
   //   { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   // ];
   public innerWidth: any;
+  date = new Date();
+  timeSched;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public image: ProviderImagesProvider, public platform: Platform, private callNumber: CallNumber) {
 
@@ -86,6 +88,12 @@ export class NewsPage {
     console.log(this.innerWidth);
    
     console.log(this.categories);
+    console.log(this.date.getDay());
+    if (this.date.getDate() !== 0 ) {
+      this.timeSched = '10:00am - 10:00pm';
+    } else {
+      this.timeSched = '10:00am - 04:00pm';
+    }
   }
 
   loadMap() {

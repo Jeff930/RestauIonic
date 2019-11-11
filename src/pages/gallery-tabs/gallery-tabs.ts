@@ -42,7 +42,15 @@ export class GalleryTabsPage {
   ];
   oldKey= null;
   public innerWidth: any;
+  date = new Date();
+  timeSched;
   constructor(public navCtrl: NavController, public image: ProviderImagesProvider) {
+   
+  }
+
+
+  ionViewDidLoad() {
+    this.loadMap();
     this.images = this.image.getEachImageForView();
     // for (let index = 0; index < this.categories.length; index++) {
     //   const element = this.categories[index];
@@ -55,16 +63,14 @@ export class GalleryTabsPage {
     console.log(this.image.checkAppPlatform());
     this.checkApp = this.image.checkAppPlatform();
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth <=480) {
+    if (this.innerWidth <= 480) {
       this.checkApp = true;
     }
-    
-  
-  }
-
-
-  ionViewDidLoad() {
-    this.loadMap();
+    if (this.date.getDate() !== 0 ) {
+      this.timeSched = '10:00am - 10:00pm';
+    } else {
+      this.timeSched = '10:00am - 04:00pm';
+    }
   }
 
   catClick(item) {
@@ -127,6 +133,10 @@ export class GalleryTabsPage {
 
 
 
+  }
+
+  callNow() {
+    window.open(`tel:3232290228`, '_system');
   }
   
 }

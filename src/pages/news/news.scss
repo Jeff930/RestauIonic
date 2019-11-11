@@ -95,6 +95,7 @@ page-news {
 		.subTexts {
 			position: absolute;
 			top: 180px;
+			right: 0;
 		}
 	}
 	.goldenText { color: rgb(196,148,51);  }
@@ -173,7 +174,7 @@ page-news {
         }
     }
 	
-	.show{
+	.show {
 		height: auto;
 		padding: 10px;
 		margin:0px;
@@ -188,17 +189,20 @@ page-news {
 		.subtitle {
 			position: absolute;
 			bottom: 0;
-			margin-bottom: 30px;
+			// margin-bottom: 10px;
+			margin-left: 2px;
 			// font-family: 'Crete Round',Georgia,'Times New Roman',serif;
-			width: 93%;
+			width: 92%;
 			// background: rgba(0, 0, 0, 0.5);
 			border-radius: 0px 5px 0px 0px;
 			text-align: center;
 			color: #ffffff;
+         	background: linear-gradient(to top, rgba(42,34,45, 0.6) 10%,rgba(29, 29, 29, 0) 100%);
 			// top: 75px;
 			h6 {
 				font-weight: bold !important;
 				font-size: 1.8rem !important;
+				padding-bottom: 20px;
 			}
 		}
 	}
@@ -233,9 +237,9 @@ page-news {
 		.subtitle {
 			position: absolute;
 			bottom: 0;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 			// font-family: 'Crete Round',Georgia,'Times New Roman',serif;
-			width: 93%;
+			// width: 93%;
 			// background: rgba(0, 0, 0, 0.5);
 			border-radius: 0px 5px 0px 0px;
 			text-align: center;
