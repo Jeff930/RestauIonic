@@ -34,18 +34,21 @@ export class GalleryTabsPage {
     { name: 'Look at our Menu', content: [], image: 'far fa-list-alt', key:  3 },
   ];
   deskCategories = [
-    { name: 'Our Foods', page: this.foodRoot, image: '', key: 3 },
-    { name: 'Enjoy the Drinks', page: this.drinkRoot, image: '', key: 0 },
-    { name: 'Inside the Restaurant', page: this.insideRoot, image: '', key: 2 },
-    { name: 'Look at our Menu', page: this.menuRoot, image: '', key: 4 },
-    { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
+    { name: 'Our Foods', content: [], image: 'fas fa-utensils' , key: 0},
+    { name: 'Enjoy the Drinks', content: [], image: 'fas fa-coffee', key: 1 },
+    { name: 'Inside & Outside', content: [], image: 'fas fa-home', key: 2 },
+    { name: 'Look at our Menu', content: [], image: 'far fa-list-alt', key:  3 }
   ];
+  itemContent: any;
   oldKey= null;
   public innerWidth: any;
   date = new Date();
   timeSched;
+  deskCurrentKey;
   constructor(public navCtrl: NavController, public image: ProviderImagesProvider) {
-   
+
+    this.itemContent = [];
+    this.getDeskData(this.deskCategories[0]);
   }
 
 
@@ -71,6 +74,7 @@ export class GalleryTabsPage {
     } else {
       this.timeSched = '10:00am - 04:00pm';
     }
+    console.log(this.itemContent);
   }
 
   catClick(item) {
@@ -139,4 +143,35 @@ export class GalleryTabsPage {
     window.open(`tel:3232290228`, '_system');
   }
   
+  getDeskData(item) {
+    this.deskCurrentKey = item.key;
+    let currentKey = item.key;
+    if (currentKey === this.oldKey) {
+     this.itemContent = [];
+      currentKey = null;
+    }
+    if (this.oldKey !== null) {
+      this.itemContent = [];
+
+    }
+
+    if (currentKey === 0) {
+      this.itemContent = this.image.getAllFoodsFromMenu();
+    } else if (currentKey === 1) {
+      this.itemContent = this.image.getImages('drinks');
+    } else if (currentKey === 2) {
+      this.itemContent = this.image.getImages('outside');
+    } else if (currentKey === 3) {
+      this.itemContent = this.image.getImages('menu');
+    }
+    if (currentKey === null) {
+      this.oldKey = null;
+      this.deskCurrentKey = null;
+    } else {
+      this.oldKey = item.key;
+    }
+    // this.categories[item.key].content
+    console.log(this.itemContent);
+  }
+
 }

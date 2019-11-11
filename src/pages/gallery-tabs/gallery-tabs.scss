@@ -572,12 +572,75 @@ page-gallery-tabs {
     }
     .deskList {
         width: 100%;
+        text-align: center;
+        padding: 80px 0px 20px 0px;
         .deskListData {
-            text-align: center;
-            .deskLister {
             display: inline-flex !important;
-                margin: 0 auto
+            .deskLister {
+                margin: 0 auto !important;
+                padding: 20px;
+                font-size: 2rem;
+                h2 {
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                    font-size: 1.8rem !important;
+                    font-family: 'Josef Sans';
+                    color: rgb(102,102,102);
+                }
+            }
+            .deskLister:hover {
+                color: rgb(196,148,51) !important;  
+                h2 {
+                    color: rgb(196,148,51) !important;  
+                }
+                cursor: pointer !important;
+            }
+        }
+    }
+    .deskCardHolder {
+        padding: 0px 40px;
+        .deskCards {
+            ion-card {
+                display: inline-flex;
+                max-height: 25vh;
+                min-height: 25vh;
+                img {
+                    min-width: 27vh;
+                    max-height: 25vh;
+                    min-height: 25vh;
+                    max-width: 27vh;
+                    // height: 100% !important;
 
+                }
+                .cardText {
+                    padding: 20px 15px 0px 20px;
+                    text-align: left;
+                    // font-family: 'Josef Sans' !important;
+                }
+                //name
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    font-family: 'Josef Sans' !important;
+                }
+                // description
+                h4 {
+                    font-size: 1.4rem;
+                    color: rgb(102,102,102);
+                    margin-top: 10px;
+                    line-height: 1.2;
+                    font-family: 'Josef Sans' !important;
+                }
+                // price 
+                h3 {
+                    font-size: 2rem;
+                    margin-top: 20px;
+                    color:rgb(196,148,51);  
+                    font-weight: bold;
+                    font-family: 'Josef Sans' !important;
+                }
+
+                
             }
         }
     }
