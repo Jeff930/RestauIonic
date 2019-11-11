@@ -96,13 +96,40 @@
 
 <ion-row>
     <div class="deskList">
-        <div class="deskListData"  >
-            <div class="deskLister" *ngFor="let item of categories"><i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"></i>
-                {{ item.name }}
+        <div class="deskListData" *ngFor="let item of deskCategories" >
+            <div class="deskLister" (click)="getDeskData(item)" >
+                <i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;" [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i>
+                <h2 [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}">{{ item.name }}</h2>
             </div>
         </div>
     </div>
 </ion-row>
+<ion-grid  text-center  *ngIf="itemContent.length !== 0">
+    <ion-row class="deskCardHolder">
+        <ion-col no-margin no-padding col-6 *ngFor="let item of itemContent" class="deskCards">
+            <ion-card>
+                <img src="assets/imgs/{{ item.image }}" alt="">
+                <div class="cardText">
+                    <h2>{{ item.name }}</h2>
+                    <h4>{{ item.description }}</h4>
+                    <h3>{{ item.price }}</h3>
+                </div>
+            </ion-card>
+        </ion-col>
+
+    </ion-row>
+
+</ion-grid>
+<ion-row>
+    <div >
+        <ion-col no-margin no-padding col-6 class="deskCardData"  >
+            <div class="" >
+               
+            </div>
+        </ion-col>
+    </div>
+</ion-row>
+
 
     <div class="first-section second">
         <ion-row align-items-center="" class="row">
