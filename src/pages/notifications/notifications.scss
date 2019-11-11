@@ -158,6 +158,15 @@ page-notifications {
             width: 1000vw;
         }
     }
+
+    .cover2 {
+        background-color: black;
+        box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
+        height: 20vw;
+        max-height:500px;
+        min-height:300px;
+    }
+
     .welcomeText {
 		font-size: 6rem !important;
         font-weight: bold;
@@ -269,7 +278,7 @@ page-notifications {
         
         .image-holder {
             margin: 20px auto !important;
-            width: 100%;
+            width: 00%;
             text-align: center;
             padding: 20px 0px !important;
             .show {
@@ -287,6 +296,30 @@ page-notifications {
             }
         }
     }
+
+    .image-holder2 {
+            margin: 20px auto !important;
+            text-align: center;
+            padding: 20px 0px !important;
+            .show2 {
+                padding: 40px;
+                ion-icon {
+                    font-size: 4rem;
+                }
+                h2, h6 {
+                    margin: 5px !important;
+                }
+                h2 {
+                    font-size: 3.5rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    .testimonial{
+        width: 40% !important;
+    }
+
     .thSection {
             text-align: center;
             margin-bottom: 70px;
@@ -304,6 +337,16 @@ page-notifications {
         .subTexts {
             line-height: 2;
             .goldenText {
+                font-size: 4rem;
+                line-height: 1px;
+            }
+        }
+        .subTexts2 {
+            width:50%;
+            margin-left:25%;
+            line-height: 2;
+            .goldenText {
+                text-align:center;
                 font-size: 4rem;
                 line-height: 1px;
             }
