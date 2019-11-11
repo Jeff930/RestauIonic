@@ -336,9 +336,14 @@ page-notifications {
         }
         .subTexts {
             line-height: 2;
+            text-align: center;
+            width: 100%;
             .goldenText {
                 font-size: 4rem;
                 line-height: 1px;
+            }
+            p {
+                width: 100%;
             }
         }
         .subTexts2 {
@@ -353,7 +358,7 @@ page-notifications {
         }
         ion-slides {
             padding: 20px 0px;
-           
+           width: 100%;
         }
     }
     .mobile-footer {
