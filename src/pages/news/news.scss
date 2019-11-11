@@ -82,6 +82,17 @@ page-news {
 			h4 { font-size: 1.5rem !important; }
 		}
 	}
+
+	.ftrLine {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        margin-left:0px !important;
+        width: 20% !important;
+        height: 3px !important;
+        background: #C49433 !important;
+        text-align:left;
+        border-radius: 20px !important;
+    }
 	.secndSection {
 		padding: 0px 10px !important;
 		position: relative;
@@ -215,13 +226,16 @@ page-news {
 		margin:0px;
 		width: 100%;
 		img {
-			border: 2px solid #c2c0c0;
-			box-shadow: 0 10px 6px -6px rgba(211, 35, 35,0.75);
 			max-height: 40vw !important;
 			min-height: vh !important;
 			width: 100%;
 			max-width: 400px;
 		}
+	}
+
+	.infoCard{
+		padding:50px;
+		border: 2px solid #C49433;
 	}
 
 	.category{
@@ -280,8 +294,11 @@ page-news {
 		margin-top: 250px;
 		width: 500px;
 		text-align: center;
-		border: 5px solid white;
 		padding:20px;
+	}
+
+	.rectangle{
+		border: 5px solid white;
 	}
 
 	.welcome{
@@ -522,7 +539,6 @@ page-news {
 		border-top: 1px solid grey;
 	}
 	.image-holder {
-			
 			width: 100%;
 		.images {
 			img {
