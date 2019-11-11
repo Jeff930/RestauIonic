@@ -72,7 +72,7 @@ export class GalleryTabsPage {
     if (this.date.getDate() !== 0 ) {
       this.timeSched = '10:00am - 10:00pm';
     } else {
-      this.timeSched = '10:00am - 04:00pm';
+      this.timeSched = '10:00am - 08:00pm';
     }
     console.log(this.itemContent);
   }
