@@ -71,28 +71,11 @@
 <div *ngIf="!checkApp">
 
 <!---->
-<ion-row style="flex-wrap: inherit;" class="cover2">
-    <!-- <ion-slides autoplay="5000" loop="true" speed="500" class="slides" pager="true" class="image-holder">
-				<ion-slide *ngFor="let image of images"  class="images" >
-					<img src="assets/imgs/{{image.image}}" alt="">
-				</ion-slide>
-			</ion-slides> -->
-    <img class="image" src="assets/imgs/cover.jpg" alt="">
-
-    <div class="welcome">
-        <h2 class="title titleText welcomeText"> <span style="color: #ffffff !important;font-size:5vw">Welcome to</span>
-        </h2>
-    </div>
-    <div class="texts2">
-        <h2 class="title Kusina" style="font-size:8vw"> <span style="color: #C49433 !important;">Kusina</span> <span
-                style="color: #ffffff !important;font-size:5vw">Filipina</span></h2>
-        <!-- <h6 class="subTitle">See our Menu!</h6>
-			<h2 class="title "> <span  style="color: #d32323 !important; font-weight: bold;">K</span>usina <span  style="color: #d32323 !important; font-weight: bold;">F</span>ilipina</h2> -->
-        <button ion-button class="menu-button" (click)="callNow()">
-            <h2>See Our Menu!</h2>
-        </button>
-    </div>
-</ion-row>
+<div style="flex-wrap: inherit; width: 100%;padding:0" class="cover2" >
+            <!-- <div class="welcome"> -->
+                <p class="title" style="color: #ffffff !important;font-size:4vw !important;padding-top:100px !important;"> Menu gallery</p>
+            <!-- </div> -->
+        </div>
 
 <ion-row>
     <div class="deskList">
@@ -163,6 +146,54 @@
     
         </ion-row>
     </div>
+
+    <div class="first-section footer" style="padding-top: 0px !important;margin-top: 20px !important">
+      <ion-row align-items-center="" class="row">
+        <ion-col class="col" col-12="" col-lg-3="" class="text-menu">
+          <div class="container contactUs" style="text-align: left">
+            <h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+            <hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
+            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM - 10PM</p>
+            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM - 11:30PM</p>
+            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
+
+          </div>
+        </ion-col>
+        <ion-col class="col" col-12="" col-lg-6="" text-center="">
+          <div class="container contactUs" style="text-align: center">
+            <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+            <p style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205</p>
+            <p style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745</p>
+            <p style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433"> infoname@gmail.com</span></p>
+          </div>
+          
+        </ion-col>
+        <ion-col class="col" col-12="" col-lg-3="" text-center="">
+          <div class="container contactUs" style="text-align: left;">
+            <h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
+            <hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
+            <p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items and our new events. This theme will help you organize your site without any technical skills.</p>
+
+            <div class="inputSection">
+          <input type="text" placeholder="Email Address">
+          <button>SIGN UP</button>
+        </div>
+
+          </div>
+          
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="last-section" style="padding-top: 0px !important;">
+            <ion-row align-items-center="" class="row">
+                <ion-col class="col" col-12="" col-lg-4="" class="text-menu">
+                    <div class="container" style="text-align: left">
+                        <p style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights Reserved</p>
+                        </div>
+                </ion-col>
+            </ion-row>
+        </div>
 </div>
 </ion-content>
 

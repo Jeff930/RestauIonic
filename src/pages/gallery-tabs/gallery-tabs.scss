@@ -127,6 +127,18 @@ page-gallery-tabs {
     .text-menu {
 		padding: 10px 20px 20px 35px;
 	}
+
+    hr {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        margin-left:0px !important;
+        width: 20% !important;
+        height: 3px !important;
+        background: #C49433 !important;
+        text-align:left;
+        border-radius: 20px !important;
+    }
+
     .maps {
         color: #ffffff;
 		padding: 5px;
@@ -213,7 +225,7 @@ page-gallery-tabs {
     .deskcontentSections {
 		margin: 0 auto;
 		text-align: center;
-		padding: 90px 10px;
+		padding: 85px 10px;
 		.mainTexts {
 			font-size: 2.5rem;
 		}
@@ -533,17 +545,21 @@ page-gallery-tabs {
         color: #d32323;
     }
     .cover2 {
-		border-radius: 0px 0px 0px 150px !important;
 		// background-image: url("assets/");
 		position: relative;
 		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
 		border: .5px solid black;
+        background-color: black;
+        height: 20vw;
+        max-height:500px;
+        min-height:300px;
         // height: 40vh;
         img {
                 max-height: 52vw;
     width: 100%;
         }
     }
+
     	.welcome{
 		position: absolute;
 		left: 0;
