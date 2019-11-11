@@ -18,6 +18,7 @@
 
 
 <ion-content >
+  <!-- <div *ngIf="checkApp">
   <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
     <h2 class="title curvyFont welcomeText">About Kusina Filipina</h2>
      
@@ -32,9 +33,6 @@
           glazed frontage on two sides of the building, overlooking the market and a bustling London intersec.</p>
 				</div>
 				
-				<!-- <div class="subTexts">
-					<p>Ristora is the place for a fine dining experience where the tradition is blended with an imaginative and modern twist.</p>
-        </div> -->
         <div class="subDesc">
           <h2>Arizenia</h2>
           <h3>JOHN ARIZENIA</h3>
@@ -119,6 +117,107 @@
       </div>
     
     </ion-row>
+  </div> -->
+
+  <div>
+  <ion-row style="flex-wrap: inherit;" class="cover2">
+    <h2 class="title curvyFont welcomeText">About Kusina Filipina</h2>
+     
+  </ion-row>
+  <ion-row no-padding>
+    <ion-col col-lg-5 offset-lg-1 col-xl-5 offset-xl-1>
+      <div class="contentSections"> 
+        <h2 class="title curvyFont welcomeText goldenText" style="text-align: left !important;">About Us</h2>
+        <h2 class="mainTexts headFont">DISCOVER OUR STORY</h2>
+        <h2 class="lestMainTexts">Welcome to Kusina Filipina, a Modern Restaurant with focus on Premium Food Tastes</h2>
+        <div class="subTexts">
+          <p>Ristora is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With
+          glazed frontage on two sides of the building, overlooking the market and a bustling London intersec.</p>
+        </div>
+        
+        <div class="subDesc">
+          <h2>Arizenia</h2>
+          <h3>JOHN ARIZENIA</h3>
+          <h4  class="subTexts">Founder of Restaurant</h4>
+          <img src="assets/imgs/aboutConte.png" alt="">
+        </div>
+      </div>
+    </ion-col>
+     
+  </ion-row>
+  
+  <ion-row no-padding>
+      <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories"
+        class="image-holder2 contentSections secndSection">
+  
+        <div class="show2">
+          <ion-icon name="{{l.icon}}" class="goldenText"></ion-icon>
+          <div class="subtitle">
+            <h2>{{ l.numbers }}</h2>
+            <h6>{{ l.name }}</h6>
+          </div>
+        </div>
+      </ion-col>
+  </ion-row>
+    <ion-row no-padding>
+      <div class="contentSections thSection">
+          
+        <h2 class="title curvyFont welcomeText goldenText" style="text-align: center !important;">Testimonials</h2>
+        <h2 class="mainTexts headFont">CUSTOMERS REVIEW</h2>
+        <ion-slides class="" pager>
+          <ion-slide *ngFor="let t of testimonials" >
+            <img src="assets/imgs/{{t.image}}" alt="">
+            <div class="subTexts2">
+              <p><span class="goldenText">"</span>{{t.testim}}</p>
+            </div>
+            
+            <h2 class="mainTexts headFont">{{t.name}}</h2>
+          </ion-slide>
+        </ion-slides>
+      </div>
+    
+    </ion-row>
+
+    <ion-row no-padding>
+      <div class="contentSections timeSched">
+        <h2 class="title curvyFont welcomeText goldenText">Business Hours</h2>
+        <h2 class="mainTexts headFont">OPEN FOR SPECIAL OCASIONS</h2>
+        <div class="alarmIcon">
+          <ion-icon name="alarm" class="goldenText"></ion-icon>
+        </div>
+        <div class="sched subTexts">
+          <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
+          <h4>Sunday: 10:00am - 04:00pm</h4>
+        </div>
+        <button ion-button class="menu-button" (click)="callNow()">
+          <h2>CONTACT US</h2>
+        </button>
+      </div>
+      
+    </ion-row>
+
+    <div class="mapContainer">
+      <div #map id="map"></div>
+    </div>
+    
+    <ion-row no-padding>
+      <div class="contentSections footerSect">
+        <h2 class="mainTexts headFont">SUBSCRIBE NOW</h2>
+        <hr>
+        <div class="subTexts">
+          <p>Sign up to our newsletter to get latest food item news and our new events. This theme will help you organizing your site
+          without any technical skills.</p>
+        </div>
+    
+        <div class="inputSection">
+          <input type="text" placeholder="Email Address">
+          <button>SIGN UP</button>
+        </div>
+      
+      </div>
+    
+    </ion-row>
+  </div>
   <!-- <div class="maps">
     
   <div class="mapContainer">
