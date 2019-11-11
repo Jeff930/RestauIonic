@@ -173,11 +173,21 @@ page-gallery-tabs {
             width: 1000vw;
         }
     }
+    	.ftrLine {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        margin-left:0px !important;
+        width: 20% !important;
+        height: 3px !important;
+        background: #C49433 !important;
+        text-align:left;
+        border-radius: 20px !important;
+    }
     .welcomeText {
 		font-size: 6rem !important;
         font-weight: bold;
         width: 100%;
-        margin: auto;
+        margin: auto !important;
     }
     .texts {
         display: inline-block; 
@@ -396,7 +406,8 @@ page-gallery-tabs {
 			margin: 0 auto !important;
 			font-size: 15px !important;
 		}
-	}
+    }
+    
     }
 	.goldenText { color: rgb(196,148,51);  }
     .card-lists {
@@ -659,4 +670,17 @@ page-gallery-tabs {
             }
         }
     }
+    .menu-button {
+		text-align: center;
+		margin: 0 auto !important;
+		margin-top: 20px !important;
+		width: 50% !important;
+		background: rgb(196,148,51);
+		color: white;
+		border-radius: 10px;
+		h2 {
+			margin: 0 auto !important;
+			font-size: 15px !important;
+		}
+	}
 }

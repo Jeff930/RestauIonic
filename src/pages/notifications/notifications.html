@@ -18,7 +18,7 @@
 
 
 <ion-content >
-  <!-- <div *ngIf="checkApp">
+  <div *ngIf="checkApp">
   <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
     <h2 class="title curvyFont welcomeText">About Kusina Filipina</h2>
      
@@ -117,9 +117,9 @@
       </div>
     
     </ion-row>
-  </div> -->
+  </div>
 
-  <div>
+  <div *ngIf="!checkApp">
   <ion-row style="flex-wrap: inherit;" class="cover2">
     <h2 class="title welcomeText">About Kusina Filipina</h2>
      
