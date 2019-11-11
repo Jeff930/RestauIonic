@@ -121,7 +121,7 @@
 
   <div *ngIf="!checkApp">
   <ion-row style="flex-wrap: inherit;" class="cover2">
-    <h2 class="title curvyFont welcomeText">About Kusina Filipina</h2>
+    <h2 class="title welcomeText">About Kusina Filipina</h2>
      
   </ion-row>
   <ion-row no-padding>
@@ -179,6 +179,13 @@
     </ion-row>
 
     <ion-row no-padding>
+      <ion-col col-lg-6 col-xl-6>
+       <div class="mapContainer">
+      <div #map id="map"></div>
+    </div>
+      </ion-col>
+   
+    <ion-col col-lg-6 col-xl-6>
       <div class="contentSections timeSched">
         <h2 class="title curvyFont welcomeText goldenText">Business Hours</h2>
         <h2 class="mainTexts headFont">OPEN FOR SPECIAL OCASIONS</h2>
@@ -193,12 +200,10 @@
           <h2>CONTACT US</h2>
         </button>
       </div>
-      
+      </ion-col>
     </ion-row>
 
-    <div class="mapContainer">
-      <div #map id="map"></div>
-    </div>
+   
     
     <ion-row no-padding>
       <div class="contentSections footerSect">
