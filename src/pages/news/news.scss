@@ -20,6 +20,7 @@ page-news {
 			color: white;
 			width: 100%;
 			border-radius: 10px;
+			padding: 18px;
 			h2 {
 				margin: 0 auto !important;
 				font-size: 15px !important;
@@ -175,18 +176,29 @@ page-news {
 		position: relative !important;
 		margin-right: 0px !important;
 	}
-	
+	.swiper-pagination-bullet {
+		// margin-bottom: 20px !important;
+		margin: 20px 8px !important;
+
+	}
+	  .mobSections {
+		  font-family: 'Josef Sans' !important;
+        .contactUs {
+            padding: 0px !important;
+            text-align: left !important;
+        }
+    }
 	#map {
     height: 100%;
     box-shadow:0 0 20px rgba(0,0,0,0.3);
 	}
 	.mapContainer {
-		width: 95%;
+		width: 100%;
 		height: 50vh;
 		margin: 0 auto;
 		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 		margin: 0 auto;
-		border: 3px solid rgb(29,29,29);
+		// border: 3px solid rgb(29,29,29);
 	}
 	.inputSection {
         display: inline-flex;
@@ -196,11 +208,14 @@ page-news {
         font-size: 1.5rem;
         input {
             padding: 5px;
+			padding-top: 5px;	
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
-            background: rgb(196,148,51);
+			background: rgb(196,148,51);
+			text-align: center;
+			padding-top: 5px;	
         }
     }
 	
@@ -406,16 +421,23 @@ page-news {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		.slides {
 			
-			padding: 10px;
-			// border: 1px solid black;
+			padding: 10px 10px 10px 10px;
 			.slidesCard {
 				width: 100%;
 				display: inline-flex;
-				padding: 20px;
+				padding: 0px 20px 50px 20px;
+				overflow: hidden;
+				border: .8px solid rgba(0, 0, 0, 0.116);
 				div {
 					margin-top: 10px;
-					width: 100%;
+					// margin-left: 10px;
+					// width: 90%;
+						width: 50%;
+					padding: 5px;
 					text-align: center;
+					div {
+						width: 100%;
+					}
 					p {
 						padding: 10px;
 						margin: 0 auto;
@@ -440,6 +462,7 @@ page-news {
 						text-align: center;
 						margin: 0 auto;
 						margin-top: 10px !important;
+						word-wrap: unset;
 						hr {
 							font-weight: 500;
 							width: 30%;
@@ -456,7 +479,16 @@ page-news {
 			}
 		}
 	}
-
+	.hrFoot {
+		margin-top: 0px !important;
+		margin-bottom: 20px !important;
+		margin-left: 0px !important;
+		width: 20% !important;
+		height: 3px !important;
+		background: #C49433 !important;
+		text-align: left;
+		border-radius: 20px !important;
+    }
 	.slidesHolder2 {
 		margin-bottom: 10px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -621,7 +653,7 @@ page-news {
 		text-indent: 10px;
 		padding: 5px 15px 15px 15px;
 		 text-align: justify;
-		 font-family: 'Crete Round',Georgia,'Times New Roman',serif;
+		font-family: 'Josef Sans' !important;
 	}
 	.fooot {
 		word-wrap: normal;

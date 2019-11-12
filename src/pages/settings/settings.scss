@@ -17,14 +17,17 @@ page-settings {
     box-shadow:0 0 20px rgba(0,0,0,0.3);
 	}
 	.mapContainer {
-		width: 95%;
+		width: 100%;
 		height: 50vh;
 		// margin: 0 auto;
 		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 		margin: 20px auto;
-		border: 3px solid rgb(29,29,29);
+		// border: 3px solid rgb(29,29,29);
 	}
-
+    .lastSectHead {
+        font-family: 'Josef Sans' !important;
+        font-weight: bold;
+    }
     .contacts {
         .contactContent {
             display: inline-flex !important;
@@ -93,13 +96,7 @@ page-settings {
         color: #ffffff;
         
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        hr {
-            width: 10%;
-            background: rgb(29,29,29);
-            height: 2px;
-            border-radius: 5px;
-            margin: 0 auto;
-        }
+        
         .hoursContent {
             .hours {
                 padding: 0px 20px;
@@ -191,10 +188,11 @@ page-settings {
         }
     }
     .welcomeText {
-		font-size: 6rem !important;
+			font-size: 4rem !important;
         font-weight: bold;
         width: 100%;
         margin: auto;
+        font-family: 'Josef Sans' !important;
     }
     .texts {
         display: inline-block; 
@@ -395,7 +393,27 @@ page-settings {
     .lastSect {
         padding: 20px !important;
         margin: 0px !important;
+        background: rgba(184, 184, 184, 0.11);
+        width: 100%;
     }
 	.goldenText { color: rgb(196,148,51);  }
-
+ .mobSections {
+        .contactUs {
+            padding: 0px !important;
+            text-align: left !important;
+            hr {
+                margin-top: 0px !important;
+                margin-bottom: 20px !important;
+                margin-left: 0px !important;
+                width: 20% !important;
+                height: 3px !important;
+                background: #C49433 !important;
+                text-align: left;
+                border-radius: 20px !important;
+            }
+        }
+    } 
+    .hrFoot {
+        width: 20%;height: 30px;color: #C49433 !important; text-align: left
+    }
 }
