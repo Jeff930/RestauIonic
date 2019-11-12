@@ -572,12 +572,11 @@ page-gallery-tabs {
         text-decoration: underline;
         color: #d32323;
     }
-    .cover2 {
-		// background-image: url("assets/");
+        .cover2 {
+		 background: url('../assets/imgs/banner/Events.png') no-repeat center center fixed;
 		position: relative;
 		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
 		border: .5px solid black;
-        background-color: black;
         height: 20vw;
         max-height:500px;
         min-height:300px;
@@ -601,7 +600,7 @@ page-gallery-tabs {
 		margin: 0px auto;
 		font-weight: 500;
     }
-    .texts2 {
+      .texts2 {
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -613,7 +612,7 @@ page-gallery-tabs {
 		border: 5px solid white;
 		padding:20px;
     }
-    .deskList {
+     .deskList {
         width: 100%;
         text-align: center;
         padding: 80px 0px 20px 0px;
@@ -640,13 +639,15 @@ page-gallery-tabs {
             }
         }
     }
-    .deskCardHolder {
+   .deskCardHolder {
         padding: 0px 40px;
         .deskCards {
+            box-shadow: 20px #000000 !important;
             ion-card {
                 display: inline-flex;
                 max-height: 25vh;
                 min-height: 25vh;
+                box-shadow: 20px #000000 !important;
                 img {
                     min-width: 27vh;
                     max-height: 25vh;

@@ -109,9 +109,12 @@ page-news {
 		border: .5px solid black;
 		// height: 40vh;
 		height: 50vh;
+		img {
+			max-width: 110% !important;
+		}
 	}
 
-	.cover2 {
+		.cover2 {
 		border-radius: 0px 0px 0px 150px !important;
 		// background-image: url("assets/");
 		position: relative;
