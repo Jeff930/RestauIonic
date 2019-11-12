@@ -27,7 +27,7 @@ page-profile {
   }
 
 .cover2 {
-		background-color: black;
+		background: url('../assets/imgs/banner/menupage.png') no-repeat center center fixed !important;
 		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
 		height: 20vw;
 		max-height:500px;
@@ -51,8 +51,8 @@ page-profile {
     }
 
 .icon{
-	font-size:70px;
-	text-align:right;
+	font-size:40px;
+	margin-top:10px;
 }
 
    h1 {

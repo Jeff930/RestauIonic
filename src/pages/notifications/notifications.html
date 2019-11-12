@@ -121,7 +121,7 @@
 
   <div>
   <ion-row style="flex-wrap: inherit;" class="cover2">
-    <h2 class="title welcomeText">About Kusina Filipina</h2>
+    <h2 class="title welcomeText headFont">About Kusina Filipina</h2>
      
   </ion-row>
   <ion-row no-padding>
@@ -146,12 +146,12 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
         <div class="subDesc">
           <h2>Arizenia</h2>
           <h3>JOHN ARIZENIA</h3>
-          <h4  class="subTexts">Founder of Restaurant</h4>
+          <h4  class="subTexts headFont">Founder of Restaurant</h4>
         </div>
         
       </div>
     </ion-col>
-    <ion-col col-lg-5 offset-lg-1 col-xl-5 offset-xl-1>
+    <ion-col col-lg-5  col-xl-6 >
        <div class="aboutImage">
           <img src="assets/imgs/aboutConte.png" alt="">
         </div>
@@ -173,23 +173,22 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
         </div>
       </ion-col>
   </ion-row>
-    <ion-row no-padding>
       <div class="contentSections thSection">
-        <h2 class="title curvyFont welcomeText goldenText" style="text-align: center !important;">Testimonials</h2>
-        <h2 class="mainTexts headFont">CUSTOMERS REVIEW</h2>
+          <h2 class="title curvyFont welcomeText goldenText" style="text-align: center !important;">Testimonials</h2>
+          <h2 class="mainTexts headFont">CUSTOMERS REVIEW</h2>
         <ion-slides class="" pager>
-          <ion-slide *ngFor="let t of testimonials" >
+          <ion-slide *ngFor="let t of testimonials" style="height:40vw;">
             <img src="assets/imgs/{{t.image}}" alt="">
             <div class="subTexts2">
-              <p><span class="goldenText">"</span>{{t.testim}}</p>
+              <p style="width:80%;margin: auto"><span class="goldenText">"</span>{{t.testim}}<span class="goldenText">"</span></p>
+
+              
             </div>
             
             <h2 class="mainTexts headFont">{{t.name}}</h2>
           </ion-slide>
         </ion-slides>
       </div>
-    
-    </ion-row>
     <div class="first-section2 space">
     <ion-row no-padding>
       <ion-col col-lg-6 col-xl-6>
@@ -223,28 +222,28 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
       <ion-row align-items-center="" class="row">
         <ion-col class="col" col-12="" col-lg-3="" class="text-menu">
           <div class="container contactUs" style="text-align: left">
-            <h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+            <h2 class="headFont" style="margin-bottom: 0px;">BUSINESS HOURS</h2>
             <hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
-            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM - 10PM</p>
-            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM - 11:30PM</p>
-            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM - 10PM</p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM - 11:30PM</p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
 
           </div>
         </ion-col>
         <ion-col class="col" col-12="" col-lg-6="" text-center="">
           <div class="container contactUs" style="text-align: center">
             <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
-            <p style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205</p>
-            <p style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745</p>
-            <p style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433"> infoname@gmail.com</span></p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205</p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745</p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433"> infoname@gmail.com</span></p>
           </div>
           
         </ion-col>
         <ion-col class="col" col-12="" col-lg-3="" text-center="">
           <div class="container contactUs" style="text-align: left;">
-            <h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
+            <h2 class="headFont" style="margin-bottom: 0px;">SUBSCRIBE NOW</h2>
             <hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
-            <p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items and our new events. This theme will help you organize your site without any technical skills.</p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items and our new events. This theme will help you organize your site without any technical skills.</p>
 
             <div class="inputSection">
           <input type="text" placeholder="Email Address">
@@ -261,7 +260,7 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
       <ion-row align-items-center="" class="row">
         <ion-col class="col" col-12="" col-lg-4="" class="text-menu">
           <div class="container" style="text-align: left">
-            <p style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights Reserved</p>
+            <p class="headFont" style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights Reserved</p>
             </div>
         </ion-col>
       </ion-row>
