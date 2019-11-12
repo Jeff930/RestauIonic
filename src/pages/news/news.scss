@@ -26,6 +26,11 @@ page-news {
 			}
 		}
 	}
+
+	.map{
+		margin:0 !important;
+	}
+
 	.welcomeText {
 		font-size: 4rem !important;
 		margin: 0px auto;
@@ -100,7 +105,8 @@ page-news {
 	}
 
 	.image {
-		max-height:52vw;
+		min-height:30vw;
+		max-height:65vw;
 		width:100%;
 	}
 
@@ -146,12 +152,14 @@ page-news {
         overflow: hidden;
         font-size: 1.5rem;
         input {
-            padding: 5px;
+            padding: 15px;
+            background-color:#EEF1EF;
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
             background: rgb(196,148,51);
+            border: none;
         }
     }
 	
@@ -193,13 +201,13 @@ page-news {
 		height: 20vw;
 		padding: 10px;
 		margin:0px;
-		margin-left: 40px;
+		margin-left: 2vw;
 		width: 100%;
 		img {
 			max-height: 40vw !important;
 			min-height: vh !important;
 			width: 100%;
-			max-width: 400px;
+			max-width: 28vw;
 		}
 	}
 
@@ -261,14 +269,15 @@ page-news {
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 250px;
-		width: 500px;
+		margin-top: 210px;
+		width: 40vw;
 		text-align: center;
 		padding:20px;
 	}
 
 	.rectangle{
 		border: 5px solid white;
+		height: 30vw;
 	}
 
 	.welcome{
@@ -482,6 +491,10 @@ page-news {
 		margin-top: 5px !important;
 	}
 
+	.story {
+		margin-bottom: 40px !important;
+	}
+
 	.menu-button {
 		text-align: center;
 		margin: 0 auto !important;
@@ -492,7 +505,7 @@ page-news {
 		border-radius: 10px;
 		h2 {
 			margin: 0 auto !important;
-			font-size: 15px !important;
+			font-size: 20px !important;
 		}
 	}
 	.footer .footer-md {
@@ -635,9 +648,6 @@ page-news {
  	.curvyFont {
 		 font-family: 'Cookie Curvy';
 	 }
-	.headFont {
-		font-family: 'Ge Body' !important;
-	}
 	.menu-buttonHover {
 		margin-top: 0px !important;
 		margin-bottom: 50px !important;
