@@ -26,13 +26,13 @@ export class NotificationsPage {
     { day: 'Thursday', time: '10:00am-10:00pm' },
     { day: 'Friday', time: '10:00am-10:00pm' },
     { day: 'Saturday', time: '10:00am-10:00pm' },
-    { day: 'Sunday', time: '10:00am-04:00pm' }
+    { day: 'Sunday', time: '10:00am-08:00pm' }
   ]
   categories = [
-    { name: 'MENUS',  icon: 'menu', numbers: 1022 },
-    { name: 'TOP RATED',  icon: 'heart', numbers: 65200 },
-    { name: 'HAPPY CUSTOMERS',  icon: 'contacts', numbers: 15642 },
-    { name: 'BRANCHES',  icon: 'home', numbers: 30 },
+    { name: 'MENUS', icon: 'fas fa-utensils', numbers: 1022 },
+    { name: 'TOP RATED',  icon: 'fas fa-heart', numbers: 65200 },
+    { name: 'HAPPY CUSTOMERS',  icon: 'fas fa-users', numbers: 15642 },
+    { name: 'BRANCHES', icon: 'fas fa-home', numbers: 30 },
     // { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   ];
   testimonials = [
@@ -70,7 +70,7 @@ export class NotificationsPage {
     if (this.date.getDate() !== 0 ) {
       this.timeSched = '10:00am - 10:00pm';
     } else {
-      this.timeSched = '10:00am - 04:00pm';
+      this.timeSched = '10:00am - 08:00pm';
     }
   }
   callNow() {

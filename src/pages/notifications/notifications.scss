@@ -17,12 +17,12 @@ page-notifications {
     box-shadow:0 0 20px rgba(0,0,0,0.3);
 	}
 	.mapContainer {
-        width: 95%;
+        width: 100%;
         height: 50vh;
         margin: 0 auto;
         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         margin: 0 auto;
-        border: 3px solid rgb(29,29,29);
+        // border: 3px solid rgb(29,29,29);
     }
 
     .aboutImage{
@@ -41,7 +41,6 @@ page-notifications {
     .parg p {
         line-height: 25px;
         font-size: 4.8vw;
-        font-family: Arial, Helvetica, sans-serif;
     }
     // .iconFont {
     //     font-size: 2rem;
@@ -63,7 +62,6 @@ page-notifications {
     .storeHours {
         color: #ffffff;
         
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         hr {
             width: 10%;
             background: rgb(29,29,29);
@@ -141,7 +139,7 @@ page-notifications {
 	}
     .cover {
 		// border-radius: 0px 0px 0px 150px !important;
-		 background: url('../assets/imgs/coverSub.jpg') no-repeat center center fixed;
+		 background: url('../assets/imgs/banner/Events.png') no-repeat center fixed;
         position: relative;
         width: 100%;
         -webkit-background-size: cover;
@@ -161,7 +159,15 @@ page-notifications {
             width: 1000vw;
         }
     }
-
+    .mobSections {
+        .contactUs {
+            padding: 0px !important;
+            text-align: left !important;
+        }
+    }
+    .hrFoot {
+        width: 20%;height: 30px;color: #C49433 !important; text-align: left
+    }
     .cover2 {
         background: url('../assets/imgs/banner/contact.png') no-repeat center center fixed;
         box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
@@ -171,10 +177,11 @@ page-notifications {
     }
 
     .welcomeText {
-		font-size: 6rem !important;
+		font-size: 4rem !important;
         font-weight: bold;
         width: 100%;
         margin: auto;
+        font-family: 'Josef Sans' !important;
     }
     .texts {
         display: inline-block; 
@@ -284,7 +291,14 @@ page-notifications {
     .contentSections {
 		margin: 0 auto;
 		text-align: left;
-        padding: 100px 15px;
+        padding: 50px 15px;
+        
+        .mainHead {
+            font-size: 44px !important;
+            // font-weight: bold;
+            width: 100%;
+            margin: auto;
+        }
         hr {
             width: 50%;
             background: rgb(196,148,51);
@@ -296,16 +310,20 @@ page-notifications {
             font-size: 2.5rem;
             margin-top: 0px !important;
             z-index: 999999;
+            margin-bottom: 26px;
+            font-family: 'Josef Sans';
 		}
         .lestMainTexts { 
-            font-size: 1.8rem; 
+            font-size: 18px; 
             line-height: 2;
+            font-family: 'Josef Sans';
         }
 		.subTexts {
 			color: rgb(102,102,102);
 			// padding: 0px 25px;
 			margin: 0 auto !important;
 			font-size: 1.5rem;
+            font-family: 'Josef Sans';
 			p {	
 				line-height: 2;
 			}
@@ -348,8 +366,9 @@ page-notifications {
             padding: 20px 0px !important;
             .show {
                 padding: 40px;
-                ion-icon {
+                i{
                     font-size: 4rem;
+                    color: rgb(196,148,51);
                 }
                 h2, h6 {
                     margin: 5px !important;
@@ -401,9 +420,14 @@ page-notifications {
         }
         .subTexts {
             line-height: 2;
+            text-align: center;
+            width: 100%;
             .goldenText {
                 font-size: 4rem;
                 line-height: 1px;
+            }
+            p {
+                width: 100%;
             }
         }
 
@@ -424,7 +448,7 @@ page-notifications {
         }
         ion-slides {
             padding: 20px 0px;
-           
+           width: 100%;
         }
     }
     .mobile-footer {

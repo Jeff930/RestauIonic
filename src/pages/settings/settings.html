@@ -19,7 +19,7 @@
 
 <ion-content>
 	<ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
-		<h2 class="title curvyFont welcomeText">Contact Us</h2>
+		<h2 class="title  welcomeText">Contact Us</h2>
 
 	</ion-row>
 
@@ -69,28 +69,132 @@
 
 	<ion-row no-padding>
 		<div class="contentSections lastSect">
-			<h2 class="mainTexts headFont">RESTAURANT</h2>
-			<hr>
+			<h2 class="mainTexts headFont lastSectHead">RESTAURANT</h2>
+			<!-- <hr> -->
 			<div class="subTexts">
 				<p><span>Opening Hours:</span> 10:00am</p>
-				<p><span>Closing Hours:</span> Monday - Saturday (10:00pm), Sunday (04:00pm)</p>
+				<p><span>Closing Hours:</span> Monday - Saturday (10:00pm), Sunday (08:00pm)</p>
 				<p><span>Booking Call:</span> (323) 229-0228</p>
 			</div>
 		</div>
 	</ion-row>
 	<ion-row no-padding>
 		<div class="contentSections lastSect" >
-			<h2 class="mainTexts headFont">EVENT CATERING</h2>
-			<hr>
+			<h2 class="mainTexts headFont lastSectHead">EVENT CATERING</h2>
+			<!-- <hr> -->
 			<div class="subTexts">
 				<p><span>Monday - Saturday:</span> 10:00am - 10:00pm</p>
 				<!-- <p><span>Friday - :</span> 10:00am - 10:00pm</p> -->
-				<p><span>Sunday:</span> 10:00am - 04:00pm.</p>
+				<p><span>Sunday:</span> 10:00am - 08:00pm.</p>
 				<p><span>Booking Time:</span> 24/7 Hours</p>
 			</div>
 		</div>
 	</ion-row>
-	<ion-row no-padding>
+
+	<div class="first-section footer" style="padding-top: 0px !important;margin-top: -10px !important" *ngIf="!checkApp">
+		<ion-row align-items-center="" class="row">
+			<ion-col class="col" col-12="" col-lg-3="" class="text-menu">
+				<div class="container contactUs" style="text-align: left">
+					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
+					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday:
+						</span>06AM - 10PM</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday:
+						</span>10AM - 11:30PM</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM
+					</p>
+	
+				</div>
+			</ion-col>
+			<ion-col class="col" col-12="" col-lg-6="" text-center="">
+				<div class="container contactUs" style="text-align: center">
+					<img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+					<p style="font-size: 1.5rem;margin-top: 0px;">
+						<ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY,
+						205
+					</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;">
+						<ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+					</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;">
+						<ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span
+							style="color:#C49433"> infoname@gmail.com</span>
+					</p>
+				</div>
+	
+			</ion-col>
+			<ion-col class="col" col-12="" col-lg-3="" text-center="">
+				<div class="container contactUs" style="text-align: left;">
+					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
+					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
+					<p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items
+						and our new events. This theme will help you organize your site without any technical skills.</p>
+	
+					<div class="inputSection">
+						<input type="text" placeholder="Email Address">
+						<button>SIGN UP</button>
+					</div>
+	
+				</div>
+	
+			</ion-col>
+		</ion-row>
+	</div>
+	<div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important"
+		*ngIf="checkApp">
+		<ion-row align-items-center="" class="row">
+			<ion-col class="col" col-12="" col-lg-3="" class="text-menu">
+				<div class="container contactUs" style="text-align: left">
+					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
+					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday:
+						</span>06AM -
+						10PM</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday:
+						</span>10AM -
+						11:30PM</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM
+					</p>
+	
+				</div>
+			</ion-col>
+			<ion-col class="col" col-12="" col-lg-6="" text-center="">
+				<div class="container contactUs" style="text-align: center">
+					<img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+					<p style="font-size: 1.5rem;margin-top: 0px;">
+						<ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY,
+						205
+					</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;">
+						<ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+					</p>
+					<p style="font-size: 1.5rem;margin-top: 0px;">
+						<ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span
+							style="color:#C49433">
+							infoname@gmail.com</span>
+					</p>
+				</div>
+	
+			</ion-col>
+			<ion-col class="col" col-12="" col-lg-3="" text-center="">
+				<div class="container contactUs" style="text-align: left;">
+					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
+					<hr style="">
+					<p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items
+						and our
+						new events. This theme will help you organize your site without any technical skills.</p>
+	
+					<div class="inputSection">
+						<input type="text" placeholder="Email Address">
+						<button>SIGN UP</button>
+					</div>
+	
+				</div>
+	
+			</ion-col>
+		</ion-row>
+	</div>
+	<!-- <ion-row no-padding>
 		<div class="contentSections footerSect contentPadding" style="padding: 100px 10px !important;">
 			<h2 class="mainTexts headFont">SUBSCRIBE NOW</h2>
 			<hr>
@@ -107,7 +211,7 @@
 
 		</div>
 
-	</ion-row>
+	</ion-row> -->
 	<!-- <div class="maps">
     
   <div class="mapContainer">

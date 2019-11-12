@@ -22,7 +22,7 @@
     <div *ngIf="checkApp">
         
     <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
-        <h2 class="title curvyFont welcomeText">Menu Gallery</h2>
+        <h2 class="title josefFont welcomeText">Menu Gallery</h2>
 
     </ion-row>
 
@@ -30,14 +30,15 @@
             <div class="card-lists">
                 <div class="card-holder" (click)="catClick(item)" *ngFor="let item of categories">
                     <div class="cards-content">
-                        <div class="lister"><i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;" ></i> {{ item.name }}
-                        <div class="cardLister" *ngFor=" let cat of item.content">
+                        <div class="lister" [ngStyle]="{'color': mobileCurrentKey === item.key ? 'rgb(196,148,51)': ''}"><i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"  [ngStyle]="{'color': mobileCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i> {{ item.name }}
+                        <div class="cardLister" *ngFor=" let cat of item.content"  >
                            <ion-card>
                                <img src="assets/imgs/{{ cat.image }}" alt="">
                                <div class="cardText">    
                                 <h2>{{ cat.name }}</h2>
                                 <h4>{{ cat.description }}</h4>
-                                <h3>{{ cat.price }}</h3>
+                                <h3 *ngIf="cat.price!==undefined">$ {{ cat.price }}</h3>
+                                <h3 *ngIf="cat.price===undefined">$ 7.55</h3>
                                </div>
                            </ion-card>
                         </div></div>
@@ -45,29 +46,86 @@
                 </div>
         </div>
     </ion-row>
-
     <ion-row no-padding>
-        <div class="contentSections footerSect">
-            <h2 class="mainTexts headFont">SUBSCRIBE NOW</h2>
-            <hr>
-            <div class="subTexts">
-                <p>Sign up to our newsletter to get latest food item news and our new events. This theme will help you
-                    organizing your site
-                    without any technical skills.</p>
+        <div class="contentSections timeSched">
+            <h2 class="title curvyFont welcomeText goldenText">Business Hours</h2>
+            <h2 class="mainTexts headFont">OPEN FOR SPECIAL OCASIONS</h2>
+            <div class="alarmIcon">
+                <ion-icon name="alarm" class="goldenText"></ion-icon>
             </div>
-
-            <div class="inputSection">
-                <input type="text" placeholder="Email Address">
-                <button>SIGN UP</button>
+            <div class="sched subTexts">
+                <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
+                <h4>Sunday: 10:00am - 08:00pm</h4>
             </div>
-
+            <button ion-button class="menu-button" (click)="callNow()">
+                <h2>CONTACT US</h2>
+            </button>
         </div>
-
+    
     </ion-row>
+    
+    <ion-row>
+<div class="mapContainer">
+    <div #map id="map"></div>
+</div>
+    </ion-row>
+    <div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important"
+        *ngIf="checkApp">
+        <ion-row align-items-center="" class="row">
+            <ion-col class="col" col-12="" col-lg-3="" class="">
+                <div class="container contactUs" style="text-align: left">
+                    <h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+                    <hr class="hrFoot">
+                    <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday:
+                        </span>06AM -
+                        10PM</p>
+                    <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday:
+                        </span>10AM -
+                        11:30PM</p>
+                    <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM
+                    </p>
+    
+                </div>
+            </ion-col>
+            <ion-col class="col" col-12="" col-lg-6="" text-center="">
+                <div class="container contactUs" style="text-align: center">
+                    <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+                    <p style="font-size: 1.5rem;margin-top: 0px;">
+                        <ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY,
+                        205
+                    </p>
+                    <p style="font-size: 1.5rem;margin-top: 0px;">
+                        <ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+                    </p>
+                    <p style="font-size: 1.5rem;margin-top: 0px;">
+                        <ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span
+                            style="color:#C49433">
+                            infoname@gmail.com</span>
+                    </p>
+                </div>
+    
+            </ion-col>
+            <ion-col class="col" col-12="" col-lg-3="" text-center="">
+                <div class="container contactUs" style="text-align: left;">
+                    <h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
+                    <hr class="hrFoot">
+                    <p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items
+                        and our
+                        new events. This theme will help you organize your site without any technical skills.</p>
+    
+                    <div class="inputSection">
+                        <input type="text" placeholder="Email Address">
+                        <button>SIGN UP</button>
+                    </div>
+    
+                </div>
+    
+            </ion-col>
+        </ion-row>
+    </div>
 </div>
 
 <!--WEB APP-->
-
 <div *ngIf="!checkApp">
 
 <!---->
@@ -77,41 +135,43 @@
             <!-- </div> -->
         </div>
 
-<ion-row>
-    <div class="deskList">
-        <div class="deskListData" *ngFor="let item of deskCategories" >
-            <div class="deskLister" (click)="getDeskData(item)" >
-                <i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;" [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i>
-                <h2 [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}">{{ item.name }}</h2>
+    <ion-row>
+        <div class="deskList">
+            <div class="deskListData" *ngFor="let item of deskCategories">
+                <div class="deskLister" (click)="getDeskData(item)">
+                    <i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"
+                        [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i>
+                    <h2 [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}">{{ item.name }}</h2>
+                </div>
             </div>
         </div>
-    </div>
-</ion-row>
-<ion-grid  text-center  *ngIf="itemContent.length !== 0">
-    <ion-row class="deskCardHolder">
-        <ion-col no-margin no-padding col-6 *ngFor="let item of itemContent" class="deskCards">
-            <ion-card>
-                <img src="assets/imgs/{{ item.image }}" alt="">
-                <div class="cardText">
-                    <h2>{{ item.name }}</h2>
-                    <h4>{{ item.description }}</h4>
-                    <h3>{{ item.price }}</h3>
-                </div>
-            </ion-card>
-        </ion-col>
+    </ion-row>
+    <ion-grid text-center *ngIf="itemContent.length !== 0">
+        <ion-row class="deskCardHolder">
+            <ion-col no-margin no-padding col-6 *ngFor="let item of itemContent" class="deskCards">
+                <ion-card>
+                    <img src="assets/imgs/{{ item.image }}" alt="">
+                    <div class="cardText">
+                        <h2>{{ item.name }}</h2>
+                        <h4>{{ item.description }}</h4>
+                        <h3>{{ item.price }}</h3>
+                    </div>
+                </ion-card>
+            </ion-col>
 
+        </ion-row>
+
+    </ion-grid>
+    <ion-row>
+        <div>
+            <ion-col no-margin no-padding col-6 class="deskCardData">
+                <div class="">
+
+                </div>
+            </ion-col>
+        </div>
     </ion-row>
 
-</ion-grid>
-<ion-row>
-    <div >
-        <ion-col no-margin no-padding col-6 class="deskCardData"  >
-            <div class="" >
-               
-            </div>
-        </ion-col>
-    </div>
-</ion-row>
 
 
     <div class="first-section fourth">

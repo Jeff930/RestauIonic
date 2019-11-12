@@ -18,19 +18,32 @@
 
 
 <ion-content >
-  <!-- <div *ngIf="checkApp">
+  <div *ngIf="checkApp">
   <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
-    <h2 class="title curvyFont welcomeText">About Kusina Filipina</h2>
+    <h2 class="title  welcomeText">About Kusina Filipina</h2>
      
   </ion-row>
   <ion-row no-padding>
 			<div class="contentSections"> 
-				<h2 class="title curvyFont welcomeText goldenText" style="text-align: left !important;">About Us</h2>
+				<h2 class="title curvyFont mainHead goldenText" style="text-align: left !important;">About Us</h2>
         <h2 class="mainTexts headFont">DISCOVER OUR STORY</h2>
         <h2 class="lestMainTexts">Welcome to Kusina Filipina, a Modern Restaurant with focus on Premium Food Tastes</h2>
 				<div class="subTexts">
-					<p>Ristora is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With
-          glazed frontage on two sides of the building, overlooking the market and a bustling London intersec.</p>
+					<p>Our family arrived at the City of Angels in 1990 in search of greener pasture. Shortly after, we’ve realized how much we
+          missed the food back home in the Philippines. So we pooled all our resources to create our own restaurant.
+          
+          We wanted our fellow Filipino immigrants in Los Angeles to experience authentic Filipino cuisine once more. We also
+          wanted the rest of LA to get a taste of Filipino cooking.
+          
+          The Philippines’ location makes it a melting pot of Oriental culture. Filipino cuisine has advanced by absorbing the
+          best parts of other Asian cuisines. We were confident authentic Filipino food would not lose no matter the location.
+          
+          We only employ Chefs who were originally from the Philippines. And our restaurant is designed to provide a traditional
+          Filipino setting and ambiance.
+          
+          Our 25 years of culinary experience guarantees that when it comes to providing an authentic Filipino dining experience,
+          nobody does it better than us.
+</p>
 				</div>
 				
         <div class="subDesc">
@@ -42,14 +55,13 @@
 			</div>
      
   </ion-row>
-  
   <ion-row no-padding>
     <div class="contentSections secndSection">
       <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories"
         class="image-holder">
   
         <div class="show">
-          <ion-icon name="{{l.icon}}" class="goldenText"></ion-icon>
+          <i class="{{ l.icon }}" color="goldenText"></i>
           <div class="subtitle">
             <h2>{{ l.numbers }}</h2>
             <h6>{{ l.name }}</h6>
@@ -59,7 +71,6 @@
   
     </div>
   </ion-row>
-    <ion-row no-padding>
       <div class="contentSections thSection">
           
         <h2 class="title curvyFont welcomeText goldenText" style="text-align: center !important;">Testimonials</h2>
@@ -76,7 +87,6 @@
         </ion-slides>
       </div>
     
-    </ion-row>
 
     <ion-row no-padding>
       <div class="contentSections timeSched">
@@ -87,7 +97,7 @@
         </div>
         <div class="sched subTexts">
           <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
-          <h4>Sunday: 10:00am - 04:00pm</h4>
+          <h4>Sunday: 10:00am - 08:00pm</h4>
         </div>
         <button ion-button class="menu-button" (click)="callNow()">
           <h2>CONTACT US</h2>
@@ -96,10 +106,10 @@
       
     </ion-row>
 
-    <div class="mapContainer">
+     <div class="mapContainer">
       <div #map id="map"></div>
     </div>
-    
+<!--   
     <ion-row no-padding>
       <div class="contentSections footerSect">
         <h2 class="mainTexts headFont">SUBSCRIBE NOW</h2>
@@ -116,10 +126,10 @@
       
       </div>
     
-    </ion-row>
-  </div> -->
+    </ion-row> -->
+  </div>
 
-  <div>
+  <div *ngIf="!checkApp">
   <ion-row style="flex-wrap: inherit;" class="cover2">
     <h2 class="title welcomeText headFont">About Kusina Filipina</h2>
      
@@ -218,7 +228,7 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
 
   </div>
 
-  <div class="first-section footer" style="padding-top: 0px !important;margin-top: -10px !important">
+  <div class="first-section footer" style="padding-top: 0px !important;margin-top: -10px !important" *ngIf="!checkApp">
       <ion-row align-items-center="" class="row">
         <ion-col class="col" col-12="" col-lg-3="" class="text-menu">
           <div class="container contactUs" style="text-align: left">
@@ -255,8 +265,52 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
         </ion-col>
       </ion-row>
     </div>
+<div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important" *ngIf="checkApp">
+  <ion-row align-items-center="" class="row">
+    <ion-col class="col" col-12="" col-lg-3="" class="text-menu">
+      <div class="container contactUs" style="text-align: left">
+        <h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2><hr class="hrFoot">
+        <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM -
+          10PM</p>
+        <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM -
+          11:30PM</p>
+        <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
 
-    <div class="last-section" style="padding-top: 0px !important;">
+      </div>
+    </ion-col>
+    <ion-col class="col" col-12="" col-lg-6="" text-center="">
+      <div class="container contactUs" style="text-align: center">
+        <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+        <p style="font-size: 1.5rem;margin-top: 0px;">
+          <ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205
+        </p>
+        <p style="font-size: 1.5rem;margin-top: 0px;">
+          <ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+        </p>
+        <p style="font-size: 1.5rem;margin-top: 0px;">
+          <ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433">
+            infoname@gmail.com</span>
+        </p>
+      </div>
+
+    </ion-col>
+    <ion-col class="col" col-12="" col-lg-3="" text-center="">
+      <div class="container contactUs" style="text-align: left;">
+        <h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2><hr class="hrFoot">
+        <p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items and our
+          new events. This theme will help you organize your site without any technical skills.</p>
+
+        <div class="inputSection">
+          <input type="text" placeholder="Email Address">
+          <button>SIGN UP</button>
+        </div>
+
+      </div>
+
+    </ion-col>
+  </ion-row>
+</div>
+    <div class="last-section" style="padding-top: 0px !important;" *ngIf="!checkApp">
       <ion-row align-items-center="" class="row">
         <ion-col class="col" col-12="" col-lg-4="" class="text-menu">
           <div class="container" style="text-align: left">
@@ -265,32 +319,6 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
         </ion-col>
       </ion-row>
     </div>
-  <!-- <div class="maps">
-    
-  <div class="mapContainer">
-    <div #map id="map"></div>
-  </div>
-  <div class="parg">
-    <h4 class="titles" style="color: #ffffff !important"> <ion-icon color="danger" name="navigate"></ion-icon> Want to know our location? <br> You can find us here:</h4>
-  
-  <h6 style="font-size: 1.4rem; color: #ffffff">4157 Eagle Rock Blvd
-  Ste 1
-  Los Angeles, CA 90065</h6>
-  </div>
-  </div>
-  <div class="storeHours"> 
-      <h4 class="titles exdtra">Store Hours</h4>
-      <hr>
-      <div class="hoursContent">
-        <div class="hours" *ngFor="let hour of storeTime">
-        
-          <div class="schedContent">
-            <h5 class="day">{{ hour.day }}</h5>
-            <h5 class="sched">{{ hour.time }}</h5>
-          </div>
-        </div>
-      </div>
-  </div> -->
 </ion-content>
 
 <ion-footer transparent *ngIf="checkApp">
