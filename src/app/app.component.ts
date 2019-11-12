@@ -50,7 +50,6 @@ export class MyApp {
         { title: 'ABOUT US', component: 'NotificationsPage', icon: 'information-circle' },
         { title: 'EVENTS', component: 'CateringPage', icon: 'information-circle' },
         { title: 'CONTACT', component: 'ProfilePage', icon: 'information-circle' },
-        
        // { title: 'EVENTS', component: 'CateringPage', icon: 'basket' }
       ]
     }
