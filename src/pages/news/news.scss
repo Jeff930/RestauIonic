@@ -127,7 +127,7 @@ page-news {
 
 	.image {
 		min-height:30vw;
-		max-height:65vw;
+		max-height:60vw;
 		width:100%;
 	}
 
@@ -337,7 +337,7 @@ page-news {
         width: 95%;
         height: 50vh;
         text-align: center;
-        padding: 90px 10px;
+        padding: 40px 10px 90px 10px;
         .mainTexts {
             font-size: 2.5rem;
         }
@@ -362,7 +362,7 @@ page-news {
             font-size: 6rem;
         }
         .sched {
-            h4 { font-size: 1.5rem !important; }
+            h4 { font-size: 2rem !important; }
         }
     }
     
