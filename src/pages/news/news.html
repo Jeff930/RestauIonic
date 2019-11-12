@@ -501,7 +501,7 @@
 		
 		<ion-grid class="fullGrid">
 			<div class="black">
-				<ion-row class="first-section story">
+				<ion-row class="first-section menuSection">
 					<ion-col col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 class="text-menu">
 						<div style="text-align: center">
 							<h1 class="titleText" style="font-size:46px;margin-top: 50px"> <span style="color: #C49433 !important; font-weight: bold;">Our Menu</span></h1>
@@ -520,47 +520,47 @@
 			</div>
 		</ion-grid>
 
-	
-		<!-- <hr>
-		<div class="first-section second">
+		<ion-grid class="fullGrid">
+			<div >
+				<ion-row class="first-section second">
+					<ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">
+						<div class="container" style="text-align: center">
+							<h1 class="titleText" style="font-size:5vw"> <span style="color: #C49433 !important;">Business Hours</span></h1>
+						</div>
+					</ion-col>
+				</ion-row>
+				<ion-row align-items-center="" class="row">
+					<ion-col class="col" col-lg-6="" class="text-menu">
+						<div class="mapContainer">
+							<div #map id="map"></div>
+						</div>
+					</ion-col>
+					
+					<ion-col class="col" col-lg-6="" class="text-menu">
+						<div class="contentSections">
+							<p class="mainTexts headFont" style="font-weight: bold;font-size: 2vw;margin-top: 0px;">OPEN FOR SPECIAL OCCASIONS</p>
+							<div class="alarmIcon">
+								<ion-icon name="alarm" class="goldenText" style="font-weight: bold;font-size: 8vw;"></ion-icon>
+							</div>
+							<div class="sched subTexts">
+								<h4 class="headFont" style="font-size: 2vw;">Monday - Saturday: 10:00am - 10:00pm</h4>
+								<h4 class="headFont" style="font-size: 2vw;">Sunday: 10:00am - 04:00pm</h4>
+							</div>
+							  <button ion-button class="contact-button" (click)="callNow()">
+          						<h2>CONTACT US</h2>
+        						</button>
+						</div>
+					</ion-col>
+				</ion-row>
+			</div>
+		</ion-grid>
+		
+		<ion-grid>
+		<div class="first-section third">
 			<ion-row align-items-center="" class="row">
 				<ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">
 					<div class="container" style="text-align: center">
-						<h1 class="titleText" style="font-size:5vw"> <span style="color: #C49433 !important;">Business
-								Hours</span></h1>
-					</div>
-				</ion-col>
-	
-			</ion-row>
-			<ion-row align-items-center="" class="row">
-				<ion-col class="col" col-lg-6="" class="text-menu">
-					<div class="mapContainer">
-						<div #map id="map"></div>
-					</div>
-				</ion-col>
-	
-				<ion-col class="col" col-lg-6="" class="text-menu">
-					<div class="contentSections deskBrder">
-						<p class="mainTexts headFont" style="font-weight: bold;font-size: 2vw;margin-top: 0px;">OPEN FOR SPECIAL OCCASIONS</p>
-						<div class="alarmIcon">
-							<ion-icon name="alarm" class="goldenText" style="font-weight: bold;font-size: 8vw;"></ion-icon>
-						</div>
-						<div class="sched subTexts">
-							<h4 class="headFont" style="font-size: 2vw;">Monday - Saturday: 10:00am - 10:00pm</h4>
-							<h4 class="headFont" style="font-size: 2vw;">Sunday: 10:00am - 04:00pm</h4>
-						</div>
-					</div>
-				</ion-col>
-	
-			</ion-row>
-		</div> -->
-	
-		<!-- <div class="first-section third">
-			<ion-row align-items-center="" class="row">
-				<ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">
-					<div class="container" style="text-align: center">
-						<h1 class="titleText Kusina" style="font-size:4vw"> <span style="color: #C49433 !important;">Good To
-								Know</span></h1>
+						<h1 class="titleText Kusina" style="font-size:4vw"> <span style="color: #C49433 !important;">Good To Know</span></h1>
 					</div>
 				</ion-col>
 	
@@ -580,14 +580,12 @@
 						<p><ion-icon ios="ios-medkit" md="md-medkit"></ion-icon></p>
 						<ion-label>
 							Health Score: <span>A</span>
-							<hr>
 						</ion-label>
 					</div>
 					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-calendar" md="md-calendar"></ion-icon></p>
 						<ion-label>
 							Reservations: <span>Yes</span>
-							<hr>
 						</ion-label>
 					</div>
 				</div>
@@ -596,14 +594,12 @@
 						<p><ion-icon ios="ios-basket" md="md-basket"></ion-icon></p>
 						<ion-label>
 							Take Out: <span>Yes</span>
-							<hr>
 						</ion-label>
 					</div>
 					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-person" md="md-person"></ion-icon></p>
 						<ion-label>
 							Caters: <span>Yes</span>
-							<hr>
 						</ion-label>
 					</div>
 				</div>
@@ -612,14 +608,12 @@
 						<p><ion-icon ios="ios-bicycle" md="md-bicycle"></ion-icon></p>
 						<ion-label>
 							Bike Parking: <span>No</span>
-							<hr>
 						</ion-label>
 					</div>
 					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-people" md="md-people"></ion-icon></p>
 						<ion-label>
 							Good for Groups: <span>Yes</span>
-							<hr>
 						</ion-label>
 					</div>
 				</div>
@@ -628,14 +622,12 @@
 						<p><ion-icon ios="ios-volume-up" md="md-volume-up"></ion-icon></p>
 						<ion-label>
 							Noise Level: <span>Average</span>
-							<hr>
 						</ion-label>
 					</div>
 					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon></p>
 						<ion-label>
 							Good For All Meals: <span>Yes</span>
-							<hr>
 						</ion-label>
 					</div>
 				</div>
@@ -650,14 +642,12 @@
 						<p><ion-icon ios="ios-beer" md="md-beer"></ion-icon></p>
 							<ion-label>
 								Happy Hour: <span>No</span>
-								<hr>
 							</ion-label>
 					</div>
 					<div style="margin-top: 50px">
 						<p><ion-icon ios="ios-umbrella" md="md-umbrella"></ion-icon></p>
 							<ion-label>
 								Outdoor Seating: <span>No</span>
-								<hr>
 							</ion-label>
 						</div>
 				</div>
@@ -666,14 +656,12 @@
 						<p><ion-icon ios="ios-wifi" md="md-wifi"></ion-icon></p>
 							<ion-label>
 								Free Wi-Fi: <span>Yes</span>
-								<hr>
 							</ion-label>
 					</div>
 					<div style="margin-top: 50px">
 						<p><ion-icon ios="ios-paw" md="md-paw"></ion-icon></p>
 							<ion-label>
 								Dogs Allowed: <span>No</span>
-								<hr>
 							</ion-label>
 					</div>
 				</div>
@@ -682,14 +670,12 @@
 						<p><ion-icon ios="ios-body" md="md-body"></ion-icon></p>
 						<ion-label>
 								GNR: <span>Yes</span>
-								<hr>
 						</ion-label>
 					</div>
 					<div style="margin-top: 50px">
 						<p><ion-icon ios="ios-nutrition" md="md-nutrition"></ion-icon></p>
 						<ion-label>
 								Vegan Options: <span>Yes</span>
-								<hr>
 						</ion-label>
 					</div>
 				</div>
@@ -698,14 +684,12 @@
 						<p><ion-icon ios="ios-send" md="md-send"></ion-icon></p>
 							<ion-label>
 								Delivery: <span>Yes</span>
-								<hr>
 							</ion-label>
 					</div>
 					<div style="margin-top: 50px" >
 						<p><ion-icon  ios="ios-card" md="md-card"></ion-icon></p>
 							<ion-label>
 								Credit Cards: <span>Yes</span>
-								<hr>
 							</ion-label>
 					</div>
 				</div>
@@ -718,14 +702,12 @@
 						<p><ion-icon ios="ios-car" md="md-car"></ion-icon></p>
 							<ion-label>
 								Private Parking: <span>Yes</span>
-								<hr>
 							</ion-label>
 					</div>
 					<div style="margin-top: 50px">
 						<p><ion-icon  ios="ios-happy" md="md-happy"></ion-icon></p>
 							<ion-label>
 								Good for Kids: <span>Yes</span>
-								<hr>
 							</ion-label>
 					</div>
 				</div>
@@ -734,7 +716,6 @@
 								<p><ion-icon ios="ios-bulb" md="md-bulb"></ion-icon></p>
 								<ion-label>
 									Ambience: <span>Casual</span>
-									<hr>
 								</ion-label>
 							</div>
 						</div>
@@ -743,7 +724,6 @@
 								<p><ion-icon  ios="ios-pint" md="md-pint"></ion-icon></p>
 								<ion-label>
 									Alcohol: <span>No</span>
-									<hr>
 								</ion-label>
 							</div>
 						</div>
@@ -752,7 +732,6 @@
 								<p><ion-icon ios="ios-desktop" md="md-desktop"></ion-icon></p>
 								<ion-label>
 									TV: <span>Yes</span>
-									<hr>
 								</ion-label>
 							</div>
 						</div>
@@ -765,9 +744,11 @@
 				</ion-col>
 	
 			</ion-row> 
-		</div> -->
+		</div>
+	</ion-grid>
 	
-		<!-- <div class="first-section footer" style="padding-top: 0px !important;margin-top: -10px !important">
+	<ion-grid class="fullGrid footer">
+		<div class="first-section" style="padding-top: 0px !important;margin-top: 10px !important">
 			<ion-row align-items-center="" class="row">
 				<ion-col class="col" col-12="" col-lg-3="" class="text-menu">
 					<div class="container contactUs" style="text-align: left">
@@ -776,7 +757,6 @@
 						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM - 10PM</p>
 						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM - 11:30PM</p>
 						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
-
 					</div>
 				</ion-col>
 				<ion-col class="col" col-12="" col-lg-6="" text-center="">
@@ -786,37 +766,34 @@
 						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745</p>
 						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433"> infoname@gmail.com</span></p>
 					</div>
-	
 				</ion-col>
 				<ion-col class="col" col-12="" col-lg-3="" text-center="">
 					<div class="container contactUs" style="text-align: left;">
 						<h2 class="headFont" style="margin-bottom: 0px;">SUBSCRIBE NOW</h2>
 						<hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
-						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items and our new events. This theme will help you organize your site without any technical skills.</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;line-height:30px;"> Sign up now to our newsletter to get latest food items and our new events. This theme will help you organize your site without any technical skills.</p>
 
-						 <div class="inputSection">
-          <input type="text" placeholder="Email Address">
-          <button>SIGN UP</button>
-        </div>
-
-
+						<div class="inputSection">
+          					<input class="headFont" type="text" placeholder="Email Address">
+          					<button class="headFont">SIGN UP</button>
+        				</div>
 					</div>
-	
 				</ion-col>
 			</ion-row>
+		</div>
+	</ion-grid>
 
-		</div> -->
-		<!-- <div class="last-section" >
+	<ion-grid class="fullGrid">
+		<div class="last-section" >
 			<ion-row align-items-center="" class="row">
-				<ion-col class="col" col-12="" col-lg-4="" class="text-menu">
+				<ion-col class="col" col-12="" col-lg-4="">
 					<div class="container" style="text-align: left">
 						<p class="headFont" style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights Reserved</p>
 						</div>
 				</ion-col>
 			</ion-row>
-
-		</div> -->
-	
+		</div>
+	</ion-grid>
 	
 	
 	</div>

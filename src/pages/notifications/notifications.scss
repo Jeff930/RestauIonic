@@ -330,12 +330,63 @@ page-notifications {
             .subTexts { margin-bottom: 50px !important; }
         }
     }
+
+    .story {
+        margin: 0 auto;
+        text-align: left;
+        padding: 50px 15px;
+        hr {
+            width: 50%;
+            background: rgb(196,148,51);
+            height: 5px;
+            text-align: left;
+            margin: -10px 0px;
+        }
+        .mainTexts {
+            font-size: 2.5rem;
+            margin-top: 0px !important;
+            z-index: 999999;
+        }
+        .lestMainTexts { 
+            font-size: 1.8rem; 
+            line-height: 2;
+        }
+        .subTexts {
+            color: rgb(102,102,102);
+            // padding: 0px 25px;
+            margin: 0 auto !important;
+            font-size: 1.5rem;
+            p { 
+                line-height: 2;
+            }
+        }
+        .alarmIcon {
+            font-size: 6rem;
+        }
+        .sched {
+            h4 { font-size: 1.5rem !important; }
+        }
+        .subDesc {
+            margin-top: 20px;
+            h2 {
+                font-family: 'Allura';
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            h3 {
+                font-family: 'Josef Sans';
+                font-size: 1.5rem;
+            }
+            .subTexts { margin-bottom: 50px !important; }
+        }
+    }
     	.secndSection {
-            padding: 0px 10px !important;
+            padding: 100px 10px !important;
             position: relative;
             width: 100%;
             height: 100%;
 			background: rgba(119, 119, 119, 0.164);
+
 		.mainTitle {
 			padding: 50px 0px;
 			height: 50vh;
@@ -365,7 +416,7 @@ page-notifications {
     .image-holder2 {
             margin: auto !important;
             text-align: center;
-            padding: 20px 0px !important;
+            padding: 65px 0px !important;
             .show2 {
                 padding: 40px;
                 ion-icon {

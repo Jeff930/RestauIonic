@@ -37,11 +37,16 @@ ion-toolbar {
          font-family: 'GE Body' !important;
     }
 
+.swipr-pagination {
+   position: fixed;
+   bottom: 0px;}
+
 .black{
      background: url('../assets/imgs/banner/homepageMenu for today.png') no-repeat center center fixed;
      height: 35vw;
-     max-height: 450px;
+     max-height: 600px;
      min-height:250px;
+     margin-bottom: 10vw;
 }
 
 	.fonty {
@@ -91,13 +96,13 @@ ion-toolbar {
 }
 
 .second {
-    padding: 150px 20px 0px 20px;
+    padding: 50px 20px 0px 20px;
 }
 
 .third{
     padding: 30px 20px 0px 20px;
     margin-bottom: 8vw;
-    margin-top:5vw;
+    margin-top:4vw;
 }
 
 .padding-all { 

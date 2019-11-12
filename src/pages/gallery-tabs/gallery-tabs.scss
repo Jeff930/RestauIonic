@@ -22,7 +22,6 @@ page-gallery-tabs {
 		margin: 0 auto;
 		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 		margin: 0 auto;
-		border: 3px solid rgb(29,29,29);
 	}
 
 
@@ -646,8 +645,41 @@ page-gallery-tabs {
     }
 
     .fourth {
-    padding: 50px 20px;
+    padding: 70px 20px;
 }
+
+.inputSection {
+        display: inline-flex;
+        border-radius: 50px;
+        border: 2px solid rgb(196,148,51);
+        overflow: hidden;
+        font-size: 1.5rem;
+        input {
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
+        }
+        button {
+            color: #ffffff;
+            font-size: 1.5rem;
+            background: rgb(196,148,51);
+            border: none;
+        }
+    }
+
+.contact-button {
+        text-align: center;
+        margin: 0 auto !important;
+        margin-top: 20px !important;
+        width: 20% !important;
+        background: rgb(196,148,51);
+        color: white;
+        border-radius: 20px;
+        h2 {
+            margin: 0 auto !important;
+            font-size: 15px !important;
+        }
+    }
 
 .menu-button {
         text-align: center;
