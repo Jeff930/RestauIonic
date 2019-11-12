@@ -90,7 +90,8 @@ page-news {
 		height: 135vh;
 		.mainTitle {
 			padding: 50px 0px;
-			background: rgb(29,29,29);
+		 background: url('../assets/imgs/banner/homepage Menu for today.png');
+		 background-size: contain;
 			height: 50vh;
 		}
 		.subTexts {
