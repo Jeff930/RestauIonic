@@ -26,7 +26,7 @@ ion-toolbar {
 	}
 
 .Kusina {
-         font-family: 'Ge Body' !important;
+         font-family: 'GE Body' !important;
     }
 
 .black{
@@ -60,11 +60,11 @@ ion-toolbar {
     display: inline-flex;
 }
 .first-section {
-    padding: 30px 20px 20px 20px;
+    padding: 30px 20px 30px 20px;
 }
 
 .last-section {
-    padding: 0px;
+    padding: 15px;
 }
 
 .footer{
@@ -80,12 +80,13 @@ ion-toolbar {
 }
 
 .second {
-    padding: 120px 20px 0px 20px;
+    padding: 150px 20px 0px 20px;
 }
 
 .third{
     padding: 30px 20px 0px 20px;
-    margin-bottom: 80px;
+    margin-bottom: 8vw;
+    margin-top:5vw;
 }
 
 .padding-all { 
@@ -147,7 +148,7 @@ ion-toolbar {
 		 font-family: 'Cookie Curvy';
 	 }
 	.headFont {
-		font-family: 'Ge Body' !important;
+		font-family: 'PT-Sans',sans-serif !important;
     }
     .footerSect {
         background: rgba(184, 184, 184, 0.11);
