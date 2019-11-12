@@ -26,6 +26,11 @@ page-news {
 			}
 		}
 	}
+
+	.map{
+		margin:0 !important;
+	}
+
 	.welcomeText {
 		font-size: 4rem !important;
 		margin: 0px auto;
@@ -58,6 +63,27 @@ page-news {
         text-align:left;
         border-radius: 20px !important;
     }
+
+    .slidesContainer {
+		position: relative;
+		.leftButton, .rightButton {
+			position: absolute;
+			z-index: 99999;
+			bottom: 200px;
+			font-size: 10rem;
+			color: #C49433 !important;
+			font-weight: bold;
+			background: none !important;
+		}
+			.rightButton {
+				
+				right: -5vw;
+			}
+			.leftButton {
+				left: -5vw;
+			}
+	}
+
 	.secndSection {
 		padding: 0px 10px !important;
 		position: relative;
@@ -99,8 +125,13 @@ page-news {
 		// height: 40vh;
 	}
 
+	.menuDay{
+		background-image: url("assets/imgs/banner/homepageMenu for today.png");
+	}
+
 	.image {
-		max-height:52vw;
+		min-height:30vw;
+		max-height:60vw;
 		width:100%;
 	}
 
@@ -146,12 +177,14 @@ page-news {
         overflow: hidden;
         font-size: 1.5rem;
         input {
-            padding: 5px;
+            padding: 15px;
+            background-color:#EEF1EF;
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
             background: rgb(196,148,51);
+            border: none;
         }
     }
 	
@@ -193,13 +226,13 @@ page-news {
 		height: 20vw;
 		padding: 10px;
 		margin:0px;
-		margin-left: 40px;
+		margin-left: 2vw;
 		width: 100%;
 		img {
 			max-height: 40vw !important;
 			min-height: vh !important;
 			width: 100%;
-			max-width: 400px;
+			max-width: 28vw;
 		}
 	}
 
@@ -261,14 +294,15 @@ page-news {
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 250px;
-		width: 500px;
+		margin-top: 210px;
+		width: 40vw;
 		text-align: center;
 		padding:20px;
 	}
 
 	.rectangle{
 		border: 5px solid white;
+		height: 30vw;
 	}
 
 	.welcome{
@@ -307,7 +341,7 @@ page-news {
         width: 95%;
         height: 50vh;
         text-align: center;
-        padding: 90px 10px;
+        padding: 40px 10px 90px 10px;
         .mainTexts {
             font-size: 2.5rem;
         }
@@ -332,7 +366,7 @@ page-news {
             font-size: 6rem;
         }
         .sched {
-            h4 { font-size: 1.5rem !important; }
+            h4 { font-size: 2rem !important; }
         }
     }
     
@@ -374,9 +408,13 @@ page-news {
 		margin-bottom: 10px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		.slides {
+			
+			padding: 10px;
+			// border: 1px solid black;
 			.slidesCard {
 				width: 100%;
 				display: inline-flex;
+				padding: 20px;
 				div {
 					margin-top: 10px;
 					width: 100%;
@@ -425,14 +463,29 @@ page-news {
 	.slidesHolder2 {
 		margin-bottom: 10px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		position: relative;
+		// .buttonNav {
+		// 	right: 0;
+		// 	bottom: 0;
+		// 	background: black;
+		// }
 		.slides2 {
+			overflow: hidden;
 			.slidesCard2 {
 				width: 100%;
 				display: inline-flex;
 				div {
 					margin-top: 10px;
-					width: 100%;
+					margin-left: 10px;
+					width: 90%;
+					padding: 10px;
 					text-align: center;
+					div {
+						border: 1px solid rgba(0, 0, 0, 0.116);	
+						box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.212); 
+						padding: 20px;
+						border-radius: 5px;
+					}
 					p {
 						padding: 10px;
 						margin: 0 auto;
@@ -471,6 +524,7 @@ page-news {
 							color: rgb(196,148,51); 
 						}
 					}
+					
 				}
 			}
 		}
@@ -480,6 +534,10 @@ page-news {
 		font-size: 3vw !important;
 		font-weight: bold;
 		margin-top: 5px !important;
+	}
+
+	.story {
+		margin-bottom: 40px !important;
 	}
 
 	.menu-button {
@@ -492,7 +550,7 @@ page-news {
 		border-radius: 10px;
 		h2 {
 			margin: 0 auto !important;
-			font-size: 15px !important;
+			font-size: 20px !important;
 		}
 	}
 	.footer .footer-md {
@@ -635,9 +693,6 @@ page-news {
  	.curvyFont {
 		 font-family: 'Cookie Curvy';
 	 }
-	.headFont {
-		font-family: 'Ge Body' !important;
-	}
 	.menu-buttonHover {
 		margin-top: 0px !important;
 		margin-bottom: 50px !important;
