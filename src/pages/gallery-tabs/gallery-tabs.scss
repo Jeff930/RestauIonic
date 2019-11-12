@@ -667,6 +667,7 @@ page-gallery-tabs {
     .deskCardHolder {
         padding: 0px 40px;
         .deskCards {
+            box-shadow: 20px #000000 !important;
             ion-card {
                 display: inline-flex;
                 max-height: 25vh;
