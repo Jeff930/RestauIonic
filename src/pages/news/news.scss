@@ -33,7 +33,7 @@ page-news {
 
 	.welcomeText {
 		font-size: 4rem !important;
-		margin: 0px auto;
+		margin-top: -4vw !important;
 		font-weight: 500;
 	}
 	.mainTitles {
@@ -117,13 +117,22 @@ page-news {
 	}
 
 	.cover2 {
-		border-radius: 0px 0px 0px 150px !important;
-		// background-image: url("assets/");
-		position: relative;
-		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
+		background: url('../assets/imgs/banner/homepage.png') no-repeat center center fixed;		
 		border: .5px solid black;
-		// height: 40vh;
+        height: 45vw;
+        max-height:700px;
+        min-height:300px;
+        // height: 40vh;
+        img {
+                max-height: 52vw;
+    width: 100%;
+        }
 	}
+
+	.fullGrid {
+		padding:0px !important;
+	}
+
 
 	.menuDay{
 		background-image: url("assets/imgs/banner/homepageMenu for today.png");
@@ -224,15 +233,14 @@ page-news {
 
 	.show2{
 		height: 20vw;
-		padding: 10px;
+		padding: 20px;
 		margin:0px;
-		margin-left: 2vw;
 		width: 100%;
 		img {
-			max-height: 40vw !important;
-			min-height: vh !important;
+			height:25vw !important;
+			max-height: 450px !important;
+			min-height:250px !important;
 			width: 100%;
-			max-width: 28vw;
 		}
 	}
 
@@ -242,12 +250,8 @@ page-news {
 	}
 
 	.category{
-		
 		height:25vw !important;
-	}
-
-	.category2{
-		height:25vw !important;
+		max-height: 100px !important;
 	}
 
 	.image-holder {
@@ -295,24 +299,28 @@ page-news {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 210px;
-		width: 40vw;
 		text-align: center;
 		padding:20px;
 	}
 
 	.rectangle{
 		border: 5px solid white;
-		height: 30vw;
+		padding: 5px 30px;
 	}
 
 	.welcome{
-		position: absolute;
 		left: 0;
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 150px;
-		width: 500px;
+	}
+
+	.center{
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.mobile-footer {
@@ -541,13 +549,28 @@ page-news {
 	}
 
 	.menu-button {
+		padding:20px !important;
 		text-align: center;
-		margin: 0 auto !important;
-		margin-top: 20px !important;
-		width: 50% !important;
+		margin-top:2vw !important;
+		width:40% !important;
+		margin-left: 30%;
 		background: rgb(196,148,51);
 		color: white;
-		border-radius: 10px;
+		border-radius: 20px;
+		h2 {
+			margin: 0 auto !important;
+			font-size: 20px !important;
+		}
+	}
+
+	.menu-button2 {
+		padding:20px !important;
+		text-align: center;
+		margin-top:2vw !important;
+	
+		background: rgb(196,148,51);
+		color: white;
+		border-radius: 20px;
 		h2 {
 			margin: 0 auto !important;
 			font-size: 20px !important;

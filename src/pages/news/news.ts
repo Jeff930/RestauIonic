@@ -81,7 +81,7 @@ export class NewsPage {
 
   ionViewDidLoad() {
     
-    this.loadMap();
+    //this.loadMap();
     console.log('ionViewDidLoad NewsPage');
     console.log(this.images)
     

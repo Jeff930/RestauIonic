@@ -16,6 +16,14 @@
 // automatically applied to the <body> element in the app.
 @import '../theme/fonts';
 
+@media (min-width: 1200px){
+    .grid[fixed] {
+        width: 1190px;
+        max-width: 100%;
+    }
+}
+
+
 ion-toolbar {
    --background-color: transparent;
    --ion-color-base: transparent !important;
@@ -31,6 +39,9 @@ ion-toolbar {
 
 .black{
      background: url('../assets/imgs/banner/homepageMenu for today.png') no-repeat center center fixed;
+     height: 35vw;
+     max-height: 450px;
+     min-height:250px;
 }
 
 	.fonty {
