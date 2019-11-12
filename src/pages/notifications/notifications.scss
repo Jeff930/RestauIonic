@@ -25,6 +25,9 @@ page-notifications {
         border: 3px solid rgb(29,29,29);
     }
 
+    .aboutImage{
+        margin-top:5vw;
+    }
 
    h1 {
         font-size: 4rem !important;
@@ -360,7 +363,7 @@ page-notifications {
     }
 
     .image-holder2 {
-            margin: 20px auto !important;
+            margin: auto !important;
             text-align: center;
             padding: 20px 0px !important;
             .show2 {
@@ -506,18 +509,18 @@ page-notifications {
          .mainTexts { font-size: 2rem !important; }
          
 	.menu-button {
-		text-align: center;
-		margin: 0 auto !important;
-		margin-top: 20px !important;
-		width: 50% !important;
-		background: rgb(196,148,51);
-		color: white;
-		border-radius: 10px;
-		h2 {
-			margin: 0 auto !important;
-			font-size: 15px !important;
-		}
-	}
+        text-align: center;
+        margin: 0 auto !important;
+        margin-top: 20px !important;
+        width: 20% !important;
+        background: rgb(196,148,51);
+        color: white;
+        border-radius: 20px;
+        h2 {
+            margin: 0 auto !important;
+            font-size: 15px !important;
+        }
+    }
     }
 	.goldenText { color: rgb(196,148,51);  }
 }
