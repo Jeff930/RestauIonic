@@ -559,35 +559,38 @@
 		
 			<ion-row align-items-center="" class="row">
 				<ion-col class="col" col-12="" col-lg-10="" push-lg-1="" class="text-menu">
-					<div class="container" style="text-align: center">	
-	<ion-slides class="slidesHolder2">
-		<ion-slide class="slides2">
+					<div class="container slidesContainer" style="text-align: center">	
+						
+							<button class="rightButton" (click)="clickNext();"><ion-icon name="arrow-dropright"></ion-icon></button>
+							<button class="leftButton" (click)="clickPrev()"><ion-icon name="arrow-dropleft"></ion-icon></button>
+	<ion-slides class="slidesHolder2" pager #theSlides>
+		<ion-slide class="slides2" >
 			<ion-card class="slidesCard2">
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-medkit" md="md-medkit"></ion-icon></p>
 						<ion-label>
 							Health Score: <span>A</span>
 							<hr>
 						</ion-label>
 					</div>
-					<div class="infoCard" style="margin-top: 50px" >
+					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-calendar" md="md-calendar"></ion-icon></p>
 						<ion-label>
-							Reservations: <span>Yes</span>
+							Takes Reservations: <span>Yes</span>
 							<hr>
 						</ion-label>
 					</div>
 				</div>
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-basket" md="md-basket"></ion-icon></p>
 						<ion-label>
 							Take Out: <span>Yes</span>
 							<hr>
 						</ion-label>
 					</div>
-					<div class="infoCard" style="margin-top: 50px" >
+					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-person" md="md-person"></ion-icon></p>
 						<ion-label>
 							Caters: <span>Yes</span>
@@ -596,14 +599,14 @@
 					</div>
 				</div>
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-bicycle" md="md-bicycle"></ion-icon></p>
 						<ion-label>
 							Bike Parking: <span>No</span>
 							<hr>
 						</ion-label>
 					</div>
-					<div class="infoCard" style="margin-top: 50px" >
+					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-people" md="md-people"></ion-icon></p>
 						<ion-label>
 							Good for Groups: <span>Yes</span>
@@ -612,14 +615,14 @@
 					</div>
 				</div>
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-volume-up" md="md-volume-up"></ion-icon></p>
 						<ion-label>
 							Noise Level: <span>Average</span>
 							<hr>
 						</ion-label>
 					</div>
-					<div class="infoCard" style="margin-top: 50px" >
+					<div style="margin-top: 50px" >
 						<p><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon></p>
 						<ion-label>
 							Good For All Meals: <span>Yes</span>
@@ -634,14 +637,14 @@
 			<ion-card class="slidesCard2">
 				
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-beer" md="md-beer"></ion-icon></p>
 							<ion-label>
 								Happy Hour: <span>No</span>
 								<hr>
 							</ion-label>
 					</div>
-					<div class="infoCard" style="margin-top: 50px">
+					<div style="margin-top: 50px">
 						<p><ion-icon ios="ios-umbrella" md="md-umbrella"></ion-icon></p>
 							<ion-label>
 								Outdoor Seating: <span>No</span>
@@ -650,14 +653,14 @@
 						</div>
 				</div>
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-wifi" md="md-wifi"></ion-icon></p>
 							<ion-label>
 								Free Wi-Fi: <span>Yes</span>
 								<hr>
 							</ion-label>
 					</div>
-					<div  class="infoCard" style="margin-top: 50px">
+					<div style="margin-top: 50px">
 						<p><ion-icon ios="ios-paw" md="md-paw"></ion-icon></p>
 							<ion-label>
 								Dogs Allowed: <span>No</span>
@@ -666,14 +669,14 @@
 					</div>
 				</div>
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-body" md="md-body"></ion-icon></p>
 						<ion-label>
 								GNR: <span>Yes</span>
 								<hr>
 						</ion-label>
 					</div>
-					<div class="infoCard" style="margin-top: 50px">
+					<div style="margin-top: 50px">
 						<p><ion-icon ios="ios-nutrition" md="md-nutrition"></ion-icon></p>
 						<ion-label>
 								Vegan Options: <span>Yes</span>
@@ -682,14 +685,14 @@
 					</div>
 				</div>
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-send" md="md-send"></ion-icon></p>
 							<ion-label>
 								Delivery: <span>Yes</span>
 								<hr>
 							</ion-label>
 					</div>
-					<div class="infoCard" style="margin-top: 50px" >
+					<div style="margin-top: 50px" >
 						<p><ion-icon  ios="ios-card" md="md-card"></ion-icon></p>
 							<ion-label>
 								Credit Cards: <span>Yes</span>
@@ -702,14 +705,14 @@
 			<ion-slide class="slides2">
 				<ion-card class="slidesCard2">
 				<div>
-					<div class="infoCard">
+					<div>
 						<p><ion-icon ios="ios-car" md="md-car"></ion-icon></p>
 							<ion-label>
 								Private Parking: <span>Yes</span>
 								<hr>
 							</ion-label>
 					</div>
-					<div  class="infoCard" style="margin-top: 50px">
+					<div style="margin-top: 50px">
 						<p><ion-icon  ios="ios-happy" md="md-happy"></ion-icon></p>
 							<ion-label>
 								Good for Kids: <span>Yes</span>
@@ -718,7 +721,7 @@
 					</div>
 				</div>
 				<div>
-							<div class="infoCard">
+							<div>
 								<p><ion-icon ios="ios-bulb" md="md-bulb"></ion-icon></p>
 								<ion-label>
 									Ambience: <span>Casual</span>
@@ -727,7 +730,7 @@
 							</div>
 						</div>
 						<div>
-							<div class="infoCard">
+							<div style="margin-top: 50px">
 								<p><ion-icon  ios="ios-pint" md="md-pint"></ion-icon></p>
 								<ion-label>
 									Alcohol: <span>No</span>
@@ -736,7 +739,7 @@
 							</div>
 						</div>
 						<div>
-							<div class="infoCard">
+							<div>
 								<p><ion-icon ios="ios-desktop" md="md-desktop"></ion-icon></p>
 								<ion-label>
 									TV: <span>Yes</span>
@@ -746,6 +749,8 @@
 						</div>
 		</ion-card>
 			</ion-slide>
+			<button id="next" (click)="next(theSlides)"></button>
+			<button id="prev" (click)="prev(theSlides)"></button>
 	</ion-slides>
 					</div>
 				</ion-col>

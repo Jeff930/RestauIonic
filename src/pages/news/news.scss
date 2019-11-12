@@ -63,6 +63,27 @@ page-news {
         text-align:left;
         border-radius: 20px !important;
     }
+
+    .slidesContainer {
+		position: relative;
+		.leftButton, .rightButton {
+			position: absolute;
+			z-index: 99999;
+			bottom: 200px;
+			font-size: 10rem;
+			color: #C49433 !important;
+			font-weight: bold;
+			background: none !important;
+		}
+			.rightButton {
+				
+				right: -5vw;
+			}
+			.leftButton {
+				left: -5vw;
+			}
+	}
+
 	.secndSection {
 		padding: 0px 10px !important;
 		position: relative;
@@ -383,9 +404,13 @@ page-news {
 		margin-bottom: 10px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		.slides {
+			
+			padding: 10px;
+			// border: 1px solid black;
 			.slidesCard {
 				width: 100%;
 				display: inline-flex;
+				padding: 20px;
 				div {
 					margin-top: 10px;
 					width: 100%;
@@ -434,14 +459,29 @@ page-news {
 	.slidesHolder2 {
 		margin-bottom: 10px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		position: relative;
+		// .buttonNav {
+		// 	right: 0;
+		// 	bottom: 0;
+		// 	background: black;
+		// }
 		.slides2 {
+			overflow: hidden;
 			.slidesCard2 {
 				width: 100%;
 				display: inline-flex;
 				div {
 					margin-top: 10px;
-					width: 100%;
+					margin-left: 10px;
+					width: 90%;
+					padding: 10px;
 					text-align: center;
+					div {
+						border: 1px solid rgba(0, 0, 0, 0.116);	
+						box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.212); 
+						padding: 20px;
+						border-radius: 5px;
+					}
 					p {
 						padding: 10px;
 						margin: 0 auto;
@@ -480,6 +520,7 @@ page-news {
 							color: rgb(196,148,51); 
 						}
 					}
+					
 				}
 			}
 		}
