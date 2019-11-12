@@ -130,7 +130,7 @@
 			</div>
 			<div class="sched subTexts">
 				<h4>Monday - Saturday: 10:00am - 10:00pm</h4>
-				<h4>Sunday: 10:00am - 04:00pm</h4>
+				<h4>Sunday: 10:00am - 08:00pm</h4>
 			</div>
 		</div>
 		<!-- <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories" class="image-holder">
@@ -160,8 +160,8 @@
 	authenticity. We do Catering and Special Events! Prices: $3.75 - $37.00</p>	</div>
 	
 <h2 class="title mainTexts headText welcomeText headFont" >Kusina Filipina Has Known For Its</h2>
-	<ion-slides class="slidesHolder">
-		<ion-slide class="slides">
+	<ion-slides class="slidesHolder" pager>
+		<ion-slide class="slides" >
 			<ion-card class="slidesCard">
 				<div>
 					<div>
@@ -499,11 +499,12 @@
 	
 			<div class="show2">
 				<img class="category2" src="assets/imgs/{{l.image}}">
+				<div class="subtitle2">
+					<h6>{{l.name}}</h6>
+				</div>
 			</div>
 	
-			<!-- <div class="subtitle2">
-				<h6>{{l.name}}</h6>
-			</div> -->
+			
 		</ion-col>
 	
 	</ion-row>
@@ -759,7 +760,7 @@
 				</ion-col>
 				
 			</ion-row> -->
-		<div class="first-section second">
+		<div class="first-section second contentLessSpace">
 			<ion-row align-items-center="" class="row">
 				<ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">
 					<div class="container" style="text-align: center">
@@ -771,9 +772,12 @@
 		
 			<ion-row align-items-center="" class="row">
 				<ion-col class="col" col-12="" col-lg-10="" push-lg-1="" class="text-menu">
-					<div class="container" style="text-align: center">	
-	<ion-slides class="slidesHolder2">
-		<ion-slide class="slides2">
+					<div class="container slidesContainer" style="text-align: center">	
+						
+							<button class="rightButton" (click)="clickNext();"><ion-icon name="arrow-dropright"></ion-icon></button>
+							<button class="leftButton" (click)="clickPrev()"><ion-icon name="arrow-dropleft"></ion-icon></button>
+	<ion-slides class="slidesHolder2" pager #theSlides>
+		<ion-slide class="slides2" >
 			<ion-card class="slidesCard2">
 				<div>
 					<div>
@@ -958,6 +962,8 @@
 						</div>
 		</ion-card>
 			</ion-slide>
+			<button id="next" (click)="next(theSlides)"></button>
+			<button id="prev" (click)="prev(theSlides)"></button>
 	</ion-slides>
 					</div>
 				</ion-col>
@@ -1016,10 +1022,6 @@
 		
 		
 	</div>
-
-	<ion-toolbar *ngIf="!checkApp" class="footer-text" color="semiDark">
-		<h6>© Kusina Filipina Copyright</h6>
-	</ion-toolbar>
 
 </ion-content>
 

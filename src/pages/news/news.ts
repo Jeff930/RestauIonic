@@ -1,11 +1,10 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
 import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
 import { HomePage } from '../home/home';
 import { Nav, Platform } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number/ngx';
-
 
 declare var google;
 
@@ -23,6 +22,7 @@ declare var google;
 })
 export class NewsPage {
   @ViewChild('map') mapElement: ElementRef;
+  @ViewChild('slides') slides: Slides;
   map: any;
   allFoodsRoot = 'AllFoodsPage'
   foodRoot = 'FoodPage'
@@ -134,5 +134,20 @@ export class NewsPage {
 
   goToAboutUs() {
     this.navCtrl.setRoot('NotificationsPage');
+  }
+
+  next(slides) {
+    slides.slideNext();
+  }
+  prev(slides) {
+    slides.slidePrev();
+  }
+  clickNext() {
+    let element: HTMLElement = document.getElementById('next') as HTMLElement;
+    element.click();
+  }
+  clickPrev() {
+    let element: HTMLElement = document.getElementById('prev') as HTMLElement;
+    element.click();
   }
 }
