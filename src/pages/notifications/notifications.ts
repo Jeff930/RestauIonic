@@ -104,7 +104,11 @@ export class NotificationsPage {
 
     // this.addInfoWindow(marker, content);
 
+    
 
+  }
 
+  goToContactUs() {
+    this.navCtrl.setRoot('ProfilePage');
   }
 }

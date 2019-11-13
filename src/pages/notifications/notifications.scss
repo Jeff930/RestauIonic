@@ -22,7 +22,6 @@ page-notifications {
         margin: 0 auto;
         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         margin: 0 auto;
-        border: 3px solid rgb(29,29,29);
     }
 
     .aboutImage{
@@ -413,10 +412,51 @@ page-notifications {
         }
     }
 
+    .slideHolder2{
+        padding-bottom:30px;
+    }
+
+    .swiper-pagination-bullet-active {
+    background: #C49433;
+    opacity: 1 !important;
+}
+    .swiper-pagination-bullet {
+    border-radius: 0%;
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    opacity: .2;
+    pointer-events: auto;
+}
+
+
+    ion-icon{
+        margin-right: 10px;
+    }
+
+    .inputSection {
+        display: inline-flex;
+        border-radius: 50px;
+        border: 2px solid rgb(196,148,51);
+        overflow: hidden;
+        font-size: 1.5rem;
+        input {
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
+        }
+        button {
+            color: #ffffff;
+            font-size: 1.5rem;
+            background: rgb(196,148,51);
+            border: none;
+        }
+    }
+
     .image-holder2 {
             margin: auto !important;
             text-align: center;
-            padding: 65px 0px !important;
+            padding: 85px 0px !important;
             .show2 {
                 padding: 40px;
                 ion-icon {
@@ -560,7 +600,7 @@ page-notifications {
     }
 
     .space{
-        margin-bottom:100px;
+        margin-bottom:70px;
     }
     .timeSched {
         text-align: center;

@@ -35,24 +35,7 @@ page-profile {
     }
 }
 
-.inputSection {
-        display: inline-flex;
-        border-radius: 50px;
-        border: 2px solid rgb(196,148,51);
-        overflow: hidden;
-        font-size: 1.5rem;
-        input {
-            padding: 15px;
-            background-color:#EEF1EF;
-            border:none;
-        }
-        button {
-            color: #ffffff;
-            font-size: 1.5rem;
-            background: rgb(196,148,51);
-            border: none;
-        }
-    }
+
 
 
 .cover2 {
@@ -70,12 +53,15 @@ page-profile {
         overflow: hidden;
         font-size: 1.5rem;
         input {
-            padding: 5px;
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
             background: rgb(196,148,51);
+            border: none;
         }
     }
 

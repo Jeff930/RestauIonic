@@ -136,6 +136,10 @@ export class NewsPage {
     this.navCtrl.setRoot('NotificationsPage');
   }
 
+  goToContactUs() {
+    this.navCtrl.setRoot('ProfilePage');
+  }
+
   next(slides) {
     slides.slideNext();
   }

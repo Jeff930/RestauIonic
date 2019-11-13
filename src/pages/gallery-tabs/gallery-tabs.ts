@@ -139,6 +139,10 @@ export class GalleryTabsPage {
 
   }
 
+  goToContactUs() {
+    this.navCtrl.setRoot('ProfilePage');
+  }
+
   callNow() {
     window.open(`tel:3232290228`, '_system');
   }
