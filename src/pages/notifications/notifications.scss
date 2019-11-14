@@ -181,7 +181,7 @@ page-notifications {
         font-weight: bold;
         width: 100%;
         margin: auto;
-        font-family: 'Josef Sans' !important;
+        // font-family: 'Josef Sans' !important;
     }
     .texts {
         display: inline-block; 
@@ -364,6 +364,7 @@ page-notifications {
             width: 00%;
             text-align: center;
             padding: 20px 0px !important;
+            font-family: 'Josef Sans' !important;
             .show {
                 padding: 40px;
                 i{
@@ -537,6 +538,7 @@ page-notifications {
     }
     .timeSched {
         text-align: center;
+        padding-top: 0px !important;
          .mainTexts { font-size: 2rem !important; }
          
 	.menu-button {

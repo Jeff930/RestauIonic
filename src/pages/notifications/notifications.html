@@ -57,7 +57,7 @@
   </ion-row>
   <ion-row no-padding>
     <div class="contentSections secndSection">
-      <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories"
+      <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 *ngFor="let l of categories"
         class="image-holder">
   
         <div class="show">
@@ -90,7 +90,7 @@
 
     <ion-row no-padding>
       <div class="contentSections timeSched">
-        <h2 class="title curvyFont welcomeText goldenText">Business Hours</h2>
+        <h2 class="title curvyFont welcomeText goldenText" style="font-family: 'Cookie Curvy' !important;">Business Hours</h2>
         <h2 class="mainTexts headFont">OPEN FOR SPECIAL OCASIONS</h2>
         <div class="alarmIcon">
           <ion-icon name="alarm" class="goldenText"></ion-icon>
@@ -99,7 +99,7 @@
           <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
           <h4>Sunday: 10:00am - 08:00pm</h4>
         </div>
-        <button ion-button class="menu-button" (click)="callNow()">
+        <button ion-button class="menu-button" (click)="callNow()" style="width: 40% !important;">
           <h2>CONTACT US</h2>
         </button>
       </div>
@@ -282,13 +282,13 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
       <div class="container contactUs" style="text-align: center">
         <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
         <p style="font-size: 1.5rem;margin-top: 0px;">
-          <ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205
+          <ion-icon name="map" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon> 503 Old Buffalo Street NY, 205
         </p>
         <p style="font-size: 1.5rem;margin-top: 0px;">
-          <ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+          <ion-icon name="call" color="charcoal" style="font-size:1.5em; margin-right: 12px"></ion-icon>(+088) 589-8745
         </p>
         <p style="font-size: 1.5rem;margin-top: 0px;">
-          <ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433">
+          <ion-icon name="mail" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon><span style="color:#C49433">
             infoname@gmail.com</span>
         </p>
       </div>

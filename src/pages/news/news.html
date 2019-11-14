@@ -24,20 +24,9 @@
 
 <ion-content>
 	<div *ngIf="checkApp">
-	<!-- <ion-row >
-		<ion-col text-left padding>
-			Stories
-		</ion-col>
-		<ion-col text-right padding>
-			Watch All
-		</ion-col>
-	</ion-row> -->
+	
 		<ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover" >
-			<!-- <ion-slides autoplay="5000" loop="true" speed="500" class="slides" pager="true" class="image-holder">
-				<ion-slide *ngFor="let image of images"  class="images" >
-					<img src="assets/imgs/{{image.image}}" alt="">
-				</ion-slide>
-			</ion-slides> -->
+			
 			<img src="assets/imgs/banner/menu page.png" alt="">
 			<div class="texts">
 			<h2 class="title curvyFont welcomeText">Welcome To</h2>
@@ -51,11 +40,7 @@
 			</div>
 		</ion-row>
 	
-	<!-- <hr> -->
-	<!-- <div text-center>
-	
-	</div> -->
-	<!-- <h4  class="titles">Categories:</h4> -->
+
 	<ion-row no-padding>
 			<div class="contentSections" style="padding-top: 50px !important;">
 				<h2 class="title curvyFont welcomeText goldenText">Our Story</h2>
@@ -72,27 +57,16 @@
 					of Angels, we only employ Chefs who were originally from the Philippines.
 					
 					With over 25 years of culinary experience, we are confident that there is no other place in LA that can offer the same
-					authentic Filipino dining experience that we do.
-.</p>
+					authentic Filipino dining experience that we do.</p>
 				</div>
 				<h2 class="lestMainTexts">WE ARE OPEN FOR BREAKFAST, LUNCH, & DINNER</h2>
 				<div class="subTexts">
 					<p>1062 Bulk Street, Florida, CL 13805 | (608) 853-8569</p>
 				</div>
-				<button ion-button class="menu-button" (click)="callNow()">
+				<button ion-button class="menu-button" (click)="callNow()" style="font-size: 20px !important;">
 					<h2>Discover More</h2>
 				</button>
 			</div>
-		<!-- <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories" class="image-holder">
-	
-			<div class="show">
-				<img class="category" src="assets/imgs/{{l.image}}">
-			</div>
-	
-			<div class="subtitle">
-				<h6>{{l.name}}</h6>
-			</div>
-		</ion-col> -->
 	
 	</ion-row>
 	<ion-row no-padding>
@@ -133,33 +107,18 @@
 				<h4>Sunday: 10:00am - 08:00pm</h4>
 			</div>
 		</div>
-		<!-- <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories" class="image-holder">
-		
-				<div class="show">
-					<img class="category" src="assets/imgs/{{l.image}}">
-				</div>
-		
-				<div class="subtitle">
-					<h6>{{l.name}}</h6>
-				</div>
-			</ion-col> -->
 	
 	</ion-row>
 	<div class="desc">
 		<img src="assets/imgs/karekare.png" alt="">
 	<h4 class="titles curvyFont">Kusina Filipina</h4>
-
-	<!-- <ion-item style="padding: 0px !important;" >
-		<ion-title  class="titles" color="dark">Specialties:</ion-title>
-	</ion-item>-->
-	
 	<p class="intro">
 		<!-- <ion-icon class="iconFont" color="danger" name="information-circle"></ion-icon> -->
 	Authentic Filipino Cuisine in Los Angeles. Our Chefs take pride in maintaining the traditional taste of Filipino dishes.
 	All Chefs here are originally from Philippines, with over 25 years of culinary experience, maintaining the utmost
 	authenticity. We do Catering and Special Events! Prices: $3.75 - $37.00</p>	</div>
 	
-<h2 class="title mainTexts headText welcomeText headFont" >Kusina Filipina Has Known For Its</h2>
+<h2 class="title mainTexts headText welcomeText headFont" style="font-weight: bold" >Kusina Filipina Has Known For Its</h2>
 	<ion-slides class="slidesHolder" pager>
 		<ion-slide class="slides" >
 			<ion-card class="slidesCard">
@@ -342,7 +301,7 @@
 						</div>
 					</ion-card>
 				</ion-slide>
-				<ion-slide class="slides">
+				<ion-slide class="slides lastSlide">
 					<ion-card class="slidesCard">
 						<div>
 							<div>
@@ -458,20 +417,9 @@
 <!--END OF MOBILE-->
 	<div *ngIf="!checkApp">
 	
-		<!-- <ion-row >
-				<ion-col text-left padding>
-					Stories
-				</ion-col>
-				<ion-col text-right padding>
-					Watch All
-				</ion-col>
-			</ion-row> -->
+	
 		<ion-row style="flex-wrap: inherit;" class="cover2">
-			<!-- <ion-slides autoplay="5000" loop="true" speed="500" class="slides" pager="true" class="image-holder">
-				<ion-slide *ngFor="let image of images"  class="images" >
-					<img src="assets/imgs/{{image.image}}" alt="">
-				</ion-slide>
-			</ion-slides> -->
+			
 			<img class="image" src="assets/imgs/banner/homepage.png" alt="">
 
 			<div class="welcome">
@@ -482,9 +430,9 @@
 			<div  class="rectangle">
 			<h2 class="title headFont" style="font-size:8vw;margin-bottom: 0px !important;margin-top:5vw;font-weight:bold"> <span  style="color: #C49433 !important;">KUSINA</span></h2>
 			<h2 class="title headFont" style="margin-top: 0px !important;margin-bottom: 20px !important;font-weight:bold"> <span  style="color: #ffffff !important;font-size:5vw;padding-top: 0px;">FILIPINA</span></h2>
-			<!-- <h6 class="subTitle">See our Menu!</h6>
-			<h2 class="title "> <span  style="color: #d32323 !important; font-weight: bold;">K</span>usina <span  style="color: #d32323 !important; font-weight: bold;">F</span>ilipina</h2> -->
+			
 			</div>
+		</div>
 		</ion-row>
 
 		<div class="first-section story">
@@ -756,7 +704,7 @@
 				</div>
 		</ion-card>
 		</ion-slide>
-			<ion-slide class="slides2">
+			<ion-slide class="slides2" style="">
 				<ion-card class="slidesCard2">
 				<div>
 					<div>

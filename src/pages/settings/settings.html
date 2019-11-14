@@ -47,7 +47,7 @@
 					<ion-icon style="margin-left: 5px !important;" name="ios-phone-portrait-outline" color="goldenBrown">
 				
 					</ion-icon>
-					<div class="texts">
+					<div class="texts" style="padding-left: 22px;">
 						<h2>Phone Number</h2>
 						<h3>(323) 229-0228</h3>
 					</div>
@@ -65,15 +65,18 @@
 		</div>
 	
 	</ion-row>
-	<img src="assets/imgs/logoName.png" height="300px;" class="imageConte">
+
 
 	<ion-row no-padding>
-		<div class="contentSections lastSect">
+		<div class="imageHoler">
+			<img src="assets/imgs/logoName.png" height="300px;" class="imageConte">
+		</div>
+		<div class="contentSections lastSect" style="padding-bottom: 10px !important;">
 			<h2 class="mainTexts headFont lastSectHead">RESTAURANT</h2>
 			<!-- <hr> -->
 			<div class="subTexts">
 				<p><span>Opening Hours:</span> 10:00am</p>
-				<p><span>Closing Hours:</span> Monday - Saturday (10:00pm), Sunday (08:00pm)</p>
+				<p ><span>Closing Hours:</span> Monday - Saturday (10:00pm), Sunday (08:00pm)</p>
 				<p><span>Booking Call:</span> (323) 229-0228</p>
 			</div>
 		</div>
@@ -95,7 +98,7 @@
 		<ion-row align-items-center="" class="row">
 			<ion-col class="col" col-12="" col-lg-3="" class="text-menu">
 				<div class="container contactUs" style="text-align: left">
-					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+					<h2 class="headFont;" style="margin-bottom: 0px; "><strong>BUSINESS HOURS</strong></h2>
 					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
 					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday:
 						</span>06AM - 10PM</p>
@@ -143,9 +146,9 @@
 	<div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important"
 		*ngIf="checkApp">
 		<ion-row align-items-center="" class="row">
-			<ion-col class="col" col-12="" col-lg-3="" class="text-menu">
+			<ion-col class="col " col-12="" col-lg-3="" class="text-menu ">
 				<div class="container contactUs" style="text-align: left">
-					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+					<h2 class="headFont curvyFont" style="margin-bottom: 0px; font-family: 'Josef Sans' !important; font-size: 25px !important"><strong>BUSINESS HOURS</strong></h2>
 					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
 					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday:
 						</span>06AM -
@@ -158,25 +161,25 @@
 	
 				</div>
 			</ion-col>
-			<ion-col class="col" col-12="" col-lg-6="" text-center="">
+			<ion-col class="col noPad" col-12="" col-lg-6="" text-center="">
 				<div class="container contactUs" style="text-align: center">
 					<img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
 					<p style="font-size: 1.5rem;margin-top: 0px;">
-						<ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY,
+						<ion-icon name="map" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon> 503 Old Buffalo Street NY,
 						205
 					</p>
 					<p style="font-size: 1.5rem;margin-top: 0px;">
-						<ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+						<ion-icon name="call" color="charcoal" style="font-size:1.5em; margin-right: 12px"></ion-icon>(+088) 589-8745
 					</p>
 					<p style="font-size: 1.5rem;margin-top: 0px;">
-						<ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span
+						<ion-icon name="mail" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon><span
 							style="color:#C49433">
 							infoname@gmail.com</span>
 					</p>
 				</div>
 	
 			</ion-col>
-			<ion-col class="col" col-12="" col-lg-3="" text-center="">
+			<ion-col class="col noPad" col-12="" col-lg-3="" text-center="">
 				<div class="container contactUs" style="text-align: left;">
 					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
 					<hr style="">
@@ -194,50 +197,6 @@
 			</ion-col>
 		</ion-row>
 	</div>
-	<!-- <ion-row no-padding>
-		<div class="contentSections footerSect contentPadding" style="padding: 100px 10px !important;">
-			<h2 class="mainTexts headFont">SUBSCRIBE NOW</h2>
-			<hr>
-			<div class="subTexts">
-				<p>Sign up to our newsletter to get latest food item news and our new events. This theme will help you
-					organizing your site
-					without any technical skills.</p>
-			</div>
-
-			<div class="inputSection">
-				<input type="text" placeholder="Email Address">
-				<button>SIGN UP</button>
-			</div>
-
-		</div>
-
-	</ion-row> -->
-	<!-- <div class="maps">
-    
-  <div class="mapContainer">
-    <div #map id="map"></div>
-  </div>
-  <div class="parg">
-    <h4 class="titles" style="color: #ffffff !important"> <ion-icon color="danger" name="navigate"></ion-icon> Want to know our location? <br> You can find us here:</h4>
-  
-  <h6 style="font-size: 1.4rem; color: #ffffff">4157 Eagle Rock Blvd
-  Ste 1
-  Los Angeles, CA 90065</h6>
-  </div>
-  </div>
-  <div class="storeHours"> 
-      <h4 class="titles exdtra">Store Hours</h4>
-      <hr>
-      <div class="hoursContent">
-        <div class="hours" *ngFor="let hour of storeTime">
-        
-          <div class="schedContent">
-            <h5 class="day">{{ hour.day }}</h5>
-            <h5 class="sched">{{ hour.time }}</h5>
-          </div>
-        </div>
-      </div>
-  </div> -->
 </ion-content>
 
 <ion-footer transparent *ngIf="checkApp">

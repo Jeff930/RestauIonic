@@ -27,6 +27,7 @@ page-settings {
     .lastSectHead {
         font-family: 'Josef Sans' !important;
         font-weight: bold;
+        margin-bottom: 0px !important;
     }
     .contacts {
         .contactContent {
@@ -237,13 +238,19 @@ page-settings {
             background: rgb(196,148,51);
         }
     }
-    .imageConte {
-        background: rgba(0,0,0,0.05);
+    .imageHoler {
+        padding: 0px 50px;
+        background: rgb(242,242,242);
+        .imageConte {
+            width: 100%;    
+                height: 200px;
+            }
     }
+    
     .contentSections {
 		margin: 0 auto;
 		text-align: left;
-        padding: 100px 0px;
+        padding: 30px 0px;
         hr {
             width: 50%;
             background: rgb(196,148,51);
@@ -266,12 +273,16 @@ page-settings {
 			margin: 0 auto !important;
 			font-size: 1.5rem;
 			p {	
-                line-height: 2;
+                padding: 5px 0px;
+                margin: 0px !important;
                 span {
-                    color: rgb(78, 78, 78);
+                    color: rgb(0, 0, 0);
                     font-weight: bold;
                 }
 			}
+        }
+        .noPad  {
+            padding: 0px !important;
         }
         .contentPadding { };
 		.alarmIcon {
@@ -340,7 +351,6 @@ page-settings {
             width: 100px;
         }
         .subTexts {
-            line-height: 2;
             .goldenText {
                 font-size: 4rem;
                 line-height: 1px;
@@ -391,10 +401,11 @@ page-settings {
 	}
     }
     .lastSect {
-        padding: 20px !important;
+        padding: 25px !important;
         margin: 0px !important;
-        background: rgba(184, 184, 184, 0.11);
+        background: rgb(242,242,242);
         width: 100%;
+        margin-top: -10px;
     }
 	.goldenText { color: rgb(196,148,51);  }
  .mobSections {

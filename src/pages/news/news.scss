@@ -236,8 +236,8 @@ page-news {
 		margin:0px;
 		position: relative;
 		img {
-			border: 2px solid #c2c0c0;
-			box-shadow: 0 10px 6px -6px rgb(196,148,51); 
+			// border: 2px solid #c2c0c0;
+			// box-shadow: 0 10px 6px -6px rgb(196,148,51); 
 			max-height: 30vh !important;
 			min-height: 30vh !important;
 			width: 100%;
@@ -359,7 +359,6 @@ page-news {
 		margin-top: 210px;
 		width: 40vw;
 		text-align: center;
-		border: 5px solid white;
 		padding:20px;
 	}
 
@@ -402,7 +401,7 @@ page-news {
 	.contentSections {
         margin: 0 auto;
         width: 95%;
-        height: 50vh;
+        // height: 50vh;
         text-align: center;
         padding: 40px 10px 90px 10px;
         .mainTexts {
@@ -472,14 +471,13 @@ page-news {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		.slides {
 			
-			padding: 10px;
+			padding: 0px 10px 10px 10px;
 			// border: 1px solid black;
 			.slidesCard {
 				width: 100%;
 				display: inline-flex;
-				padding: 20px;
+				padding: 5px 20px 20px 20px;
 				div {
-					margin-top: 10px;
 					// margin-left: 10px;
 					// width: 90%;
 						width: 50%;
@@ -525,6 +523,17 @@ page-news {
 							color: rgb(196,148,51); 
 						}
 					}
+				}
+			
+			}
+		}
+		.lastSlide {
+			height: 100%;
+			.slidesCard {
+				height: 269px;
+				div {
+					width: 100% !important;
+					margin: auto;
 				}
 			}
 		}
@@ -607,6 +616,9 @@ page-news {
 				}
 			}
 		}
+			#next, #prev {
+					display: none;
+				}
 	}
 
 	.subTitle {
@@ -629,7 +641,7 @@ page-news {
 		border-radius: 10px;
 		h2 {
 			margin: 0 auto !important;
-			font-size: 20px !important;
+			font-size: 16px !important;
 		}
 	}
 	.footer .footer-md {

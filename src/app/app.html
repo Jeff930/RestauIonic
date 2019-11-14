@@ -6,13 +6,10 @@
   </ion-header>
 
   <ion-content>
-    <ion-item>
-      <h6>Categories:</h6>
-    </ion-item>
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         &nbsp;&nbsp; <ion-icon name="{{p.icon}}"  color="goldenBrown"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;
-        {{p.title}}
+        {{p.title}}&nbsp;&nbsp;
       </button>
     </ion-list>
   </ion-content>
