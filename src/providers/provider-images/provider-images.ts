@@ -32,7 +32,7 @@ export class ProviderImagesProvider {
     console.log('Hello ProviderImagesProvider Provider');
   }
   
-
+  //TODO: Update this when the app is ready for IOS, currently this is for android only 
   checkAppPlatform() {
     this.checkApp = this.platform.is('android');
     this.innerWidth = window.innerWidth;
@@ -41,6 +41,8 @@ export class ProviderImagesProvider {
     }
     return this.checkApp;
   }
+
+  //TODO: Update this when Client gives the spreadsheet for the menu
   getImages(type) {
     if (type === "drinks") {
       this.templateImage = drinks;
@@ -89,8 +91,8 @@ export class ProviderImagesProvider {
     }); 
     beefs.forEach(element => {
       if (element.name === 'Beef Mechado (Stew in Tomato Sauce)') {
-        allFoods.push(element);
-      }
+        allFoods.push(element); 
+      }   
     });
     menu.forEach(element => {
       if (element.name === 'sample Menu 2') {
@@ -103,6 +105,7 @@ export class ProviderImagesProvider {
 
 
   // get all the items from the other foods.
+  
   getAllFoodsFromMenu() {
     const allMenu = [];
     appetizers.forEach(element => {

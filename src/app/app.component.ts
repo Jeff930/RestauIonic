@@ -42,7 +42,7 @@ export class MyApp {
       { title: 'Menu', component: 'GalleryTabsPage', icon: 'book' },
       { title: 'About Us', component: 'NotificationsPage', icon: 'information-circle' },
       { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
-      // { title: 'Catering and Events', component: 'NotificationsPage', icon: 'albums' }
+      { title: 'Catering and Events', component: 'CateringPage', icon: 'albums' }
       ];
       this.pagesDesk = [
         { title: 'HOME', component: 'NewsPage', icon: 'home' },
