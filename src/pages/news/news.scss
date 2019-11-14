@@ -66,7 +66,9 @@ page-news {
 
     .slidesContainer {
 		position: relative;
+		border: none;
 		.leftButton, .rightButton {
+			border: none;
 			position: absolute;
 			z-index: 99999;
 			bottom: 200px;
@@ -195,6 +197,7 @@ page-news {
             font-size: 1.5rem;
             background: rgb(196,148,51);
             border: none;
+            width:100px !important;
         }
     }
 	
@@ -494,6 +497,7 @@ page-news {
 
 	.slidesHolder2 {
 		margin-bottom: 10px;
+		border: none;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		position: relative;
 		// .buttonNav {
@@ -501,13 +505,19 @@ page-news {
 		// 	bottom: 0;
 		// 	background: black;
 		// }
+		#next, #prev {
+					display: none;
+				}
 		.slides2 {
 			overflow: hidden;
+			border: none;
 			.slidesCard2 {
 				width: 100%;
+				border: none;
 				display: inline-flex;
 				padding-bottom: 50px;
 				div {
+					border: none;
 					margin-top: 10px;
 					margin-left: 10px;
 					width: 90%;
@@ -515,10 +525,10 @@ page-news {
 					text-align: center;
 					div {
 						border: 1px solid rgba(0, 0, 0, 0.116);	
-						box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.116); 
+						box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.116);
 						padding: 20px;
 						border-radius: 5px;
-					}
+						}
 					p {
 						padding: 10px;
 						margin: 0 auto;
@@ -574,17 +584,22 @@ page-news {
 	}
 
 	.menu-button {
-		padding:25px !important;
-		text-align: center;
-		margin-top:2vw !important;
-		width:40% !important;
-		margin-left: 30%;
-		background: rgb(196,148,51);
-		color: white;
-		border-radius: 20px;
+padding: 0;
+text-align: center;
+margin-top: 2vw !important;
+width: 230px !important;
+margin-left: 0;
+background: #c49433;
+color: white;
+margin: 2vw auto 0 !important;
+height: 58px;
+border-radius: 25px;
+
 		h2 {
 			margin: 0 auto !important;
 			font-size: 20px !important;
+			height: inherit;
+   			line-height:60px;
 		}
 	}
 

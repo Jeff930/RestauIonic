@@ -419,15 +419,35 @@ page-notifications {
     .swiper-pagination-bullet-active {
     background: #C49433;
     opacity: 1 !important;
+    height: 35px;
+
 }
     .swiper-pagination-bullet {
     border-radius: 0%;
     display: inline-block;
     width: 8px;
-    height: 12px;
     opacity: .2;
     pointer-events: auto;
+    transition: all ease-in-out .2s;
+
 }
+
+.slide-image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+
+.swiper-pagination {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
     ion-icon{
@@ -450,6 +470,7 @@ page-notifications {
             font-size: 1.5rem;
             background: rgb(196,148,51);
             border: none;
+            width:100px !important;
         }
     }
 
@@ -489,6 +510,17 @@ page-notifications {
             border-radius: 50%;
             height: 100px;
             width: 100px;
+        }
+        .slide-image{
+            img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
         }
         .subTexts {
             line-height: 2;

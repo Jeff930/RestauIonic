@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
 
+declare var google;
 /**
  * Generated class for the CateringPage page.
  *
@@ -15,36 +16,59 @@ import { ProviderImagesProvider } from '../../providers/provider-images/provider
   templateUrl: 'catering.html',
 })
 export class CateringPage {
-  public liked1: boolean = false;
-  public list: any = [];
+  @ViewChild('map') mapElement: ElementRef;
+  map: any;
+
   checkApp;
-  public innerWidth: any;
+  date = new Date();
+  timeSched;
   constructor(public navCtrl: NavController, public imageProvider: ProviderImagesProvider) {
-    // this.list = this.imageProvider.getImages('food');
-    this.list = this.imageProvider.getImages('drinks');
-    this.checkApp = this.imageProvider.checkAppPlatform();
-    this.innerWidth = window.innerWidth;
-    if (this.innerWidth <= 480) {
-      this.checkApp = true;
-    }
+     this.checkApp = this.imageProvider.checkAppPlatform();
   }
 
-  enterWebsite() {
-    this.navCtrl.push('HomePage');
-  }
-
-  like(no) {
-
-    if (this.liked1) {
-      this.liked1 = false;
+  ionViewDidLoad() {
+    this.loadMap();  
+    if (this.date.getDate() !== 0 ) {
+      this.timeSched = '10:00am - 10:00pm';
     } else {
-      this.liked1 = true;
+      this.timeSched = '10:00am - 04:00pm';
     }
   }
+  
+  loadMap() {
 
-  showPortfolio(image) {
-    this.navCtrl.push('PortfolioPage');
-    console.log(image);
-    this.imageProvider.currentImage = image;
+    let latLng = new google.maps.LatLng(34.122198, -118.225819);
+    let mapOptions = {
+      center: latLng,
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    let marker = new google.maps.Marker({
+      position: latLng,
+      map: mapOptions,
+      title: 'Hello World!'
+    });
+    this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+    this.addMarker(this.map);
+  }
+  
+  addMarker(map: any) {
+
+    let marker = new google.maps.Marker({
+      map: map,
+      animation: google.maps.Animation.DROP,
+      position: map.getCenter()
+    });
+
+    let content = "<h4>Information!</h4>";
+
+    // this.addInfoWindow(marker, content);
+
+    
+
+  }
+
+  goToContactUs() {
+    this.navCtrl.setRoot('ProfilePage');
   }
 }

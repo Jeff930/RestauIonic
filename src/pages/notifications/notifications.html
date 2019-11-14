@@ -178,7 +178,9 @@ We wanted our fellow Filipino immigrants in Los Angeles to experience authentic 
           <h1 class="mainTexts headFont">CUSTOMERS REVIEW</h1>
         <ion-slides class="" pager>
           <ion-slide *ngFor="let t of testimonials" class="slideHolder2">
-            <img src="assets/imgs/{{t.image}}" alt="">
+            <div class="slide-image">
+              <img src="assets/imgs/{{t.image}}" alt="">
+            </div>
             <div class="subTexts2">
               <p class="headFont" style="width:80%;margin: auto"><i><span class="goldenText">"</span>{{t.testim}}<span class="goldenText">"</span></i></p>
               <h2 class="mainTexts headFont" style="margin-top: 10px !important">{{t.name}}</h2>

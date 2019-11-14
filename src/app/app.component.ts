@@ -48,7 +48,7 @@ export class MyApp {
         { title: 'HOME', component: 'NewsPage', icon: 'home' },
         { title: 'MENU', component: 'GalleryTabsPage', icon: 'images' },
         { title: 'ABOUT US', component: 'NotificationsPage', icon: 'information-circle' },
-        { title: 'EVENTS', component: 'CateringPage', icon: 'basket' },
+        // { title: 'EVENTS', component: 'CateringPage', icon: 'basket' },
         { title: 'CONTACT', component: 'ProfilePage', icon: 'information-circle' },
       ]
     }
