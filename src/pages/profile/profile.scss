@@ -13,8 +13,7 @@ page-profile {
     padding-left: 10px;
   }
   #map {
-    height: 100%;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    height: 550px;
   }
   .mapContainer {
       width: 100%;
@@ -22,17 +21,39 @@ page-profile {
       margin: 0 auto;
        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
+   .mapContainer2 {
+      width: 100%;
+      margin: 0 auto;
+  }
   .map-col{
   	padding:0px !important;
   }
 
+  .contactUsSection {
+    background-color: #EEF1EF;
+    padding:50px;
+    max-height:500px;
+
+    img{
+        padding-top:5px;
+        height:334px;
+    }
+}
+
+
 .cover2 {
-		background: url('../assets/imgs/banner/menupage.png') no-repeat center center fixed !important;
+		background: url('../assets/imgs/banner/Events.png') no-repeat center center fixed;
+		position: relative;
 		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
-		height: 20vw;
-		max-height:500px;
-		min-height:300px;
-	}
+		border: .5px solid black;
+        height: 20vw;
+        max-height:500px;
+        min-height:300px;
+        img {
+                max-height: 52vw;
+    width: 100%;
+        }
+    }
 
 .inputSection {
         display: inline-flex;
@@ -41,12 +62,16 @@ page-profile {
         overflow: hidden;
         font-size: 1.5rem;
         input {
-            padding: 5px;
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
             background: rgb(196,148,51);
+            border: none;
+            width:100px !important;
         }
     }
 
@@ -181,6 +206,11 @@ page-profile {
 			}
 		}
 	}
+
+	.fullGrid {
+		padding:0px !important;
+	}
+	
 	.intro {
 		text-indent: 10px;
 		padding: 5px 15px 15px 15px;

@@ -18,6 +18,7 @@
 
 
 <ion-content>
+	<div ngIf="checkApp">
 	<ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
 		<h2 class="title  welcomeText">Contact Us</h2>
 
@@ -94,55 +95,7 @@
 		</div>
 	</ion-row>
 
-	<div class="first-section footer" style="padding-top: 0px !important;margin-top: -10px !important" *ngIf="!checkApp">
-		<ion-row align-items-center="" class="row">
-			<ion-col class="col" col-12="" col-lg-3="" class="text-menu">
-				<div class="container contactUs" style="text-align: left">
-					<h2 class="headFont;" style="margin-bottom: 0px; "><strong>BUSINESS HOURS</strong></h2>
-					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
-					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday:
-						</span>06AM - 10PM</p>
-					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday:
-						</span>10AM - 11:30PM</p>
-					<p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM
-					</p>
 	
-				</div>
-			</ion-col>
-			<ion-col class="col" col-12="" col-lg-6="" text-center="">
-				<div class="container contactUs" style="text-align: center">
-					<img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
-					<p style="font-size: 1.5rem;margin-top: 0px;">
-						<ion-icon name="map" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY,
-						205
-					</p>
-					<p style="font-size: 1.5rem;margin-top: 0px;">
-						<ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
-					</p>
-					<p style="font-size: 1.5rem;margin-top: 0px;">
-						<ion-icon name="mail" color="charcoal" style="font-size:1.5em"></ion-icon><span
-							style="color:#C49433"> infoname@gmail.com</span>
-					</p>
-				</div>
-	
-			</ion-col>
-			<ion-col class="col" col-12="" col-lg-3="" text-center="">
-				<div class="container contactUs" style="text-align: left;">
-					<h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
-					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
-					<p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items
-						and our new events. This theme will help you organize your site without any technical skills.</p>
-	
-					<div class="inputSection">
-						<input type="text" placeholder="Email Address">
-						<button>SIGN UP</button>
-					</div>
-	
-				</div>
-	
-			</ion-col>
-		</ion-row>
-	</div>
 	<div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important"
 		*ngIf="checkApp">
 		<ion-row align-items-center="" class="row">
@@ -196,6 +149,157 @@
 	
 			</ion-col>
 		</ion-row>
+	</div>
+</div>
+
+	<div *ngIf="!checkApp" >
+		<div style="flex-wrap: inherit; width: 100%;padding:0" class="cover2" >
+			<!-- <div class="welcome"> -->
+				<p class="title headFont" style="color: #ffffff !important;font-size:4vw !important;padding-top:100px !important;"> Contact Us</p>
+			<!-- </div> -->
+		</div>
+		
+		<div class="map" style="padding-top: 0px !important">
+			<ion-row align-items-center="" class="row">
+				<ion-col class="col map-col" col-12="" col-lg-12="" text-center="">
+					<div class="mapContainer2" style="height:500px;">
+						<div #map id="map"></div>
+					</div>
+				</ion-col>
+			</ion-row>
+		</div>
+
+	<ion-grid>
+	<div class="first-section" style="padding-top: 5vw !important;padding-bottom: 0px !important">
+			<ion-row align-items-center="" class="row">
+				<ion-col class="col" col-12="" col-lg-6="" >
+					<div class="container contactUsSection" style="text-align: left">
+						<h1 class="Kusina">CONTACT INFO</h1>
+						<br>
+						<ion-row>
+						<ion-col col-1="" style="margin:0;width:10px;text-align:center">
+							<ion-icon class="icon" color="goldenBrown" name="pin"></ion-icon>
+						</ion-col>
+						<ion-col>
+							<p class="headFont" style="font-size: 1.7rem;font-weight: bold;margin-bottom: 0px">Address</p>
+							<p class="headFont" style="font-size: 1.5rem;margin-top: 7px">4157 Eagle Rock Blvd
+							Ste 1
+							Los Angeles, CA 90065</p>
+						</ion-col>
+					</ion-row>
+
+					<ion-row>
+						<ion-col col-1="" style="margin:0;width:10px;text-align:center">
+							<ion-icon class="icon" color="goldenBrown" name="phone-portrait"></ion-icon>
+						</ion-col>
+						<ion-col>
+							<p class="headFont" style="font-size: 1.7rem;font-weight: bold;margin-bottom: 0px">Phone Number</p>
+							<p class="headFont" style="font-size: 1.5rem;margin-top: 7px">(323) 229-0228</p>
+						</ion-col>
+					</ion-row>
+
+					<ion-row>
+						<ion-col col-1="" style="margin:0;width:10px;text-align:center;">
+							<ion-icon class="icon" color="goldenBrown" name="mail"></ion-icon>
+						</ion-col>
+						<ion-col>
+							<p class="headFont" style="font-size: 1.7rem;font-weight: bold;margin-bottom: 0px">Email Address</p>
+							<p class="headFont" style="font-size: 1.5rem;margin-top: 7px">infoname@gmail.com</p>
+						</ion-col>
+					</ion-row>
+
+					</div>
+				</ion-col>
+				<ion-col class="col" col-12="" col-lg-6="" text-center="">
+					<div class="container contactUsSection" style="text-align: center">
+						<img src="assets/imgs/logoName.png" alt="">
+					</div>
+					
+				</ion-col>
+			</ion-row>
+		</div>
+	</ion-grid>
+
+	<ion-grid>
+		<div class="first-section" style="padding-top: 0px !important;margin-top: -10px !important">
+			<ion-row align-items-center="" class="row">
+				<ion-col class="col" col-12="" col-lg-6="">
+					<div class="container contactUs" style="text-align: left">
+						<h2 class="headFont" style="margin-bottom: 0px;margin-left: 15px;">RESTAURANT</h2>
+						<br>
+						<p class="headFont" style="font-size: 1.5rem;margin-left: 15px;margin-top: 0px;">Business Hours: 8:00 - 23:30</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-left: 15px">Booking Call: +88045221210</p>
+
+					</div>
+				</ion-col>
+				<ion-col class="col" col-12="" col-lg-6="" text-center="">
+					<div class="container contactUs" style="text-align: left">
+						<h2 class="headFont" style="margin-bottom: 0px;;margin-left: 15px;">EVENT CATERING</h2>
+						<br>
+						<p class="headFont" style="font-size: 1.5rem;margin-left: 15px;margin-top: 0px;">Business Hours: 8:00 - 23:30</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-left: 15px">Booking Call: +88045221210</p>
+
+					</div>
+					
+				</ion-col>
+			</ion-row>
+		</div>
+	</ion-grid>
+
+	<ion-grid class="fullGrid footer">
+		<div class="first-section" style="padding-top: 0px !important;margin-top: -10px !important">
+			<ion-row align-items-center="" class="row">
+				<ion-col class="col" col-12="" col-lg-3="" class="text-menu">
+					<div class="container contactUs" style="text-align: left;">
+						<h2 class="headFont" style="margin-bottom: 0px;">BUSINESS HOURS</h2>
+						<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM - 10PM</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM - 11:30PM</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 60px;"><span style="font-weight: bold">Booking Time: </span>24/7 Hours</p>
+					</div>
+				</ion-col>
+				<ion-col class="col" col-12="" col-lg-6="" text-center="">
+					<div class="container contactUs" style="text-align: center">
+						<img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;vertical-align: middle"><ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;vertical-align: middle"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745</p>
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;vertical-align: middle"><ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433"> infoname@gmail.com</span></p>
+					</div>
+					
+				</ion-col>
+				<ion-col class="col" col-12="" col-lg-3="" text-center="">
+					<div class="container contactUs" style="text-align: left;">
+						<h2 class="headFont" style="margin-bottom: 0px;">SUBSCRIBE NOW</h2>
+						<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
+						<p class="headFont" style="font-size: 1.5rem;margin-top: 0px;line-height:30px;"> Sign up now to our newsletter to get latest food items and our new events. This theme will help you organize your site without any technical skills.</p>
+
+						 <div class="inputSection">
+          <input class="headFont" type="text" placeholder="Email Address">
+          <button class="headFont">SIGN UP</button>
+        </div>
+
+
+					</div>
+
+					
+				</ion-col>
+			</ion-row>
+		</div>
+	</ion-grid>
+
+	<ion-grid>
+		<div class="last-section">
+			<ion-row align-items-center="" class="row">
+				<ion-col class="col" col-12="" col-lg-4="" >
+					<div class="container" style="text-align: left">
+						<p style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights Reserved</p>
+						</div>
+				</ion-col>
+			</ion-row>
+		</div>
+	</ion-grid>
+		
 	</div>
 </ion-content>
 
