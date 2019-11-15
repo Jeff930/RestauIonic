@@ -24,6 +24,17 @@ page-catering {
         margin: 0 auto;
         // border: 3px solid rgb(29,29,29);
     }
+      .hrFoot {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        margin-left:0px !important;
+        width: 20% !important;
+        height: 3px !important;
+        background: #C49433 !important;
+        text-align:left;
+        border-radius: 20px !important;
+    }
+    
       .mapContainer2 {
         width: 95%;
         height: 50vh;
@@ -178,6 +189,21 @@ page-catering {
             padding: 0px !important;
             text-align: left !important;
         }
+          .inputSection {
+        display: inline-flex;
+        border-radius: 50px;
+        border: 2px solid rgb(196,148,51);
+        overflow: hidden;
+        font-size: 1.5rem;
+        input {
+            padding: 5px;
+        }
+        button {
+            color: #ffffff;
+            font-size: 1.5rem;
+            background: rgb(196,148,51);
+        }
+    }
     }
     .hrFoot {
         width: 20%;height: 30px;color: #C49433 !important; text-align: left
@@ -385,7 +411,6 @@ page-catering {
                 color: rgb(196,148,51) !important;
                 text-align: left !important;
                 font-size: 1.8rem;
-                margin-bottom: 5px;
             }
             hr {
                 width: 100% !important;
