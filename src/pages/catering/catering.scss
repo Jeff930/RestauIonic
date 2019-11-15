@@ -25,9 +25,25 @@ page-catering{
     }
 
     .aboutImage{
+    	height: 450px;
+    	background-image: url('../assets/imgs/banner/eventContent.jpg');
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: 50% 50%;
     	img{
-    		width: 100%;
-    		height: 550px;
+    		height: 450px;
+    	}
+       
+    }
+
+    .setImage{
+    	height: 450px;
+    	background-image: url('../assets/imgs/banner/eventContent.jpg');
+    	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    	img{
+    		height: 450px;
     	}
        
     }
