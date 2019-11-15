@@ -24,10 +24,24 @@ page-catering {
         margin: 0 auto;
         // border: 3px solid rgb(29,29,29);
     }
-
-    .aboutImage{
-        margin:5vw;
+      .mapContainer2 {
+        width: 95%;
+        height: 50vh;
+        margin: 0 auto;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        margin: 0 auto;
     }
+    .aboutImage{
+    	height: 520px;
+    	background-image: url('../assets/imgs/banner/eventsContent.jpg');
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: 50% 50%;
+    	img{
+    		height: 520px;
+    	}  
+    }
+
 
    h1 {
         font-size: 4rem !important;
@@ -218,16 +232,20 @@ page-catering {
         overflow: hidden;
         font-size: 1.5rem;
         input {
-            padding: 5px;
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
             background: rgb(196,148,51);
+            border: none;
+            width:100px !important;
         }
     }
 
-    hr {
+    .smallLine {
         margin-top: 0px !important;
         margin-bottom: 20px !important;
         margin-left:0px !important;
@@ -236,6 +254,11 @@ page-catering {
         background: #C49433 !important;
         text-align:left;
         border-radius: 20px !important;
+    }
+
+     .sectionLine {
+        height: 3px !important;
+        background: #C49433 !important;
     }
 
     .contentSections2 {
@@ -286,7 +309,34 @@ page-catering {
             }
             .subTexts { margin-bottom: 50px !important; }
         }
+         	.menu-button {
+        text-align: center;
+        margin: 0 auto !important;
+        margin-top: 20px !important;
+        width: 20% !important;
+        background: rgb(196,148,51);
+        color: white;
+        border-radius: 20px;
+        h2 {
+            text-align: center;
+        font-family: 'Roboto' !important;
+        margin: 0 auto !important;
+            font-size: 15px !important;
+        }
     }
+    }
+    
+    .ftrLine {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        margin-left:0px !important;
+        width: 20% !important;
+        height: 3px !important;
+        background: #C49433 !important;
+        text-align:left;
+        border-radius: 20px !important;
+    }
+
     .businessHrs {
 		 color: rgb(102,102,102) !important;
             padding: 0px 25px !important;
@@ -403,6 +453,167 @@ page-catering {
             .subTexts { margin-bottom: 50px !important; }
         }
     }
+
+    .contentSections3 {
+		margin: 0 auto;
+		text-align: center;
+        padding: 0px;
+        
+        .mainHead {
+            font-size: 44px !important;
+            // font-weight: bold;
+            width: 100%;
+            margin: auto;
+        }
+        hr {
+            width: 50%;
+            background: rgb(196,148,51);
+            height: 5px;
+            text-align: left;
+            margin: -10px 0px;
+        }
+		.mainTexts {
+            font-size: 3rem;
+            margin-top: 0px !important;
+            z-index: 999999;
+            margin-bottom: 26px;
+            font-weight: bold;
+            font-family: 'Josef Sans';
+		}
+        .lestMainTexts { 
+            font-size: 18px; 
+            line-height: 2;
+            font-family: 'Josef Sans';
+        }
+		.subTexts {
+            // color: rgb(102,102,102);
+            background: rgb(29,29,29);
+            // padding: 0px 25px;
+			margin: 0 auto !important;
+            font-family: 'Josef Sans' !important;
+            padding: 5px 25px 25px 25px;
+			.mainTitle {
+                color: rgb(196,148,51) !important;
+                text-align: left !important;
+                font-size: 1.8rem;
+                margin-bottom: 5px;
+            }
+            hr {
+                width: 100% !important;
+            }
+            .eventTitle {
+                color: #ffffff;
+                font-size: 2.5rem !important;
+            }
+            .eventDetailsContainer {
+                .eventDetails {
+                    display: inline-flex !important;
+                    color: #ffffff;
+                    width: 100%;
+                    padding: 15px 0px;
+                    border-bottom: 1px solid gray;
+                    h2 {
+                        text-align: left;
+                        margin: 0px;
+                        font-size: 1.8rem !important;
+                        width: 50%;
+                    }
+                    h3 {
+                        text-align: right !important;
+                        width: 50%;
+                        font-size: 1.8rem !important;
+                        margin: 0px;
+                    }
+                    i { 
+                        color: rgb(196,148,51) !important;
+                        margin-right: 10px;  
+                    }
+
+                }
+                .eventDetails:last-child {
+                    border: none !important;
+                }
+                
+            }
+            .menu-button {
+                    margin-top: 5px;
+                    border-radius: 50px !important;
+                    padding: 25px 30px;
+                    h2 {
+                    font-size: 1.8rem !important;
+                    }
+                }
+		}
+		.alarmIcon {
+			font-size: 6rem;
+		}
+		.sched {
+			h4 { font-size: 1.5rem !important; }
+        }
+        .subDesc {
+            margin-top: 20px;
+            h2 {
+                font-family: 'Allura';
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            h3 {
+                font-family: 'Josef Sans';
+                font-size: 1.5rem;
+            }
+            .subTexts { margin-bottom: 50px !important; }
+        }
+    }
+
+    .story {
+        margin: 0 auto;
+        text-align: left;
+        padding: 50px 15px;
+        hr {
+            width: 50%;
+            background: rgb(196,148,51);
+            height: 5px;
+            text-align: left;
+            margin: -10px 0px;
+        }
+        .mainTexts {
+            font-size: 2.5rem;
+            margin-top: 0px !important;
+            z-index: 999999;
+        }
+        .lestMainTexts { 
+            font-size: 1.8rem; 
+            line-height: 2;
+        }
+        .subTexts {
+            color: rgb(102,102,102);
+            // padding: 0px 25px;
+            margin: 0 auto !important;
+            font-size: 1.5rem;
+            p { 
+                line-height: 2;
+            }
+        }
+        .alarmIcon {
+            font-size: 6rem;
+        }
+        .sched {
+            h4 { font-size: 1.5rem !important; }
+        }
+        .subDesc {
+            margin-top: 20px;
+            h2 {
+                font-family: 'Allura';
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            h3 {
+                font-family: 'Josef Sans';
+                font-size: 1.5rem;
+            }
+            .subTexts { margin-bottom: 50px !important; }
+        }
+    }
     	.secndSection {
             padding: 0px 0px !important;
             position: relative;
@@ -412,7 +623,6 @@ page-catering {
 			padding: 50px 0px;
 			height: 50vh;
         }
-        
         .image-holder {
             margin: 20px auto !important;
             width: 00%;
@@ -434,6 +644,7 @@ page-catering {
                 }
             }
         }
+      
         .cateringSection {
          background: url('../assets/imgs/banner/eventsContent.jpg') no-repeat;
          background-size: cover;
@@ -456,7 +667,7 @@ page-catering {
     .image-holder2 {
             margin: auto !important;
             text-align: center;
-            padding: 20px 0px !important;
+            padding: 85px 0px !important;
             .show2 {
                 padding: 40px;
                 ion-icon {
@@ -489,6 +700,17 @@ page-catering {
             border-radius: 50%;
             height: 100px;
             width: 100px;
+        }
+        .slide-image{
+            img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
         }
         .subTexts {
             line-height: 2;
@@ -627,6 +849,15 @@ page-catering {
     }
     }
 	.goldenText { color: rgb(196,148,51);  }
-
+      .aboutImage{
+    	height: 460px;
+         background: url('../assets/imgs/banner/eventsContent.jpg') no-repeat;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: 50% 50%;
+    	img{
+    		height: 460px;
+    	}  
+    }
 
 }
