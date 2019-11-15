@@ -21,9 +21,16 @@ page-gallery-tabs {
 		height: 50vh;
 		margin: 0 auto;
 		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-		margin: 0px auto 50px auto;
+		margin: 0px auto 0px auto;
 		// border: 3px solid rgb(29,29,29);
-	}
+    }
+     .mapContainer2 {
+        width: 95%;
+        height: 50vh;
+        margin: 0 auto;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        margin: 0 auto;
+    }
       .mobSections {
 		  font-family: 'Josef Sans' !important;
         .contactUs {
@@ -222,6 +229,11 @@ page-gallery-tabs {
 		color: white;
 		font-weight: 500;
     }
+
+    .fullGrid {
+        padding:0px !important;
+    }
+    
     .inputSection {
         display: inline-flex;
         border-radius: 50px;
@@ -229,14 +241,16 @@ page-gallery-tabs {
         overflow: hidden;
         font-size: 1.5rem;
         input {
-            padding: 5px;
-			padding-top: 5px;	
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
             background: rgb(196,148,51);
-			padding-top: 5px;	
+            border: none;
+            width:100px !important;
         }
     }
     .deskcontentSections {
@@ -426,7 +440,7 @@ page-gallery-tabs {
         // padding: 20px;
         // border-radius: 20px;
         width: 100%;
-        margin: 50px;
+        margin: 50px 30px;
         .lister {
             // margin-top: 10px !important;
             background: rgb(248,248,248);
@@ -612,7 +626,7 @@ page-gallery-tabs {
 		border: 5px solid white;
 		padding:20px;
     }
-     .deskList {
+        .deskList {
         width: 100%;
         text-align: center;
         padding: 80px 0px 20px 0px;
@@ -690,8 +704,34 @@ page-gallery-tabs {
             font-size: 15px !important;
         }
     }
+    .texts2 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 250px;
+		width: 500px;
+		text-align: center;
+		border: 5px solid white;
+		padding:20px;
+    }
 
-    .deskCardHolder {
+    .contact-button {
+        text-align: center;
+        margin: 0 auto !important;
+        margin-top: 20px !important;
+        width: 20% !important;
+        background: rgb(196,148,51);
+        color: white;
+        border-radius: 20px;
+        h2 {
+            margin: 0 auto !important;
+            font-size: 15px !important;
+        }
+    }
+
+     .deskCardHolder {
         padding: 0px 40px;
         .deskCards {
             box-shadow: 20px #000000 !important;

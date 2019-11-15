@@ -64,11 +64,9 @@
     
     </ion-row>
     
-    <ion-row>
 <div class="mapContainer">
     <div #map id="map"></div>
 </div>
-    </ion-row>
     <div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important"
         *ngIf="checkApp">
         <ion-row align-items-center="" class="row">
@@ -128,25 +126,28 @@
 <!--WEB APP-->
 <div *ngIf="!checkApp">
 
-<!---->
-<div style="flex-wrap: inherit; width: 100%;padding:0" class="cover2" >
-            <!-- <div class="welcome"> -->
-                <p class="title headFont" style="color: #ffffff !important;font-size:4vw !important;padding-top:100px !important;"> Menu Gallery</p>
-            <!-- </div> -->
-        </div>
-
-    <ion-row>
-        <div class="deskList">
-            <div class="deskListData" *ngFor="let item of deskCategories">
-                <div class="deskLister" (click)="getDeskData(item)">
-                    <i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"
-                        [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i>
-                    <h2 [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}">{{ item.name }}</h2>
+    <!---->
+    <div style="flex-wrap: inherit; width: 100%;padding:0" class="cover2">
+        <!-- <div class="welcome"> -->
+        <p class="title headFont"
+            style="color: #ffffff !important;font-size:4vw !important;padding-top:100px !important;"> Menu Gallery</p>
+        <!-- </div> -->
+    </div>
+    <ion-grid>
+        <ion-row>
+            <div class="deskList">
+                <div class="deskListData" *ngFor="let item of deskCategories">
+                    <div class="deskLister" (click)="getDeskData(item)">
+                        <i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"
+                            [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i>
+                        <h2 [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}">{{ item.name }}
+                        </h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </ion-row>
-    <ion-grid text-center *ngIf="itemContent.length !== 0">
+        </ion-row>
+    </ion-grid>
+    <ion-grid fixed text-center *ngIf="itemContent.length !== 0">
         <ion-row class="deskCardHolder">
             <ion-col no-margin no-padding col-6 *ngFor="let item of itemContent" class="deskCards">
                 <ion-card>
@@ -160,7 +161,7 @@
             </ion-col>
 
         </ion-row>
-
+`
     </ion-grid>
     <ion-row>
         <div>
@@ -172,28 +173,24 @@
         </div>
     </ion-row>
 
-
-
-    <div class="first-section fourth">
-            <ion-row align-items-center="" class="row">
-                <ion-col class="col" col-12="" col-lg-6="" push-lg-3="" class="text-menu">
-                    
-                </ion-col>
-                
-            </ion-row>
+    <ion-grid>
+        <div class="first-section fourth">
             <ion-row align-items-center="" class="row">
                 <ion-col class="col" col-lg-6="" class="text-menu">
-                    <div class="mapContainer">
-                        <div #map id="map"></div>
+                    <div class="mapContainer2">
+                        <div #map id="map" style="height: 100% !important;
+    box-shadow:0 0 20px rgba(0,0,0,0.3) !important; "></div>
                     </div>
                 </ion-col>
 
                 <ion-col class="col" col-lg-6="" class="text-menu">
-                    <div class="contentSections deskBrder">
+                    <div class="contentSections">
                         <div class="container" style="text-align: center">
-                        <h1 class="titleText" style="font-size:4vw !important"> <span style="color: #C49433 !important;">Business Hours</span></h1>
-                    </div>
-                        <h2 class="mainTexts headFont" style="font-size:2vw !important"><strong>OPEN FOR SPECIAL OCCASIONS</strong></h2>
+                            <h1 class="titleText" style="font-size:4vw !important"> <span
+                                    style="color: #C49433 !important;">Business Hours</span></h1>
+                        </div>
+                        <h2 class="mainTexts headFont" style="font-size:2vw !important"><strong>OPEN FOR SPECIAL
+                                OCCASIONS</strong></h2>
                         <div class="alarmIcon">
                             <ion-icon name="alarm" class="goldenText"></ion-icon>
                         </div>
@@ -201,62 +198,79 @@
                             <h4 style="font-size: 1vw !important;">Monday - Saturday: 10:00am - 10:00pm</h4>
                             <h4 style="font-size: 1vw !important;">Sunday: 10:00am - 04:00pm</h4>
                         </div>
-                       <!--  <button ion-button class="menu-button" (click)="callNow()">
-          <h2>CONTACT US</h2>
-        </button> -->
+                        <button ion-button class="contact-button" (click)="goToContactUs()">
+                            <h2 class="headFont">CONTACT US</h2>
+                        </button>
                     </div>
                 </ion-col>
-                
+
             </ion-row>
         </div>
+    </ion-grid>
 
-    <div class="first-section footer" style="padding-top: 0px !important;">
+    <ion-grid class="fullGrid">
+        <div class="first-section footer" style="padding-top: 0px !important;">
             <ion-row align-items-center="" class="row">
                 <ion-col class="col" col-12="" col-lg-3="" class="text-menu">
-                    <div class="container contactUs" style="text-align: left">
+                    <div class="container contactUs" style="text-align: left;">
                         <h2 class="headFont" style="margin-bottom: 0px;">BUSINESS HOURS</h2>
-                        <hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
-                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM - 10PM</p>
-                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM - 11:30PM</p>
-                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
-
+                        <hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span
+                                style="font-weight: bold">Monday - Thursday: </span>06AM - 10PM</p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span
+                                style="font-weight: bold">Friday - Saturday: </span>10AM - 11:30PM</p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span
+                                style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 60px;"><span
+                                style="font-weight: bold">Booking Time: </span>24/7 Hours</p>
                     </div>
                 </ion-col>
                 <ion-col class="col" col-12="" col-lg-6="" text-center="">
                     <div class="container contactUs" style="text-align: center">
                         <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
-                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205</p>
-                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745</p>
-                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433"> infoname@gmail.com</span></p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;">
+                            <ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo
+                            Street NY, 205
+                        </p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;">
+                            <ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+                        </p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;">
+                            <ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span
+                                style="color:#C49433"> infoname@gmail.com</span>
+                        </p>
                     </div>
-                    
                 </ion-col>
                 <ion-col class="col" col-12="" col-lg-3="" text-center="">
                     <div class="container contactUs" style="text-align: left;">
                         <h2 class="headFont" style="margin-bottom: 0px;">SUBSCRIBE NOW</h2>
-                        <hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left"> 
-                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items and our new events. This theme will help you organize your site without any technical skills.</p>
+                        <hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;line-height:30px;"> Sign up now to
+                            our newsletter to get latest food items and our new events. This theme will help you
+                            organize your site without any technical skills.</p>
 
-                         <div class="inputSection">
-          <input type="text" placeholder="Email Address">
-          <button>SIGN UP</button>
-        </div>
-
-
-                    </div>
-                    
-                </ion-col>
-            </ion-row>
-        </div>
-       <div class="last-section" >
-            <ion-row align-items-center="" class="row">
-                <ion-col class="col" col-12="" col-lg-4="" class="text-menu">
-                    <div class="container" style="text-align: left">
-                        <p class="headFont" style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights Reserved</p>
+                        <div class="inputSection">
+                            <input class="headFont" type="text" placeholder="Email Address">
+                            <button class="headFont">SIGN UP</button>
                         </div>
+                    </div>
                 </ion-col>
             </ion-row>
         </div>
+    </ion-grid>
+
+    <ion-grid>
+        <div class="last-section">
+            <ion-row align-items-center="" class="row">
+                <ion-col class="col" col-12="" col-lg-4="">
+                    <div class="container" style="text-align: left">
+                        <p class="headFont" style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights
+                            Reserved</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-grid>
 </div>
 </ion-content>
 
