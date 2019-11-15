@@ -16,6 +16,13 @@
 // automatically applied to the <body> element in the app.
 @import '../theme/fonts';
 
+@media (min-width: 1200px){
+    .grid[fixed] {
+        width: 1190px;
+        max-width: 100%;
+    }
+}
+
 ion-toolbar {
    --background-color: transparent;
    --ion-color-base: transparent !important;
@@ -42,8 +49,16 @@ ion-toolbar {
          font-family: 'GE Body' !important;
     }
 
+  .swipr-pagination {
+   position: fixed;
+   bottom: 0px;}
+
 .black{
      background: url('../assets/imgs/banner/homepageMenu for today.png') no-repeat center center fixed;
+       height: 35vw;
+     max-height: 600px;
+     min-height:250px;
+     margin-bottom: 10vw;
 }
 
 	.fonty {
@@ -89,17 +104,17 @@ ion-toolbar {
     }
 
 .first-section2 {
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
 }
 
 .second {
-    padding: 150px 20px 0px 20px;
+    //padding: 150px 20px 0px 20px;
 }
 
 .third{
     padding: 30px 20px 0px 20px;
     margin-bottom: 8vw;
-    margin-top:5vw;
+    margin-top:1vw;
 }
 
 .padding-all { 
@@ -120,7 +135,7 @@ ion-toolbar {
     padding:15px;
     pading-top:50px;
     padding-bottom:50px;
-    max-height:400px;
+    max-height:450px;
 
     img{
         padding-top:5px;
@@ -152,7 +167,6 @@ ion-toolbar {
     .menuHeader {
             width: 100%;
             text-align: center;
-            height: 32vh;
         img {
             height: 20vh;
             margin: 0 auto;
