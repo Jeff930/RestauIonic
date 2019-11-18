@@ -24,6 +24,10 @@ page-settings {
 		margin: 20px auto;
 		// border: 3px solid rgb(29,29,29);
 	}
+     .mapContainer2 {
+      width: 100%;
+      margin: 0 auto;
+  }
     .lastSectHead {
         font-family: 'Josef Sans' !important;
         font-weight: bold;
@@ -427,4 +431,251 @@ page-settings {
     .hrFoot {
         width: 20%;height: 30px;color: #C49433 !important; text-align: left
     }
+
+.contactUsSection {
+    background-color: #EEF1EF;
+    padding:50px;
+    max-height:500px;
+
+    img{
+        padding-top:5px;
+        height:334px;
+    }}
+
+.cover2 {
+        background: url('../assets/imgs/banner/Events.png') no-repeat center center fixed;
+        position: relative;
+        box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
+        border: .5px solid black;
+        height: 20vw;
+        max-height:500px;
+        min-height:300px;
+        img {
+                max-height: 52vw;
+    width: 100%;
+        }
+    }
+
+.inputSection {
+        display: inline-flex;
+        border-radius: 50px;
+        border: 2px solid rgb(196,148,51);
+        overflow: hidden;
+        font-size: 1.5rem;
+        input {
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
+        }
+        button {
+            color: #ffffff;
+            font-size: 1.5rem;
+            background: rgb(196,148,51);
+            border: none;
+            width:100px !important;
+        }
+    }
+
+.icon{
+    font-size:40px;
+    margin-top:10px;
+}
+
+   h1 {
+        font-size: 4rem !important;
+    color: rgb(94, 94, 94) !important;
+    }
+ .parg {
+        margin: 2rem 5vw;
+        text-align: center;
+    color: rgb(94, 94, 94) !important;
+    }   
+    .parg p {
+        line-height: 25px;
+        font-size: 4.8vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .iconFont {
+        font-size: 2rem;
+        top: 3px !important;
+        position: relative !important;
+    }
+        .content {
+            width:100% !important;
+            padding:0 !important;
+            margin:0 !important;
+    }
+    .title, .subTitle {
+        text-align: center !important; 
+        font-size: 30px !important;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .subTitle {
+        font-size: 15px !important;
+        margin-top: 5px !important;
+    }
+    .menu-button {
+        text-align: center;
+        margin: 0 auto !important;
+        margin-top: 20px !important;
+        width: 70% !important;
+        background: rgb(245, 61, 61);
+        color: white;
+        border-radius: 3px;
+        h2 {
+            margin: 0 auto !important;
+            font-size: 15px !important;
+        }
+    }
+    
+    .button-menu-desk {
+        background: rgb(245, 61, 61) !important;
+        transition: .5s;
+    }
+    .button-menu-desk:hover {
+        background: #b11e1e !important;
+        transition: .5s;
+    }
+    .text-menu {
+        padding: 20px 20px 20px 35px;
+    }
+.colinline{
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+.suggestion{
+        //max-height:60px !important;
+        //max-width:60px !important;
+        margin:0 auto;
+        padding: 1px;
+        border:1px solid lightgray;
+        border-radius: 50%;
+    }
+
+    ion-card{
+        margin:0px !important;
+        width: 100% !important;
+    }
+
+    hr {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        margin-left:0px !important;
+        width: 20% !important;
+        height: 3px !important;
+        background: #C49433 !important;
+        text-align:left;
+        border-radius: 20px !important;
+    }
+
+    .card-content-md{
+        padding: 5px 16px !important;
+    }
+    .card-title-md{
+        margin:0px !important;
+    }
+
+    ion-icon{
+        margin-right: 10px;
+    }
+
+    .profile-image{
+        border-top: 1px solid grey;
+    }
+    .image-holder {
+            
+            width: 100%;
+        .images {
+            img {
+                max-height: 30vh !important;
+                width: 100% !important;
+            }
+        }
+    }
+    .desk-image-holder {
+        
+            width: 100%;
+        .images {
+            img {
+                max-height: 40vh !important;
+                border-radius: 3px;
+                
+                box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                width: 100% !important;
+            }
+        }
+    }
+
+    .fullGrid {
+        padding:0px !important;
+    }
+    
+    .intro {
+        text-indent: 10px;
+        padding: 5px 15px 15px 15px;
+         text-align: justify;
+    }
+    .fooot {
+        word-wrap: normal;
+    }
+    .lister {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+        ion-item {
+            ion-label {
+                width: 100%;
+                font-weight: 400;
+                span {
+                    font-weight: 100;
+                    float: right !important;
+                }
+            }
+        }
+    }
+    .listy {
+        
+    color: rgb(94, 94, 94) !important;
+        width: 100%;
+        display: inline-flex;
+        div {
+        width: 50%;
+        font-size: 1.3rem !important;
+        .item-inner {
+            border-bottom: none !important;
+        }ion-item {
+            ion-label {
+                
+                span {
+                    font-weight: 500 !important;
+                    color: rgb(245, 61, 61) !important; 
+                }
+            }
+        }
+        }
+    }
+    .deskList { 
+        ion-label { font-size: 1.6rem !important; }
+    }
+    
+    .no-line {
+        .item-inner {
+            border-bottom: none !important;
+        }
+    }
+    .text-pad {
+        padding: 50px 100px!important;
+    }
+     .infoHead {
+        padding-bottom: 5px !important;
+        color: black;
+    }
+    .toolbar-title-md {
+        font-size: 2.5rem !important;
+        font-family: 'October Twilight' !important;
+    }
+
+
 }
