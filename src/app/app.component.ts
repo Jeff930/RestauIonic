@@ -13,8 +13,7 @@ import { IntroPage} from '../pages/intro/intro';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
-  rootPage: any = 'IntroPage';
+  rootPage: any = 'HomePage';
   checkApp: any;
   pages: Array<{title: string, component: any , icon : string}>;
   pagesDesk: Array<{ title: string, component: any, icon: string }>;
@@ -30,7 +29,7 @@ export class MyApp {
     console.log();
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: 'NewsPage', icon: 'basket' },
+      { title: 'Home', component: 'HomePage', icon: 'basket' },
       // {
       //   title: 'Gallery', component: 'GalleryTabsPage', icon: 'albums' },
       // { title: 'List', component: 'ListPage' },
@@ -40,16 +39,16 @@ export class MyApp {
       // { title: 'Notifications', component: 'NotificationsPage' , icon:'notifications-outline'},
       // { title: 'Profile', component: 'ProfilePage' , icon:'contact'},
       { title: 'Menu', component: 'GalleryTabsPage', icon: 'book' },
-      { title: 'About Us', component: 'NotificationsPage', icon: 'information-circle' },
-      { title: 'Contact Us', component: 'SettingsPage' , icon:'call'},
+      { title: 'About Us', component: 'AboutPage', icon: 'information-circle' },
+      { title: 'Contact Us', component: 'ContactPage' , icon:'call'},
       { title: 'Catering and Events', component: 'CateringPage', icon: 'albums' }
       ];
       this.pagesDesk = [
-        { title: 'HOME', component: 'NewsPage', icon: 'home' },
+        { title: 'HOME', component: 'HomePage', icon: 'home' },
         { title: 'MENU', component: 'GalleryTabsPage', icon: 'images' },
-        { title: 'ABOUT US', component: 'NotificationsPage', icon: 'information-circle' },
+        { title: 'ABOUT US', component: 'AboutPage', icon: 'information-circle' },
         { title: 'EVENTS', component: 'CateringPage', icon: 'basket' }, 
-        { title: 'CONTACT', component: 'SettingsPage', icon: 'information-circle' }
+        { title: 'CONTACT', component: 'ContactPage', icon: 'information-circle' }
       ]
     }
 
@@ -67,7 +66,8 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
     }
+
   goTo() {
-    this.nav.setRoot('NewsPage');
+    this.nav.setRoot('HomePage');
     }
 }
