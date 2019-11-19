@@ -68,8 +68,12 @@ export class CateringPage {
 
 
   }
+
   goTo() {
-  
-    this.navCtrl.setRoot('SettingsPage');
+    this.navCtrl.setRoot('ContactPage');
+  }
+
+  goToContactUs() {
+    this.navCtrl.setRoot('ContactPage');
   }
 }

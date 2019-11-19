@@ -177,4 +177,8 @@ export class GalleryTabsPage {
     console.log(this.itemContent);
   }
 
+  goToContactUs() {
+    this.navCtrl.setRoot('ContactPage');
+  }
+
 }

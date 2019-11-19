@@ -104,8 +104,10 @@ export class AboutPage {
 
     // this.addInfoWindow(marker, content);
 
+  }
 
-
+  goToContactUs() {
+    this.navCtrl.setRoot('ContactPage');
   }
 
 }
