@@ -99,7 +99,7 @@
 	<div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important"
 		*ngIf="checkApp">
 		<ion-row align-items-center="" class="row">
-			<ion-col class="col " col-12="" col-lg-3="" class="text-menu ">
+			<ion-col class="col " col-12="" col-lg-3="" class="text-menu " style="padding: 0px !important;">
 				<div class="container contactUs" style="text-align: left">
 					<h2 class="headFont curvyFont" style="margin-bottom: 0px; font-family: 'Josef Sans' !important; font-size: 25px !important"><strong>BUSINESS HOURS</strong></h2>
 					<hr style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
@@ -178,7 +178,7 @@
 						<br>
 						<ion-row>
 						<ion-col col-1="" style="margin:0;width:10px;text-align:center">
-							<ion-icon class="icon" color="goldenBrown" name="pin"></ion-icon>
+							<ion-icon class="icon2" color="goldenBrown" name="pin"></ion-icon>
 						</ion-col>
 						<ion-col>
 							<p class="headFont" style="font-size: 1.7rem;font-weight: bold;margin-bottom: 0px">Address</p>
@@ -190,7 +190,7 @@
 
 					<ion-row>
 						<ion-col col-1="" style="margin:0;width:10px;text-align:center">
-							<ion-icon class="icon" color="goldenBrown" name="phone-portrait"></ion-icon>
+							<ion-icon class="icon2" color="goldenBrown" name="phone-portrait"></ion-icon>
 						</ion-col>
 						<ion-col>
 							<p class="headFont" style="font-size: 1.7rem;font-weight: bold;margin-bottom: 0px">Phone Number</p>
@@ -200,7 +200,7 @@
 
 					<ion-row>
 						<ion-col col-1="" style="margin:0;width:10px;text-align:center;">
-							<ion-icon class="icon" color="goldenBrown" name="mail"></ion-icon>
+							<ion-icon class="icon2" color="goldenBrown" name="mail"></ion-icon>
 						</ion-col>
 						<ion-col>
 							<p class="headFont" style="font-size: 1.7rem;font-weight: bold;margin-bottom: 0px">Email Address</p>
@@ -304,21 +304,21 @@
 </ion-content>
 
 <ion-footer transparent *ngIf="checkApp">
-	<ion-toolbar class="footer-text mobile-footer" color="brownLight">
-		<h5><span class="iconFont">
-				<ion-icon color="goldenBrown" name="time"></ion-icon>
-				</span><span style="margin-left: 0px !important">{{ timeSched }}</span></h5>
-		<h5><span class="iconFont">
-				<ion-icon color="goldenBrown" name="contacts"></ion-icon>
-			</span><span style="margin-left: 0px !important">Kusina Filipina 2019</span></h5>
-		<h5><span class="iconFont">
-				<ion-icon color="goldenBrown" name="mail"></ion-icon>
-			</span><span style="margin-left: 0px !important">info@gmail.com</span></h5>
-		<div class="eatIcon">
-			<div class="eatIconContent">
-				<ion-icon name="restaurant" color="goldenBrown"></ion-icon>
-				<p class="eatSubText">An oasis of pleasure</p>
+		<ion-toolbar class="footer-text mobile-footer" color="brownLight" >
+			<h5><span class="iconFont">
+					<ion-icon color="goldenBrown" name="time"></ion-icon>
+				</span><span style="margin-left: -8px !important">{{ timeSched }}</span></h5>
+			<h5><span class="iconFont">
+					<ion-icon color="goldenBrown" name="contacts"></ion-icon>
+				</span><span style="margin-left: -8px !important">Kusina Filipina 2019</span></h5>
+				<h5><span class="iconFont">
+						<ion-icon color="goldenBrown" name="mail"></ion-icon>
+					</span><span style="margin-left: -8px !important">info@gmail.com</span></h5>
+			<div class="eatIcon">
+				<div class="eatIconContent">
+					<ion-icon name="restaurant" color="goldenBrown"></ion-icon>
+					<p class="eatSubText">An oasis of pleasure</p>
+				</div>
 			</div>
-		</div>
-	</ion-toolbar>
+		</ion-toolbar>
 </ion-footer>

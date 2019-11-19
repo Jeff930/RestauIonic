@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-// import { ListPage } from '../pages/list/list';
 import { IntroPage} from '../pages/intro/intro';
 
 
@@ -15,6 +14,8 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage: any = 'HomePage';
   checkApp: any;
+  Date = new Date();
+  currentSched;
   pages: Array<{title: string, component: any , icon : string}>;
   pagesDesk: Array<{ title: string, component: any, icon: string }>;
 
@@ -27,17 +28,8 @@ export class MyApp {
       this.checkApp = true;
     }
     console.log();
-    // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: 'HomePage', icon: 'basket' },
-      // {
-      //   title: 'Gallery', component: 'GalleryTabsPage', icon: 'albums' },
-      // { title: 'List', component: 'ListPage' },
-      // { title: 'Portfolio', component: 'PortfolioPage' , icon:'image'},
-      // { title: 'Login', component: 'LoginPage' , icon:'log-in'},
-      // { title: 'Click', component: 'ClickPage' , icon:'camera'},
-      // { title: 'Notifications', component: 'NotificationsPage' , icon:'notifications-outline'},
-      // { title: 'Profile', component: 'ProfilePage' , icon:'contact'},
       { title: 'Menu', component: 'GalleryTabsPage', icon: 'book' },
       { title: 'About Us', component: 'AboutPage', icon: 'information-circle' },
       { title: 'Contact Us', component: 'ContactPage' , icon:'call'},
@@ -50,6 +42,13 @@ export class MyApp {
         { title: 'EVENTS', component: 'CateringPage', icon: 'basket' }, 
         { title: 'CONTACT', component: 'ContactPage', icon: 'information-circle' }
       ]
+      const currentDate = this.Date.getDate();
+      if (currentDate !== 0 ) {
+        console.log(currentDate);
+        this.currentSched = '10:00am - 10:00pm';
+      } else {
+        this.currentSched = '10:00am - 08:00pm';
+      }
     }
 
     initializeApp() {

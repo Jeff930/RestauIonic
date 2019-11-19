@@ -39,6 +39,7 @@ export class ProviderImagesProvider {
     if (this.innerWidth <= 480) {
       this.checkApp = true;
     }
+    console.log(this.checkApp);
     return this.checkApp;
   }
 
