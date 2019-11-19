@@ -74,7 +74,7 @@ export class HomePage {
   ionViewDidLoad() {
     
     this.loadMap();
-    console.log('ionViewDidLoad NewsPage');
+    console.log('ionViewDidLoad HomePage');
     console.log(this.images)
     
     console.log(this.innerWidth);
@@ -125,11 +125,11 @@ export class HomePage {
   }
 
   goToAboutUs() {
-    this.navCtrl.setRoot('NotificationsPage');
+    this.navCtrl.setRoot('AboutPage');
   }
 
   goToContactUs() {
-    this.navCtrl.setRoot('ProfilePage');
+    this.navCtrl.setRoot('ContactPage');
   }
 
   next(slides) {
