@@ -29,14 +29,14 @@ export class MyApp {
     }
     console.log();
     this.pages = [
-      { title: 'Home', component: 'HomePage', icon: 'basket' },
+      // { title: 'Home', component: 'HomePage', icon: 'basket' },
       { title: 'Menu', component: 'GalleryTabsPage', icon: 'book' },
       { title: 'About Us', component: 'AboutPage', icon: 'information-circle' },
       { title: 'Contact Us', component: 'ContactPage' , icon:'call'},
       { title: 'Catering and Events', component: 'CateringPage', icon: 'albums' }
       ];
       this.pagesDesk = [
-        { title: 'HOME', component: 'HomePage', icon: 'home' },
+        // { title: 'HOME', component: 'HomePage', icon: 'home' },
         { title: 'MENU', component: 'GalleryTabsPage', icon: 'images' },
         { title: 'ABOUT US', component: 'AboutPage', icon: 'information-circle' },
         { title: 'EVENTS', component: 'CateringPage', icon: 'basket' }, 
