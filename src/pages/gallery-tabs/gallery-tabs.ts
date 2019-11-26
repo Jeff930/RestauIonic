@@ -28,16 +28,16 @@ export class GalleryTabsPage {
   images = [];
   checkApp;
   categories = [ 
-    { name: 'Our Foods', content: [], image: 'fas fa-utensils' , key: 0},
-    { name: 'Look at our Menu', content: [], image: 'far fa-list-alt', key: 1 },
-    { name: 'Inside & Outside', content: [], image: 'fas fa-home', key: 2 },
-    { name: 'Enjoy the Drinks', content: [], image: 'fas fa-coffee', key: 3 },
+    { name: 'Menus', content: [], image: 'fas fa-utensils' , key: 0},
+    { name: 'Appetizer', content: [], image: 'fas fa-apple-alt', key: 1 },
+    { name: 'Pork', content: [], image: 'fas fa-bacon', key: 2 },
+    { name: 'Soup', content: [], image: 'fas fa-coffee', key: 3 },
   ];
   deskCategories = [
-    { name: 'Our Foods', content: [], image: 'fas fa-utensils' , key: 0},
-    // { name: 'Look at our Menu', content: [], image: 'far fa-list-alt', key: 3 },
-    // { name: 'Inside & Outside', content: [], image: 'fas fa-home', key: 2 },
-    // { name: 'Enjoy the Drinks', content: [], image: 'fas fa-coffee', key:  1 }
+    { name: 'Menus', content: [], image: 'fas fa-utensils' , key: 0},
+    { name: 'Appetizer', content: [], image: 'fas fa-apple-alt', key: 1 },
+    { name: 'Pork', content: [], image: 'fas fa-bacon', key: 2 },
+    { name: 'Soup', content: [], image: 'fas fa-coffee', key: 3 },
   ];
   itemContent: any;
   oldKey= null;

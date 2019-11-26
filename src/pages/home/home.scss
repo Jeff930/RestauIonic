@@ -90,7 +90,7 @@ page-home {
 		position: relative;
 		width: 100%;
 		height: 100%;
-		height: 135vh;
+		height: 235vh;
 		.mainTitle {
 			padding: 50px 0px;
 		 background: url('../assets/imgs/banner/homepage Menu for today.png');
@@ -671,11 +671,72 @@ page-home {
 		font-weight: bold;
 		margin-top: 5px !important;
 	}
+	 .swiper-pagination-bullet-active {
+    background: #C49433;
+    opacity: 1 !important;
+    height: 35px;
 
+}
+    .swiper-pagination-bullet {
+    border-radius: 0%;
+    display: inline-block;
+    background: #C49433;
+    width: 8px;
+    opacity: .8;
+    pointer-events: auto;
+    margin: 0 auto;
+    transition: all ease-in-out .2s;
+
+}
 	.story {
-		margin-bottom: 40px !important;
-	}
-
+        margin: 0 auto;
+        text-align: left;
+        padding: 50px 15px;
+        hr {
+            width: 50%;
+            background: rgb(196,148,51);
+            height: 5px;
+            text-align: left;
+            margin: -10px 0px;
+        }
+        .mainTexts {
+            font-size: 2.5rem;
+            margin-top: 0px !important;
+            z-index: 999999;
+        }
+        .lestMainTexts { 
+            font-size: 1.8rem; 
+            line-height: 2;
+        }
+        .subTexts {
+            color: rgb(102,102,102);
+            // padding: 0px 25px;
+            margin: 0 auto !important;
+            font-size: 1.5rem;
+            p { 
+                line-height: 2;
+            }
+        }
+        .alarmIcon {
+            font-size: 6rem;
+        }
+        .sched {
+            h4 { font-size: 1.5rem !important; }
+        }
+        .subDesc {
+            margin-top: 20px;
+            h2 {
+                font-family: 'Allura';
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            h3 {
+                font-family: 'Josef Sans';
+                font-size: 1.5rem;
+            }
+            .subTexts { margin-bottom: 50px !important; }
+        }
+    }
 	.menu-button {
 		text-align: center;
 		margin: 0 auto !important;
@@ -689,6 +750,64 @@ page-home {
 			font-size: 16px !important;
 		}
 	}
+	 .thSection {
+            text-align: center;
+            margin-bottom: 70px !important;
+            background: rgba(184, 184, 184, 0.11);
+            
+        .mainTexts {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .slide-image{
+            img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+        }
+        .subTexts {
+            line-height: 2;
+            text-align: center;
+            width: 100%;
+            .goldenText {
+                font-size: 4rem;
+                line-height: 1px;
+            }
+            p {
+                width: 100%;
+            }
+        }
+
+      .text-menu {
+        padding: 10px 20px 20px 35px;
+    }
+
+        .subTexts2 {
+            width:50%;
+            margin-left:25%;
+            line-height: 2;
+            .goldenText {
+                width: 20px;
+                text-align:center;
+                font-size: 4rem;
+                line-height: 1px;
+            }
+        }
+        ion-slides {
+            padding: 20px 0px;
+           width: 100%;
+        }
+    }
 
 	.menu-button2 {
 padding: 0;
