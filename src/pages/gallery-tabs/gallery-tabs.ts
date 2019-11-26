@@ -35,9 +35,9 @@ export class GalleryTabsPage {
   ];
   deskCategories = [
     { name: 'Our Foods', content: [], image: 'fas fa-utensils' , key: 0},
-    { name: 'Look at our Menu', content: [], image: 'far fa-list-alt', key: 3 },
-    { name: 'Inside & Outside', content: [], image: 'fas fa-home', key: 2 },
-    { name: 'Enjoy the Drinks', content: [], image: 'fas fa-coffee', key:  1 }
+    // { name: 'Look at our Menu', content: [], image: 'far fa-list-alt', key: 3 },
+    // { name: 'Inside & Outside', content: [], image: 'fas fa-home', key: 2 },
+    // { name: 'Enjoy the Drinks', content: [], image: 'fas fa-coffee', key:  1 }
   ];
   itemContent: any;
   oldKey= null;
