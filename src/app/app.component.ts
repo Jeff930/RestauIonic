@@ -40,7 +40,7 @@ export class MyApp {
         { title: 'MENU', component: 'GalleryTabsPage', icon: 'images' },
         { title: 'ABOUT US', component: 'AboutPage', icon: 'information-circle' },
         // { title: 'EVENTS', component: 'CateringPage', icon: 'basket' }, 
-        { title: 'CONTACT', component: 'ContactPage', icon: 'information-circle' }
+        { title: 'CONTACT US', component: 'ContactPage', icon: 'information-circle' }
       ]
       const currentDate = this.Date.getDate();
       if (currentDate !== 0 ) {
