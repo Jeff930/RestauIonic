@@ -1,9 +1,10 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProviderImagesProvider } from '../../providers/provider-images/provider-images';
+
 declare var google;
 /**
- * Generated class for the CateringPage page.
+ * Generated class for the ContactPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,14 +12,12 @@ declare var google;
 
 @IonicPage()
 @Component({
-  selector: 'page-catering',
-  templateUrl: 'catering.html',
+  selector: 'page-contact',
+  templateUrl: 'contact.html',
 })
-export class CateringPage {
+export class ContactPage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-  public liked1: boolean = false;
-  public list: any = [];
   checkApp;
   date = new Date();
   timeSched;
@@ -28,7 +27,7 @@ export class CateringPage {
 
   ionViewDidLoad() {
     this.loadMap();
-    if (this.date.getDate() !== 0) {
+    if (this.date.getDate() !== 0 ) {
       this.timeSched = '10:00am - 10:00pm';
     } else {
       this.timeSched = '10:00am - 08:00pm';
@@ -66,14 +65,6 @@ export class CateringPage {
     // this.addInfoWindow(marker, content);
 
 
-
   }
 
-  goTo() {
-    this.navCtrl.setRoot('ContactPage');
-  }
-
-  goToContactUs() {
-    this.navCtrl.setRoot('ContactPage');
-  }
 }

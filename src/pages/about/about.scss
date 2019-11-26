@@ -1,4 +1,4 @@
-page-catering {
+page-about {
     #floating-panel {
     position: absolute;
     top: 10px;
@@ -24,35 +24,10 @@ page-catering {
         margin: 0 auto;
         // border: 3px solid rgb(29,29,29);
     }
-      .hrFoot {
-        margin-top: 0px !important;
-        margin-bottom: 20px !important;
-        margin-left:0px !important;
-        width: 20% !important;
-        height: 3px !important;
-        background: #C49433 !important;
-        text-align:left;
-        border-radius: 20px !important;
-    }
-    
-      .mapContainer2 {
-        width: 95%;
-        height: 50vh;
-        margin: 0 auto;
-        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        margin: 0 auto;
-    }
-    .aboutImage{
-    	height: 520px;
-    	background-image: url('../assets/imgs/banner/eventsContent.jpg');
-    	background-size: cover;
-    	background-repeat: no-repeat;
-    	background-position: 50% 50%;
-    	img{
-    		height: 520px;
-    	}  
-    }
 
+    .aboutImage{
+        margin:5vw;
+    }
 
    h1 {
         font-size: 4rem !important;
@@ -189,21 +164,6 @@ page-catering {
             padding: 0px !important;
             text-align: left !important;
         }
-          .inputSection {
-        display: inline-flex;
-        border-radius: 50px;
-        border: 2px solid rgb(196,148,51);
-        overflow: hidden;
-        font-size: 1.5rem;
-        input {
-            padding: 5px;
-        }
-        button {
-            color: #ffffff;
-            font-size: 1.5rem;
-            background: rgb(196,148,51);
-        }
-    }
     }
     .hrFoot {
         width: 20%;height: 30px;color: #C49433 !important; text-align: left
@@ -271,7 +231,7 @@ page-catering {
         }
     }
 
-    .smallLine {
+    hr {
         margin-top: 0px !important;
         margin-bottom: 20px !important;
         margin-left:0px !important;
@@ -282,12 +242,7 @@ page-catering {
         border-radius: 20px !important;
     }
 
-     .sectionLine {
-        height: 3px !important;
-        background: #C49433 !important;
-    }
-
-    .contentSections2 {
+   .contentSections2 {
         margin: 0 auto;
         text-align: left;
         padding: 10px 15px;
@@ -335,7 +290,7 @@ page-catering {
             }
             .subTexts { margin-bottom: 50px !important; }
         }
-         	.menu-button {
+        	.menu-button {
         text-align: center;
         margin: 0 auto !important;
         margin-top: 20px !important;
@@ -351,248 +306,18 @@ page-catering {
         }
     }
     }
-    
-    .ftrLine {
-        margin-top: 0px !important;
-        margin-bottom: 20px !important;
-        margin-left:0px !important;
-        width: 20% !important;
-        height: 3px !important;
-        background: #C49433 !important;
-        text-align:left;
-        border-radius: 20px !important;
-    }
 
-    .businessHrs {
-		 color: rgb(102,102,102) !important;
-            padding: 0px 25px !important;
-            margin: 0 auto !important;
-            font-size: 1.5rem !important;
-	}
     .contentSections {
 		margin: 0 auto;
-		text-align: center;
-        padding: 50px 0px;
-        
-        .mainHead {
-            font-size: 44px !important;
-            // font-weight: bold;
-            width: 100%;
-            margin: auto;
-        }
-        hr {
-            width: 50%;
-            background: rgb(196,148,51);
-            height: 5px;
-            text-align: left;
-            margin: -10px 0px;
-        }
-		.mainTexts {
-            font-size: 3rem;
-            margin-top: 0px !important;
-            z-index: 999999;
-            margin-bottom: 26px;
-            font-weight: bold;
-            font-family: 'Josef Sans';
-		}
-        .lestMainTexts { 
-            font-size: 18px; 
-            line-height: 2;
-            font-family: 'Josef Sans';
-        }
-		.subTexts {
-            // color: rgb(102,102,102);
-            background: rgb(29,29,29);
-            // padding: 0px 25px;
-			margin: 0 auto !important;
-            font-family: 'Josef Sans' !important;
-            padding: 5px 25px 25px 25px;
-			.mainTitle {
-                color: rgb(196,148,51) !important;
-                text-align: left !important;
-                font-size: 1.8rem;
-            }
-            hr {
-                width: 100% !important;
-            }
-            .eventTitle {
-                color: #ffffff;
-                font-size: 2.5rem !important;
-            }
-            .eventDetailsContainer {
-                .eventDetails {
-                    display: inline-flex !important;
-                    color: #ffffff;
-                    width: 100%;
-                    padding: 15px 0px;
-                    border-bottom: 1px solid gray;
-                    h2 {
-                        text-align: left;
-                        margin: 0px;
-                        font-size: 1.8rem !important;
-                        width: 50%;
-                    }
-                    h3 {
-                        text-align: right !important;
-                        width: 50%;
-                        font-size: 1.8rem !important;
-                        margin: 0px;
-                    }
-                    i { 
-                        color: rgb(196,148,51) !important;
-                        margin-right: 10px;  
-                    }
-
-                }
-                .eventDetails:last-child {
-                    border: none !important;
-                }
-                
-            }
-            .menu-button {
-                    margin-top: 5px;
-                    border-radius: 50px !important;
-                    padding: 25px 30px;
-                    h2 {
-                    font-size: 1.8rem !important;
-                    }
-                }
-		}
-		.alarmIcon {
-			font-size: 6rem;
-		}
-		.sched {
-			h4 { font-size: 1.5rem !important; }
-        }
-        .subDesc {
-            margin-top: 20px;
-            h2 {
-                font-family: 'Allura';
-                font-weight: bold;
-                font-size: 3.5rem;
-            }
-            h3 {
-                font-family: 'Josef Sans';
-                font-size: 1.5rem;
-            }
-            .subTexts { margin-bottom: 50px !important; }
-        }
-    }
-
-    .contentSections3 {
-		margin: 0 auto;
-		text-align: center;
-        padding: 0px;
-        
-        .mainHead {
-            font-size: 44px !important;
-            // font-weight: bold;
-            width: 100%;
-            margin: auto;
-        }
-        hr {
-            width: 50%;
-            background: rgb(196,148,51);
-            height: 5px;
-            text-align: left;
-            margin: -10px 0px;
-        }
-		.mainTexts {
-            font-size: 3rem;
-            margin-top: 0px !important;
-            z-index: 999999;
-            margin-bottom: 26px;
-            font-weight: bold;
-            font-family: 'Josef Sans';
-		}
-        .lestMainTexts { 
-            font-size: 18px; 
-            line-height: 2;
-            font-family: 'Josef Sans';
-        }
-		.subTexts {
-            // color: rgb(102,102,102);
-            background: rgb(29,29,29);
-            // padding: 0px 25px;
-			margin: 0 auto !important;
-            font-family: 'Josef Sans' !important;
-            padding: 5px 25px 25px 25px;
-			.mainTitle {
-                color: rgb(196,148,51) !important;
-                text-align: left !important;
-                font-size: 1.8rem;
-                margin-bottom: 5px;
-            }
-            hr {
-                width: 100% !important;
-            }
-            .eventTitle {
-                color: #ffffff;
-                font-size: 2.5rem !important;
-            }
-            .eventDetailsContainer {
-                .eventDetails {
-                    display: inline-flex !important;
-                    color: #ffffff;
-                    width: 100%;
-                    padding: 15px 0px;
-                    border-bottom: 1px solid gray;
-                    h2 {
-                        text-align: left;
-                        margin: 0px;
-                        font-size: 1.8rem !important;
-                        width: 50%;
-                    }
-                    h3 {
-                        text-align: right !important;
-                        width: 50%;
-                        font-size: 1.8rem !important;
-                        margin: 0px;
-                    }
-                    i { 
-                        color: rgb(196,148,51) !important;
-                        margin-right: 10px;  
-                    }
-
-                }
-                .eventDetails:last-child {
-                    border: none !important;
-                }
-                
-            }
-            .menu-button {
-                    border-radius: 50px !important;
-                    padding: 25px 30px;
-                    p {
-                    font-size: 1.8rem !important;
-                    }
-                }
-		}
-		.alarmIcon {
-			font-size: 6rem;
-		}
-		.sched {
-			h4 { font-size: 1.5rem !important; }
-        }
-        .subDesc {
-            margin-top: 20px;
-            h2 {
-                font-family: 'Allura';
-                font-weight: bold;
-                font-size: 3.5rem;
-            }
-            h3 {
-                font-family: 'Josef Sans';
-                font-size: 1.5rem;
-            }
-            .subTexts { margin-bottom: 50px !important; }
-        }
-    }
-
-    .story {
-        margin: 0 auto;
-        text-align: left;
+		text-align: left;
         padding: 50px 15px;
+        
+        .mainHead {
+            font-size: 44px !important;
+            // font-weight: bold;
+            width: 100%;
+            margin: auto;
+        }
         hr {
             width: 50%;
             background: rgb(196,148,51);
@@ -600,29 +325,33 @@ page-catering {
             text-align: left;
             margin: -10px 0px;
         }
-        .mainTexts {
+		.mainTexts {
             font-size: 2.5rem;
             margin-top: 0px !important;
             z-index: 999999;
-        }
+            margin-bottom: 26px;
+            font-family: 'Josef Sans';
+		}
         .lestMainTexts { 
-            font-size: 1.8rem; 
+            font-size: 18px; 
             line-height: 2;
+            font-family: 'Josef Sans';
         }
-        .subTexts {
-            color: rgb(102,102,102);
-            // padding: 0px 25px;
-            margin: 0 auto !important;
-            font-size: 1.5rem;
-            p { 
-                line-height: 2;
-            }
-        }
-        .alarmIcon {
-            font-size: 6rem;
-        }
-        .sched {
-            h4 { font-size: 1.5rem !important; }
+		.subTexts {
+			color: rgb(102,102,102);
+			// padding: 0px 25px;
+			margin: 0 auto !important;
+			font-size: 1.5rem;
+            font-family: 'Josef Sans';
+			p {	
+				line-height: 2;
+			}
+		}
+		.alarmIcon {
+			font-size: 6rem;
+		}
+		.sched {
+			h4 { font-size: 1.5rem !important; }
         }
         .subDesc {
             margin-top: 20px;
@@ -639,14 +368,16 @@ page-catering {
         }
     }
     	.secndSection {
-            padding: 0px 0px !important;
+            padding: 0px 10px !important;
             position: relative;
             width: 100%;
             height: 100%;
+			background: rgba(119, 119, 119, 0.164);
 		.mainTitle {
 			padding: 50px 0px;
 			height: 50vh;
         }
+        
         .image-holder {
             margin: 20px auto !important;
             width: 00%;
@@ -668,33 +399,76 @@ page-catering {
                 }
             }
         }
-      
-        .cateringSection {
-         background: url('../assets/imgs/banner/eventsContent.jpg') no-repeat;
-         background-size: cover;
-         padding: 20px 15px 50px 15px;
-         margin-bottom: 20px;
-        color: #ffffff;
-        text-align: center;
-        font-family: 'Josef Sans' !important;
-            h2 {
-               font-family: 'Cookie Curvy' !important;
-               font-size: 5rem !important;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-        }
-        
+    }
+    .slideHolder2{
+        padding-bottom:30px;
     }
 
-    .image-holder2 {
+    .swiper-pagination-bullet-active {
+    background: #C49433;
+    opacity: 1 !important;
+    height: 35px;
+
+}
+    .swiper-pagination-bullet {
+    border-radius: 0%;
+    display: inline-block;
+    width: 8px;
+    opacity: .2;
+    pointer-events: auto;
+    transition: all ease-in-out .2s;
+
+}
+
+.slide-image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+
+.swiper-pagination {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+    ion-icon{
+        margin-right: 10px;
+    }
+
+     .inputSection {
+        display: inline-flex;
+        border-radius: 50px;
+        border: 2px solid rgb(196,148,51);
+        overflow: hidden;
+        font-size: 1.5rem;
+        input {
+            padding: 15px;
+            background-color:#EEF1EF;
+            border:none;
+        }
+        button {
+            color: #ffffff;
+            font-size: 1.5rem;
+            background: rgb(196,148,51);
+            border: none;
+            width:100px !important;
+        }
+    }
+   .image-holder2 {
             margin: auto !important;
             text-align: center;
             padding: 85px 0px !important;
             .show2 {
                 padding: 40px;
-                ion-icon {
+                text-align: center !important;
+                i {
                     font-size: 4rem;
                 }
                 h2, h6 {
@@ -706,14 +480,13 @@ page-catering {
                 }
             }
         }
-
     .testimonial{
         width: 40% !important;
     }
 
     .thSection {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 70px !important;
             background: rgba(184, 184, 184, 0.11);
             
         .mainTexts {
@@ -828,6 +601,62 @@ page-catering {
            
         }
     }
+    .mapContainer2 {
+        width: 95%;
+        height: 50vh;
+        margin: 0 auto;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        margin: 0 auto;
+    }
+    .story {
+        margin: 0 auto;
+        text-align: left;
+        padding: 50px 15px;
+        hr {
+            width: 50%;
+            background: rgb(196,148,51);
+            height: 5px;
+            text-align: left;
+            margin: -10px 0px;
+        }
+        .mainTexts {
+            font-size: 2.5rem;
+            margin-top: 0px !important;
+            z-index: 999999;
+        }
+        .lestMainTexts { 
+            font-size: 1.8rem; 
+            line-height: 2;
+        }
+        .subTexts {
+            color: rgb(102,102,102);
+            // padding: 0px 25px;
+            margin: 0 auto !important;
+            font-size: 1.5rem;
+            p { 
+                line-height: 2;
+            }
+        }
+        .alarmIcon {
+            font-size: 6rem;
+        }
+        .sched {
+            h4 { font-size: 1.5rem !important; }
+        }
+        .subDesc {
+            margin-top: 20px;
+            h2 {
+                font-family: 'Allura';
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            h3 {
+                font-family: 'Josef Sans';
+                font-size: 1.5rem;
+            }
+            .subTexts { margin-bottom: 50px !important; }
+        }
+    }
     .mobile-footer {
         // border-radius: 0px 80px 0px 0px;
         color: #ffffff;
@@ -851,7 +680,7 @@ page-catering {
     }
 
     .space{
-        margin-bottom:100px;
+        margin-bottom:70px;
     }
     .timeSched {
         text-align: center;
@@ -861,31 +690,15 @@ page-catering {
 	.menu-button {
         text-align: center;
         margin: 0 auto !important;
-        margin-top: 20px !important;
+        margin-top: 20px;
         width: 20% !important;
         background: rgb(196,148,51);
         color: white;
         border-radius: 20px;
         h2 {
-            margin: 0 auto !important;
             font-size: 15px !important;
         }
     }
     }
 	.goldenText { color: rgb(196,148,51);  }
-      .aboutImage{
-    	height: 460px;
-         background: url('../assets/imgs/banner/eventsContent.jpg') no-repeat;
-    	background-size: cover;
-    	background-repeat: no-repeat;
-    	background-position: 50% 50%;
-    	img{
-    		height: 460px;
-    	}  
-    }
-    /*BROWSER SCREEN CSS*/
-
-    .eventsContentDesk {
-    
-    }    
 }
