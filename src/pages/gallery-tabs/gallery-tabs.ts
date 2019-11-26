@@ -162,12 +162,9 @@ export class GalleryTabsPage {
     // this.categories[item.key].content
     console.log(this.itemContent);
   }
-<<<<<<< HEAD
-=======
 
   goToContactUs() {
     this.navCtrl.setRoot('ContactPage');
   }
 
->>>>>>> 7e99653b4cec61bdbb660701366811bfcbae5c63
 }
