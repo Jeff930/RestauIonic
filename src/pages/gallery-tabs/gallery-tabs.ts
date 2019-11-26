@@ -55,13 +55,6 @@ export class GalleryTabsPage {
 
   ionViewDidLoad() {
     this.images = this.image.getEachImageForView();
-    // for (let index = 0; index < this.categories.length; index++) {
-    //   const element = this.categories[index];
-    //   const element2 = this.deskCategories[index];
-    //   element.image = this.images[element.key].image;
-    //   element2.image = this.images[element2.key].image;
-    //   console.log(this.images[0]);
-    // }
     console.log(this.categories)
     console.log(this.image.checkAppPlatform());
     this.checkApp = this.image.checkAppPlatform();
@@ -105,8 +98,6 @@ export class GalleryTabsPage {
 
     // this.addInfoWindow(marker, content);
 
-
-
   }
   catClick(item) {
     // this.oldKey = item.key;
@@ -118,7 +109,6 @@ export class GalleryTabsPage {
     }
     if (this.oldKey !== null) {
       this.categories[this.oldKey].content = [];
-
     }
 
     if (currentKey === 0) {
@@ -140,12 +130,10 @@ export class GalleryTabsPage {
     console.log(this.categories[item.key].content);
   }
 
-  
-
   callNow() {
     window.open(`tel:3232290228`, '_system');
   }
-  
+
   getDeskData(item) {
     this.deskCurrentKey = item.key;
     let currentKey = item.key;
@@ -155,9 +143,7 @@ export class GalleryTabsPage {
     }
     if (this.oldKey !== null) {
       this.itemContent = [];
-
     }
-
     if (currentKey === 0) {
       this.itemContent = this.image.getAllFoodsFromMenu();
     } else if (currentKey === 1) {
@@ -176,9 +162,12 @@ export class GalleryTabsPage {
     // this.categories[item.key].content
     console.log(this.itemContent);
   }
+<<<<<<< HEAD
+=======
 
   goToContactUs() {
     this.navCtrl.setRoot('ContactPage');
   }
 
+>>>>>>> 7e99653b4cec61bdbb660701366811bfcbae5c63
 }
