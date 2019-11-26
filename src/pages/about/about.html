@@ -27,22 +27,9 @@
 			<div class="contentSections"> 
 				<h2 class="title curvyFont mainHead goldenText" style="text-align: left !important;">About Us</h2>
         <h2 class="mainTexts headFont">DISCOVER OUR STORY</h2>
-        <h2 class="lestMainTexts">Welcome to Kusina Filipina, a Modern Restaurant with focus on Premium Food Tastes</h2>
+        <h2 class="lestMainTexts">Taste of Home</h2>
 				<div class="subTexts">
-					<p>Our family arrived at the City of Angels in 1990 in search of greener pasture. Shortly after, we’ve realized how much we
-          missed the food back home in the Philippines. So we pooled all our resources to create our own restaurant.
-          
-          We wanted our fellow Filipino immigrants in Los Angeles to experience authentic Filipino cuisine once more. We also
-          wanted the rest of LA to get a taste of Filipino cooking.
-          
-          The Philippines’ location makes it a melting pot of Oriental culture. Filipino cuisine has advanced by absorbing the
-          best parts of other Asian cuisines. We were confident authentic Filipino food would not lose no matter the location.
-          
-          We only employ Chefs who were originally from the Philippines. And our restaurant is designed to provide a traditional
-          Filipino setting and ambiance.
-          
-          Our 25 years of culinary experience guarantees that when it comes to providing an authentic Filipino dining experience,
-          nobody does it better than us.
+					<p>We at Kusina Filipina aims to provide you the best experience every time you visit. We prepare the most authentic filipino food that will make you say "This tastes like home cooking" and we have friendly staff that will make you feel at home.
 </p>
 				</div>
 				
@@ -77,7 +64,6 @@
         <h2 class="mainTexts headFont">CUSTOMERS REVIEW</h2>
         <ion-slides class="" pager>
           <ion-slide class="" *ngFor="let t of testimonials" >
-            <img src="assets/imgs/{{t.image}}" alt="">
             <div class="subTexts">
               <p><span class="goldenText">"</span>{{t.testim}}</p>
             </div>
@@ -138,26 +124,9 @@
       <ion-col col-lg-5 offset-lg-1 col-xl-5 offset-xl-1>
         <div class="story">
           <h2 class="title curvyFont welcomeText goldenText" style="text-align: left !important; font-size: 6rem !important;">About Us</h2>
-          <h1 class="mainTexts headFont">DISCOVER OUR STORY</h1>
+          <h1 class="mainTexts headFont">Taste of Home</h1>
           <div class="subTexts">
-            <p class="headFont">Our family arrived at the City of Angels in 1990 in search of greener pasture. Shortly
-              after, we’ve realized how much we missed the food back home in the Philippines. So we pooled all our
-              resources to create our own restaurant.</p>
-  
-            <p class="headFont">
-  
-              We wanted our fellow Filipino immigrants in Los Angeles to experience authentic Filipino cuisine once more.
-              We also wanted the rest of LA to get a taste of Filipino cooking.</p>
-  
-            <p class="headFont">The Philippines’ location makes it a melting pot of Oriental culture. Filipino cuisine has
-              advanced by absorbing the best parts of other Asian cuisines. We were confident authentic Filipino food
-              would not lose no matter the location.</p>
-  
-            <p class="headFont">We only employ Chefs who were originally from the Philippines. And our restaurant is
-              designed to provide a traditional Filipino setting and ambiance.</p>
-  
-            <p class="headFont">Our 25 years of culinary experience guarantees that when it comes to providing an
-              authentic Filipino dining experience, nobody does it better than us.
+            <p class="headFont">We at Kusina Filipina aims to provide you the best experience every time you visit. We prepare the most authentic filipino food that will make you say "This tastes like home cooking" and we have friendly staff that will make you feel at home.
             </p>
           </div>
           <div class="subDesc">
@@ -170,14 +139,14 @@
       </ion-col>
       <ion-col col-lg-5 col-xl-6>
         <div class="aboutImage">
-          <img src="assets/imgs/aboutConte.png" alt="">
+          <img src="assets/imgs/banner/homepage.jpg" alt="">
         </div>
   
       </ion-col>
   
     </ion-row>
   
-    <ion-row no-padding>
+    <!-- <ion-row no-padding>
       <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories"
         class="secndSection story image-holder2 ">
   
@@ -189,15 +158,13 @@
           </div>
         </div>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
     <div class="story thSection">
       <h2 class="title curvyFont welcomeText goldenText" style="text-align: center !important;" style="font-size: 6rem !important;">Testimonials</h2>
       <h1 class="mainTexts headFont">CUSTOMERS REVIEW</h1>
       <ion-slides class="" pager>
         <ion-slide *ngFor="let t of testimonials" class="slideHolder2">
-          <div class="slide-image">
-            <img src="assets/imgs/{{t.image}}" alt="">
-          </div>
+         
           <div class="subTexts2">
             <p class="headFont" style="width:80%;margin: auto"><i><span class="goldenText">"</span>{{t.testim}}<span
                   class="goldenText">"</span></i></p>
@@ -221,14 +188,14 @@
         <ion-col col-lg-6 col-xl-6>
           <div class="contentSections2 timeSched">
             <h2 class="title curvyFont welcomeText goldenText" style="font-size: 6rem !important;">Business Hours</h2>
-            <h2 class="mainTexts headFont" style="font-size:2vw !important"><strong>OPEN FOR SPECIAL OCCASIONS</strong>
+            <h2 class="mainTexts headFont" style="font-size:2vw !important"><strong>Let us do your Catering and Parties</strong>
             </h2>
             <div class="alarmIcon">
               <ion-icon name="alarm" class="goldenText"></ion-icon>
             </div>
             <div class="sched subTexts">
               <h4 style="font-size: 1vw !important;">Monday - Saturday: 10:00am - 10:00pm</h4>
-              <h4 style="font-size: 1vw !important;">Sunday: 10:00am - 04:00pm</h4>
+              <h4 style="font-size: 1vw !important;">Sunday: 10:00am - 08:00pm</h4>
             </div>
             <button ion-button class="menu-button" (click)="goToContactUs()" style="
         margin-top: 20px !important; 
@@ -248,11 +215,9 @@
               <h2 class="headFont" style="margin-bottom: 0px;">BUSINESS HOURS</h2>
               <hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
               <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday -
-                  Thursday: </span>06AM - 10PM</p>
-              <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday -
-                  Saturday: </span>10AM - 11:30PM</p>
+                  Saturday: </span>10AM - 10:00PM</p>
               <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday:
-                </span>1PM - 10PM</p>
+                </span>10:00aM - 8:00PM</p>
               <p class="headFont" style="font-size: 1.5rem;margin-top: 60px;"><span style="font-weight: bold">Booking
                   Time: </span>24/7 Hours</p>
             </div>
@@ -261,14 +226,14 @@
             <div class="container contactUs" style="text-align: center">
               <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
               <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;">
-                <ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 503 Old Buffalo Street NY, 205
+                <ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 4157 Eagle Rock Blvd STE 1, Los Angeles CA 90065
               </p>
               <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;">
-                <ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>(+088) 589-8745
+                <ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>323 229 0228
               </p>
               <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;">
                 <ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span
-                  style="color:#C49433"> infoname@gmail.com</span>
+                  style="color:#C49433"> info@kusinafilipina.com</span>
               </p>
             </div>
           </ion-col>
@@ -309,11 +274,9 @@
           <div class="container contactUs" style="text-align: left">
             <h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
             <hr class="hrFoot">
-            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Thursday: </span>06AM -
-              10PM</p>
-            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Friday - Saturday: </span>10AM -
-              11:30PM</p>
-            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>1PM - 10PM</p>
+            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Saturday: </span>10AM -
+              10:00PM</p>
+            <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>10:00AM - 8:00PM</p>
     
           </div>
         </ion-col>
@@ -321,16 +284,15 @@
           <div class="container contactUs" style="text-align: center">
             <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
             <p style="font-size: 1.5rem;margin-top: 0px;">
-              <ion-icon name="map" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon> 503 Old Buffalo
-              Street NY, 205
+              <ion-icon name="map" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon> 4157 Eagle Rock Blvd STE 1, Los Angeles CA 90065
             </p>
             <p style="font-size: 1.5rem;margin-top: 0px;">
-              <ion-icon name="call" color="charcoal" style="font-size:1.5em; margin-right: 12px"></ion-icon>(+088) 589-8745
+              <ion-icon name="call" color="charcoal" style="font-size:1.5em; margin-right: 12px"></ion-icon>323 229 0228
             </p>
             <p style="font-size: 1.5rem;margin-top: 0px;">
               <ion-icon name="mail" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon><span
                 style="color:#C49433">
-                infoname@gmail.com</span>
+                info@kusinafilipina.com</span>
             </p>
           </div>
     
@@ -364,7 +326,7 @@
 				</span><span style="margin-left: 0px !important">Kusina Filipina 2019</span></h5>
 				<h5><span class="iconFont">
 						<ion-icon color="goldenBrown" name="mail"></ion-icon>
-					</span><span style="margin-left: 0px !important">info@gmail.com</span></h5>
+					</span><span style="margin-left: 0px !important">info@kusinafilipina.com</span></h5>
 			<div class="eatIcon">
 				<div class="eatIconContent">
 					<ion-icon name="restaurant" color="goldenBrown"></ion-icon>

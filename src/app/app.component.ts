@@ -36,11 +36,11 @@ export class MyApp {
       { title: 'Catering and Events', component: 'CateringPage', icon: 'albums' }
       ];
       this.pagesDesk = [
-        { title: 'HOME', component: 'HomePage', icon: 'home' },
+        // { title: 'HOME', component: 'HomePage', icon: 'home' },
         { title: 'MENU', component: 'GalleryTabsPage', icon: 'images' },
         { title: 'ABOUT US', component: 'AboutPage', icon: 'information-circle' },
-        { title: 'EVENTS', component: 'CateringPage', icon: 'basket' }, 
-        { title: 'CONTACT', component: 'ContactPage', icon: 'information-circle' }
+        // { title: 'EVENTS', component: 'CateringPage', icon: 'basket' }, 
+        { title: 'CONTACT US', component: 'ContactPage', icon: 'information-circle' }
       ]
       const currentDate = this.Date.getDate();
       if (currentDate !== 0 ) {
