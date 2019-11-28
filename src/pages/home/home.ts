@@ -39,6 +39,17 @@ export class HomePage {
     { name: 'PANCIT BIHON', page: this.menuRoot, image: 'assets/imgs/bestsellers/pancitbihon.jpg', key: 4 }
     // { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   ];
+
+  bestsellersList=[{
+  bestsellers:[
+        { name: 'DINAKDAKAN', page: this.foodRoot, image: 'assets/imgs/bestsellers/dinakdakan.jpg', key: 3 },
+        { name: 'CRISPY PATA', page: this.drinkRoot, image: 'assets/imgs/bestsellers/crispypata.jpg', key: 0 },
+        { name: 'BEEF STEAK TAGALOG', page: this.menuRoot, image: 'assets/imgs/bestsellers/beefsteaktagalog.jpg', key: 4 }]},{
+  bestsellers:[
+        { name: 'EGG ROLLS', page: this.menuRoot, image: 'assets/imgs/bestsellers/eggrolls.jpg', key: 4 },
+        { name: 'KARE-KARE', page: this.menuRoot, image: 'assets/imgs/bestsellers/karekare.jpg', key: 4 },
+        { name: 'PANCIT BIHON', page: this.menuRoot, image: 'assets/imgs/bestsellers/pancitbihon.jpg', key: 4 }]}];
+
   deskCategories = [
     { name: 'FOODS', page: this.foodRoot, image: '', key: 3 },
     { name: 'DRINKS', page: this.drinkRoot, image: '', key: 0 },
