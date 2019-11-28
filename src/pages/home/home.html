@@ -478,12 +478,17 @@ info@kusinafilipina.com</span></p>
             
           </ion-col>
           <ion-slides no-margin no-padding 
-              class="image-holder desk-holder" pager>
-  
-              <ion-slide class="show2"  *ngFor="let l of categories">
-                <img class="category2" src="{{l.image}}">
+              class="image-holder2" pager>
+              <ion-slide no-margin no-padding class="show2" *ngFor="let b of bestsellersList">
+                <ion-col no-margin no-padding col-md-6 col-lg-4 col-xl-3 *ngFor="let a of b.bestsellers"
+                >
+                <img class="category2" src="{{a.image}}">
+                <!-- <div class="subtitle">
+                  <h6>{{ b.name }}</h6>
+                </div> -->
+              </ion-col>
               </ion-slide>  
-            </ion-slides>
+          </ion-slides>
         </ion-row> 
       </div>
     </ion-grid>
@@ -525,7 +530,7 @@ info@kusinafilipina.com</span></p>
        <div class="story thSection">
       <h2 class="title curvyFont welcomeText goldenText" style="text-align: center !important;" style="font-size: 6rem !important;">Testimonials</h2>
       <h1 class="mainTexts headFont">CUSTOMERS REVIEW</h1>
-      <ion-slides class="" pager>
+      <ion-slides style="padding-bottom: 30px;" pager>
         <ion-slide *ngFor="let t of testimonials" class="slideHolder2">
          
           <div class="subTexts2">
