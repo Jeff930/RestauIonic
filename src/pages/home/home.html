@@ -477,13 +477,13 @@ info@kusinafilipina.com</span></p>
             </div>
             
           </ion-col>
-          <ion-col no-margin no-padding col-md-6 col-lg-4 col-xl-4 (click)="showPortfolio(l);"
-              *ngFor="let l of categories" class="image-holder">
+          <ion-slides no-margin no-padding 
+              class="image-holder desk-holder" pager>
   
-              <div class="show2">
-                <img class="category2" src="assets/imgs/{{l.image}}">
-              </div>  
-            </ion-col>
+              <ion-slide class="show2"  *ngFor="let l of categories">
+                <img class="category2" src="{{l.image}}">
+              </ion-slide>  
+            </ion-slides>
         </ion-row> 
       </div>
     </ion-grid>

@@ -27,7 +27,9 @@ page-home {
 			}
 		}
 	}
+	.menuSection {
 
+	}
 	.map2{
 		margin:0 !important;
 	}
@@ -268,12 +270,16 @@ page-home {
 		}
 	}
 	
-
-	.show2{
-		height: 20vw;
+	.desk-holder {
+		margin: 0 auto;
+		width: 60% !important;
+		height: 60vh !important;
+		.show2{
+		height: 30vw;
 		padding: 20px;
 		margin:0px;
-		width: 100%;
+		width: 100% !important;
+		margin: 0 auto !important;
 		img {
 			height:25vw !important;
 			max-height: 450px !important;
@@ -281,6 +287,8 @@ page-home {
 			width: 100%;
 		}
 	}
+	}
+	
 	.contentLessSpace {
 		padding: 0px 20px 50px 20px !important;
 	}

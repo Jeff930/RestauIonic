@@ -28,16 +28,34 @@ export class GalleryTabsPage {
   images = [];
   checkApp;
   categories = [ 
-    { name: 'Menus', content: [], image: 'fas fa-utensils' , key: 0},
+    { name: 'Menus', content: [], image: 'fas fa-list' , key: 0},
     { name: 'Appetizer', content: [], image: 'fas fa-apple-alt', key: 1 },
     { name: 'Pork', content: [], image: 'fas fa-bacon', key: 2 },
-    { name: 'Soup', content: [], image: 'fas fa-coffee', key: 3 },
+    { name: 'Vegetable', content: [], image: 'fas fa-carrot', key: 3 },
+    { name: 'Beef', content: [], image: 'fas fa-cloud-meatball', key: 4 },
+    { name: 'Seafood', content: [], image: 'fas fa-fish', key: 5 },
+    { name: 'Soup', content: [], image: 'fas fa-glass-whiskey', key: 6 },
+    { name: 'Noodles', content: [], image: 'fas fa-stroopwafel', key: 7 },
+    { name: 'Platters', content: [], image: 'fas fa-cloud-meatball', key: 8 },
+    { name: 'Rice', content: [], image: 'fas fa-seedling', key: 9 },
+    { name: 'Chicken', content: [], image: 'fas fa-drumstick-bite', key: 10 },
+    { name: 'Drinks', content: [], image: 'fas fa-beer', key: 11 },
   ];
+ 
   deskCategories = [
-    { name: 'Menus', content: [], image: 'fas fa-utensils' , key: 0},
+      { name: 'Menus', content: [], image: 'fas fa-list' , key: 0},
     { name: 'Appetizer', content: [], image: 'fas fa-apple-alt', key: 1 },
     { name: 'Pork', content: [], image: 'fas fa-bacon', key: 2 },
-    { name: 'Soup', content: [], image: 'fas fa-coffee', key: 3 },
+    { name: 'Vegetable', content: [], image: 'fas fa-carrot', key: 3 },
+    { name: 'Beef', content: [], image: 'fas fa-cloud-meatball', key: 4 },
+    { name: 'Seafood', content: [], image: 'fas fa-fish', key: 5 },
+    { name: 'Soup', content: [], image: 'fas fa-glass-whiskey', key: 6 },
+    { name: 'Noodles', content: [], image: 'fas fa-stroopwafel', key: 7 },
+    { name: 'Platters', content: [], image: 'fas fa-cloud-meatball', key: 8 },
+    { name: 'Rice', content: [], image: 'fas fa-seedling', key: 9 },
+    { name: 'Chicken', content: [], image: 'fas fa-drumstick-bite', key: 10 },
+    { name: 'Drinks', content: [], image: 'fas fa-beer', key: 11 },
+
   ];
   itemContent: any;
   oldKey= null;
@@ -112,14 +130,31 @@ export class GalleryTabsPage {
     }
 
     if (currentKey === 0) {
-      this.categories[item.key].content = this.image.getAllFoodsFromMenu();
-    } else if (currentKey === 3) {
-      this.categories[item.key].content = this.image.getImages('drinks');
-    } else if (currentKey === 2) {
-      this.categories[item.key].content = this.image.getImages('outside');
+      this.categories[0].content = this.image.getImages('menu');
     } else if (currentKey === 1) {
-      this.categories[item.key].content = this.image.getImages('menu');
-    }
+      this.categories[1].content = this.image.getImages('appetizers');
+    } else if (currentKey === 2) {
+      this.categories[2].content = this.image.getImages('porks');
+    } else if (currentKey === 3) {
+      this.categories[3].content = this.image.getImages('vegetables');
+    } else if (currentKey === 4) {
+      this.categories[4].content = this.image.getImages('beefs');
+    } else if (currentKey === 5) {
+      this.categories[5].content = this.image.getImages('seafoods');
+    } else if (currentKey === 6) {
+      this.categories[6].content = this.image.getImages('soups');
+    } else if (currentKey === 7) {
+      this.categories[7].content = this.image.getImages('noodles');
+    } else if (currentKey === 8) {
+      this.categories[8].content = this.image.getImages('platters');
+    } else if (currentKey === 9) {
+      this.categories[9].content = this.image.getImages('rices');
+    } else if (currentKey === 10) {
+      this.categories[10].content = this.image.getImages('chickens');
+    } else if (currentKey === 11) {
+      this.categories[11].content = this.image.getImages('drinks');
+    } 
+
     if (currentKey === null) {
       this.oldKey = null;
       this.mobileCurrentKey = null;
@@ -144,15 +179,41 @@ export class GalleryTabsPage {
     if (this.oldKey !== null) {
       this.itemContent = [];
     }
+
     if (currentKey === 0) {
-      this.itemContent = this.image.getAllFoodsFromMenu();
-    } else if (currentKey === 1) {
-      this.itemContent = this.image.getImages('drinks');
-    } else if (currentKey === 2) {
-      this.itemContent = this.image.getImages('outside');
-    } else if (currentKey === 3) {
       this.itemContent = this.image.getImages('menu');
-    }
+    } else if (currentKey === 1) {
+      this.itemContent = this.image.getImages('appetizers');
+    } else if (currentKey === 2) {
+      this.itemContent = this.image.getImages('porks');
+    } else if (currentKey === 3) {
+      this.itemContent = this.image.getImages('vegetables');
+    } else if (currentKey === 4) {
+      this.itemContent = this.image.getImages('beefs');
+    } else if (currentKey === 5) {
+      this.itemContent = this.image.getImages('seafoods');
+    } else if (currentKey === 6) {
+      this.itemContent = this.image.getImages('soups');
+    } else if (currentKey === 7) {
+      this.itemContent = this.image.getImages('noodles');
+    } else if (currentKey === 8) {
+      this.itemContent = this.image.getImages('platters');
+    } else if (currentKey === 9) {
+      this.itemContent = this.image.getImages('rices');
+    } else if (currentKey === 10) {
+      this.itemContent = this.image.getImages('chickens');
+    } else if (currentKey === 11) {
+      this.itemContent = this.image.getImages('drinks');
+    } 
+    // if (currentKey === 0) {
+    //   this.itemContent = this.image.getAllFoodsFromMenu();
+    // } else if (currentKey === 1) {
+    //   this.itemContent = this.image.getImages('drinks');
+    // } else if (currentKey === 2) {
+    //   this.itemContent = this.image.getImages('outside');
+    // } else if (currentKey === 3) {
+    //   this.itemContent = this.image.getImages('menu');
+    // }
     if (currentKey === null) {
       this.oldKey = null;
       this.deskCurrentKey = null;

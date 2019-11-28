@@ -12,6 +12,11 @@ import { vegetables } from '../../models/vegetable';
 import { chickens } from '../../models/chicken';
 import { porks } from '../../models/pork';
 import { seafoods } from '../../models/seafood';
+import { platters } from '../../models/platter';
+import { rices } from '../../models/rice';
+import { soups } from '../../models/soup';
+import { noodles } from '../../models/noodle';
+
 import { Platform } from 'ionic-angular';
 
 /*
@@ -47,30 +52,48 @@ export class ProviderImagesProvider {
   getImages(type) {
     if (type === "drinks") {
       this.templateImage = drinks;
-    } else if ( type === "outside") {
-      this.templateImage = outside;
-    } else if (type === "inside") {
-      this.templateImage = inside;
-    } else if (type === "menu") {
+    } else if ( type === "menu") {
       this.templateImage = menu;
-    } else if (type === "food") {
-      this.templateImage = food;
-    } else {
-      const allFoods = [];
-      drinks.forEach(element => {
-        allFoods.push(element);
-      });
-      outside.forEach(element => {
-        allFoods.push(element);
-      });
-      inside.forEach(element => {
-        allFoods.push(element);
-      });
-      food.forEach(element => {
-        allFoods.push(element);
-      });
-      this.templateImage = allFoods;
-    }
+    } else if (type === "appetizers") {
+      this.templateImage = appetizers;
+    } else if (type === "beefs") {
+      this.templateImage = beefs;
+    } else if (type === "vegetables") {
+      this.templateImage = vegetables;
+    }  else if (type === "chickens") {
+      this.templateImage = chickens;
+    }  else if (type === "porks") {
+      this.templateImage = porks;
+    }  else if (type === "seafoods") {
+      this.templateImage = seafoods;
+    }  else if (type === "platters") {
+      this.templateImage = platters;
+    }  else if (type === "rices") {
+      this.templateImage = rices;
+    }  else if (type === "soups") {
+      this.templateImage = soups;
+    }  else if (type === "noodles") {
+      this.templateImage = noodles;
+    } 
+
+
+
+  //   else {
+  //     const allFoods = [];
+  //     drinks.forEach(element => {
+  //       allFoods.push(element);
+  //     });
+  //     outside.forEach(element => {
+  //       allFoods.push(element);
+  //     });
+  //     inside.forEach(element => {
+  //       allFoods.push(element);
+  //     });
+  //     food.forEach(element => {
+  //       allFoods.push(element);
+  //     });
+  //     this.templateImage = allFoods;
+  //   }
     return this.templateImage;
   }
   getEachImageForView() {
@@ -103,8 +126,6 @@ export class ProviderImagesProvider {
     this.imageReturnLimitedView = allFoods;
     return this.imageReturnLimitedView;
   }
-
-
   // get all the items from the other foods.
   
   getAllFoodsFromMenu() {
