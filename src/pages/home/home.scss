@@ -27,9 +27,7 @@ page-home {
 			}
 		}
 	}
-	.menuSection {
 
-	}
 	.map2{
 		margin:0 !important;
 	}
@@ -270,16 +268,20 @@ page-home {
 		}
 	}
 	
-	.desk-holder {
-		margin: 0 auto;
-		width: 60% !important;
-		height: 60vh !important;
-		.show2{
-		height: 30vw;
-		padding: 20px;
-		margin:0px;
-		width: 100% !important;
-		margin: 0 auto !important;
+	.show2{
+	width:100% !important;
+	padding-bottom: 40px;
+	margin-left:0px;
+	margin-right:0px;
+	.slide-zoom{
+		width:100%;
+	}
+	}
+
+	.desk-holder{
+		height: 30vw;		
+		
+		width: 100%;
 		img {
 			height:25vw !important;
 			max-height: 450px !important;
@@ -287,8 +289,6 @@ page-home {
 			width: 100%;
 		}
 	}
-	}
-	
 	.contentLessSpace {
 		padding: 0px 20px 50px 20px !important;
 	}
@@ -299,6 +299,7 @@ page-home {
 
 	.category2{
 		height:25vw !important;
+		margin:30px !important;
 	}
 
 	.image-holder {
@@ -894,6 +895,20 @@ border-radius: 25px;
 				width: 100% !important;
 			}
 		}
+	}
+	.image-holder2 {
+			width: 100%;
+			padding-bottom: 20px !important;
+		.images {
+			img {
+				max-height: 30vh !important;
+				width: 100% !important;
+			}
+		}
+	}
+
+	.menu-section{
+		margin-bottom:20px;
 	}
 	.desk-image-holder {
 		
