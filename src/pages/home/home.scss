@@ -683,11 +683,10 @@ page-home {
 	 .swiper-pagination-bullet-active {
     background: #C49433;
     opacity: 1 !important;
-    height: 35px;
 
 }
     .swiper-pagination-bullet {
-    border-radius: 0%;
+    border-radius: 50%;
     display: inline-block;
     background: #C49433;
     width: 8px;
