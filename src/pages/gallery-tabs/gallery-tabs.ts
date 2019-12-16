@@ -28,7 +28,6 @@ export class GalleryTabsPage {
   images = [];
   checkApp;
   categories = [ 
-    { name: 'Menus', content: [], image: 'fas fa-list' , key: 0},
     { name: 'Appetizer', content: [], image: 'fas fa-apple-alt', key: 1 },
     { name: 'Pork', content: [], image: 'fas fa-bacon', key: 2 },
     { name: 'Vegetable', content: [], image: 'fas fa-carrot', key: 3 },
@@ -43,7 +42,6 @@ export class GalleryTabsPage {
   ];
  
   deskCategories = [
-      { name: 'Menus', content: [], image: 'fas fa-list' , key: 0},
     { name: 'Appetizer', content: [], image: 'fas fa-apple-alt', key: 1 },
     { name: 'Pork', content: [], image: 'fas fa-bacon', key: 2 },
     { name: 'Vegetable', content: [], image: 'fas fa-carrot', key: 3 },
