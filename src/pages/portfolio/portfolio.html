@@ -22,13 +22,15 @@
 
 		<ion-slide >
 
-			<img src="assets/imgs/{{currentImage.image}}">
-			<h2 style="color:rgb(0, 0, 0);">{{currentImage.name}}</h2>
-			<hr>
-			<h6 style="color: rgb(0, 0, 0); padding: 2px;">Price: <span style="color: rgb(245, 61, 61)">{{ currentImage.price }}</span> </h6>
-			<ion-row style="margin-bottom: 20px">
-				<h6 style="color: rgb(0, 0, 0); margin-top: 0px !important;">{{ currentImage.description }}</h6>
-			</ion-row>
+			<img src="assets/imgs/{{currentImage.image}}" class="image" *ngIf="currentImage.image !== undefined">
+			<div class="text-space">
+				<h2 style="color:rgb(0, 0, 0);">{{currentImage.name}}</h2>
+				<hr>
+				<h6 style="color: rgb(0, 0, 0); padding: 2px;">Price: <span style="color: rgb(245, 61, 61)">{{ currentImage.price }}</span> </h6>
+				<ion-row style="margin-bottom: 20px">
+					<h6 style="color: rgb(0, 0, 0); margin-top: 0px !important;">{{ currentImage.description }}</h6>
+				</ion-row>
+			</div>
 		</ion-slide>
 	</ion-slides>
 

@@ -2,19 +2,19 @@ export const chickens = [
 	{
 		name : 'Spring Chicken (Whole/Half)',
 		description : 'Tasty and lightly crisp fried chicken.',
-		image: 'chicken/ChickenCurry.jpg',
+		image: 'chicken/EggRollsz.jpg',
 		price : '15.99/8.99'
 		
 	},{
 		name : 'Chicken Afritada',
 		description : 'Spanish inspired chicken dish simmered in tomato sauce and dressed with potatoes, carrots and sweet peas.',
-		image: 'chicken/ChickenCurry.jpg',
+		image: 'chicken/EggRollsz.jpg',
 		price : '12.99'
 		
 	},{
 		name : 'Chicken Adobo',
 		description : 'Favorite Filipino dish marinated in vinegar and soy sauce slowly cooked in garlic and spices.',
-		image: 'chicken/ChickenCurry.jpg',
+		image: 'chicken/EggRollsz.jpg',
 		price : '12.99'
 		
 	},

@@ -29,7 +29,7 @@ import { Platform } from 'ionic-angular';
 export class ProviderImagesProvider {
   public templateImage = [];
   public imageReturnLimitedView = [];
-  public currentImage: any;
+  public currentImage;
   public menuItems = [];
   public checkApp;
   innerWidth: number;

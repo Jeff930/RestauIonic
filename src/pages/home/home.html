@@ -65,8 +65,8 @@
         <h2 class="mainTexts headFont" style="color: #ffffff !important;">OUR BESTSELLERS</h2>
       </div>
 
-      <div class="subTexts">
-        <ion-col no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories"
+      <ion-slides class="subTexts" pager>
+        <ion-slide no-margin no-padding col-md-6 col-lg-3 col-xl-3 (click)="showPortfolio(l);" *ngFor="let l of categories"
           class="image-holder">
         
           <div class="show">
@@ -75,8 +75,8 @@
             <h6>{{ l.name }}</h6>
           </div>
           </div>
-        </ion-col>
-      </div>
+        </ion-slide>
+      </ion-slides>
     
     </div>
   </ion-row>

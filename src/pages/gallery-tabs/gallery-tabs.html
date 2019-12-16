@@ -32,7 +32,7 @@
                     <div class="cards-content">
                         <div class="lister" [ngStyle]="{'color': mobileCurrentKey === item.key ? 'rgb(196,148,51)': ''}"><i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"  [ngStyle]="{'color': mobileCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i> {{ item.name }}
                         <div class="cardLister" *ngFor=" let cat of item.content"  >
-                           <ion-card>
+                           <ion-card (click)="showPortfolio(cat);">
                                <img src="assets/imgs/{{ cat.image }}" alt="">
                                <div class="cardText">    
                                 <h2>{{ cat.name }}</h2>
