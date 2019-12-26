@@ -92,7 +92,7 @@ export class HomePage {
     public image: ProviderImagesProvider, public platform: Platform, private callNumber: CallNumber) {
 
     this.images = this.image.getEachImageForView();
-    this.checkApp = this.platform.is('android'); 
+    this.checkApp = this.image.checkAppPlatform(); 
     for (let index = 0; index < this.deskCategories.length; index++) {
       // const element = this.categories[index];
       const element2 = this.deskCategories[index];

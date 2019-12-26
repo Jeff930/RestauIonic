@@ -335,6 +335,11 @@ page-catering {
             }
             .subTexts { margin-bottom: 50px !important; }
         }
+        .menu-button2 {
+            p {
+                margin-top: 20px !important;
+            }
+        }
          	.menu-button {
         text-align: center;
         margin: 0 auto !important;
@@ -564,7 +569,16 @@ page-catering {
                     border-radius: 50px !important;
                     padding: 25px 30px;
                     p {
-                    font-size: 1.8rem !important;
+                        font-size: 1.8rem !important;
+                    }
+                }
+                .menu-button2 {
+                    border-radius: 50px !important;
+                    padding: 25px 30px;
+                    p {
+                        text-align: center;
+                        margin-top: 23px;
+                        font-size: 1.8rem !important;
                     }
                 }
 		}

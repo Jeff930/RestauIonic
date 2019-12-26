@@ -39,12 +39,11 @@ export class ProviderImagesProvider {
   
   //TODO: Update this when the app is ready for IOS, currently this is for android only 
   checkAppPlatform() {
-    this.checkApp = this.platform.is('android');
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth <= 480) {
+    if (this.innerWidth <= 480 || this.platform.is('android') || this.platform.is('cordova') || this.platform.is('iphone')) {
       this.checkApp = true;
     }
-    console.log(this.checkApp);
+    console.log('this Device is a mobile ' + this.checkApp);
     return this.checkApp;
   }
 

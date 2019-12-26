@@ -168,13 +168,13 @@ export class GalleryTabsPage {
   getDeskData(item) {
     this.deskCurrentKey = item.key;
     let currentKey = item.key;
-    if (currentKey === this.oldKey) {
-     this.itemContent = [];
-      currentKey = null;
-    }
-    if (this.oldKey !== null) {
-      this.itemContent = [];
-    }
+    // if (currentKey === this.oldKey) {
+    //  this.itemContent = [];
+    //   currentKey = null;
+    // }
+    // if (this.oldKey !== null) {
+    //   this.itemContent = [];
+    // }
 
     if (currentKey === 0) {
       this.itemContent = this.image.getImages('appetizers');
@@ -209,9 +209,9 @@ export class GalleryTabsPage {
     //   this.itemContent = this.image.getImages('menu');
     // }
     if (currentKey === null) {
-      this.oldKey = null;
-      this.deskCurrentKey = null;
     } else {
+      // this.oldKey = null;
+      // this.deskCurrentKey = null;
       this.oldKey = item.key;
     }
     // this.categories[item.key].content
