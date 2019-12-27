@@ -217,12 +217,14 @@ page-about {
         border: 2px solid rgb(196,148,51);
         overflow: hidden;
         font-size: 1.5rem;
+        width: 100%;
         input {
-            padding: 15px;
             background-color:#EEF1EF;
             border:none;
+            width: 80%;
         }
         button {
+            width: 20%;
             color: #ffffff;
             font-size: 1.5rem;
             background: rgb(196,148,51);

@@ -14,7 +14,7 @@
     
   <ion-buttons end>
   <button ion-button class="button-header" (click)="callNow()">
-    <h2>Call Us Now!</h2>
+    <h2>Call Us Now</h2>
   </button>
   </ion-buttons>
 
@@ -25,7 +25,7 @@
 <ion-content>
   <div *ngIf="checkApp">
   
-    <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover" >
+    <ion-row style="flex-wrap: inherit;" class="cover" >
       
       <img src="assets/imgs/banner/homepage.jpg" alt="">
       <div class="texts">
@@ -92,23 +92,31 @@
         <ion-icon name="alarm" class="goldenText"></ion-icon>
       </div>
       <div class="sched subTexts">
-        <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
-        <h4>Sunday: 10:00am - 08:00pm</h4>
+        <h4  *ngIf="responsiveDate"> Monday - Saturday: 10:00am - 10:00pm</h4>
+        <span *ngIf="!responsiveDate">
+          <h4 class="subme">Monday - Saturday:</h4>
+          <h4 style="margin-top: 0px !important">10:00am - 10:00pm</h4>
+        </span>
+        <h4 class="subme" *ngIf="responsiveDate">Sunday: 10:00am - 08:00pm</h4>
+        <span  *ngIf="!responsiveDate">
+          <h4 class="subme">Sunday:</h4>
+          <h4 style="margin-top: 0px !important">10:00am - 08:00pm</h4>
+        </span>
       </div>
     </div>
   
   </ion-row>
-      <div class="contentSections thSection">
+      <div class="contentSections thSection" style="padding-bottom: 20px !important">
           
         <h2 class="title curvyFont welcomeText goldenText" style="text-align: center !important;">Testimonials</h2>
         <h2 class="mainTexts headFont">CUSTOMERS REVIEW</h2>
-        <ion-slides class="" pager>
+        <ion-slides class="slidesTest" pager>
           <ion-slide class="" *ngFor="let t of testimonials" >
             <div class="subTexts">
               <p><span class="goldenText">"</span>{{t.testim}}</p>
             </div>
             
-            <h2 class="mainTexts headFont">{{t.name}}</h2>
+            <h2 class="mainTexts headFont" style="padding-bottom: 50px;">{{t.name}}</h2>
           </ion-slide>
         </ion-slides>
       </div>
@@ -374,7 +382,7 @@
       </div>
     
     </ion-row> -->
-    <div class="first-section footer mobSections" style="padding-top: 0px !important;margin-top: -10px !important" *ngIf="checkApp">
+    <div class="first-section footer mobSections" style="padding-top: 30px !important;margin-top: -10px !important" *ngIf="checkApp">
   <ion-row align-items-center="" class="row">
     <ion-col class="col" col-12="" col-lg-3="" >
       <div class="container contactUs" style="text-align: left">
@@ -406,8 +414,8 @@ info@kusinafilipina.com</span></p>
         <p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items and our
           new events. This theme will help you organize your site without any technical skills.</p>
 
-        <div class="inputSection">
-          <input type="text" placeholder="Email Address">
+        <div class="inputSection" style="padding: 0px !important; width: 100%;">
+          <input type="text" placeholder="Email Address" style="padding: 15px;">
           <button>SIGN UP</button>
         </div>
 
@@ -777,7 +785,7 @@ info@kusinafilipina.com</span></p>
       <ion-row align-items-center="" class="row">
         <ion-col class="col" col-12="" col-lg-4="">
           <div class="container" style="text-align: left">
-            <p class="headFont" style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights Reserved</p>
+            <p class="headFont" style="font-size: 1.5rem;margin:0px;margin-left: 15px;">©2019 - All Rights Reserved</p>
             </div>
         </ion-col>
       </ion-row>

@@ -86,6 +86,7 @@ export class HomePage {
   //   { name: 'Let us take it Outside', page: this.outsideRoot, image: '', key: 1 }
   // ];
   public innerWidth: any;
+  responsiveDate = true;
   date = new Date();
   timeSched;
   constructor(public navCtrl: NavController, public navParams: NavParams,
@@ -99,6 +100,11 @@ export class HomePage {
       // element.image = this.images[element.key].image;
       element2.image = this.images[element2.key].image;
       console.log(this.images[0]);
+    }
+    this.innerWidth = window.innerWidth;
+    console.log(this.innerWidth);
+    if (this.innerWidth >320 ) {
+      this.responsiveDate = true;
     }
   }
   

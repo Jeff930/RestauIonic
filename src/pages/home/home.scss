@@ -113,7 +113,9 @@ page-home {
 		box-shadow: -200px -35px 75px -51px rgba(0,0,0,0.75);
 		border: .5px solid black;
 		// height: 40vh;
-		height: 50vh;
+		height: 80vw;
+		overflow: hidden;
+		scroll-behavior: unset;
 		img {
 			max-width: 110% !important;
 		}
@@ -181,14 +183,16 @@ page-home {
         border-radius: 50px;
         border: 2px solid rgb(196,148,51);
         overflow: hidden;
-        font-size: 1.5rem;
+		font-size: 1.5rem;
+		position: relative;
         input {
-            padding: 5px;
+			width: 80%;
         }
         button {
             color: #ffffff;
             font-size: 1.5rem;
-            background: rgb(196,148,51);
+			background: rgb(196,148,51);
+			width: 20%;
         }
     }
     }
@@ -306,6 +310,7 @@ page-home {
 
 	.image-holder {
 		position: relative;
+		top: -30px;
 		.subtitle {
 			position: absolute;
 			bottom: 0;
@@ -1000,4 +1005,19 @@ border-radius: 25px;
 		margin-top: 0px !important;
 		margin-bottom: 50px !important;
 	}
+
+	.subme {
+		width: 100%;
+		display: inline;
+		.spacer {
+			width: 100%;
+		}
+		.spacef {
+			width: 20%;
+		}
+	}
+	.slidesTest {
+		padding: 20px;
+	}
 }
+
