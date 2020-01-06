@@ -461,8 +461,11 @@ page-catering {
                     margin-top: 5px;
                     border-radius: 50px !important;
                     padding: 25px 30px;
+                    p {
+                        margin: 0 auto !important;
+                        font-size: 1.8rem !important;
+                    }
                     h2 {
-                    font-size: 1.8rem !important;
                     }
                 }
 		}
@@ -578,9 +581,9 @@ page-catering {
                 .menu-button2 {
                     border-radius: 50px !important;
                     padding: 25px 30px;
+                    /*margin-top: 23px;*/
                     p {
                         text-align: center;
-                        margin-top: 23px;
                         font-size: 1.8rem !important;
                     }
                 }
@@ -891,7 +894,7 @@ page-catering {
     }
 	.goldenText { color: rgb(196,148,51);  }
       .aboutImage{
-    	height: 460px;
+    	height: 440px;
          background: url('../assets/imgs/banner/eventsContent.jpg') no-repeat;
     	background-size: cover;
     	background-repeat: no-repeat;

@@ -68,6 +68,9 @@ export class CateringPage {
 
 
   }
+  goToMotherLand() {
+    window.open('https://web.facebook.com/MotherlandComedy');
+  }
 
   goTo() {
     this.navCtrl.setRoot('ContactPage');
