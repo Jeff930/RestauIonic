@@ -111,7 +111,9 @@ export class HomePage {
   callNow() {
     window.open(`tel:3232290228`, '_system');
   }
-
+  emailNow() {
+    window.location.href = "mailto:"+ 'info@kusinafilipina.com';
+  }
   ionViewDidLoad() {
     
     this.loadMap();

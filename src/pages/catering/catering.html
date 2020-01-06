@@ -100,25 +100,26 @@
       <div class="contentSections secndSection">
           <h2 class="mainTexts headFont">CATERING AND SERVICES</h2>
           <div class="cateringSection Frst">
-            <h2 class="cateringTitle">Catering Service A</h2>
-            <p></p>
+            <h2 class="cateringTitle">Let Us Do Your Catering and Events</h2>
+            <p>Please call us at 323-229-0228</p>
           </div>
-          <div class="cateringSection Scnd">
+         <!--  <div class="cateringSection Scnd">
             <h2 class="cateringTitle">Catering Service B</h2>
             <p></p>
-          </div>
+          </div> -->
       </div>
     </ion-row>
     <ion-row no-padding>
       <div class="contentSections timeSched">
         <h2 class="title curvyFont welcomeText goldenText" style="font-family: 'Cookie Curvy' !important;">Business
           Hours</h2>
-        <h2 class="mainTexts headFont">LET US DO YOUR CATERING AND EVENTS</h2>`
+        <h2 class="mainTexts headFont">LET US DO YOUR CATERING AND PARTIES</h2>`
         <div class="alarmIcon">
           <ion-icon name="alarm" class="goldenText"></ion-icon>
         </div>
         <div class="sched subTexts businessHrs" style="background: none !important">
-          <h4>Please call us at 323-229-0228</h4>
+          <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
+          <h4>Sunday: 10:00am - 08:00pm</h4>
         </div>
         <button ion-button class="menu-button" (click)="callNow()" style="width: 40% !important;">
           <h2>CONTACT US</h2>
@@ -278,19 +279,19 @@
     <ion-grid style="background-color: #f5f5f5; padding-bottom: 60px;">
       <ion-row no-padding>
   
-        <ion-col col-lg-6 col-xl-6 style="padding: 0px 10px 0px 80px">
+        <ion-col col-lg-12 col-xl-12 style="padding: 0px 10px 0px 80px">
           <div class="aboutImage">
-            <h2 class="title welcomeText titleText" style="padding: 50px 10px;">Catering Service A</h2>
-            <p class="titleText" style="color:white;padding: 0px 30px;font-size:3rem;text-align: center"></p>
+            <h2 class="title welcomeText titleText" style="padding: 50px 10px; font-size: 7rem !important;">Let Us Do Your Catering and Events</h2>
+            <p class="titleText" style="color:white;padding: 0px 30px;font-size:4rem;text-align: center">Please call us at 323-229-0228</p>
           </div>
         </ion-col>
   
-        <ion-col col-lg-6 col-xl-6 style="padding: 0px 80px 0px 10px">
+      <!--   <ion-col col-lg-6 col-xl-6 style="padding: 0px 80px 0px 10px">
           <div class="aboutImage">
             <h2 class="title welcomeText titleText" style="padding: 50px 10px;">Catering Service B</h2>
             <p class="titleText" style="color:white;padding: 0px 30px;font-size:3rem;text-align: center"></p>
           </div>
-        </ion-col>
+        </ion-col> -->
   
       </ion-row>
     </ion-grid>
@@ -308,13 +309,14 @@
           <ion-col col-lg-6 col-xl-6>
             <div class="contentSections2 timeSched">
               <h2 class="title curvyFont welcomeText goldenText">Business Hours</h2>
-              <h2 class="mainTexts headFont" style="font-size:2vw !important"><strong>LET US DO YOUR CATERING AND EVENTS</strong>
+              <h2 class="mainTexts headFont" style="font-size:2vw !important"><strong>Let us do your Catering and Parties</strong>
               </h2>
               <div class="alarmIcon">
                 <ion-icon name="alarm" class="goldenText"></ion-icon>
               </div>
               <div class="sched subTexts">
-                <h4 style="font-size: 1vw !important;">Please call us at 323-229-0228</h4>
+              <h4 style="font-size: 1vw !important;">Monday - Saturday: 10:00am - 10:00pm</h4>
+              <h4 style="font-size: 1vw !important;">Sunday: 10:00am - 08:00pm</h4>
               </div>
               <button ion-button class="menu-button" (click)="goToContactUs()">
                 <h2 class="headFont">CONTACT US</h2>
@@ -341,8 +343,8 @@
           <div class="container contactUs" style="text-align: center">
             <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
             <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 4157 Eagle Rock Blvd STE 1, Los Angeles CA 90065</p>
-            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>323 229 0228</p>
-            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433">info@kusinafilipina.com</span></p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;cursor: pointer" (click)="callNow()"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon>  323 229 0228</p>
+            <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;cursor: pointer" (click)="emailNow()"><ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433">  info@kusinafilipina.com</span></p>
           </div>
         </ion-col>
         <ion-col class="col" col-12="" col-lg-3="" text-center="">

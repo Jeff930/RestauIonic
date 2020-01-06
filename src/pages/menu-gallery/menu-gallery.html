@@ -1,0 +1,307 @@
+
+<ion-header no-boder>
+    <ion-navbar transparent color="transp" class="bar-header">
+        <button ion-button menuToggle>
+            <ion-icon name="menu" class="bar-header"></ion-icon>
+        </button>
+        <img src="assets/imgs/logoName.png" height="60px;">
+        <!-- <ion-title style="color: red !important;">Kusina Filipina</ion-title> -->
+
+        <ion-buttons end>
+            <button ion-button class="button-header" (click)="callNow()">
+                <h2>Call Us Now!</h2>
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+    <div *ngIf="checkApp">
+        
+    <ion-row style="flex-wrap: inherit;overflow-x: scroll;" class="cover">
+        <h2 class="title josefFont welcomeText">Menu Gallery</h2>
+
+    </ion-row>
+
+    <ion-row>
+            <div class="card-lists">
+                <div class="card-holder" (click)="catClick(item)" *ngFor="let item of categories">
+                    <div class="cards-content">
+                        <div class="lister" [ngStyle]="{'color': mobileCurrentKey === item.key ? 'rgb(196,148,51)': ''}"><i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"  [ngStyle]="{'color': mobileCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i> {{ item.name }}
+                        <div class="cardLister" *ngFor=" let cat of item.content"  >
+                           <ion-card (click)="showPortfolio(cat);">
+                               <img src="assets/imgs/{{ cat.image }}" alt="">
+                               <div class="cardText">    
+                                <h2>{{ cat.name }}</h2>
+                                <h4>{{ cat.description }}</h4>
+                                <h3 *ngIf="cat.price!==undefined">$ {{ cat.price }}</h3>
+                                <h3 *ngIf="cat.price===undefined">$ 7.55</h3>
+                               </div>
+                           </ion-card>
+                        </div></div>
+                    </div>
+                </div>
+        </div>
+    </ion-row>
+    <ion-row no-padding>
+        <div class="contentSections timeSched">
+            <h2 class="title curvyFont welcomeText goldenText" style="font-family: 'Cookie Curvy' !important;">Business Hours</h2>
+        <h2 class="mainTexts headFont">LET US DO YOUR CATERING AND PARTIES</h2>
+            <div class="alarmIcon">
+                <ion-icon name="alarm" class="goldenText"></ion-icon>
+            </div>
+            <div class="sched subTexts">
+                <h4>Monday - Saturday: 10:00am - 10:00pm</h4>
+                <h4>Sunday: 10:00am - 08:00pm</h4>
+            </div>
+            <button ion-button class="menu-button" (click)="callNow()">
+                <h2>CONTACT US</h2>
+            </button>
+        </div>
+    
+    </ion-row>
+    
+<div class="mapContainer">
+    <div #map id="map"></div>
+</div>
+    <div class="first-section footer mobSections" style="padding-top: 30px !important;margin-top: -10px !important"
+        *ngIf="checkApp">
+        <ion-row align-items-center="" class="row">
+            <ion-col class="col" col-12="" col-lg-3="" class="">
+                <div class="container contactUs" style="text-align: left">
+                    <h2 class="headFont;" style="margin-bottom: 0px;"><strong>BUSINESS HOURS</strong></h2>
+                    <hr class="hrFoot">
+                    <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Saturday: </span>10AM - 10PM</p>
+                    <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>10AM - 8PM</p>
+                    <!-- <p style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Booking Time: </span>24/7 Hours</p> -->
+    
+                </div>
+            </ion-col>
+            <ion-col class="col" col-12="" col-lg-6="" text-center="">
+                <div class="container contactUs" style="text-align: center">
+                    <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+                    <p style="font-size: 1.5rem;margin-top: 0px;">
+                        <ion-icon name="map" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon>4157 Eagle Rock Blvd STE 1, Los Angeles CA 90065</p>
+                    
+                    <p style="font-size: 1.5rem;margin-top: 0px;">
+                        <ion-icon name="call" color="charcoal" style="font-size:1.5em; margin-right: 12px"></ion-icon>323 229 0228
+                    <p style="font-size: 1.5rem;margin-top: 0px;">
+                        <ion-icon name="mail" color="charcoal" style="font-size:1.5em; margin-right: 10px"></ion-icon><span
+                            style="color:#C49433">
+                            info@kusinafilipina.com</span></p>
+                </div>
+    
+            </ion-col>
+            <ion-col class="col" col-12="" col-lg-3="" text-center="">
+                <div class="container contactUs" style="text-align: left;">
+                    <h2 class="headFont;" style="margin-bottom: 0px;"><strong>SUBSCRIBE NOW</strong></h2>
+                    <hr class="hrFoot">
+                    <p style="font-size: 1.5rem;margin-top: 0px;"> Sign up now to our newsletter to get latest food items
+                        and our
+                        new events. This theme will help you organize your site without any technical skills.</p>
+    
+                    <div class="inputSection">
+                        <input type="text" placeholder="Email Address" style="padding: 15px;">
+                        <button>SIGN UP</button>
+                    </div>
+    
+                </div>
+    
+            </ion-col>
+        </ion-row>
+    </div>
+</div>
+
+<!--WEB APP-->
+<div *ngIf="!checkApp">
+
+    <!---->
+    <div style="flex-wrap: inherit; width: 100%;padding:0" class="cover2">
+        <!-- <div class="welcome"> -->
+        <p class="title headFont"
+            style="color: #ffffff !important;font-size:4vw !important;padding-top:100px !important;"> Menu Gallery</p>
+        <!-- </div> -->
+    </div>
+    <ion-grid>
+        <ion-row>
+            <div class="deskList">
+                <div class="deskListData" *ngFor="let item of deskCategories">
+                    <div class="deskLister" (click)="getDeskData(item)">
+                        <i class="{{ item.image }}" style="width: 10%; text-align: center; margin-right: 10px;"
+                            [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}"></i>
+                        <h2 [ngStyle]="{'color': deskCurrentKey === item.key ? 'rgb(196,148,51)': ''}">{{ item.name }}
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </ion-row>
+    </ion-grid>
+    <ion-grid fixed text-center *ngIf="itemContent.length !== 0">
+        <ion-row class="deskCardHolder">
+            <ion-col no-margin no-padding col-6 *ngFor="let item of itemContent" class="deskCards">
+                <ion-card style="box-shadow:0px 0px 20px 3px rgba(0,0,0,0.03)">
+                    <img src="assets/imgs/{{ item.image }}" alt="">
+                    <div class="cardText">
+                        <h2>{{ item.name }}</h2>
+                        <h4>{{ item.description }}</h4>
+                        <h3>{{ item.price }}</h3>
+                    </div>
+                </ion-card>
+            </ion-col>
+
+        </ion-row>
+`
+    </ion-grid>
+    <ion-row>
+        <div>
+            <ion-col no-margin no-padding col-6 class="deskCardData">
+                <div class="">
+
+                </div>
+            </ion-col>
+        </div>
+    </ion-row>
+
+    <ion-grid>
+        <div class="first-section fourth">
+            <ion-row align-items-center="" class="row">
+                <ion-col class="col" col-lg-6="" class="text-menu">
+                    <div class="mapContainer2">
+                        <div #map id="map" style="height: 100% !important;
+    box-shadow:0 0 20px rgba(0,0,0,0.3) !important; "></div>
+                    </div>
+                </ion-col>
+
+                <ion-col class="col" col-lg-6="" class="text-menu">
+                    <div class="contentSections">
+                        <div class="container" style="text-align: center">
+                            <h1 class="titleText" style="font-size:4vw !important"> <span
+                                    style="color: #C49433 !important;">Business Hours</span></h1>
+                        </div>
+                        <h2 class="mainTexts headFont" style="font-size:2vw !important"><strong>Let us do your Catering and Parties</strong></h2>
+                        <div class="alarmIcon">
+                            <ion-icon name="alarm" class="goldenText"></ion-icon>
+                        </div>
+                        <div class="sched subTexts">
+                            <h4 style="font-size: 1vw !important;">Monday - Saturday: 10:00am - 10:00pm</h4>
+                            <h4 style="font-size: 1vw !important;">Sunday: 10:00am - 08:00pm</h4>
+                        </div>
+                        <button ion-button class="contact-button" (click)="goToContactUs()">
+                            <h2 class="headFont">CONTACT US</h2>
+                        </button>
+                    </div>
+                </ion-col>
+
+            </ion-row>
+        </div>
+    </ion-grid>
+
+    <ion-grid class="fullGrid">
+        <div class="first-section footer" style="padding-top: 0px !important;">
+            <ion-row align-items-center="" class="row">
+                <ion-col class="col" col-12="" col-lg-3="" class="text-menu">
+                    <div class="container contactUs" style="text-align: left;">
+                        <h2 class="headFont" style="margin-bottom: 0px;">BUSINESS HOURS</h2>
+                        <hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Monday - Saturday: </span>10AM - 10PM</p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><span style="font-weight: bold">Sunday: </span>10AM - 8PM</p>
+                        <!-- <p class="headFont" style="font-size: 1.5rem;margin-top: 80px;"><span style="font-weight: bold">Booking Time: </span>24/7 Hours</p> -->
+                    </div>
+                </ion-col>
+                <ion-col class="col" col-12="" col-lg-6="" text-center="">
+                    <div class="container contactUs" style="text-align: center">
+                        <img src="assets/imgs/logoName.png" alt="" style="height:100px;margin:0px;">
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;"><ion-icon name="pin" color="charcoal" style="font-size:1.5em"></ion-icon> 4157 Eagle Rock Blvd STE 1, Los Angeles CA 90065</p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;cursor: pointer" (click)="callNow()"><ion-icon name="call" color="charcoal" style="font-size:1.5em"></ion-icon> 323 229 0228</p>
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;cursor: pointer" (click)="emailNow()"><ion-icon name="mail-open" color="charcoal" style="font-size:1.5em"></ion-icon><span style="color:#C49433"> info@kusinafilipina.com</span></p>
+                    </div>
+                </ion-col>
+                <ion-col class="col" col-12="" col-lg-3="" text-center="">
+                    <div class="container contactUs" style="text-align: left;">
+                        <h2 class="headFont" style="margin-bottom: 0px;">SUBSCRIBE NOW</h2>
+                        <hr class="ftrLine" style="width: 20%;height: 30px;color: #C49433 !important; text-align: left">
+                        <p class="headFont" style="font-size: 1.5rem;margin-top: 0px;line-height:30px;"> Sign up now to
+                            our newsletter to get latest food items and our new events. This theme will help you
+                            organize your site without any technical skills.</p>
+
+                        <div class="inputSection" style="padding: 0px !important">
+                            <input class="headFont" type="text" placeholder="Email Address">
+                            <button class="headFont">SIGN UP</button>
+                        </div>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-grid>
+
+    <ion-grid>
+        <div class="last-section">
+            <ion-row align-items-center="" class="row">
+                <ion-col class="col" col-12="" col-lg-4="">
+                    <div class="container" style="text-align: left">
+                        <p class="headFont" style="font-size: 1.5rem;margin:0px;margin-left: 15px;">© 2019 All Rights
+                            Reserved</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-grid>
+</div>
+</ion-content>
+
+<ion-footer transparent *ngIf="checkApp">
+    <ion-toolbar class="footer-text mobile-footer" color="brownLight">
+        <h5><span class="iconFont">
+                <ion-icon color="goldenBrown" name="time"></ion-icon>
+				</span><span style="margin-left: 0px !important">{{ timeSched }}</span></h5>
+        <h5><span class="iconFont">
+                <ion-icon color="goldenBrown" name="contacts"></ion-icon>
+            </span><span style="margin-left: 0px !important">Kusina Filipina 2019</span></h5>
+        <h5><span class="iconFont">
+                <ion-icon color="goldenBrown" name="mail"></ion-icon>
+            </span><span style="margin-left: 0px !important">info@kusinafilipina.com</span></h5>
+        <div class="eatIcon">
+            <div class="eatIconContent">
+                <ion-icon name="restaurant" color="goldenBrown"></ion-icon>
+                <p class="eatSubText">Taste of Home</p>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-footer>
+
+
+<!-- MOBILE DESIGN -->
+<!-- <ion-content padding *ngIf="checkApp">
+    <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina <span
+        style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
+    <hr>
+  
+</ion-content> -->
+
+<!-- WEB DESIGN  -->
+<!-- <ion-content padding *ngIf="!checkApp">
+    <ion-title class="titl infoHead"><span style="color: rgb(245, 61, 61) !important; font-weight: bold;">K</span>usina
+        <span style="color: rgb(245, 61, 61) !important; font-weight: bold;">F</span>ilipina <span
+            style="color: rgb(245, 61, 61) !important; font-weight: bold;">G</span>allery</ion-title>
+    <hr>
+    <div class="desk-card-lists padding-all">
+        <div class="desk-card-holder " (click)="catClick(item)" *ngFor="let item of deskCategories" >
+            <div class="desk-cards-content">
+                <img src="assets/imgs/{{item.image}}" alt="">
+                <h2>{{ item.name }}</h2>
+                
+            </div>
+        </div>
+    </div>
+    <h4 class="titl infoHead desk-subtitle">We offer an exceptional dining experience. Curious about <span class="emph" >what we serve?</span> and <span class="emph">What the Restaurant looks like?</span> Well just click one of the items above to look at it.
+    </h4>
+    <hr style="width: 10% !important">
+</ion-content>
+<ion-footer>
+    <ion-toolbar *ngIf="!checkApp" class="footer-text" color="semiDark">
+        <h6>© Kusina Filipina Copyright</h6>
+    </ion-toolbar>
+</ion-footer> -->

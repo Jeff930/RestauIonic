@@ -37,7 +37,7 @@ export class MyApp {
       ];
       this.pagesDesk = [
         // { title: 'HOME', component: 'HomePage', icon: 'home' },
-        { title: 'MENU', component: 'GalleryTabsPage', icon: 'images' },
+        { title: 'MENU', component: 'MenuGalleryPage', icon: 'images' },
         { title: 'ABOUT US', component: 'AboutPage', icon: 'information-circle' },
         { title: 'CATERING', component: 'CateringPage', icon: 'basket' },
         { title: 'CONTACT US', component: 'ContactPage', icon: 'information-circle' }

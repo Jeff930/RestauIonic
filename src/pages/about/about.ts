@@ -54,6 +54,9 @@ export class AboutPage {
   callNow() {
     window.open(`tel:3232290228`, '_system');
   }
+  emailNow() {
+    window.location.href = "mailto:"+ 'info@kusinafilipina.com';
+  }
   loadMap() {
 
     let latLng = new google.maps.LatLng(34.122198, -118.225819);
